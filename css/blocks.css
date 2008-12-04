@@ -1224,8 +1224,8 @@
 /* itinerary pricing block */
 
 .itineraryPricingBlock {
+	border: 1px solid #DDDDDD;
 	margin: 0 0 5px 0;
-	clear: both;
 }
 
 .itineraryPricingBlock .expandedSection .collapsedPart,
@@ -1245,10 +1245,8 @@
 }
 
 .itineraryPricingBlock .headBlock {
-	background: #004982;
-	font: bold 14px Arial;
-	color: #ffffff;
-	padding: 5px 22px;
+	background: #DDDDDD;
+	padding: 2px 8px 3px 8px;
 }
 
 .itineraryPricingBlock .headBlock TABLE {
@@ -1260,11 +1258,14 @@
 }
 
 .itineraryPricingBlock .headBlock TH {
-	font: 10px Arial;
+	font-size: 12px;
+	font-weight: bold;
 }
 
 .itineraryPricingBlock .headBlock h2 {
-	font: bold 14px Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #666666;
 	padding: 0;	
 }
 
@@ -1273,21 +1274,15 @@
 }
 
 .itineraryPricingBlock .bodyBlock {
-	border: 1px solid #CCCACB;
-	border-top: none;
-	padding: 10px 22px;
+	border: 2px solid #FFF;
 }
 
 .itineraryPricingBlock .bodyBlock TD {
-	background: #FFFFFF;
-	padding: 3px 7px 3px 3px;
-	font: 12px Arial;
-	color: #333333;
+	background: #f2f2f2;
+	border-bottom: 1px solid #FFFFFF;
+	padding: 3px 6px 3px 3px;
+	color: #666666;
 	vertical-align: top;
-}
-
-.itineraryPricingBlock .bodyBlock .rowEven TD {
-	background-color: #E5ECF2;
 }
 
 .itineraryPricingBlock .bodyBlock .expandedPart .mainstream TD {
@@ -1308,7 +1303,7 @@
 }
 
 .itineraryPricingBlock .bodyBlock .detailedPrice TD.item{
-	padding-left: 21px;
+	padding-left: 30px;
 }
 
 .itineraryPricingBlock TD.price {
@@ -1317,12 +1312,15 @@
 }
 
 .itineraryPricingBlock .totalPrice TD {
-	padding: 3px 7px 1px 1px;
+	background: #ffffff;
+	padding: 3px 5px 1px 1px;
 	font: bold 14px Arial;
+	color: #666666;
 }
 
 .itineraryPricingBlock .totalPrice TD.price {
 	text-align: right;
+	color: #666666;
 }
 
 /* component Block */
@@ -3342,24 +3340,25 @@
 }
 
 .simpleToolTip {
-	width: 240px;
-	background: #FFFFFF;
-	border: 1px solid #787777;
-	font: 12px Arial;
+	width: 195px;
+	background: #f6f3f3;
+	border: 1px solid #2e8ad8;
 }
 
 .simpleToolTip H3 {
-	font: bold 14px Arial;
-	color: #FFFFFF;
+	text-align: center;
+	font-weight: bold;
+	font-size: 11px;
 	padding: 6px 12px;
+	border-bottom: 1px solid #2e8ad8;
 }
 
 .simpleToolTip P {
-	padding: 12px 12px 3px 12px;
+	padding: 8px 10px 5px 10px;
 }
 
 .simpleToolTip UL {
-	margin: 0 12px 12px 12px;
+	margin: 0 10px 10px 10px;
 	padding: 0;
 	list-style: none;
 }
@@ -3373,19 +3372,19 @@
 
 
 .toolTipFareFamily1 H3 {
-	background-color: #7fa4bf;
+	background-color: #daebfc;
 }
 
 .toolTipFareFamily2 H3 {
-	background-color: #4077a0;
+	background-color: #c3e1fe;
 }
 
 .toolTipFareFamily3 H3 {
-	background-color: #004982;
+	background-color: #b3d9ff;
 }
 
 .toolTipFareFamily4 H3 {
-	background-color: #c4701a;
+	background-color: #9fcdfb;
 }
 
 

@@ -40,7 +40,7 @@ img {
 
 body, td, th {
 	font: 11px Arial;
-	color: #333333;
+	color: #666666;
 }
 
 TABLE {
@@ -61,7 +61,7 @@ TABLE TD, TABLE TH {
 }
 
 a {
-	color: #004982;
+	color: #0000FF;
 	text-decoration: underline;
 }
 
@@ -121,14 +121,14 @@ a.button2:link, a.button2:active, a.button2:focus {
 .formButtonArea a.button1:link, .formButtonArea a.button1:active, .formButtonArea a.button1:focus,
 .componentButtonArea a.button1, .componentButtonArea a.button1:hover, .componentButtonArea a.button1:visited,
 .componentButtonArea a.button1:link, .componentButtonArea a.button1:active, .componentButtonArea a.button1:focus {
-	background: #d3991b url(../pictures/misc/main-button-bg.gif) repeat-x left top;
+	background: url(../pictures/misc/main-button-bg.gif) repeat-x left top;
 	border: none;
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: bold 16px Arial;
+	font: bold 10px Verdana;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #004a91;
 }
 
 .pageButtonArea a.button1 span, .formButtonArea a.button1 span, .componentButtonArea a.button1 span {
@@ -138,7 +138,7 @@ a.button2:link, a.button2:active, a.button2:focus {
 
 .pageButtonArea a.button1 span span, .formButtonArea a.button1 span span, .componentButtonArea a.button1 span span {
 	background: url(../pictures/misc/main-button-right.gif) no-repeat right top;
-	padding: 3px 15px 3px 15px;
+	padding: 6px 15px 6px 15px;
 }
 
 .pageButtonArea a.button2, .pageButtonArea a.button2:hover, .pageButtonArea a.button2:visited,
@@ -147,15 +147,14 @@ a.button2:link, a.button2:active, a.button2:focus {
 .formButtonArea a.button2:link, .formButtonArea a.button2:active, .formButtonArea a.button2:focus,
 .componentButtonArea a.button2, .componentButtonArea a.button2:hover, .componentButtonArea a.button2:visited,
 .componentButtonArea a.button2:link, .componentButtonArea a.button2:active, .componentButtonArea a.button2:focus {
-	background: #1673b2 url(../pictures/misc/alt-button-bg.gif) repeat-x left top;
+	background: url(../pictures/misc/alt-button-bg.gif) repeat-x left top;
 	border: none;
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: bold 12px Arial;
+	font: bold 10px Verdana;
 	text-decoration: none;
-	color: #FFFFFF;
-	margin: 2px 0 0 0;
+	color: #004a91;
 }
 
 .pageButtonArea a.button2 span, .formButtonArea a.button2 span, .componentButtonArea a.button2 span {
@@ -165,19 +164,19 @@ a.button2:link, a.button2:active, a.button2:focus {
 
 .pageButtonArea a.button2 span span, .formButtonArea a.button2 span span, .componentButtonArea a.button2 span span {
 	background: url(../pictures/misc/alt-button-right.gif) no-repeat right top;
-	padding: 2px 25px 4px 25px;
+	padding: 6px 15px 6px 15px;
 }
 
 
 .button1Disabled {
-	background: #e9cb8d url(../pictures/misc/button1-disabled-bg.gif) repeat-x left top;
+	background: url(../pictures/misc/button1-disabled-bg.gif) repeat-x left top;
 	border: none;
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: bold 16px Arial;
+	font: bold 10px Verdana;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #729bc2;
 	cursor: default;
 }
 
@@ -188,20 +187,19 @@ a.button2:link, a.button2:active, a.button2:focus {
 
 .button1Disabled span span {
 	background: url(../pictures/misc/button1-disabled-right.gif) no-repeat right top;
-	padding: 3px 15px 3px 15px;
+	padding: 6px 15px 6px 15px;
 }
 
 .button2Disabled {
-	background: #8ab9d8 url(../pictures/misc/button2-disabled-bg.gif) repeat-x left top;
+	background: url(../pictures/misc/button2-disabled-bg.gif) repeat-x left top;
 	border: none;
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: bold 12px Arial;
+	font: bold 10px Verdana;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: 729bc2;
 	cursor: default;
-	margin: 2px 0 0 0;
 }
 
 .button2Disabled span {
@@ -211,7 +209,7 @@ a.button2:link, a.button2:active, a.button2:focus {
 
 .button2Disabled span span {
 	background: url(../pictures/misc/button2-disabled-right.gif) no-repeat right top;
-	padding: 2px 25px 4px 25px;
+	padding: 6px 15px 6px 15px;
 }
 
 .pageButtonArea TD {
