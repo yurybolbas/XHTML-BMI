@@ -1131,17 +1131,12 @@
 	margin: 0 0 5px 8px;
 }
 
-.pageTitleArea A,
-.pageTitleArea A:hover { 
-	color: #0000FF;
-}
-
 .pageTitleArea TABLE {
 	width: 100%;
 }
 
-.pageTitleArea TABLE TD {
-	width: 100%;
+.pageTitleArea TABLE TH {
+	text-align: right;
 }
 
 .pageTitleArea TD, .pageTitleArea TH {
@@ -1149,8 +1144,8 @@
 }
 
 .pageTitleArea H1 {
-	font: bold 16px Arial;
-	color: #666666;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .pageTitleArea H1 SPAN {
@@ -1158,12 +1153,14 @@
 }
 
 .pageTitleArea .links {
-	text-align: right;
+	font-size: 11px;
+	font-weight: normal;
+	padding: 0 0 1px 0;
 }
 
 .pageTitleArea .links A,
 .pageTitleArea .links A:hover {
-	color: #FFF;
+
 }
 
 .pageTitleArea .links .print {
@@ -1171,6 +1168,7 @@
 	background: url(../pictures/icons/i_print.gif) no-repeat left center;
 	padding: 0 0 0 14px;
 }
+
 
 /* intro text area */
 .introTextArea {
@@ -1215,7 +1213,7 @@
 
 .pageTotalPrice .colTotal {
 	text-align: right;
-	padding-right: 30px;
+	padding-right: 7px;
 }
 
 .pageTotalPrice .colCard {
@@ -1332,7 +1330,7 @@
 
 .componentBlock .componentBodySep {
 	height: 1px;
-	background: #cccacb;
+	background: #dddddd;
 }
 
 .componentBlockDelimiter {
@@ -1357,12 +1355,16 @@
 
 .componentBlock .componentHeader H2 {
 	 font: bold 14px Arial;
-	 padding: 5px 0 7px 0; 	
+	 padding: 2px 8px 7px 8px; 	
 }
 
 .componentBlock .componentHeader .links {
 	 font-size: 12px;
-	 padding: 4px 0 0 0;	
+	 padding: 2px 0 0 0;	
+}
+
+.componentBlock .componentHeader .links A {
+	color: #004982;
 }
 
 .componentBlock .componentHeader .remove {
@@ -1371,8 +1373,8 @@
 }
 
 .componentBody {
-	border: 1px solid #cccacb;
-	padding: 5px 25px;
+	border: 1px solid #dddddd;
+	padding: 5px 7px;
 }
 
 .componentBody .componentBodyInner1 {
@@ -1414,7 +1416,7 @@
 }
 
 .componentDetails {
-	padding: 2px 0 0 0;
+	padding: 2px 10px 0 10px;
 }
 
 .componentDetails .header {
@@ -1465,13 +1467,13 @@
 
 
 .componentTotal {
-	padding: 4px 4px 6px 4px;
+	padding: 12px 0 5px 0;
 	text-align: right;
 	font-size: 12px;
 }
 
 .componentSaving {
-	padding: 0 4px 6px 4px;
+	padding: 0 0 5px 0;
 	text-align: right;
 	font-size: 12px;
 	color: #fe0101;
@@ -1494,7 +1496,7 @@
 }
 
 .flightDetailsBlock .flightLeg {
-	padding: 5px 0 0 0;
+	padding: 8px 0 5px 0;
 }
 
 .flightDetailsBlock TABLE {
@@ -1553,8 +1555,8 @@
 }
 
 .flightDetailsBlock .footnote {
-	font-size: 10px;
-	color: #333333;
+	font-size: 11px;
+	color: #666666;
 	padding: 0 0 6px 0;
 }
 
@@ -2161,7 +2163,7 @@
 
 .detailsSubBlock .header {
 	font: bold 12px Arial;
-	background: #cccacb;
+	background: #dddddd;
 	padding: 3px 10px 3px 10px;
 }
 
@@ -2378,7 +2380,7 @@
 
 .detailsSubBlockFareBreakdown .detailsTable THEAD TD {
 	font-weight: normal;
-	background: #f2f1f1;	
+	background: #f2f2f2;	
 	padding: 2px 10px 3px 10px;
 }
 
@@ -2421,46 +2423,8 @@
 ******************************************************************************/
 
 .detailsSubBlockFareFamilyExtras .header {
-	padding: 7px 3px 4px 3px;	
+	padding: 7px 2px;	
 	background: none;
-	text-transform: none;
-}
-
-.detailsSubBlockFareFamilyExtras .extrasTabs TABLE {
-	border-top: 1px solid #bfb5bf;
-	border-right: 1px solid #bfb5bf;
-}
-
-.detailsSubBlockFareFamilyExtras .extrasTabs TD {
-	border-left: 1px solid #bfb5bf;
-	background: #ffffff;
-	vertical-align: top;
-}
-
-.detailsSubBlockFareFamilyExtras .extrasTabs DIV {
-	position: relative;
-	margin: 1px 1px 0px 1px;	
-	font: 10px Verdana;
-	background: #cdecf1;
-}
-
-.detailsSubBlockFareFamilyExtras .extrasTabs .actTab DIV {
-	background-color: #f3f9ff;
-	border-left: 1px solid #ffffff;
-	border-right: 1px solid #ffffff;
-	margin: 1px 0 -3px 0;
-	padding-bottom: 3px;
-	z-index:1;
-}
-
-.detailsSubBlockFareFamilyExtras .extrasTabs A,
-.detailsSubBlockFareFamilyExtras .extrasTabs A:hover,
-.detailsSubBlockFareFamilyExtras .extrasTabs SPAN {
-	display: block;
-	text-decoration: none;
-	color: #000;
-	padding: 0 17px 0 12px;
-	line-height: 22px; 
 }
 
 .detailsSubBlockFareFamilyExtras .body {
@@ -2468,14 +2432,26 @@
 	padding: 1px;
 }
 
-.detailsSubBlockFareFamilyExtras .detailsTable THEAD TD {
-	background: #F3F9FF;
-	font-weight: bold;
-	text-align: center;
+.detailsSubBlockFareFamilyExtras .detailsTable TD {
+	background-color: #f2f2f2;
+	font-size: 12px;
+	padding: 2px 3px 3px 3px;
 }
 
-.detailsSubBlockFareFamilyExtras .tableAdditionalItems THEAD TD {
-	text-align: left;
+.detailsSubBlockFareFamilyExtras .detailsTable .colFirst {
+	width: 1%;
+	border-right: none;
+	padding: 0;
+}
+
+.detailsSubBlockFareFamilyExtras .detailsTable .colFirst DIV {
+	background: url(../pictures/icons/bullets/bul_list.gif) no-repeat left 7px;
+	width: 5px;
+	margin: 0 5px 0 12px;
+}
+
+.detailsSubBlockFareFamilyExtras .detailsTable .colLast {
+	width: 99%;
 }
 
 .detailsSubBlockFareFamilyExtras .blockSeparator {
@@ -2515,12 +2491,12 @@
 ******************************************************************************/
 
 .blockInsuranceCrossSell .componentBody .componentBodyInner1 {
-	padding: 2px 0;
+	padding: 10px 0 0 0;
 }
 
 .insuranceCrossSell TD {
 	vertical-align: top;
-	font: 10px Verdana;
+	font-size: 12px;
 }
 
 .insuranceCrossSell .colPurchase {
@@ -2549,23 +2525,17 @@
 }
 
 .insuranceCrossSell .colIcon {
-	padding: 5px 14px 10px 8px;
+	padding: 5px 35px 10px 8px;
 	white-space: nowrap;
-	border-bottom: 1px solid #bfb5bf;
 }
 
 .insuranceCrossSell .colInfo {
 	width: 100%;
 	padding: 2px 8px 10px 0;
-	border-bottom: 1px solid #bfb5bf;
 }
 
-.insuranceCrossSell .borderBottom TD {
-	border-bottom: 1px solid #bfb5bf;
-}
-
-.insuranceCrossSell .borderBottom TD TD {
-	border: none;
+.blockInsuranceCrossSell .componentTotal {
+	padding: 0 0 7px 0;
 }
 
 

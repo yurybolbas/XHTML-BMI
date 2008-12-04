@@ -375,8 +375,7 @@ a.button2:link, a.button2:active, a.button2:focus {
 .formSeparator,
 .textSeparator,
 .blockSeparator {
-	background-image: url(../pictures/misc/form_sep.gif);
-	background-repeat: repeat-x;
+	background: #cccacb;
 	height:1px;
 }
 
