@@ -1221,7 +1221,7 @@
 }
 
 .pageTotalPrice .colCard {
-	
+	padding-left: 8px;
 }
 
 /* itinerary pricing block */
@@ -1559,7 +1559,7 @@
 }
 
 .flightDetailsBlock .footnote {
-	font-size: 11px;
+	font-size: 10px;
 	color: #666666;
 	padding: 0 0 6px 0;
 }
@@ -1888,7 +1888,7 @@
 }
 
 .confirmationInfoBlock .bodyBlock {
-	background: #f2f2f2;
+	background: #e5ecf2;
 	border: 1px solid #CCCCCC;
 	margin: 8px 0 3px 0;
 }
@@ -1938,7 +1938,7 @@
 .passengerInfoBlock .headBlock h1 {
 	font: bold 14px Arial;
 	border-bottom: 1px solid #cccacb;
-	padding: 0 0 5px 0;
+	padding: 0 8px 5px 8px;
 }
 
 .passengerInfoBlock .footerBlock {
@@ -1959,17 +1959,13 @@
 }
 
 .passengerInfoBlock TD DIV {
-	padding: 5px 5px 5px 5px;
+	padding: 5px 8px 5px 8px;
 }
 
 .passengerInfoBlock .colName {
 	width: 25%;
 	font-weight: bold;
 	text-transform: uppercase;
-}
-
-.passengerInfoBlock .colName DIV {
-	padding: 5px 5px 5px 0;
 }
 
 .passengerInfoBlock .colComponent {
@@ -1997,8 +1993,8 @@
 
 .passengerInfoBlock .footnote {
 	font-size: 10px;
-	color: #333333;
-	padding: 0 0 5px 0;
+	color: #666666;
+	padding: 5px 0 10px 0;
 }
 
 .passengerInfoBlock .footnote SUP.ref {
@@ -2010,7 +2006,7 @@
 /* Trip Status Area */
 .tripStatusArea {
 	font: bold 14px Arial;
-	padding: 5px 0;
+	padding: 5px 8px;
 }
 
 
@@ -2468,12 +2464,14 @@
 
 ******************************************************************************/
 
-.blockExtraServices .componentBody .componentBodyInner1 {
+.blockExtraServices .componentBody,
+.blockExtraServices .componentBodyInner1,
+.blockExtraServices .componentDetails {
 	padding: 0;
 }
 
 .detailsSubBlockExtraServices {
-	border-bottom: 1px solid #bfb5bf;
+	border-bottom: 1px solid #dddddd;
 }
 
 .detailsSubBlockExtraServices .header {
@@ -2482,7 +2480,15 @@
 
 .detailsSubBlockExtraServices .body {
 	border: none;
-	padding: 0 2px 2px 2px;
+	padding: 5px 15px;
+}
+
+.detailsSubBlockExtraServices .detailsTable TD {
+	background: #ffffff;
+}
+
+.blockExtraServices .componentTotal {
+	padding: 12px 7px 5px 5px;
 }
 
 

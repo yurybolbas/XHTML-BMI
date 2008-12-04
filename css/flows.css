@@ -437,8 +437,13 @@
 	padding: 0 0 5px 0;
 }
 
+#pgConfirmation #fbConfirmationEmail .formTitle {
+	font-size: 14px;
+}
+
 #pgConfirmation #fbConfirmationEmail .formLabelArea {
 	text-align: right;
+	font-weight: bold;
 }
 
 #pgConfirmation #fbConfirmationEmail .formLabelArea,
@@ -451,7 +456,7 @@
 }
 
 #pgConfirmation #fbConfirmationEmail .formButtonArea {
-	padding: 3px 0 0 2px;
+	padding: 2px 0 0 2px;
 }
 
 #pgConfirmation #fbConfirmationEmail #fbButtonSend {

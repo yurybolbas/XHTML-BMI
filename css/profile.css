@@ -104,7 +104,7 @@
 /* Create New Account */
 
 #fbPersonalInfo .formSeparator {
-	height: 4px;
+	margin: 2px 0;
 }
 
 #fbPersonalInfo .usernameValid {
