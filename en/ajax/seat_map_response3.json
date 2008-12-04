@@ -1,0 +1,10 @@
+{
+	errors:[
+		{
+			code: "NoSeatMap",
+			msg: "No Seat Map configured for itinerary segment"
+		}
+	
+	]
+}		
+/* !@#success#@! */

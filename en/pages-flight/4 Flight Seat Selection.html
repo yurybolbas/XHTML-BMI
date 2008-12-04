@@ -1,0 +1,653 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DLEXPRD</title>
+<script language="JavaScript" type="text/javascript">
+<!--		
+function registerJS(jsName){
+	return;
+}
+--></script>
+<link rel="stylesheet" type="text/css" href="../../css/all.css" />
+<link rel="stylesheet" type="text/css" href="../../css/print.css" media="print" />
+<script src="../../js/bot_script.js" type="text/JavaScript"></script>
+<script src="../../js/calendar.js" type="text/JavaScript"></script>
+<script src="../../js/dialog.js" type="text/JavaScript"></script>
+<script src="../../js/drilldown.js" type="text/JavaScript"></script>
+<script src="../../js/global.js" type="text/JavaScript"></script>
+<script src="../../js/utils.js" type="text/JavaScript"></script>
+<script src="../../js/navigation.js" type="text/JavaScript"></script>
+<script src="../../js/prototype_source_loader.js" type="text/javascript"></script>
+<script src="../../js/seatmap.js" type="text/JavaScript"></script>
+<script src="../../js/version.js" type="text/JavaScript"></script>
+<script src="../../en/js/airport_data.js" type="text/JavaScript"></script>
+<script src="../../en/js/navigation.js" type="text/JavaScript"></script>
+<script src="../../en/js/popup_templates.js" type="text/JavaScript"></script>
+<script type="text/JavaScript">
+<!--
+
+		pass = [
+			["1","ADT",["","",""],1],
+			["2","ADT",["13F","",""],1],
+			["3","CNN",["14F","",""],1]
+		];
+		
+		
+		window.onload = function () {seatMapFramework.init(pass,'edit');}
+
+		//--></script>
+</head>
+<body>
+<!-- BEGIN HEIGHT SCRETCHING -->
+<table height="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="layoutMain">
+	<tr>
+		<td valign="top">
+			<!-- BEGIN LAYOUT HEADER -->
+			<div class="layoutHeader">
+			
+				<!-- BMI HEADER -->	
+			
+				<div class="headerStub"><img src="../../pictures/header/header-stub.gif" width="930" height="104" alt=""></div>
+				
+				<!-- /BMI HEADER -->	
+			
+				<div class="blockUnderLogo">
+					<table cellpadding="0" cellspacing="0" border="0" class="blockUnderLogoContent">
+						<tr valign="top">
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN LANGUAGE SELECTOR -->
+								<div class="languageSelector"><span>English</span><span class="delim"> | </span>
+									<a href="#">Espanol</a></div>
+								<!-- /END LANGUAGE SELECTOR --></td>
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN BREADCRUMB -->
+								<div class="navigationBreadcrumb">
+									<a href="../../en/index.html">Home</a><span> » </span>
+									<a href="../../en/pages-old/Reservations &amp; Services (SRS).html">Reservations &amp; Services</a><span> » </span><strong>Flights</strong></div>
+								<!-- /END BREADCRUMB --></td>
+							<td class="layoutCell" width="99%" align="right">
+								<!-- BEGIN LOGIN STATUS -->
+								<div class="auth"><strong>Welcome, John Smith   johns123</strong><span> | </span>
+									<a href="../../en/pages-profile/Profile - Indexpage (AHP).html">My Profile</a><span> | </span>
+									<a href="../../en/pages-old/Trip Planner - 1 Control Panel (PHP).html">Trip Planner</a><span> | </span>
+									<a href="../../en/index.html" onClick="return window.confirm ('&quot;Are you sure you want to Log off?&quot;')">Logoff</a></div>
+								<!-- /END LOGIN STATUS --></td>
+						</tr>
+					</table></div></div>
+			<!-- /END LAYOUT HEADER -->
+			<table class="layoutBody" align="center">
+				<tr valign="top">
+					<td class="layoutBodyWideArea">
+						<!-- BEGIN BODY WIDE AREA -->
+						<div id="pgSeatSelection">
+							<!-- Services Tabs -->
+							<div class="mainTopServicesTabs">
+								<div class="servicesTabs">
+									<table>
+										<tr>
+											<td class="air">
+												<div>
+													<a href="../pages-flight/1 Flight Search RT.html">Flights</a></div></td>
+											<td class="hotel">
+												<div>
+													<a href="../pages-hotel/1 Hotel Search.html">Hotels</a></div></td>
+											<td class="car">
+												<div>
+													<a href="../pages-car/1 Car Search.html">Car</a></div></td>
+											<td class="package">
+												<div>
+													<a href="#">Packages</a></div></td>
+											<td class="insurance">
+												<div>
+													<a href="../pages-insurance/1 Insurance Search.html">Insurance</a></div></td>
+											<td class="discount">
+												<div>
+													<a href="#">Discount Cards</a></div></td>
+										</tr>
+									</table></div></div>
+							<!-- /Services Tabs -->
+							<!-- BEGIN STEPS LINE -->
+							<div class="stepsNavAreaOuter">
+								<table class="stepsNavArea stepsNavAir">
+									<tr class="stepsNavRow" valign="top">
+										<td class="stepsNavFirstAfter">Search</td>
+										<td class="stepsNavSpacerAfter">
+											<div class="spacerStepsNav"><span></span></div></td>
+										<td class="stepsNavDefaultAfter">Selection</td>
+										<td class="stepsNavSpacerAfter">
+											<div class="spacerStepsNav"><span></span></div></td>
+										<td class="stepsNavDefaultAfter">Summary</td>
+										<td class="stepsNavSpacerAfter">
+											<div class="spacerStepsNav"><span></span></div></td>
+										<td class="stepsNavDefaultActive"><strong>Passengers</strong></td>
+										<td>
+											<div class="spacerStepsNav"><span></span></div></td>
+										<td class="stepsNavDefaultBefore">Purchase</td>
+										<td>
+											<div class="spacerStepsNav"><span></span></div></td>
+										<td class="stepsNavLastBefore">Confirmation</td>
+									</tr>
+								</table></div>
+							<!-- /END STEPS LINE -->
+							<!-- BEGIN PAGE TITLE LINE -->
+							<div class="pageTitleArea">
+								<table>
+									<tr>
+										<td>
+											<h1>Choose Your Seats</h1></td>
+										<th nowrap="nowrap">
+											<div class="links">
+												<a href="#" class="print">Print this page</a></div></th>
+									</tr>
+								</table></div>
+							<!-- /END PAGE TITLE LINE -->
+							<div class="seatSelectionArea">
+								<!-- SEATS BLOCK BEGIN -->
+								<div class="seatsBlock">
+									<div class="headBlock">
+										<div>
+											<h1>
+											</h1></div></div>
+									<div class="bodyBlock">
+										<!-- Passengers Area -->
+										<div class="passengersArea">
+											<div class="warningMsg">Exit row passengers must be capable of providing emergency assistance. You will be checked on-board.</div>
+											<div id="idLegSegmentsArea" class="legsTableOuter">
+											<table class="legsTable">
+												<thead>
+													<tr>
+														<td class="nameArea">
+															<table width="100%">
+																<tr>
+																	<td class="name">
+																		<div>Passenger Name</div></td>
+																		<td class="prevLegLink" id="idPrevLegLink">
+																		<div>
+																				<a href="#" class="hidden"></a></div></td>
+																</tr>
+															</table></td>
+														<td class="legArea legArea1 legAreaFirst" id="idLegSegment_0">
+															<div class="route">LAX-SJC</div>
+															<div class="link">
+																<a href="#" onClick="seatMapFramework.directSegment(0);this.blur();return false">View</a></div></td>
+														<td class="legArea legArea2 legArea" id="idLegSegment_1">
+															<div class="route">SJC-SFO</div>
+															<div class="link">
+																<a href="#" onClick="seatMapFramework.directSegment(1);this.blur();return false">View</a></div></td>
+														<td class="legArea legArea3 legAreaLast" id="idLegSegment_2">
+															<div class="route">SFO-LAX</div>
+															<div class="link">
+																<a href="#" onClick="seatMapFramework.directSegment(2);this.blur();return false">View</a></div></td>
+															<td class="nextLegLink" id="idNextLegLink">
+															<div>
+																	<a href="#" class="hidden"></a></div></td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="rowOdd rowFirst">
+														<td class="nameArea">
+															<table>
+																<tr>
+																	<td class="code">
+																		<div>(1) Adult - </div></td>
+																	<td class="name">
+																		<div>John Smith</div></td>
+																</tr>
+															</table></td>
+														<td class="legArea legArea1 legAreaFirst">
+															<div>
+																<input type="text" name="legSegment_0_seatField_1" id="legSegment_0_seatField_1" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,1,0);" onFocus="seatMapFramework.setCurrentGuestSeat(1,0);" /></div></td>
+														<td class="legArea legArea2">
+															<div>
+																<input type="text" name="legSegment_1_seatField_1" id="legSegment_1_seatField_1" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,1,1);" onFocus="seatMapFramework.setCurrentGuestSeat(1,1);" /></div></td>
+														<td class="legArea legArea3 legAreaLast">
+															<div>
+																<input type="text" name="legSegment_2_seatField_1" id="legSegment_2_seatField_1" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,1,2);" onFocus="seatMapFramework.setCurrentGuestSeat(1,2);" /></div></td>
+															<td></td>
+													</tr>
+													<tr class="rowEven">
+														<td class="nameArea">
+															<table>
+																<tr>
+																	<td class="code">
+																		<div>(2) Adult - </div></td>
+																	<td class="name">
+																		<div>Mrs. Mary Smith</div></td>
+																</tr>
+															</table></td>
+														<td class="legArea legArea1 legAreaFirst">
+															<div>
+																<input type="text" name="legSegment_0_seatField_2" id="legSegment_0_seatField_2" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,2,0);" onFocus="seatMapFramework.setCurrentGuestSeat(2,0);" /></div></td>
+														<td class="legArea legArea2">
+															<div>
+																<input type="text" name="legSegment_1_seatField_2" id="legSegment_1_seatField_2" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,2,1);" onFocus="seatMapFramework.setCurrentGuestSeat(2,1);" /></div></td>
+														<td class="legArea legArea3 legAreaLast">
+															<div>
+																<input type="text" name="legSegment_2_seatField_2" id="legSegment_2_seatField_2" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,2,2);" onFocus="seatMapFramework.setCurrentGuestSeat(2,2);" /></div></td>
+															<td></td>
+													</tr>
+													<tr class="rowOdd rowLast">
+														<td class="nameArea">
+															<table>
+																<tr>
+																	<td class="code">
+																		<div>(3) Child - </div></td>
+																	<td class="name">
+																		<div>Mr. Bob Smith</div></td>
+																</tr>
+															</table></td>
+														<td class="legArea legArea1 legAreaFirst">
+															<div>
+																<input type="text" name="legSegment_0_seatField_3" id="legSegment_0_seatField_3" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,3,0);" onFocus="seatMapFramework.setCurrentGuestSeat(3,0);" /></div></td>
+														<td class="legArea legArea2">
+															<div>
+																<input type="text" name="legSegment_1_seatField_3" id="legSegment_1_seatField_3" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,3,1);" onFocus="seatMapFramework.setCurrentGuestSeat(3,1);" /></div></td>
+														<td class="legArea legArea3 legAreaLast">
+															<div>
+																<input type="text" name="legSegment_2_seatField_3" id="legSegment_2_seatField_3" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,3,2);" onFocus="seatMapFramework.setCurrentGuestSeat(3,2);" /></div></td>
+															<td></td>
+													</tr>
+												</tbody>
+												</table></div></div>
+										<!-- /Passengers Area -->
+										<!-- Flight Info Area -->
+										<div class="flightInfoArea" id="idLegSegmentInfo_0" style="display:none">
+											<div class="flight">Flight 128 Los Angeles (LAX) - San Jose (SJC).</div>
+											<div class="details"><span class="plane">Boeing 737-400.</span>&nbsp;<span class="fareFam">Fare Family: Economy</span></div></div>
+										<!-- Flight Info Area -->
+										<!-- Flight Info Area -->
+										<div class="flightInfoArea" id="idLegSegmentInfo_1" style="display:none">
+											<div class="flight">Flight 128 San Jose (SJC) - San Francisco (SFO).</div>
+											<div class="details"><span class="plane">Boeing 737-400.</span>&nbsp;<span class="fareFam">Fare Family: Economy</span></div></div>
+										<!-- Flight Info Area -->
+										<!-- Flight Info Area -->
+										<div class="flightInfoArea" id="idLegSegmentInfo_2" style="display:none">
+											<div class="flight">Flight 128 San Francisco (SFO) - Los Angeles (LAX).</div>
+											<div class="details"><span class="plane">Boeing 737-400.</span>&nbsp;<span class="fareFam">Fare Family: Economy</span></div></div>
+										<!-- Flight Info Area -->
+										<!-- Error Message Area -->
+										<div class="errorMessageArea" id="idErrorSeatMapPlaceHolder" style="display:none">
+								Seat selection is not available for this fare family.
+						</div>
+										<!-- Error Message Area -->
+										<!-- Seat Map Area -->
+										<div class="seatMapArea">
+											<div class="blockSeparator"><span></span></div>
+											<div class="seatMapLoadingBlock" id="idSeatMapLoadingPlaceHolder">Please wait whilst the system obtains the Seat Maps.</div>
+											<div class="seatMapBlock" id="idSeatMapPlaceHolder" style="height:0">
+												<!--table class="seatMapInner"><tr><td>
+									<div class="planeNavigation">
+										<table width="100%"><tr>
+											<td class="navFront"><a href="#">&laquo; Front</a></td>
+											<td class="navRear"><a href="#">Rear &raquo;</a></td>
+										</tr></table>
+									</div>
+									<table class="planeView">
+										<tr class="planeTopSeatNumbers">
+											<td><div></div></td>
+											<td><div>05</div></td>
+											<td><div>06</div></td>
+											<td><div>07</div></td>
+											<td><div>08</div></td>
+											<td><div>09</div></td>
+											<td><div>10</div></td>
+											<td class="wing"><div>11</div></td>
+											<td class="exit"><div>12</div></td>
+											<td class="exit"><div>13</div></td>
+											<td class="wing"><div>14</div></td>
+											<td class="wing"><div>15</div></td>
+											<td class="wing"><div>16</div></td>
+											<td><div>17</div></td>
+											<td><div>18</div></td>
+											<td><div>19</div></td>
+											<td><div>20</div></td>
+											<td><div>21</div></td>
+											<td><div>22</div></td>
+											<td><div>23</div></td>
+											<td><div>24</div></td>
+											<td><div>25</div></td>
+											<td><div>26</div></td>
+											<td><div>27</div></td>
+											<td><div>28</div></td>
+											<td><div>29</div></td>
+											<td><div></div></td>
+										</tr>
+										<tr class="planeSeats firstPlaneRow">
+											<td class="planeLeftSeatLetter"><div>F</div></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="exitSeat occupiedSeat"><div/></td>
+											<td class="exitSeat occupiedSeat"><div/></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="planeRightSeatLetter"><div>F</div></td>
+										</tr>
+										<tr class="planeSeats">
+											<td class="planeLeftSeatLetter"><div>E</div></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="exitSeat occupiedSeat"><div/></td>
+											<td class="exitSeat occupiedSeat"><div/></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="planeRightSeatLetter"><div>E</div></td>
+										</tr>
+										<tr class="planeSeats">
+											<td class="planeLeftSeatLetter"><div>D</div></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="exitSeat availableSeat"><div><div><div/></div></div></td>
+											<td class="exitSeat availableSeat"><div><div><div/></div></div></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="planeRightSeatLetter"><div>D</div></td>
+										</tr>
+										<tr class="planeSeats">
+											<td class="planeLeftSeatLetter"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="funcSpace"><div/></td>
+											<td class="planeRightSeatLetter"><div/></td>
+										</tr>
+										<tr class="planeSeats">
+											<td class="planeLeftSeatLetter"><div>C</div></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="exitSeat availableSeat"><div><div><div/></div></div></td>
+											<td class="exitSeat availableSeat"><div><div><div/></div></div></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="availableSeat"><div class="guest"><span>1</span></div></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="planeRightSeatLetter"><div>C</div></td>
+										</tr>
+										<tr class="planeSeats">
+											<td class="planeLeftSeatLetter"><div>B</div></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="exitSeat occupiedSeat"><div/></td>
+											<td class="exitSeat occupiedSeat"><div/></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="availableSeat"><div class="guest"><span>2</span></div></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="planeRightSeatLetter"><div>B</div></td>
+										</tr>
+										<tr class="planeSeats lastPlaneRow">
+											<td class="planeLeftSeatLetter"><div>A</div></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="naFFSeat"><div/></td>
+											<td class="exitSeat occupiedSeat"><div/></td>
+											<td class="exitSeat occupiedSeat"><div/></td>
+											<td class="availableSeat"><div><div><div/></div></div></td>
+											<td class="availableSeat"><div class="currentGuest"><span>3</span></div></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="occupiedSeat"><div/></td>
+											<td class="planeRightSeatLetter"><div>A</div></td>
+										</tr>
+										<tr class="planeBottomSeatNumbers">
+											<td><div></div></td>
+											<td><div>05</div></td>
+											<td><div>06</div></td>
+											<td><div>07</div></td>
+											<td><div>08</div></td>
+											<td><div>09</div></td>
+											<td><div>10</div></td>
+											<td class="wing"><div>11</div></td>
+											<td class="exit"><div>12</div></td>
+											<td class="exit"><div>13</div></td>
+											<td class="wing"><div>14</div></td>
+											<td class="wing"><div>15</div></td>
+											<td class="wing"><div>16</div></td>
+											<td><div>17</div></td>
+											<td><div>18</div></td>
+											<td><div>19</div></td>
+											<td><div>20</div></td>
+											<td><div>21</div></td>
+											<td><div>22</div></td>
+											<td><div>23</div></td>
+											<td><div>24</div></td>
+											<td><div>25</div></td>
+											<td><div>26</div></td>
+											<td><div>27</div></td>
+											<td><div>28</div></td>
+											<td><div>29</div></td>
+											<td><div></div></td>
+										</tr>
+									</table>
+									<div class="planeScroll">
+										<table width="100%"><tr>
+											<td class="scrollFront"><a href="#"><img src="../../pictures/icons/seats/i_arr_front.gif" width="18" height="18" alt="" /></a></td>
+											<td class="scrollPane"><div/></td>
+											<td class="scrollRear"><a href="#"><img src="../../pictures/icons/seats/i_arr_rear.gif" width="18" height="18" alt="" /></a></td>
+										</tr></table>
+									</div>
+								</td></tr></table--></div></div>
+										<!-- /Seat Map Area --></div>
+									<div class="footerBlock">
+										<div><span></span></div></div></div>
+								<!-- SEATS BLOCK END -->
+								<div align="right" class="pageButtonArea buttonArea1">
+									<table>
+										<tr>
+											<td>
+												<a href="#" class="button2" id="pgButtonClear" onClick="seatMapFramework.resetAllGuestSeats();return false" style="display:none"><span><span>Clear Selection</span></span></a><span class="button2Disabled" id="pgButtonClearDisabled"><span><span>Clear Selection</span></span></span></td>
+											<td>
+												<a href="#" onClick="seatMapFramework.nextSegment();return false" class="button2" id="pgButtonNext"><span><span>Next Flight</span></span></a></td>
+											<td>
+												<a href="5 Flight Payment Registered Multiple Cards.html" class="button1" id="pgButtonSubmit"><span><span>Continue to Payment ></span></span></a></td>
+										</tr>
+									</table></div>
+								<!-- LEGEND BLOCK BEGIN -->
+								<div class="seatsLegendBlock">
+									<div class="headBlock">
+										<div>
+											<h1>
+											</h1></div></div>
+									<div class="bodyBlock">
+										<h3>Legend</h3>
+										<table>
+											<tr>
+												<td class="colIcon">
+													<div><img src="../../pictures/icons/seats/i_seat_1_f.gif" width="15" height="15" alt="Passenger" /></div></td>
+												<td class="colText">
+													<div>Passenger</div></td>
+												<td class="colIcon">
+													<div><img src="../../pictures/icons/seats/i_seat_avail_f.gif" width="15" height="15" alt="Available Seat" /></div></td>
+												<td class="colText">
+													<div>Available Seat</div></td>
+												<td class="colIcon">
+													<div><img src="../../pictures/icons/seats/i_seat_occup_f.gif" width="15" height="15" alt="Occupied Seat" /></div></td>
+												<td class="colText">
+													<div>Occupied Seat</div></td>
+												<td class="colIcon">
+													<div><img src="../../pictures/icons/seats/i_seat_blocked_f.gif" width="15" height="15" alt="Blocked Seat" /></div></td>
+												<td class="colText">
+													<div>Blocked Seat</div></td>
+											</tr>
+											<tr>
+												<td class="colIcon">
+													<div><img src="../../pictures/icons/seats/i_exit_row.gif" width="15" height="15" alt="Exit Seat" /></div></td>
+												<td class="colText">
+													<div>Exit Seat</div></td>
+												<td class="colIcon">
+													<div><img src="../../pictures/icons/seats/i_wing.gif" width="15" height="15" alt="Wing" /></div></td>
+												<td class="colText">
+													<div>Wing</div></td>
+												<td class="colIcon">
+													<div><img src="../../pictures/icons/seats/i_func_space.gif" width="15" height="15" alt="Lavatory/Galley/Functional Space" /></div></td>
+												<td class="colText">
+													<div>No Seat/Lavatory/ Galley/Functional Space</div></td>
+												<td class="colIcon">
+													<div>&nbsp;</div></td>
+												<td class="colText">
+													<div>&nbsp;</div></td>
+											</tr>
+										</table></div>
+									<div class="footerBlock">
+										<div><span></span></div></div></div>
+								<!-- LEGEND BLOCK END --></div></div>
+						<!-- /END BODY WIDE AREA --></td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td valign="bottom">
+			<!-- Enter Chat -->
+			<div class="enterChat">
+				<div class="headBlock">
+					<div><span></span></div></div>
+				<div class="bodyBlock">
+					<h3>Need Help?</h3>
+					<p>A representative is standing by to answer your question via our <a href="#" onClick="openWindow('chatSelect', '../../en/popups/Chat Selection.html', 700, 500, '');return false">online chat</a>.</p>
+					<p>You can also <a href="#">contact us by email</a> or call 1(507) 217-2671.</p></div>
+				<div class="footerBlock">
+					<div><span></span></div></div></div>
+			<!-- /Enter Chat -->
+			<!-- BEGIN LAYOUT FOOTER -->
+			<div class="layoutFooter">
+								
+				<!-- BMI FOOTER -->		
+		
+				<div class="footerStub"><img src="../../pictures/footer/footer-stub.gif" width="930" height="56" alt=""></div>
+						
+				<!-- /BMI FOOTER -->	
+					
+			</div>
+			<!-- /END LAYOUT FOOTER --></td>
+	</tr>
+</table>
+<!-- /END HEIGHT SCRETCHING -->
+</body>
+</html>
+

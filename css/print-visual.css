@@ -1,0 +1,25 @@
+/*  Common Styles  */
+
+.layoutMain,
+.layoutHeader,
+.layoutBody,
+.layoutFooter {
+	width: 100%;
+}
+
+.layoutMain {
+	height: auto;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.componentBlock a {
+	color: #000000;
+}
+
+.detailsSubBlockFareBreakdown .detailsTable TD {
+	border: 1px solid #bfb5bf;	
+}

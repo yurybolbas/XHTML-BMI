@@ -1,0 +1,1991 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DLEXPRD</title>
+<link rel="stylesheet" type="text/css" href="../../css/all.css"/>
+<script src="../../js/global.js" type="text/javascript"></script>
+<script>
+
+if(top != self){
+onloadGlobalHandler.addAction("transferContent", function(){window.parent.protoLoaderFramework.transferContent()});
+}
+window.onload = function(){onloadGlobalHandler.execute()};
+ 
+</script>
+</head>
+
+<body>
+
+<!-- ------------------------------------------------------------ -->
+<!-- ------------------                         ----------------- -->
+<!-- ------------------      FLIGHT POPUPS      ----------------- -->
+<!-- ------------------                         ----------------- -->
+<!-- ------------------------------------------------------------ -->
+
+<!-- Flight Details Popup -->
+<div id="popupModuleFlightDetails" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Flight Details</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleFlightDetails'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div>
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="flightDetailsPopupLoadedContent">
+		<div class="popupBlockFlightDetails">
+        	<table width="100%" class="flightInfo">
+            <colgroup>
+            	<col width="20%"/>
+                <col width="30%"/>
+                <col width="20%"/>
+                <col width="30%"/>
+            </colgroup>
+            <tr>
+            	<th class="colFlight"><div>Flight</div></th>
+                <td class="colFlight"><div>UA119</div></td>
+                <th class="colAirline"><div>Operated by</div></th>
+                <td class="colAirline"><div>United Airlines</div></td>
+            </tr>
+            <tr>
+            	<th class="colFrom"><div>From</div></th>
+                <td class="colFrom"><div>Los Angeles (LAX)</div></td>
+                <th class="colTimeTotal"><div>Total Flight Duration</div></th>
+                <td class="colTimeTotal"><div>1h 15m</div></td>
+            </tr>
+            <tr>
+            	<th class="colTo"><div>To</div></th>
+                <td class="colTo"><div>San Francisco (SFO)</div></td>
+                <th class="colTimeFlying"><div>Total Flying Time</div></th>
+                <td class="colTimeFlying"><div>1h 15m</div></td>
+            </tr>
+            <tr>
+            	<th class="colDate"><div>On</div></th>
+                <td class="colDate"><div>17 April 2008</div></td>
+                <th class="colTimeGround"><div>Total Ground Time</div></th>
+                <td class="colTimeGround"><div>&nbsp;</div></td>
+            </tr>
+            </table>
+        
+			<table width="100%" class="tripInfo">
+            <colgroup>
+            	<col width="20%"/>
+                <col width="30%"/>
+                <col width="20%"/>
+                <col width="30%"/>
+            </colgroup>
+            <tr>
+            	<th class="colDepart"><div>Departs</div></th>
+                <td class="colDepart"><div>
+                	<span class="place">Los Angeles (LAX)</span><br />
+                    <span class="date">Thu 17 Apr 2008</span><br />
+                    <span class="time">04:36AM</span><br />
+                    <span class="terminal">Terminal: 1</span>
+                </div></td>
+                <th class="colArrive"><div>Arrives</div></th>
+                <td class="colArrive"><div>
+                	<span class="place">San Francisco (SFO)</span><br />
+                    <span class="date">Thu 17 Aug 2008</span><br />
+                    <span class="time">05:51AM</span><br />
+                    <span class="terminal">Terminal: 1</span>
+                </div></td>
+            </tr>
+            <tr>
+            	<th class="colEquip"><div>Equipment</div></th>
+                <td class="colEquip"><div>Boeing 737-400</div></td>
+                <th class="colMiles"><div>Total Miles</div></th>
+                <td class="colMiles"><div>340</div></td>
+            </tr>
+            <tr>
+            	<th class="colMeals" rowspan="3"><div>Meals</div></th>
+                <td class="colClass"><div>First</div></td>
+                <td class="colMeals" colspan="2"><div>Hot Lunch</div></td>
+            </tr>
+            <tr>
+                <td class="colClass"><div>Business</div></td>
+                <td class="colMeals" colspan="2"><div>Hot Snack</div></td>
+            </tr>
+            <tr>
+                <td class="colClass"><div>Economy</div></td>
+                <td class="colMeals" colspan="2"><div>Snack</div></td>
+            </tr>
+            <tr>
+            	<th class="colComment"><div>Comment</div></th>
+                <td class="colComment" colspan="3"><div>&nbsp;</div></td>
+            </tr>
+            </table>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleFlightDetails'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Flight Details Popup -->
+
+<!-- Taxes and Fees Popup -->
+<div id="popupModuleTaxesFees" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Taxes and Fees</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleTaxesFees'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="taxesFeesPopupLoadedContent">
+		<div class="popupBlockTaxesFees">
+        	<table width="100%" class="detailsTable">
+            <colgroup>
+            	<col width="11%"/>
+                <col width="11%"/>
+                <col width="50%"/>
+                <col width="14%"/>
+                <col width="14%"/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <td class="colPassenger"><div>Pass. Type</div></td>
+                    <td class="colRate"><div>Rate Code</div></td>
+                    <td class="colDescr"><div>Description</div></td>
+                    <td class="colAmount"><div>Amount</div></td>
+                    <td class="colTotal"><div>Total</div></td>
+                </tr>
+            </thead>
+            <tbody class="groupOdd">
+                <tr class="rowFirst rowOdd">
+                    <td class="colPassenger" rowspan="10"><div>ADT</div></td>
+                    <td class="colRate"><div><a href="#" onClick="popupFramework.show({id:'popupTaxDescription',ajaxConfig:{},opacity:true,templateName:'taxDescriptionPopup',size:{w:650},position:'centered'});return false">AY</a></div></td>
+                    <td class="colDescr"><div>Passenger Civil Aviation Security Servic...</div></td>
+                    <td class="colAmount"><div>USD 1.63</div></td>
+                    <td class="colTotal"><div>&nbsp;</div></td>
+                </tr>
+                <tr class="rowEven">
+                    <td class="colRate"><div><a href="#" onClick="popupFramework.show({id:'popupTaxDescription',ajaxConfig:{},opacity:true,templateName:'taxDescriptionPopup',size:{w:650},position:'centered'});return false">US</a></div></td>
+                    <td class="colDescr"><div>Transportation Tax (International) - Arr...</div></td>
+                    <td class="colAmount"><div>USD 20.13</div></td>
+                    <td class="colTotal"><div>&nbsp;</div></td>
+                </tr>
+                <tr class="rowOdd">
+                    <td class="colRate"><div><a href="#" onClick="popupFramework.show({id:'popupTaxDescription',ajaxConfig:{},opacity:true,templateName:'taxDescriptionPopup',size:{w:650},position:'centered'});return false">XA</a></div></td>
+                    <td class="colDescr"><div>APHIS User Fee - Passengers</div></td>
+                    <td class="colAmount"><div>USD 3.27</div></td>
+                    <td class="colTotal"><div>&nbsp;</div></td>
+                </tr>
+            	<tr class="rowEven">
+                    <td class="colRate"><div><a href="#" onClick="popupFramework.show({id:'popupTaxDescription',ajaxConfig:{},opacity:true,templateName:'taxDescriptionPopup',size:{w:650},position:'centered'});return false">XF</a></div></td>
+                    <td class="colDescr"><div>San Francisco Passenger Facility Charge</div></td>
+                    <td class="colAmount"><div>USD 2.94</div></td>
+                    <td class="colTotal"><div>&nbsp;</div></td>
+                </tr>
+                <tr class="rowOdd">
+                    <td class="colRate"><div><a href="#" onClick="popupFramework.show({id:'popupTaxDescription',ajaxConfig:{},opacity:true,templateName:'taxDescriptionPopup',size:{w:650},position:'centered'});return false">XY</a></div></td>
+                    <td class="colDescr"><div>Immigration User Fee</div></td>
+                    <td class="colAmount"><div>USD 4.58</div></td>
+                    <td class="colTotal"><div>&nbsp;</div></td>
+                </tr>
+                <tr class="rowEven">
+                    <td class="colRate"><div><a href="#" onClick="popupFramework.show({id:'popupTaxDescription',ajaxConfig:{},opacity:true,templateName:'taxDescriptionPopup',size:{w:650},position:'centered'});return false">YC</a></div></td>
+                    <td class="colDescr"><div>Customs User Fee</div></td>
+                    <td class="colAmount"><div>USD 3.60</div></td>
+                    <td class="colTotal"><div>&nbsp;</div></td>
+                </tr>
+                <tr class="rowOdd">
+                    <td class="colRate"><div><a href="#" onClick="popupFramework.show({id:'popupTaxDescription',ajaxConfig:{},opacity:true,templateName:'taxDescriptionPopup',size:{w:650},position:'centered'});return false">BC</a></div></td>
+                    <td class="colDescr"><div>Airport Security Charge - Intl</div></td>
+                    <td class="colAmount"><div>USD 4.06</div></td>
+                    <td class="colTotal"><div>&nbsp;</div></td>
+                </tr>
+                <tr class="rowEven">
+                    <td class="colRate"><div><a href="#" onClick="popupFramework.show({id:'popupTaxDescription',ajaxConfig:{},opacity:true,templateName:'taxDescriptionPopup',size:{w:650},position:'centered'});return false">UP</a></div></td>
+                    <td class="colDescr"><div>Passenger Charge (International)</div></td>
+                    <td class="colAmount"><div>USD 8.01</div></td>
+                    <td class="colTotal"><div>&nbsp;</div></td>
+                </tr>
+                <tr class="rowOdd">
+                    <td class="colRate"><div><a href="#" onClick="popupFramework.show({id:'popupTaxDescription',ajaxConfig:{},opacity:true,templateName:'taxDescriptionPopup',size:{w:650},position:'centered'});return false">UB</a></div></td>
+                    <td class="colDescr"><div>Passenger Service Charge - International</div></td>
+                    <td class="colAmount"><div>USD 44.81</div></td>
+                    <td class="colTotal"><div>&nbsp;</div></td>
+                </tr>
+                <tr class="rowLast rowEven">
+                    <td class="colRate"><div><a href="#" onClick="popupFramework.show({id:'popupTaxDescription',ajaxConfig:{},opacity:true,templateName:'taxDescriptionPopup',size:{w:650},position:'centered'});return false">BT</a></div></td>
+                    <td class="colDescr"><div>Booking Fee Tax</div></td>
+                    <td class="colAmount"><div>USD 5.00</div></td>
+                    <td class="colTotal"><div>USD 98.03</div></td>
+                </tr>
+            </tbody>
+            </table>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleTaxesFees'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Taxes and Fees Popup -->
+
+<!-- Surcharges Popup -->
+<div id="popupModuleSurcharges" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Surcharges</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleSurcharges'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="surchargesPopupLoadedContent">
+		<div class="popupBlockSurcharges">
+        	<table width="100%" class="detailsTable">
+            <colgroup>
+            	<col width="11%"/>
+                <col width="11%"/>
+                <col width="50%"/>
+                <col width="14%"/>
+                <col width="14%"/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <td class="colPassenger"><div>Pass. Type</div></td>
+                    <td class="colRate"><div>Rate Code</div></td>
+                    <td class="colDescr"><div>Description</div></td>
+                    <td class="colAmount"><div>Amount</div></td>
+                    <td class="colTotal"><div>Total</div></td>
+                </tr>
+            </thead>
+            <tbody class="groupOdd">
+                <tr class="rowFirst rowOdd">
+                    <td class="colPassenger" rowspan="2"><div>ADT</div></td>
+                    <td class="colRate"><div><a href="#" onClick="popupFramework.show({id:'popupSurchargeDescription',ajaxConfig:{},opacity:true,templateName:'surchargeDescriptionPopup',size:{w:650},position:'centered'});return false">YQ</a></div></td>
+                    <td class="colDescr"><div>Fuel Surcharge</div></td>
+                    <td class="colAmount"><div>USD 190.88</div></td>
+                    <td class="colTotal"><div>&nbsp;</div></td>
+                </tr>
+                <tr class="rowLast rowEven">
+                    <td class="colRate"><div><a href="#" onClick="popupFramework.show({id:'popupSurchargeDescription',ajaxConfig:{},opacity:true,templateName:'surchargeDescriptionPopup',size:{w:650},position:'centered'});return false">BF</a></div></td>
+                    <td class="colDescr"><div>Booking Fee</div></td>
+                    <td class="colAmount"><div>USD 10.00</div></td>
+                    <td class="colTotal"><div>USD 200.88</div></td>
+                </tr>
+            </tbody>
+            </table>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleSurcharges'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Surcharges Popup -->
+
+<!-- Tax Description Popup -->
+<div id="popupModuleTaxDescription" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Tax Description</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleTaxDescription'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="taxDescriptionPopupLoadedContent">
+		<div class="popupBlockTaxDescription">
+        	<table width="100%" class="taxDescription">
+            <colgroup>
+            	<col width="30%"/>
+                <col width="70%"/>
+            </colgroup>
+            <tr>
+                <th class="colRate"><div>Rate Code</div></th>
+                <td class="colRate"><div>BC</div></td>
+            </tr>
+            <tr>
+                <th class="colShort"><div>Short Description</div></th>
+                <td class="colShort"><div>Airport Security Charge - Intl</div></td>
+            </tr>
+            <tr>
+                <th class="colLong"><div>Long Description</div></th>
+                <td class="colLong"><div>Levied on each passenger departing on international flights for the purpose of providing airport security services.</div></td>
+            </tr>
+            <tr>
+                <th class="colAmount"><div>Amount</div></th>
+                <td class="colAmount"><div>USD 4.06</div></td>
+            </tr>
+            </table>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleTaxDescription'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Tax Description Popup -->
+
+<!-- Surcharge Description Popup -->
+<div id="popupModuleSurchargeDescription" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Surcharge Description</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleSurchargeDescription'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="surchargeDescriptionPopupLoadedContent">
+		<div class="popupBlockSurchargeDescription">
+        	<table width="100%" class="surchargeDescription">
+            <colgroup>
+            	<col width="30%"/>
+                <col width="70%"/>
+            </colgroup>
+            <tr>
+                <th class="colRate"><div>Rate Code</div></th>
+                <td class="colRate"><div>YQ</div></td>
+            </tr>
+            <tr>
+                <th class="colShort"><div>Short Description</div></th>
+                <td class="colShort"><div>Fuel Surcharge</div></td>
+            </tr>
+            <tr>
+                <th class="colLong"><div>Long Description</div></th>
+                <td class="colLong"><div>Fuel Surcharge long description goes here</div></td>
+            </tr>
+            <tr>
+                <th class="colAmount"><div>Amount</div></th>
+                <td class="colAmount"><div>USD 190.88</div></td>
+            </tr>
+            </table>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleSurchargeDescription'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Surcharge Description Popup -->
+
+<!-- Preferences Popup -->
+<div id="popupModulePreferences" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Preferences</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModulePreferences'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="preferencesPopupLoadedContent">
+		<div class="popupBlockPreferences">
+            <div class="formHeader"><div><h2></h2></div></div>
+            <div class="formBody">
+                <div class="formBlock">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="formHorControl">
+                        <tr valign="top">
+                            <td align="right" width="40%" class="formLabelArea"><span class="formLabelElement">Meal Preference</span></td>
+                            <td width="40%" class="formInArea">
+                                <select class="formSelect maxWidth">
+                                    <option value="0">--- No Preference ---</option>
+                                </select>
+                            </td>
+                            <td width="20%" class="formDescArea">
+                                <p class="formDescElement">&nbsp;</p>
+                            </td>
+                        </tr>
+                        <tr valign="top">
+                            <td align="right" class="formLabelArea"><span class="formLabelElement">Special Meal Details</span></td>
+                            <td class="formInArea">
+                                <input type="text" class="formInput maxWidth" />
+                            </td>
+                            <td class="formDescArea">
+                                <p class="formDescElement">&nbsp;</p>
+                            </td>
+                        </tr>
+                        <tr valign="top">
+                            <td align="right" class="formLabelArea"><span class="formLabelElement">Seat Preferences</span></td>
+                            <td class="formInArea">
+                                <select class="formSelect maxWidth">
+                                    <option value="0">--- No Preference ---</option>
+                                </select>
+                            </td>
+                            <td class="formDescArea">
+                                <p class="formDescElement">&nbsp;</p>
+                            </td>
+                        </tr>
+                        <tr valign="top">
+                            <td align="right" class="formLabelArea"><span class="formLabelElement">Special Service (SSR)</span></td>
+                            <td class="formInArea">
+                                <select class="formSelect maxWidth">
+                                    <option value="0">--- No SSR needed ---</option>
+                                </select>
+                            </td>
+                            <td class="formDescArea">
+                                <p class="formDescElement">&nbsp;</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="formFooter"><div><span></span></div></div>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+            	<td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModulePreferences'});return false"><span><span>Save</span></span></a>
+				</td>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModulePreferences'});return false"><span><span>Cancel</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Preferences Popup -->
+
+<!-- Fare Breakdown Popup -->
+<div id="popupModuleFareBreakdown" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Fare Breakdown</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleFareBreakdown'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="fareBreakdownPopupLoadedContent">
+		<div class="popupBlockFareBreakdown">
+        	<table width="100%" class="detailsTable">
+            <colgroup>
+            	<col width="16%"/>
+                <col width="14%"/>
+                <col width="14%"/>
+                <col width="14%"/>
+                <col width="14%"/>
+                <col width="14%"/>
+                <col width="14%"/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <td class="colFirst"><div><b>Passenger Type</b></div></td>
+                    <td class="colPrice"><div><b>Base Fare</b><br/>per person</div></td>
+                    <td class="colPrice"><div><b><a href="#" onClick="popupFramework.show({id:'popupSurcharges',ajaxConfig:{},opacity:true,templateName:'surchargesPopup',size:{w:675},position:'centered'});return false">Surcharges</a></b><br/>per person</div></td>
+                    <td class="colPrice"><div><b><a href="#" onClick="popupFramework.show({id:'popupTaxesFees',ajaxConfig:{},opacity:true,templateName:'taxesFeesPopup',size:{w:675},position:'centered'});return false">Taxes</a></b><br/>per person</div></td>
+                    <td class="colPrice"><div><b>Total Fare</b><br/>per person</div></td>
+                    <td class="colPrice"><div><b>Number</b><br/>of passengers</div></td>
+                    <td class="colLast colPrice"><div><b>Total Fare</b></div></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="rowFirst rowOdd">
+                    <td class="colFirst"><div>Adult</div></td>
+                    <td class="colPrice"><div>200.00</div></td>
+                    <td class="colPrice"><div>50.00</div></td>
+                    <td class="colPrice"><div>50.00</div></td>
+                    <td class="colPrice"><div>300.00</div></td>
+                    <td class="colPrice"><div>x 2</div></td>
+                    <td class="colLast colPrice"><div><b>USD 600.00</b></div></td>
+                </tr>
+                <tr class="rowLast rowEven">
+                    <td class="colFirst"><div>Child</div></td>
+                    <td class="colPrice"><div>150.00</div></td>
+                    <td class="colPrice"><div>25.00</div></td>
+                    <td class="colPrice"><div>25.00</div></td>
+                    <td class="colPrice"><div>200.00</div></td>
+                    <td class="colPrice"><div>x 1</div></td>
+                    <td class="colLast colPrice"><div><b>USD 200.00</b></div></td>
+                </tr>
+                <tr class="rowTotal">
+                	<td class="colFirst colSubheader" colspan="6"><div>TOTAL</div></td>
+                    <td class="colLast colPrice"><div><b>USD 800.00</b></div></td>
+                </tr>
+            </tbody>
+            </table>
+            <div class="footnote">This Total includes selected items, taxes, and surcharges and booking fees.</div>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleFareBreakdown'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Fare Breakdown Popup -->
+
+<!-- Air Reprice Popup -->
+<div id="popupModuleAirReprice" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Information</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleAirReprice'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="airRepricePopupLoadedContent">
+		<div class="popupBlockAirReprice">
+            <div class="textHeader">
+                <div><h2 class="textTitle">Your price has changed</h2></div>
+            </div>
+            <div class="textBody">
+                <div class="textBlock">
+                    <p>Some part of the overall itinerary has effected the overall price of this fare.</p>
+                    <p>The original price of your fare (excluding credit card fees) was: <span class="origPrice">USD 800.00</span><br/>
+                    The new price of your fare (excluding credit card fees) is: <span class="newPrice">USD 810.00</span></p>
+                    <p>Please click 'Continue &gt;' to accept the change and proceed to complete the booking or click 'Start Again' to start over again.</p>
+                </div>
+            </div>
+            <div class="textFooter"><div><span></span></div></div>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+            	<td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleAirReprice'});return false"><span><span>Start Again</span></span></a>
+				</td>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleAirReprice'});return false"><span><span>Continue &gt;</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Air Reprice Popup -->
+
+<!-- Fare Rules Popup -->
+<div id="popupModuleFareRules" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Fare Rules Details</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleFareRules'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="fareRulesPopupLoadedContent">
+		<div class="popupBlockFareRules">
+            <table width="100%">
+            <tr valign="top">
+                <td>
+                    <!-- BEGIN INTRO TEXT AREA -->
+                    <div class="introTextArea">
+                        <p>Choose a city pair with its fare basis code to view it particular fare rules.</p>
+                    </div>
+                    <!-- /END INTRO TEXT AREA -->
+                </td>
+                <td align="right" nowrap="nowrap"><div class="links"><a href="#" class="print">Print</a></div></td>
+            </tr>
+            </table>
+            <h3>City Pair (Fare Basis)</h3>
+            <div class="fareRulesInfoBlock" id="idFareRulesInfoBlock">
+                <!-- outer tabs control -->
+				<table width="100%" class="tabsExtArea">
+				<tr valign="top">
+					<td width="100%">
+					<table class="tabsFixedArea"><tr><td>
+						<div class="tabsOuterArea atabsOuterAreaClip">
+			                <div class="tabsRollingArea fareRulesTabs">
+			                    <table>
+			                    <tr>
+                                	<td class="firstTab actTab"><div><a href="#"><b>LAX-SFO</b> (XYZ123)</a></div></td>
+                       				<td class="lastTab"><div><a href="#"><b>SFO-LAX</b> (XYZ456)</a></div></td>			
+			                    </tr>
+			                    </table>
+			                </div>	
+						</div>	
+					</td></tr></table>													
+					</td>
+					<td nowrap="nowrap">
+						<div class="tabsNavArea fareRulesTabNav" style="display:none">
+							<a href="#" class="prev" onClick="tabsFramework.rolling('idFareRulesInfoBlock',0);return false"></a>
+							<a href="#" class="next" onClick="tabsFramework.rolling('idFareRulesInfoBlock',1);return false"></a>
+						</div>
+					</td>
+				</tr>
+				</table>			
+				<!-- outer tabs control -->	
+                <div class="headBlock"><div><h1></h1></div></div>
+				<div class="bodyBlock dialogFloatContent">	
+                	<div class="fareRulesText">
+                    	<p>Changes</p>
+                        <p>Charge usd 100.00 for reissue/revalidation</p>
+                        <p>Note</p>
+                        <div class="notesBlock">
+                        	<ol>
+                            	<li>Voluntary rerouting is permitted provided the new Itinerary meets all the provisions of the new fare purchased i.E. Advance reservation/ tkt. purchase min/tax stay requirements
+                                	<ol type="A">
+                                    	<li>The new itinerary is of equal or higher value. Note - at the psgrs request the full value of an existing tkt may be applied to an itinerary of lower value however no refund will apply. The difference in fare will be returned to the passenger in the form of a non-refundable travel voucher which may be applied towards the purchase of a ticket valid for transportation via aa only</li>
+                                        <li>These fares may not be upgraded to any other fare type.</li>
+                                        <li>Tkts at these fares may not be revalidated. Passengers holding confirmed reservations and tickets may standby for earlier/later same day aa nonstop and/or connecting flights between the same origin and destination airports. There is no additional cost provided the new flight/s and routing are applicable for the fare charged. If the change is not applicable for the fare charged - i.E. Invalid routing/ airport/ departure time/ etc/ then the psgr must pay the difference in fares plus the change fee of usd 100.00. Unless restricted by the fare charged - when ticketed from/to chi/hou/nyc/vas - the psgr may check-in end standby from/to one of the airports listed below. <br/>
+                                            City - airport <br/>
+                                            chi - mdw/ord <br/>
+                                            hou - hou/iah <br/>
+                                            was - ewe/jfk/lga 
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+				<div class="footerBlock"><div><span></span></div></div>
+            </div>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+            	<td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleFareRules'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Fare Rules Popup -->
+
+<!-- Seat Map Popup -->
+<div id="popupModuleSeatMap" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Seat Map</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleSeatMap'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="seatMapPopupLoadedContent">
+    	<script language="JavaScript" type="text/javascript">
+		_protoFareFamilyLighting = {
+			actElmPool: {},
+			
+			setActFareFamily: function (radName,act) {
+				var actObj = (act.obj) ? act.obj : document.getElementsByName(radName)[act.num];
+				if (actObj) {
+					radName = escape(radName).replace(/[\W]/gi,'_');
+					if (this.actElmPool[radName]) this.setSelected(this.actElmPool[radName],false);
+					this.actElmPool[radName] = actObj;
+					this.setSelected(actObj,true);
+				}
+			},
+			
+			selectFareFamily: function (o,index) {
+				this.setActFareFamily(o.name,{obj:o});
+				seatMapFramework.directSegment(index);
+			},
+			
+			setSelected: function (o, isSelected) {
+				var parent = o.parentNode;
+				if(!parent) {
+					return false;
+				}
+				while (parent.nodeName != 'TR') {
+					parent = parent.parentNode;
+				}
+				if (isSelected) {
+					o.checked = true;
+					parent.className += ' selectedFF';
+				}
+				else {
+					o.checked = false;
+					parent.className = parent.className.replace('selectedFF','');
+				}
+				
+				return true;
+			}
+		}
+		
+		
+		pass = [
+			["1","ADT",["","","",""],1]
+		];
+		
+		
+		</script>
+		<div class="popupBlockSeatMap">
+            <!-- BEGIN INTRO TEXT AREA -->
+            <div class="introTextArea">
+                <p>Seats are not available for selection at this time. Seat availability may change depending on the selected fare type.</p>
+            </div>
+            <!-- /END INTRO TEXT AREA -->
+            <div class="seatSelectionArea">
+                <div class="headBlock"><div><h1></h1></div></div>
+				<div class="bodyBlock">	
+                	<table width="100%">
+                    <tr>
+                    	<td></td>
+                        <td class="flightDetailsArea">
+                        	<div class="detailsBlock">
+                                <h3>Flight Details</h3>
+                                <table>
+                                <tr>
+                                    <th class="colFlight"><div>Flight</div></th>
+                                    <th class="colDepart"><div>Depart</div></th>
+                                    <th class="colArrive"><div>Arrive</div></th>
+                                    <th class="colAirports"><div>Airports</div></th>
+                                    <th class="colEquip"><div>Equipment</div></th>
+                                </tr>
+                                <tr>
+                                    <td class="colFlight"><div>UA119</div></td>
+                                    <td class="colDepart"><div>04:36AM</div></td>
+                                    <td class="colArrive"><div>05:51AM</div></td>
+                                    <td class="colAirports"><div>LAX-SFO</div></td>
+                                    <td class="colEquip"><div>Boeing 737-400</div></td>
+                                </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td class="fareFamilyArea" nowrap>
+                        	<div class="fareFamilyBlock">
+                                <h3>Available seats<br/>by fare family</h3>
+                                <table width="100%">
+                                <tr>
+                                    <td class="colRadio"><div><input type="radio" name="popupBlockSeatMap_FareFamily" value="" onClick="_protoFareFamilyLighting.selectFareFamily(this,0)" /></div></td>
+                                    <td class="colFF"><div>Economy Promo</div></td>
+                                </tr>
+                                <tr>
+                                    <td class="colRadio"><div><input type="radio" name="popupBlockSeatMap_FareFamily" value="" onClick="_protoFareFamilyLighting.selectFareFamily(this,1)" /></div></td>
+                                    <td class="colFF"><div>Economy Plus</div></td>
+                                </tr>
+                                <tr>
+                                    <td class="colRadio"><div><input type="radio" name="popupBlockSeatMap_FareFamily" value="" onClick="_protoFareFamilyLighting.selectFareFamily(this,2)" /></div></td>
+                                    <td class="colFF"><div>Economy Flexible</div></td>
+                                </tr>
+                                <tr>
+                                    <td class="colRadio"><div><input type="radio" name="popupBlockSeatMap_FareFamily" value="" onClick="_protoFareFamilyLighting.selectFareFamily(this,3)" /></div></td>
+                                    <td class="colFF"><div>Business Promo</div></td>
+                                </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td class="seatMapArea">
+                        	<input type="hidden" name="legSegment_0_seatField_1" id="legSegment_0_seatField_1" value="" />
+                        	<input type="hidden" name="legSegment_1_seatField_1" id="legSegment_1_seatField_1" value="" />
+                        	<input type="hidden" name="legSegment_2_seatField_1" id="legSegment_2_seatField_1" value="" />
+                        	<input type="hidden" name="legSegment_3_seatField_1" id="legSegment_3_seatField_1" value="" />																					
+							<div class="seatMapLoadingBlock" id="idSeatMapLoadingPlaceHolder"><div class="popupBlockLoading1"><table class="popupBlockLoading1OuterTable"><tr><td class="popupBlockLoading1OuterTD"><div class="popupLoadingIcon"><div><span/></div></div><div class="popupLoadingText"><p>Please wait whilst the system obtains the Seat Maps.</p></div></td></tr></table></div></div>
+	                            <!-- Error Message Area -->
+	                            <div class="errorMessageBlock" id="idErrorSeatMapPlaceHolder" style="display:none">
+	                            	<div class="popupBlockError1"><table class="popupBlockError1OuterTable"><tr><td class="popupBlockError1OuterTD"><div class="popupErrorIcon"><div><span/></div></div><div class="popupErrorText"><p> Seat selection is not available for this fare family.</p></div></td></tr></table></div>															
+	                            </div>
+	                            <!-- Error Message Area -->			
+	                            <!-- Default Error Message Area -->
+	                            <div class="errorMessageBlock" id="idDefaultErrorSeatMapPlaceHolder" style="display:none">
+									<div class="popupBlockError1"><table class="popupBlockError1OuterTable"><tr><td class="popupBlockError1OuterTD"><div class="popupErrorIcon"><div><span/></div></div><div class="popupErrorText"><p>No connection.</p></div></td></tr></table></div>							
+	                            </div>
+	                            <!-- Default Error Message Area -->													
+	                        	<div class="seatMapBlock" id="idSeatMapPlaceHolder" style="height:1px">
+                            
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td></td>
+                        <td class="legendArea">
+                        	<div class="seatsLegendBlock">
+                                <div class="headBlock"><div><h1></h1></div></div>
+                                <div class="bodyBlock">
+                                    <h3>Legend</h3>
+                                    <table>
+                                        <tr>
+                                            <td class="colIcon"><div><img src="../../pictures/icons/seats/i_seat_avail_f.gif" width="15" height="15" alt="Available Seat" /></div></td>
+                                            <td class="colText"><div>Available Seat</div></td>
+                                            <td class="colIcon"><div><img src="../../pictures/icons/seats/i_seat_occup_f.gif" width="15" height="15" alt="Occupied Seat" /></div></td>
+                                            <td class="colText"><div>Occupied Seat</div></td>
+                                            <td class="colIcon"><div><img src="../../pictures/icons/seats/i_seat_blocked_f.gif" width="15" height="15" alt="Blocked Seat" /></div></td>
+                                            <td class="colText"><div>Blocked Seat</div></td>
+                                            <td class="colIcon"><div>&nbsp;</div></td>
+                                            <td class="colText"><div>&nbsp;</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="colIcon"><div><img src="../../pictures/icons/seats/i_exit_row.gif" width="15" height="15" alt="Exit Seat" /></div></td>
+                                            <td class="colText"><div>Exit Seat</div></td>
+                                            <td class="colIcon"><div><img src="../../pictures/icons/seats/i_wing.gif" width="15" height="15" alt="Wing" /></div></td>
+                                            <td class="colText"><div>Wing</div></td>
+                                            <td class="colIcon"><div><img src="../../pictures/icons/seats/i_func_space.gif" width="15" height="15" alt="Lavatory/Galley/Functional Space" /></div></td>
+                                            <td class="colText"><div>Lavatory/Galley/ Functional Space</div></td>
+                                            <td class="colIcon"><div>&nbsp;</div></td>
+                                            <td class="colText"><div>&nbsp;</div></td>
+                                        </tr>
+                                        </table>
+                                </div>
+                                <div class="footerBlock"><div><span></span></div></div>
+                            </div>
+                        </td>
+                    </tr>
+                    </table>
+                </div>
+				<div class="footerBlock"><div><span></span></div></div>
+            </div>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+            	<td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleSeatMap'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Seat Map Popup -->
+
+<!-- Air Terms Popup -->
+<div id="popupModuleAirTerms" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Terms and Conditions</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleAirTerms'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="airTermsPopupLoadedContent">
+		<div class="popupBlockAirTerms">
+			<!-- content -->
+            <div style="height:300px"></div>
+            <!-- /content -->
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleAirTerms'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Air Terms Popup -->
+
+
+<!-- ------------------------------------------------------------ -->
+<!-- ------------------                         ----------------- -->
+<!-- ------------------      HOTEL POPUPS       ----------------- -->
+<!-- ------------------                         ----------------- -->
+<!-- ------------------------------------------------------------ -->
+
+<!-- Hotel Description Popup -->
+<div id="popupModuleHotelDescription" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Hotel Description</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleHotelDescription'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="hotelDescriptionPopupLoadedContent">
+		<div class="popupBlockHotelDescription">
+        	<table width="100%">
+            <tr>
+                <td class="colImages">
+                    <div class="viewArea">
+                    	<div class="hotelView"><img src="../pictures/content/hotel_info_01.jpg" width="195" height="140" alt=""></div>
+                        <table class="viewNavigation">
+                        <tr>
+                            <td><a href="#" class="navPrev">&lt; Previous</a></td>
+                            <td align="right"><span class="navNextDisabled">Next &gt;</span></td>
+                        </tr>
+                        </table>
+                    </div>
+                    <div class="mapArea"><img src="../pictures/content/hotel_info_02.jpg" width="195" height="140" alt=""></div>
+                </td>
+                <td class="colDescr">
+                    <div class="infoArea">
+                        <div class="infoTitle">Hilton Hawaiian Village</div>
+                        <div class="infoRating"><div class="hotelStars"><div class="s3"></div></div></div>
+                        <div class="clearSpacer"><span></span></div>
+                        <div class="infoText">
+                            100 Holomoana St. Honolulu, HI 96815, USA
+                        </div>
+                        <div class="infoHotelAmenities">
+                            <img src="../../pictures/icons/hotel-amenities/icon1.gif" width="18" height="18" alt="Indoor Pool" title="Indoor Pool"><img src="../../pictures/icons/hotel-amenities/icon2.gif" width="18" height="18" alt="Gymnasium" title="Gymnasium"><img src="../../pictures/icons/hotel-amenities/icon3.gif" width="18" height="18" alt="Baby Sitting" title="Baby Sitting"><img src="../../pictures/icons/hotel-amenities/icon4.gif" width="18" height="18" alt="Room Service" title="Room Service"><img src="../../pictures/icons/hotel-amenities/icon5.gif" width="18" height="18" alt="Laundry" title="Laundry"><img src="../../pictures/icons/hotel-amenities/icon6.gif" width="18" height="18" alt="Car Rental" title="Car Rental"><img src="../../pictures/icons/hotel-amenities/icon7.gif" width="18" height="18" alt="Golf" title="Golf"><img src="../../pictures/icons/hotel-amenities/icon8.gif" width="18" height="18" alt="Outdoor Pool" title="Outdoor Pool"><img src="../../pictures/icons/hotel-amenities/icon9.gif" width="18" height="18" alt="Sauna" title="Sauna"><img src="../../pictures/icons/hotel-amenities/icon10.gif" width="18" height="18" alt="Tennis" title="Tennis"><img src="../../pictures/icons/hotel-amenities/icon11.gif" width="18" height="18" alt="Disabled" title="Disabled"><img src="../../pictures/icons/hotel-amenities/icon12.gif" width="18" height="18" alt="Car Parking" title="Car Parking">
+                        </div>
+                    </div>
+                    <div class="descriptionArea">
+                        <h3>Hotel Information</h3>
+                        <p>The Rainbow Tower is conveniently located right on Waikiki Beach, and only steps away from our Super Pool. You'll also enjoy the convenience of having three of our premier restaurants located in the Rainbow Tower. This tower offers majestic views of Waikiki Beach, Diamond Head Crater and the Honolulu coastline.</p>
+                        <h3>Distinctive Hawaiian Landmark</h3>
+                        <p>Rainbow Tower is the signature tower of our historic Resort, recognized by many around the world as an Oahu landmarks. The 31-story tower, framed on either side by mosaic tile rainbows, is listed in the Guinness Book of World Records for displaying two of the world's tallest mosaics.</p>
+                        <h3>Distinctive Room D&eacute;cor</h3>
+                        <p>While the Rainbow Tower offers impressive vistas, you will also enjoy comfortable, spacious guest rooms and a wide range of suites, which feature tropical d&eacute;cor. Each room is well-appointed with marble-top desks, wooden armories with intricately carved leaf motifs and colorful tropical bedspreads. Spacious bathrooms with marble countertops complete these rooms.</p>
+                        <h3>Home to the Village's Premier Restaurants</h3>
+                        <p>Sitting directly on Waikiki Beach, Rainbow Tower is home to two of Oahu's finest dining experiences, Bali by the Sea&reg; and Golden Dragon&reg;. Both fine dining restaurants provide an elegant, seaside atmosphere and have garnered numerous prestigious awards. Also located in the Rainbow Tower is the popular Rainbow Lanai, offering casual, all-day, open-air dining, a relaxed atmosphere and great views of our beautiful beach.</p>
+                        <h4>Cancellation Terms</h4>
+                        <p>Bookings are subject to at 15 EUR or 10 GBP or 12 USD for any CANCELLATIONS/AMENDMENTS depending on the published rate of your booking.</p>
+                    </div>
+                </td>
+            </tr>
+            </table>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleHotelDescription'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Hotel Description Popup -->
+
+<!-- Hotel Price Breakdown Popup -->
+<div id="popupModuleHotelBreakdown" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Price Breakdown</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleHotelBreakdown'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="hotelBreakdownPopupLoadedContent">
+		<div class="popupBlockHotelBreakdown">
+        	<!-- BEGIN COMPONENT BLOCK -->
+            <div class="componentBlock">
+                <div class="componentBody">
+                    <div class="componentBodyInner1">
+                        <!-- title -->
+                        <div class="componentTitleArea">
+                            <table width="100%"><tr><td width="100%">			
+                                <h3>Hilton Hawaiian Village</h3>
+                            </td><td nowrap="nowrap">
+                                <div class="price">$1080.00</div>
+                            </td></tr></table>					
+                        </div>	
+                        <!-- /title -->
+                    </div>					
+                    
+                    
+                    <!-- hotel Extra Details -->	
+                    <div class="componentExtraDetails">
+                        <div class="componentReservationParameters">
+                            <strong>Check-In:</strong> Thu, 01 Aug 2007; <strong>Check-Out:</strong> Thu, 15 Aug 2007; <strong>Nights: </strong>14<br />
+                            <strong>Room:</strong> Partial Ocean View, 1 Adult + 1 Child<br />
+                            <strong>Rate:</strong> Rack - Descriptive text goes here...
+                        </div>	
+                        <!-- details Sub Block -->
+                        <div class="detailsSubBlock detailsSubBlockDailyPricing">
+                            <div class="header">Daily Pricing</div>
+                            <div class="body">
+                                <table width="100%" class="detailsTable">
+                                    <colgroup>
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="40%" />
+                                    </colgroup>	
+                                    <thead>
+                                        <tr>
+                                            <td class="colFirst"><div>&nbsp;</div></td>
+                                            <td><div>01 Aug - 07 Aug</div></td>	
+                                            <td><div>08 Aug - 14 Aug</div></td>									
+                                            <td class="colLast"><div>&nbsp;</div></td>
+                                        </tr>								
+                                    </thead>	
+                                    <tbody>							
+                                        <tr class="rowFirst rowOdd">
+                                            <td class="colFirst"><div>Rate</div></td>
+                                            <td align="right"><div>$55.00</div></td>	
+                                            <td align="right"><div>$65.00</div></td>									
+                                            <td class="colLast"><div>&nbsp;</div></td>
+                                        </tr>
+                                        <tr class="rowEven">
+                                            <td class="colFirst"><div>Taxes And Fees</div></td>
+                                            <td align="right"><div>$17.00</div></td>
+                                            <td align="right"><div>$17.00</div></td>									
+                                            <td class="colLast"><div>&nbsp;</div></td>
+                                        </tr>
+                                        <tr class="rowOdd">
+                                            <td class="colFirst"><div>Sub-Total</div></td>
+                                            <td align="right"><div>$72.00</div></td>
+                                            <td align="right"><div>$82.00</div></td>									
+                                            <td class="colLast"><div>&nbsp;</div></td>
+                                        </tr>								
+                                        <tr class="rowLast rowEven">
+                                            <td class="colFirst"><div>Rate Code</div></td>
+                                            <td><div>Rack</div></td>	
+                                            <td><div>Rack</div></td>									
+                                            <td class="colLast"><div>&nbsp;</div></td>
+                                        </tr>
+                                    </tbody>								
+                                </table>
+                            </div>		
+                        </div>	
+                        <!-- /details Sub Block -->	
+                        
+                        <!-- details Sub Block -->
+                        <div class="detailsSubBlock detailsSubBlockRoomTaxesFees">
+                            <div class="header">Room, Taxes and Fees</div>
+                            <div class="body">
+                                <table width="100%" class="detailsTable">
+                                    <colgroup>
+                                        <col width="18%" />
+                                        <col width="67%" />
+                                        <col width="15%" />
+                                    </colgroup>	
+                                    <thead>
+                                        <tr>
+                                            <td class="colFirst" colspan="2"><div>&nbsp;</div></td>							
+                                            <td class="colLast"><div>Amount</div></td>
+                                        </tr>								
+                                    </thead>	
+                                    <tbody>							
+                                        <tr class="rowFirst rowOdd">
+                                            <td class="colFirst"><div>Room</div></td>
+                                            <td><div>&nbsp;</div></td>	
+                                            <td class="colLast" align="right"><div><b>$840.00</b></div></td>
+                                        </tr>
+                                        <tr class="rowEven">
+                                            <td class="colFirst"><div>Tax</div></td>
+                                            <td><div>Honolulu Occupancy Tax</div></td>	
+                                            <td class="colLast" align="right"><div><b>$120.00</b></div></td>
+                                        </tr>
+                                        <tr class="rowOdd">
+                                            <td class="colFirst"><div>Fee</div></td>
+                                            <td><div>Daily Facilities Charge</div></td>	
+                                            <td class="colLast" align="right"><div><b>$120.00</b></div></td>
+                                        </tr>
+                                        <tr class="rowLast rowEven rowTotal">									
+                                            <td class="colFirst" colspan="2" align="right"><div><b>TOTAL:</b></div></td>
+                                            <td align="right" class="colLast colPrice"><div><b>$1080.00</b></div></td>													
+                                        </tr>
+                                    </tbody>								
+                                </table>
+                            </div>		
+                        </div>	
+                        <!-- /details Sub Block -->
+                        
+                        <!-- details Sub Block -->
+                        <div class="detailsSubBlock detailsSubBlockCancellationPolicy">
+                            <div class="header">Cancellation Policy</div>
+                            <div class="body">
+                                <table width="100%" class="detailsTable">
+                                    <colgroup>
+                                        <col width="18%" />
+                                        <col width="67%" />
+                                        <col width="15%" />
+                                    </colgroup>	
+                                    <thead>
+                                        <tr>
+                                            <td class="colFirst"><div>Deadline</div></td>
+                                            <td><div>Description</div></td>								
+                                            <td class="colLast"><div>Amount</div></td>
+                                        </tr>								
+                                    </thead>	
+                                    <tbody>							
+                                        <tr class="rowFirst rowOdd rowLast">
+                                            <td class="colFirst"><div>15/07/07 Noon</div></td>
+                                            <td><div>General cancellation policy description</div></td>	
+                                            <td class="colLast" align="right"><div>&nbsp;</div></td>
+                                        </tr>
+                                    </tbody>								
+                                </table>
+                            </div>		
+                        </div>	
+                        <!-- /details Sub Block -->
+                        
+                        <!-- details Sub Block -->
+                        <div class="detailsSubBlock detailsSubBlockPaymentPolicy">
+                            <div class="header">Payment Policy</div>
+                            <div class="body">
+                                <table width="100%" class="detailsTable">
+                                    <colgroup>
+                                        <col width="18%" />
+                                        <col width="67%" />
+                                        <col width="15%" />
+                                    </colgroup>	
+                                    <thead>
+                                        <tr>
+                                            <td class="colFirst"><div>Deadline</div></td>
+                                            <td><div>Description</div></td>								
+                                            <td class="colLast"><div>Amount</div></td>
+                                        </tr>								
+                                    </thead>	
+                                    <tbody>							
+                                        <tr class="rowFirst rowOdd rowLast">
+                                            <td class="colFirst"><div>15/07/07</div></td>
+                                            <td><div>General payment policy description</div></td>	
+                                            <td class="colLast" align="right"><div>$100.00</div></td>
+                                        </tr>
+                                    </tbody>								
+                                </table>
+                            </div>		
+                        </div>	
+                        <!-- /details Sub Block -->
+                        
+                    </div>	
+                    <!-- /hotel Extra Details -->	
+                                    
+                </div>			
+                <div class="componentFooter"><div><span></span></div></div>			
+            </div>
+            <!-- END COMPONENT BLOCK -->				
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleHotelBreakdown'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Hotel Price Breakdown Popup -->
+
+<!-- Location Map Popup -->
+<div id="popupModuleLocationMap" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Location Map</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleLocationMap'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="locationMapPopupLoadedContent">
+		<div class="popupBlockLocationMap">
+			<div class="locationMap" id="locationMap" style="width: 550px; height:463px"><img src="../pictures/content/location_map.jpg" width="550" height="463" alt="" /></div>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleLocationMap'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Location Map Popup -->
+
+<!-- Group Booking Popup -->
+<div id="popupModuleGroupBooking" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Information</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleGroupBooking'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="groupBookingPopupLoadedContent">
+		<div class="popupBlockGroupBooking">
+            <div class="textHeader"><div><h2 class="textTitle"></h2></div></div>
+            <div class="textBody">
+                <div class="textBlock">
+                    <p>For Group Booking please contact our group booking direct help line on +1 00 111 222</p>
+                </div>
+            </div>
+            <div class="textFooter"><div><span></span></div></div>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+            	<td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleGroupBooking'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Group Booking Popup -->
+
+
+<!-- ------------------------------------------------------------ -->
+<!-- ------------------                         ----------------- -->
+<!-- ------------------       CAR POPUPS        ----------------- -->
+<!-- ------------------                         ----------------- -->
+<!-- ------------------------------------------------------------ -->
+
+<!-- Car Description Popup -->
+<div id="popupModuleCarDescription" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Car Information</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleCarDescription'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="carDescriptionPopupLoadedContent">
+		<div class="popupBlockCarDescription">
+        	<div class="infoArea">
+                <table width="100%">
+                <tr>
+                    <td class="colImages">
+                        <div class="carView"><img src="../pictures/content/car_info_01.jpg" width="157" height="91" alt=""></div>
+                    </td>
+                    <td class="colInfo">
+                        <div class="infoTitle">Full Size 2-4 Door</div>
+                        <div class="infoText">
+                            Intermediate, 2-4 Door, Automatic, Aircon -<br>
+                            Toyota Corolla or similar
+                        </div>
+                    </td>
+                </tr>
+                </table>
+            </div>
+            
+            <div class="descriptionArea">
+                <div class="header">Car Description</div>
+                <div class="body">
+                    <h3>Vehicle Features</h3>
+                    <ul>
+                        <li>5 Adults</li>
+                        <li>1 Large Suitcase, 2 Small Suitcases</li>
+                        <li>Air Conditioning</li>
+                        <li>Dual Airbags</li>
+                        <li>Anti-Lock Brakes</li>
+                    </ul>
+                    <div class="notesBlock">
+                    	<p>Please Note: The vehicles shown are examples - actual models offered within a class car may vary, subject to availability, as may vehicle features (such as passenger seating, luggage capacity and specification).</p>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleCarDescription'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Car Description Popup -->
+
+<!-- Car Vendor Popup -->
+<div id="popupModuleCarVendor" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Location Information</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleCarVendor'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="carVendorPopupLoadedContent">
+		<div class="popupBlockCarVendor">
+        	<div class="infoArea">
+                <table width="100%">
+                <tr>
+                    <td class="colIcon"><div class="infoIcon"><img src="../../pictures/icons/car/hertz.gif" width="60" height="23" alt="Hertz" /></div></td>
+                    <td class="colTitle"><div class="infoTitle">Hertz Airport</div></td>
+                </tr>
+                </table>
+                <div class="infoText">
+                    <p>300 Rodgers Blvd, Honolulu - Oahu (Honolulu), HI, US</p>
+                    <p>Hours of Operation:<br>
+                    5:00AM - 10:00PM Mon - Sun<br>
+                    5:00AM - 11:00PM Fri - Sat</p>
+                </div>
+            </div>
+            <div class="descriptionArea">
+                <ul>
+                    <li>Special Services</li>
+                    <li>Child Seats</li>
+                    <li>Hand Controls</li>
+                    <li>NeverLost</li>
+                    <li>Prestige Service</li>
+                    <li>Gold Customer Service</li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleCarVendor'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Car Vendor Popup -->
+
+<!-- Car Price Breakdown Popup -->
+<div id="popupModuleCarBreakdown" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Price Breakdown</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleCarBreakdown'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="carBreakdownPopupLoadedContent">
+		<div class="popupBlockCarBreakdown">
+			<!-- BEGIN COMPONENT BLOCK -->
+            <div class="componentBlock">
+                <div class="componentBody">
+                    <div class="componentBodyInner1">
+                        <!-- title -->
+                        <div class="componentTitleArea">
+                            <table width="100%"><tr>
+                            <td>
+                                <div class="icon"><img src="../../pictures/icons/car/hertz.gif" width="60" height="23" alt="" /></div></td>
+                            <td width="100%">			
+                                <h3>Hertz Airport</h3>
+                            </td><td nowrap="nowrap">
+                                <div class="price">$150.65</div>
+                            </td></tr></table>					
+                        </div>	
+                        <!-- /title -->
+                    </div>					
+                    
+                    <!-- car Extra Details -->	
+                    <div class="componentExtraDetails">
+                        <div class="componentReservationParameters">
+                            <strong>Pickup:</strong> Honolulu, Thu, 01 Aug 2008, 9.00am <strong>Dropoff:</strong> Honolulu, Thu, 14 Aug 2008, 9.00am<br/>
+                            <strong>Duration:</strong> 14 Days <strong>Driver Age:</strong> 25 <strong>Country of Residence:</strong> United States of America<br />
+                            Honolulu International Airport, 300 Rodgers Blvd, Honolulu - Oahu (Honolulu), HI, US<br />
+                            <strong>Description:</strong> Full Size 2-4 Door &nbsp; 4 <span class="iconCarPassengers"><img src="../../pictures/icons/i_people_per_car.gif" width="15" height="14" alt="" /></span> &nbsp; 3 <span class="iconCarBaggage"><img src="../../pictures/icons/i_baggage_per_car.gif" width="15" height="14" alt="" /></span>							
+                        </div>	
+                        <!-- details Sub Block -->
+                        <div class="detailsSubBlock detailsSubBlockPriceBreakdown">
+                            <div class="header">Price Breakdown</div>
+                            <div class="body">
+                                <table width="100%" class="detailsTable">
+                                    <colgroup>
+                                        <col width="25%" />
+                                        <col width="60%" />
+                                        <col width="15%" />
+                                    </colgroup>	
+                                    <thead>
+                                        <tr>
+                                            <td class="colFirst"><div>&nbsp;</div></td>
+                                            <td><div>&nbsp;</div></td>										
+                                            <td class="colLast"><div>Amount</div></td>
+                                        </tr>								
+                                    </thead>	
+                                    <tbody>							
+                                        <tr class="rowFirst rowOdd">
+                                            <td class="colFirst"><div>Base Rental</div></td>
+                                            <td><div>&nbsp;</div></td>										
+                                            <td class="colLast" align="right"><div><b>$120.61</b></div></td>
+                                        </tr>
+                                        <tr class="rowEven">
+                                            <td class="colFirst"><div>Tax</div></td>
+                                            <td><div>&nbsp;</div></td>										
+                                            <td class="colLast" align="right"><div><b>$22.44</b></div></td>
+                                        </tr>								
+                                        <tr class="rowOdd">
+                                            <td class="colFirst"><div>Vehicle Licencing Fee</div></td>
+                                            <td><div>&nbsp;</div></td>										
+                                            <td class="colLast" align="right"><div><b>$7.60</b></div></td>
+                                        </tr>
+                                        <tr class="rowLast rowEven rowTotal">									
+                                            <td class="colFirst" colspan="2" align="right"><div><b>TOTAL:</b></div></td>
+                                            <td align="right" class="colLast colPrice"><div><b>$150.65</b></div></td>													
+                                        </tr>
+                                    </tbody>								
+                                </table>
+                            </div>		
+                        </div>	
+                        <!-- /details Sub Block -->	
+                        
+                       <!-- details Sub Block -->
+                        <div class="detailsSubBlock detailsSubBlockRateInformation">
+                            <div class="header">Rate Information</div>
+                            <div class="body">
+                                <table width="100%" class="detailsTable">
+                                    <colgroup>
+                                        <col width="25%" />
+                                        <col width="25%" />
+                                        <col width="25%" />
+                                        <col width="25%" />
+                                    </colgroup>	
+                                    <thead>
+                                        <tr>
+                                            <td class="colFirst"><div>&nbsp;</div></td>
+                                            <td><div>Car Rate</div></td>
+                                            <td><div>Free Km/Miles</div></td>									
+                                            <td class="colLast"><div>Extra Per Km/Mile</div></td>
+                                        </tr>								
+                                    </thead>	
+                                    <tbody>							
+                                        <tr class="rowFirst rowOdd">
+                                            <td class="colFirst"><div>Week</div></td>
+                                            <td><div>$105.53</div></td>
+                                            <td><div>Unlimited</div></td>										
+                                            <td class="colLast"><div>&nbsp;</div></td>
+                                        </tr>
+                                        <tr class="rowLast rowEven">
+                                            <td class="colFirst"><div>Day</div></td>
+                                            <td><div>$15.08</div></td>
+                                            <td><div>Unlimited</div></td>										
+                                            <td class="colLast"><div>&nbsp;</div></td>
+                                        </tr>
+                                    </tbody>								
+                                </table>
+                            </div>		
+                        </div>	
+                        <!-- /details Sub Block --> 
+                        
+                        <!-- details Sub Block -->
+                        <div class="detailsSubBlock detailsSubBlockExtras">
+                            <div class="header">Extras</div>
+                            <div class="body">
+                                <table width="100%" class="detailsTable">
+                                    <colgroup>
+                                        <col width="45%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="15%" />
+                                    </colgroup>	
+                                    <thead>
+                                        <tr>
+                                            <td class="colFirst"><div>Description</div></td>
+                                            <td><div>Unit Price</div></td>
+                                            <td><div>&nbsp;</div></td>									
+                                            <td class="colLast"><div>Tax Included</div></td>
+                                        </tr>								
+                                    </thead>	
+                                    <tbody>							
+                                        <tr class="rowFirst rowOdd">
+                                            <td class="colFirst"><div>Ski Rack</div></td>
+                                            <td align="right"><div>$20.00</div></td>
+                                            <td><div>Per Rental</div></td>										
+                                            <td class="colLast colStatus"><div><img src="../../pictures/icons/checked.gif" width="7" height="7" alt="" /></div></td>
+                                        </tr>
+                                        <tr class="rowEven">
+                                            <td class="colFirst"><div>Child Toddler Seat</div></td>
+                                            <td align="right"><div>$20.00</div></td>
+                                            <td><div>Per Rental</div></td>										
+                                            <td class="colLast colStatus"><div><img src="../../pictures/icons/checked.gif" width="7" height="7" alt="" /></div></td>
+                                        </tr>
+                                        <tr class="rowOdd">
+                                            <td class="colFirst"><div>Neverlost System</div></td>
+                                            <td align="right"><div>$10.00</div></td>
+                                            <td><div>Per Rental</div></td>										
+                                            <td class="colLast colStatus"><div><img src="../../pictures/icons/checked.gif" width="7" height="7" alt="" /></div></td>
+                                        </tr>
+                                        <tr class="rowEven">
+                                            <td class="colFirst"><div>Satellite Radio</div></td>
+                                            <td align="right"><div>$5.00</div></td>
+                                            <td><div>Per Rental</div></td>										
+                                            <td class="colLast colStatus"><div><img src="../../pictures/icons/checked.gif" width="7" height="7" alt="" /></div></td>
+                                        </tr>
+                                        <tr class="rowOdd">
+                                            <td class="colFirst"><div>Seat Belt Extender</div></td>
+                                            <td align="right"><div>$5.00</div></td>
+                                            <td><div>Per Rental</div></td>										
+                                            <td class="colLast colStatus"><div><img src="../../pictures/icons/checked.gif" width="7" height="7" alt="" /></div></td>
+                                        </tr>
+                                        <tr class="rowLast rowEven">
+                                            <td class="colFirst"><div>Spinner Knob</div></td>
+                                            <td align="right"><div>$5.00</div></td>
+                                            <td><div>Per Rental</div></td>										
+                                            <td class="colLast colStatus"><div><img src="../../pictures/icons/checked.gif" width="7" height="7" alt="" /></div></td>
+                                        </tr>
+                                    </tbody>								
+                                </table>
+                            </div>		
+                        </div>	
+                        <!-- /details Sub Block -->
+                        
+                        <!-- details Sub Block -->
+                        <div class="detailsSubBlock detailsSubBlockCoverage">
+                            <div class="header">Coverage</div>
+                            <div class="body">
+                                <table width="100%" class="detailsTable">
+                                    <colgroup>
+                                        <col width="45%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="15%" />
+                                    </colgroup>	
+                                    <thead>
+                                        <tr>
+                                            <td class="colFirst"><div>Description</div></td>
+                                            <td><div>Price</div></td>
+                                            <td><div>&nbsp;</div></td>									
+                                            <td class="colLast"><div>Included</div></td>
+                                        </tr>								
+                                    </thead>	
+                                    <tbody>							
+                                        <tr class="rowFirst rowOdd">
+                                            <td class="colFirst"><div>Collision Damage Waiver</div></td>
+                                            <td align="right"><div>&nbsp;</div></td>
+                                            <td><div>Per Rental</div></td>										
+                                            <td class="colStatus colLast"><div><img src="../../pictures/icons/checked.gif" width="7" height="7" alt="" /></div></td>
+                                        </tr>
+                                        <tr class="rowLast rowEven">
+                                            <td class="colFirst"><div>Theft Protection</div></td>
+                                            <td align="right"><div>&nbsp;</div></td>
+                                            <td><div>Per Rental</div></td>										
+                                            <td class="colStatus colLast"><div><img src="../../pictures/icons/checked.gif" width="7" height="7" alt="" /></div></td>
+                                        </tr>
+                                    </tbody>								
+                                </table>
+                            </div>		
+                        </div>	
+                        <!-- /details Sub Block -->
+                        
+                    </div>	
+                    <!-- /car Extra Details -->	
+                                    
+                </div>			
+                <div class="componentFooter"><div><span></span></div></div>			
+            </div>
+            <!-- END COMPONENT BLOCK -->	
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleCarBreakdown'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Car Price Breakdown Popup -->
+
+
+<!-- ------------------------------------------------------------ -->
+<!-- ------------------                         ----------------- -->
+<!-- ------------------    INSURANCE POPUPS     ----------------- -->
+<!-- ------------------                         ----------------- -->
+<!-- ------------------------------------------------------------ -->
+
+<!-- Benefits Popup -->
+<div id="popupModuleInsuranceBenefits" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Benefits</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleInsuranceBenefits'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="insuranceBenefitsPopupLoadedContent">
+		<div class="popupBlockInsuranceBenefits">
+        	<div class="benefitsProductDescription">
+            	Mondial: Europe, all countries west of the Ural Mountains...
+            </div>
+        	<table width="100%" class="detailsTable">
+            <colgroup>
+            	<col width="85%"/>
+                <col width="15%"/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <td class="colIncl"><div>Inclusions</div></td>
+                    <td class="colLimit"><div>Limits</div></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="rowFirst rowOdd">
+                    <td class="colIncl"><div>Cancellations &amp; Curailments</div></td>
+                    <td class="colLimit"><div>$3,000.00</div></td>
+                </tr>
+                <tr class="rowEven">
+                    <td class="colIncl"><div>Medical Expenses</div></td>
+                    <td class="colLimit"><div>$10,000.00</div></td>
+                </tr>
+                <tr class="rowOdd">
+                    <td class="colIncl"><div>Delayed Possessions</div></td>
+                    <td class="colLimit"><div>$100.00</div></td>
+                </tr>
+                <tr class="rowLast rowEven">
+                    <td class="colIncl"><div>Personal Accident</div></td>
+                    <td class="colLimit"><div>$15,000.00</div></td>
+                </tr>
+            </tbody>
+            </table>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleInsuranceBenefits'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Benefits Popup -->
+
+<!-- Insurance Breakdown Popup -->
+<div id="popupModuleInsuranceBreakdown" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Price Breakdown</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleInsuranceBreakdown'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="insuranceBreakdownPopupLoadedContent">
+		<div class="popupBlockInsuranceBreakdown">
+        	<div class="breakdownPriceDetails">
+                <table width="100%" class="detailsTable">
+                <colgroup>
+                    <col width="7%"/>
+                    <col width="58%"/>
+                    <col width="10%"/>
+                    <col width="10%"/>
+                    <col width="8%"/>
+                    <col width="7%"/>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <td class="colCode"><div>Code</div></td>
+                        <td class="colDescr"><div>Description</div></td>
+                        <td class="colValue"><div>Trip Value</div></td>
+                        <td class="colTotal"><div>Total Price</div></td>
+                        <td class="colBenefits"><div>&nbsp;</div></td>
+                        <td class="colTerms"><div>&nbsp;</div></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="rowFirst rowOdd rowLast">
+                        <td class="colCode"><div>JV235</div></td>
+                        <td class="colDescr"><div>Single Trip - South East Asia / French Polynesia. Duration: 15 Days - Plan 1</div></td>
+                        <td class="colValue"><div>$4,000.00</div></td>
+                        <td class="colTotal"><div>$269.00</div></td>
+                        <td class="colBenefits"><div><a href="#" onClick="popupFramework.show({id:'popupInsuranceBenefits',ajaxConfig:{},opacity:true,templateName:'insuranceBenefitsPopup',size:{w:650},position:'centered'});return false">Benefits</a></div></td>
+                        <td class="colTerms"><div><a href="#" onClick="popupFramework.show({id:'popupInsuranceTerms',ajaxConfig:{},opacity:true,templateName:'insuranceTermsPopup',size:{w:650},position:'centered'});return false">Terms</a></div></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            
+            <div class="breakdownAddOnsDetails">
+                <table width="100%" class="detailsTable">
+                <colgroup>
+                    <col width="40%"/>
+                    <col width="30%"/>
+                    <col width="30%"/>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <td class="colOption"><div>Additional Add-On Options</div></td>
+                        <td class="colCover"><div>Cover Level</div></td>
+                        <td class="colDescr"><div>Description</div></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="rowFirst rowOdd">
+                        <td class="colOption"><div>Car Excess Cover Increase</div></td>
+                        <td class="colCover"><div>&nbsp;</div></td>
+                        <td class="colDescr"><div>&nbsp;</div></td>
+                    </tr>
+                    <tr class="rowEven">
+                        <td class="colOption"><div>Existing Medical Condition Screening Reference</div></td>
+                        <td class="colCover"><div>&nbsp;</div></td>
+                        <td class="colDescr"><div>&nbsp;</div></td>
+                    </tr>
+                    <tr class="rowLast rowOdd">
+                        <td class="colOption"><div>Extra Luggage Cover</div></td>
+                        <td class="colCover"><div>&nbsp;</div></td>
+                        <td class="colDescr"><div>&nbsp;</div></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleInsuranceBreakdown'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Insurance Breakdown Popup -->
+
+<!-- Insurance Terms Popup -->
+<div id="popupModuleInsuranceTerms" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Terms</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleInsuranceTerms'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="insuranceTermsPopupLoadedContent">
+		<div class="popupBlockInsuranceTerms">
+			<!-- content -->
+            <div style="height:300px"></div>
+            <!-- /content -->
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleInsuranceTerms'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Insurance Terms Popup -->
+
+
+<!-- ------------------------------------------------------------ -->
+<!-- ------------------                         ----------------- -->
+<!-- ------------------      COMMON POPUPS      ----------------- -->
+<!-- ------------------                         ----------------- -->
+<!-- ------------------------------------------------------------ -->
+
+<!-- Session Expiration Popup -->
+<div id="popupModuleSessionExp" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Information</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleSessionExp'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="sessionExpPopupLoadedContent">
+		<div class="popupBlockSessionExp">
+            <div class="textHeader">
+                <div><h2 class="textTitle">Your session has expired</h2></div>
+            </div>
+            <div class="textBody">
+                <div class="textBlock">
+                    <p>We are sorry, the session you are using has expired.</p>
+                    <p>A session usually expires when time has passed and no action has occured.</p>
+                    <br/>
+                    <p>You can begin your search again by <a href="#">clicking here</a>.</p>
+                </div>
+            </div>
+            <div class="textFooter"><div><span></span></div></div>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+            	<td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleSessionExp'});return false"><span><span>Continue</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Session Expiration Popup -->
+
+<!-- Security Code Popup -->
+<div id="popupModuleSecurityCode" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Security Code</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleSecurityCode'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="securityCodePopupLoadedContent">
+		<div class="popupBlockSecurityCode">
+            <div class="textHeader"><div><h2 class="textTitle"></h2></div></div>
+            <div class="textBody">
+                <div class="textBlock">
+                    <table width="100%"><tr>
+                    <td class="imageArea"><img src="../../pictures/content/credit-card/codes/mastercard-code.gif" width="180" height="113" alt="" /></td>
+                    <td class="textArea">
+                        <h3>Credit Card Security Code</h3>
+                        <p>The Card Security Code (CSC), sometimes called Card Verification Value (CVV), is a security feature for credit card or debit card transactions, giving you increased protection against credit card fraud.</p>
+                        <p>The Card Security Code is located on the back of MasterCard, Visa and Discover credit or debit cards and is typically a separate group of 3 digits to the right of the signature strip.</p>
+                    </td>
+                    </tr></table>
+                </div>
+            </div>
+            <div class="textFooter"><div><span></span></div></div>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+            	<td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleSecurityCode'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Security Code Popup -->
+
+<!-- Error Type 1 Popup -->
+<div id="popupModuleError1" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Warning</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleError1'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+	<div class="dialogContent" id="error1PopupLoadedContent">
+		<div class="popupBlockError1">
+        	<table class="popupBlockError1OuterTable"><tr><td class="popupBlockError1OuterTD">
+                <div class="popupErrorIcon"><div><span/></div></div>
+                <div class="popupErrorText">
+                    <p>You already have a booked ticket.</p>
+                    <p>Are you sure you want to proceed?</p>
+                </div>
+            </td></tr></table>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+            	<td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleError1'});return false"><span><span>Yes</span></span></a>
+				</td>
+                <td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleError1'});return false"><span><span>No</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Error Type 1 Popup -->
+
+<!-- Loading Type 1 Popup -->
+<div id="popupModuleLoading1" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Loading</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleLoading1'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+	<div class="dialogContent" id="loading1PopupLoadedContent">
+		<div class="popupBlockLoading1">
+        	<table class="popupBlockLoading1OuterTable"><tr><td class="popupBlockLoading1OuterTD">
+                <div class="popupLoadingIcon"><div><span/></div></div>
+                <div class="popupLoadingText">
+                    <p>Page Loading</p>
+                </div>
+            </td></tr></table>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+            	<td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleLoading1'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Loading Type 1 Popup -->
+
+<!-- Static Content Popup -->
+<div id="popupModuleStaticContent" class="defaultDialogFrame">
+ 	<div class="dialogHeader">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="dialogHeaderInner">
+		<tr>
+			<td width="100%" class="dialogTitle">Information</td>
+			<td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:'popupModuleStaticContent'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td>
+		</tr>
+		</table>
+	</div> 
+    <div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div> 
+	<div class="dialogContent" id="staticContentPopupLoadedContent">
+		<div class="popupBlockStaticContent">
+            <div class="textHeader"><div><h2 class="textTitle">&nbsp;</h2></div></div>
+            <div class="textBody">
+                <div class="textBlock">
+                	<h3>Header 1</h3>
+                    <p>Static content block</p>
+                </div>
+            </div>
+            <div class="textFooter"><div><span></span></div></div>
+		</div>
+	</div>
+	<div class="dialogFooter">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+            	<td>
+					<a href="#" class="button2" onClick="popupFramework.hide({id:'popupModuleStaticContent'});return false"><span><span>Close</span></span></a>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+<!-- /Static Content Popup -->
+
+</body>
+</html>

@@ -1,0 +1,738 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DLEXPRD</title>
+<script language="JavaScript" type="text/javascript">
+<!--		
+function registerJS(jsName){
+	return;
+}
+--></script>
+<link rel="stylesheet" type="text/css" href="../../css/all.css" />
+<link rel="stylesheet" type="text/css" href="../../css/print.css" media="print" />
+<script src="../../js/bot_script.js" type="text/JavaScript"></script>
+<script src="../../js/calendar.js" type="text/JavaScript"></script>
+<script src="../../js/dialog.js" type="text/JavaScript"></script>
+<script src="../../js/drilldown.js" type="text/JavaScript"></script>
+<script src="../../js/global.js" type="text/JavaScript"></script>
+<script src="../../js/utils.js" type="text/JavaScript"></script>
+<script src="../../js/navigation.js" type="text/JavaScript"></script>
+<script src="../../js/prototype_source_loader.js" type="text/javascript"></script>
+<script src="../../js/seatmap.js" type="text/JavaScript"></script>
+<script src="../../js/version.js" type="text/JavaScript"></script>
+<script src="../../en/js/airport_data.js" type="text/JavaScript"></script>
+<script src="../../en/js/navigation.js" type="text/JavaScript"></script>
+<script src="../../en/js/popup_templates.js" type="text/JavaScript"></script>
+<script type="text/JavaScript">
+<!--
+		
+						
+		var ArrActRadioRowID={radiogr1:"radiogr1-row1"};
+		
+		var ArrActRadioRowDefaultClass={};		
+		
+		function SelectRadio(id){
+			var o=document.getElementById(id);
+			var ArrParam = id.split("-");
+			document.getElementById(ArrActRadioRowID[ArrParam[0]]).className=ArrActRadioRowDefaultClass[ArrParam[0]];
+			ArrActRadioRowID[ArrParam[0]]=id;
+			ArrActRadioRowDefaultClass[ArrParam[0]]=o.className;
+			o.className="optionActive"
+		}
+		
+		function InitRadio(){
+			for (i in ArrActRadioRowID){
+				var o=document.getElementById(ArrActRadioRowID[i]);
+				var ArrParam = ArrActRadioRowID[i].split("-");
+				ArrActRadioRowDefaultClass[ArrParam[0]]=o.className;				
+				o.className="optionActive";		
+				document.getElementById(ArrParam[0]+"-f1-"+ArrParam[1]).checked=true;						
+			}
+		}
+		
+		function InitDefaultState(){
+			InitRadio();
+			showHideTripPlannerBlock(0);
+		}
+		
+		window.onload=InitDefaultState;
+		
+		function showHideTripPlannerBlock(type){
+			document.getElementById("fbTripPlanner").style.display = (type==0)?"none":"block";
+		}		
+				
+		
+		//--></script>
+</head>
+<body>
+<!-- BEGIN HEIGHT SCRETCHING -->
+<table height="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="layoutMain">
+	<tr>
+		<td valign="top">
+			<!-- BEGIN LAYOUT HEADER -->
+			<div class="layoutHeader">
+			
+				<!-- BMI HEADER -->	
+			
+				<div class="headerStub"><img src="../../pictures/header/header-stub.gif" width="930" height="104" alt=""></div>
+				
+				<!-- /BMI HEADER -->	
+			
+				<div class="blockUnderLogo">
+					<table cellpadding="0" cellspacing="0" border="0" class="blockUnderLogoContent">
+						<tr valign="top">
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN LANGUAGE SELECTOR -->
+								<div class="languageSelector"><span>English</span><span class="delim"> | </span>
+									<a href="#">Espanol</a></div>
+								<!-- /END LANGUAGE SELECTOR --></td>
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN BREADCRUMB -->
+								<div class="navigationBreadcrumb">
+									<a href="../../en/index.html">Home</a><span> » </span>
+									<a href="../../en/pages-old/Reservations &amp; Services (SRS).html">Reservations &amp; Services</a><span> » </span><strong>Flights</strong></div>
+								<!-- /END BREADCRUMB --></td>
+							<td class="layoutCell" width="99%" align="right">
+								<!-- BEGIN LOGIN STATUS -->
+								<div class="auth">
+									<a href="../../en/pages-login/Login - Login Screen (ALG).html">Login</a></div>
+								<!-- /END LOGIN STATUS --></td>
+						</tr>
+					</table></div></div>
+			<!-- /END LAYOUT HEADER -->
+			<table cellpadding="0" cellspacing="0" border="0" class="layoutBody" align="center">
+				<tr valign="top">
+					<td class="layoutBodyWideArea">
+						<!-- BEGIN BODY WIDE AREA -->
+						<div id="pgItinerarySummary">
+							<form action="#" method="post">
+								<!-- Services Tabs -->
+								<div class="mainTopServicesTabs">
+									<div class="servicesTabs">
+										<table>
+											<tr>
+												<td class="air">
+													<div>
+														<a href="../pages-flight/1 Flight Search RT.html">Flights</a></div></td>
+												<td class="hotel">
+													<div>
+														<a href="../pages-hotel/1 Hotel Search.html">Hotels</a></div></td>
+												<td class="car">
+													<div>
+														<a href="../pages-car/1 Car Search.html">Car</a></div></td>
+												<td class="package">
+													<div>
+														<a href="#">Packages</a></div></td>
+												<td class="insurance">
+													<div>
+														<a href="../pages-insurance/1 Insurance Search.html">Insurance</a></div></td>
+												<td class="discount">
+													<div>
+														<a href="#">Discount Cards</a></div></td>
+											</tr>
+										</table></div></div>
+								<!-- /Services Tabs -->
+								<!-- BEGIN STEPS LINE -->
+								<div class="stepsNavAreaOuter">
+									<table class="stepsNavArea stepsNavAir">
+										<tr class="stepsNavRow" valign="top">
+											<td class="stepsNavFirstAfter">Search</td>
+											<td class="stepsNavSpacerAfter">
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavDefaultAfter">Selection</td>
+											<td class="stepsNavSpacerAfter">
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavDefaultActive"><strong>Summary</strong></td>
+											<td>
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavDefaultBefore">Passengers</td>
+											<td>
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavDefaultBefore">Purchase</td>
+											<td>
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavLastBefore">Confirmation</td>
+										</tr>
+									</table></div>
+								<!-- /END STEPS LINE -->
+								<!-- BEGIN PAGE TITLE LINE -->
+								<div class="pageTitleArea">
+									<table>
+										<tr>
+											<td>
+												<h1>Review Your Itinerary and Price</h1></td>
+											<th nowrap="nowrap">
+												<div class="links">
+													<a href="#" class="print">Print this page</a></div></th>
+										</tr>
+									</table></div>
+								<!-- /END PAGE TITLE LINE -->
+								<!-- BEGIN ITINERARY PRICING BLOCK -->
+								<div class="itineraryPricingBlock">
+									<div class="headBlock">
+										<div>
+											<h2>Your Selection</h2></div>
+										<!--table><tr>
+						<td><h2>Your Selection</h2></td>
+						<th nowrap="nowrap"><div class="links"><a href="#" class="viewCart"><b>View Cart [4]</b></a></div></th>
+					</tr></table--></div>
+									<div class="bodyBlock">
+										<div class="bodySection collapsedSection">
+											<div class="collapsedPart">
+												<table cellpadding="0" cellspacing="0" border="0" class="mainstream">
+													<tr>
+														<td class="icon">
+															<div>
+																<a href="#" onClick="collapsePriceSection(this,1);return false"><img src="../../pictures/icons/i_plus.gif" alt="" width="11" height="11" border="0" /></a></div></td>
+														<td class="item">
+															<div>Fare: Los Angeles (LAX) - San Francisco (SFO) - Los Angeles (LAX)</div></td>
+														<td class="price">
+															<div>690.00</div></td>
+													</tr>
+												</table></div>
+											<div class="expandedPart">
+												<table cellpadding="0" cellspacing="0" border="0" class="mainstream">
+													<tr>
+														<td class="icon">
+															<div>
+																<a href="#" onClick="collapsePriceSection(this,0);return false"><img src="../../pictures/icons/i_minus.gif" alt="" width="11" height="11" border="0" /></a></div></td>
+														<td class="item">
+															<div>Fare: Los Angeles (LAX) - San Francisco (SFO) - Los Angeles (LAX)</div></td>
+														<td class="price">
+															<div>&nbsp;</div></td>
+													</tr>
+												</table>
+												<table cellpadding="0" cellspacing="0" border="0" class="detailedPrice">
+													<tr class="rowOdd">
+														<td class="item">
+															<div>2 Adults + 1 Child. Thu, 17 Apr 2008, 04:36AM - Thu, 24 Apr 2008, 07:28AM</div></td>
+														<td class="price">
+															<div>550.00</div></td>
+													</tr>
+													<tr class="rowEven">
+														<td class="item">
+															<div>Coupon Discount</div></td>
+														<td class="price">
+															<div>-110.00</div></td>
+													</tr>
+													<tr class="rowOdd">
+														<td class="item">
+															<div>Surcharges</div></td>
+														<td class="price">
+															<div>125.00</div></td>
+													</tr>
+													<tr class="rowEven">
+														<td class="item">
+															<div>Taxes</div></td>
+														<td class="price">
+															<div>125.00</div></td>
+													</tr>
+												</table></div></div>
+										<div class="bodySection collapsedSection">
+											<div class="collapsedPart">
+												<table cellpadding="0" cellspacing="0" border="0" class="mainstream">
+													<tr>
+														<td class="icon">
+															<div>
+																<a href="#" onClick="collapsePriceSection(this,1);return false"><img src="../../pictures/icons/i_plus.gif" alt="" width="11" height="11" border="0" /></a></div></td>
+														<td class="item">
+															<div>Insurance - Single Trip Travel Insurance</div></td>
+														<td class="price">
+															<div>32.85</div></td>
+													</tr>
+												</table></div>
+											<div class="expandedPart">
+												<table cellpadding="0" cellspacing="0" border="0" class="mainstream">
+													<tr>
+														<td class="icon">
+															<div>
+																<a href="#" onClick="collapsePriceSection(this,0);return false"><img src="../../pictures/icons/i_minus.gif" alt="" width="11" height="11" border="0" /></a></div></td>
+														<td class="item">
+															<div>Insurance - Single Trip Travel Insurance</div></td>
+														<td class="price">
+															<div>&nbsp;</div></td>
+													</tr>
+												</table>
+												<table cellpadding="0" cellspacing="0" border="0" class="detailedPrice">
+													<tr class="rowOdd">
+														<td class="item">
+															<div>Insurance - Single Trip Travel Insurance</div></td>
+														<td class="price">
+															<div>32.85</div></td>
+													</tr>
+												</table></div></div>
+										<table cellpadding="0" cellspacing="0" border="0" class="totalPrice">
+											<tr>
+												<td class="item"></td>
+												<td class="price">
+													<div>TOTAL: USD 722.85</div></td>
+											</tr>
+										</table></div>
+									<div class="footerBlock">
+										<div><span></span></div></div></div>
+								<!-- /END ITINERARY PRICING BLOCK -->
+								<!-- BEGIN COMPONENT BLOCK -->
+								<div class="componentBlock blockFlightSummary">
+									<div class="componentHeader">
+										<table width="100%">
+											<tr>
+												<td>
+													<h2>Air Itinerary Details</h2></td>
+												<td align="right">
+													<div class="links">
+														<a href="#" class="fareRules" onClick="popupFramework.show({id:'popupFareRules',ajaxConfig:{},opacity:true,templateName:'fareRulesPopup',size:{w:650},position:'centered'});return false">Fare Rules</a>
+														<a href="#" class="remove">Remove</a></div></td>
+											</tr>
+										</table></div>
+									<div class="componentBody">
+										<div class="componentBodyInner1">
+											<div class="componentDetails">
+												<!-- Flight Details Block -->
+												<div class="flightDetailsBlock">
+													<div class="headBlock">
+														<div><span></span></div></div>
+													<div class="bodyBlock">
+														<!-- flight leg -->
+														<div class="flightLeg flightLegOdd">
+															<table width="100%">
+																<tr>
+																	<td class="colDeparture">
+																		<div><span class="orig">Los Angeles (LAX)</span><br /><span class="date">Thu, 17 Apr</span>, <span class="time">04:36AM</span></div></td>
+																	<td class="colArrival">
+																		<div><span class="transf">San Jose Intl. (SJC)</span><br /><span class="date">Thu, 17 Apr</span>, <span class="time">05:11AM</span></div></td>
+																	<td class="colFlight">
+																		<div><span class="flightNum"><img src="../../pictures/icons/i_airline_noimage.gif" width="15" height="15" alt="" align="absmiddle" /><a href="#" onClick="popupFramework.show({id:'popupFlightDetails',ajaxConfig:{},opacity:true,templateName:'flightDetailsPopup',size:{w:650},position:'centered'});return false">UA119</a></span><br /><span class="airline">United Airlines</span></div></td>
+																	<td class="colDetails">
+																		<div><span class="fare">Fare Family: Economy</span><br /><span class="stops">1 Stop: 1h 25m</span></div></td>
+																</tr>
+																<tr>
+																	<td colspan="4" class="colAircraft">
+																		<div><span class="plane">Boeing 737-700</span>. <span class="meal">Breakfast</span></div></td>
+																</tr>
+																<tr>
+																	<td class="colDeparture">
+																		<div><span class="transf">San Jose Intl (SJC)</span><br /><span class="date">Thu, 17 Apr</span>, <span class="time">06:36AM</span></div></td>
+																	<td class="colArrival">
+																		<div><span class="dest">San Francisco (SFO)</span><br /><span class="date">Thu, 17 Apr</span>, <span class="time">06:51AM</span></div></td>
+																	<td class="colFlight">
+																		<div><span class="flightNum"><img src="../../pictures/icons/i_airline_noimage.gif" width="15" height="15" alt="" align="absmiddle" /><a href="#" onClick="popupFramework.show({id:'popupFlightDetails',ajaxConfig:{},opacity:true,templateName:'flightDetailsPopup',size:{w:650},position:'centered'});return false">UA710</a>
+																				<sup class="ref">1</sup></span><br /><span class="airline">United Airlines</span></div></td>
+																	<td class="colDetails">
+																		<div><span class="fare">Fare Family: Economy</span><br /><span class="stops">Non stop</span></div></td>
+																</tr>
+																<tr>
+																	<td colspan="4" class="colAircraft">
+																		<div><span class="plane">Boeing 737-700</span>. <span class="meal">Lunch</span></div></td>
+																</tr>
+															</table></div>
+														<!-- /flight leg -->
+														<div class="blockSeparator blockSep1"><span></span></div>
+														<!-- flight leg -->
+														<div class="flightLeg flightLegEven">
+															<table width="100%">
+																<tr>
+																	<td class="colDeparture">
+																		<div><span class="orig">San Francisco (SFO)</span><br /><span class="date">Thu, 24 Apr</span>, <span class="time">07:28AM</span></div></td>
+																	<td class="colArrival">
+																		<div><span class="dest">Los Angeles (LAX)</span><br /><span class="date">Thu, 24 Apr</span>, <span class="time">08:43AM</span></div></td>
+																	<td class="colFlight">
+																		<div><span class="flightNum"><img src="../../pictures/icons/i_airline_noimage.gif" width="15" height="15" alt="" align="absmiddle" /><a href="#" onClick="popupFramework.show({id:'popupFlightDetails',ajaxConfig:{},opacity:true,templateName:'flightDetailsPopup',size:{w:650},position:'centered'});return false">UA435</a>
+																				<sup class="ref">2</sup></span><br /><span class="airline">United Airlines</span></div></td>
+																	<td class="colDetails">
+																		<div><span class="fare">Fare Family: Economy</span><br /><span class="stops">Non stop</span></div></td>
+																</tr>
+																<tr>
+																	<td colspan="4" class="colAircraft">
+																		<div><span class="plane">Boeing 737-700</span>. <span class="meal">Breakfast</span></div></td>
+																</tr>
+															</table></div>
+														<!-- /flight leg -->
+														<div class="footnote">Flight is operated by <sup class="ref">1</sup> AeroRepublica, <sup class="ref">2</sup> Continental Airlines</div></div>
+													<div class="footerBlock">
+														<div><span></span></div></div></div>
+												<!-- /Flight Details Block -->
+												<!-- details Sub Block -->
+												<div class="detailsSubBlock detailsSubBlockFareBreakdown">
+													<div class="header">Fare Breakdown</div>
+													<div class="body">
+														<table width="100%" class="detailsTable">
+															<colgroup>
+																<col width="14%" />
+																<col width="15%" />
+																<col width="16%" />
+																<col width="14%" />
+																<col width="14%" />
+																<col width="11%" />
+																<col width="16%" />
+															</colgroup>
+															<thead>
+																<tr>
+																	<td class="colFirst">
+																		<div><b>Passenger Type</b></div></td>
+																	<td class="colPrice">
+																		<div><b>Base Fare</b><br />per person</div></td>
+																	<td class="colPrice">
+																		<div><b><a href="#" onClick="popupFramework.show({id:'popupSurcharges',ajaxConfig:{},opacity:true,templateName:'surchargesPopup',size:{w:675},position:'centered'});return false">Surcharges</a>
+																			</b><br />per person</div></td>
+																	<td class="colPrice">
+																		<div><b><a href="#" onClick="popupFramework.show({id:'popupTaxesFees',ajaxConfig:{},opacity:true,templateName:'taxesFeesPopup',size:{w:675},position:'centered'});return false">Taxes</a>
+																			</b><br />per person</div></td>
+																	<td class="colPrice">
+																		<div><b>Total Fare</b><br />per person</div></td>
+																	<td class="colPrice">
+																		<div><b>Number of</b><br />passengers</div></td>
+																	<td class="colLast colPrice">
+																		<div><b>Total Fare</b></div></td>
+																</tr>
+															</thead>
+															<tbody>
+																<tr class="rowFirst rowOdd">
+																	<td class="colFirst">
+																		<div>Adult</div></td>
+																	<td class="colPrice">
+																		<div>200.00</div></td>
+																	<td class="colPrice">
+																		<div>50.00</div></td>
+																	<td class="colPrice">
+																		<div>50.00</div></td>
+																	<td class="colPrice">
+																		<div>300.00</div></td>
+																	<td class="colPrice">
+																		<div>x 2</div></td>
+																	<td class="colLast colPrice">
+																		<div><b>USD 600.00</b></div></td>
+																</tr>
+																<tr class="rowLast rowEven">
+																	<td class="colFirst">
+																		<div>Child</div></td>
+																	<td class="colPrice">
+																		<div>150.00</div></td>
+																	<td class="colPrice">
+																		<div>25.00</div></td>
+																	<td class="colPrice">
+																		<div>25.00</div></td>
+																	<td class="colPrice">
+																		<div>200.00</div></td>
+																	<td class="colPrice">
+																		<div>x 1</div></td>
+																	<td class="colLast colPrice">
+																		<div><b>USD 200.00</b></div></td>
+																</tr>
+															</tbody>
+														</table></div></div>
+												<!-- /details Sub Block -->
+												<!-- details Sub Block -->
+												<div class="detailsSubBlock detailsSubBlockFareFamilyExtras">
+													<div class="header">LAX-SFO: Economy Fare Family Benefits</div>
+													<!--div class="extrasTabs">
+									<table>
+									<tr>
+										<td class="firstTab actTab"><div><a href="#"><b>LAX-SFO:</b> Economy</a></div></td>
+										<td class="lastTab"><div><a href="#"><b>SFO-LAX:</b> Economy</a></div></td>			
+									</tr>
+									</table>
+								</div-->
+													<div class="body">
+														<table width="100%" class="detailsTable">
+															<colgroup>
+																<col width="4%" />
+																<col width="96%" />
+															</colgroup>
+															<tbody>
+																<tr class="rowFirst rowOdd">
+																	<td class="colFirst">
+																		<div>&nbsp;</div></td>
+																	<td class="colLast">
+																		<div>Earn 100% Air Miles</div></td>
+																</tr>
+																<tr class="rowEven">
+																	<td class="colFirst">
+																		<div>&nbsp;</div></td>
+																	<td class="colLast">
+																		<div>Complimentary sandwich or snack (available flights)</div></td>
+																</tr>
+																<tr class="rowOdd">
+																	<td class="colFirst">
+																		<div>&nbsp;</div></td>
+																	<td class="colLast">
+																		<div>Direct TV</div></td>
+																</tr>
+																<tr class="rowEven">
+																	<td class="colFirst">
+																		<div>&nbsp;</div></td>
+																	<td class="colLast">
+																		<div>Change Penalty $50</div></td>
+																</tr>
+																<tr class="rowOdd">
+																	<td class="colFirst">
+																		<div>&nbsp;</div></td>
+																	<td class="colLast">
+																		<div>Refund Penalty $50</div></td>
+																</tr>
+																<tr class="rowLast rowEven">
+																	<td class="colFirst">
+																		<div>&nbsp;</div></td>
+																	<td class="colLast">
+																		<div>$25 Fee may apply when you check a second bag</div></td>
+																</tr>
+															</tbody>
+														</table></div></div>
+												<!-- /details Sub Block -->
+												<!-- details Sub Block -->
+												<div class="detailsSubBlock detailsSubBlockFareFamilyExtras">
+													<div class="header">SFO-LAX: Economy Plus Fare Family Benefits</div>
+													<div class="body">
+														<table width="100%" class="detailsTable">
+															<colgroup>
+																<col width="4%" />
+																<col width="96%" />
+															</colgroup>
+															<tbody>
+																<tr class="rowFirst rowOdd">
+																	<td class="colFirst">
+																		<div>&nbsp;</div></td>
+																	<td class="colLast">
+																		<div>Earn 100% Air Miles</div></td>
+																</tr>
+																<tr class="rowEven">
+																	<td class="colFirst">
+																		<div>&nbsp;</div></td>
+																	<td class="colLast">
+																		<div>Complimentary advance seat selection</div></td>
+																</tr>
+																<tr class="rowOdd">
+																	<td class="colFirst">
+																		<div>&nbsp;</div></td>
+																	<td class="colLast">
+																		<div>Complimentary sandwich or snack (available flights)</div></td>
+																</tr>
+																<tr class="rowEven">
+																	<td class="colFirst">
+																		<div>&nbsp;</div></td>
+																	<td class="colLast">
+																		<div>Direct TV</div></td>
+																</tr>
+																<tr class="rowOdd">
+																	<td class="colFirst">
+																		<div>&nbsp;</div></td>
+																	<td class="colLast">
+																		<div>Change Penalty $15</div></td>
+																</tr>
+																<tr class="rowEven">
+																	<td class="colFirst">
+																		<div>&nbsp;</div></td>
+																	<td class="colLast">
+																		<div>Refund Penalty $15</div></td>
+																</tr>
+																<tr class="rowLast rowOdd">
+																	<td class="colFirst">
+																		<div>&nbsp;</div></td>
+																	<td class="colLast">
+																		<div>No fee applies when you check a second bag</div></td>
+																</tr>
+															</tbody>
+														</table></div></div>
+												<!-- /details Sub Block --></div>
+											<!-- Component Total -->
+											<div class="componentTotal">
+												<div>
+													<div>Total Air Fare: <span>USD 690.00</span></div></div></div>
+											<!-- /Component Total -->
+											<!-- Component Saving -->
+											<div class="componentSaving">
+												<div>
+													<div>Coupon Saving: <span>USD 110.00</span></div></div></div>
+											<!-- /Component Saving --></div></div>
+									<div class="componentFooter">
+										<div><span></span></div></div></div>
+								<!-- END COMPONENT BLOCK -->
+								<div class="componentBlockDelimiter"><span></span></div>
+								<!-- BEGIN COMPONENT BLOCK -->
+								<div class="componentBlock blockInsuranceCrossSell">
+									<div class="componentHeader">
+										<table width="100%">
+											<tr>
+												<td>
+													<h2>Travel Insurance</h2></td>
+												<td align="right">
+													<div class="links">
+														<a href="#" class="remove">Remove</a></div></td>
+											</tr>
+										</table></div>
+									<div class="componentBody">
+										<div class="componentBodyInner1">
+											<div class="componentDetails">
+												<div class="insuranceCrossSell">
+													<table width="100%">
+														<tbody>
+															<tr>
+																<td>
+																	<div>&nbsp;</div></td>
+																<td class="colPurchase">
+																	<div>
+																		<table>
+																			<tr>
+																				<td class="check">
+																					<input type="checkbox" name="insurancePurchase" id="insurancePurchase" value="" checked="checked" /></td>
+																				<td class="label">
+																					<label for="insurancePurchase">Yes, I want to purchase insurance (USD 10.95 per person)</label></td>
+																			</tr>
+																		</table>
+																		<p>If you do not wish to purchase insurance, please uncheck the box above.</p></div></td>
+															</tr>
+															<tr>
+																<td class="colIcon">
+																	<div><img src="../../pictures/content/logo_insurance1.gif" width="102" height="24" alt="AIG Travel Guard" /></div></td>
+																<td class="colInfo">
+																	<div>
+												Travel insurance includes reimbursement for: Trip Cancellation or Interruption; Travel Delay; Lost, Stolen or Damaged Baggage; 
+												Baggage Delay; 24-hour travel assistance.<br />International travel insurance plans include Medical and Emergency Medical Transportation coverage.<br /><br />
+												Click <a href="#">here</a> to learn more and read all limitations and policy restrictions.
+											</div></td>
+															</tr>
+														</tbody>
+													</table></div></div>
+											<div class="componentTotal">
+												<div>
+													<div>Total Insurance: <span>USD 32.85</span></div></div></div></div></div>
+									<div class="componentFooter">
+										<div><span></span></div></div></div>
+								<!-- END COMPONENT BLOCK -->
+								<!-- BEGIN PAGE TOTAL PRICE -->
+								<div class="pageTotalPrice">
+									<table width="100%">
+										<tr>
+											<td class="colCard">
+												<div>&nbsp;</div></td>
+											<td class="colTotal">
+												<div>TOTAL: <span>USD 722.85</span></div></td>
+										</tr>
+									</table></div>
+								<!-- /END PAGE TOTAL PRICE -->
+								<div class="proceedOptionsBlock">
+									<div class="headBlock">
+										<div>
+											<h1>How would you like to proceed?</h1></div></div>
+									<div class="bodyBlock">
+										<div class="blockSeparator blockSep1"><span></span></div>
+										<div class="option" id="radiogr1-row1">
+											<table cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<th class="c1">
+														<input type="radio" name="radiogr1-f1" id="radiogr1-f1-row1" value="1" onClick="SelectRadio('radiogr1-row1');showHideTripPlannerBlock(0)" /></th>
+													<td class="c2">
+														<h3>I'd like to proceed to payment</h3></td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>Static textual information on the benefits of choosing this payment option</td>
+												</tr>
+											</table></div>
+										<div class="blockSeparator blockSep2"><span></span></div>
+										<div class="option" id="radiogr1-row2">
+											<table cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<th class="c1">
+														<input type="radio" name="radiogr1-f1" id="radiogr1-f1-row2" value="1" onClick="SelectRadio('radiogr1-row2');showHideTripPlannerBlock(0)" /></th>
+													<td class="c2">
+														<h3>I don't want to pay now, but I'd like to reserve and hold my itinerary</h3></td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>
+														<p>Static textual information on the benefits of choosing reserve and hold</p>
+														<p>If you do not have a [Company Name] profile, you will be asked to specify a password on the next page</p></td>
+												</tr>
+											</table></div>
+										<div class="blockSeparator blockSep3"><span></span></div>
+										<div class="option" id="radiogr1-row3">
+											<table cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<th class="c1">
+														<input type="radio" name="radiogr1-f1" id="radiogr1-f1-row3" value="1" onClick="SelectRadio('radiogr1-row3');showHideTripPlannerBlock(1)" /></th>
+													<td class="c2">
+														<h3>Save without booking</h3></td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>
+														<p>Static textual information on the benefits of choosing to save the itinerary without booking</p>
+														<p>If you do not have a [Company Name] profile, you will be asked to specify a password on the next page</p></td>
+												</tr>
+											</table></div>
+										<div class="blockSeparator blockSep4"><span></span></div></div>
+									<div class="footerBlock">
+										<div><span></span></div></div></div>
+								<div id="fbTripPlanner">
+									<div class="formHeader">
+										<div>
+											<h2 class="formTitle">Trip Planner</h2></div></div>
+									<div class="formBody">
+										<div class="textBlock">
+											<p>Use Trip Planner to save your itinerary without booking. You can then retrieve the itinerary for later use.</p></div>
+										<div class="formBlock">
+											<table width="100%" cellpadding="0" cellspacing="0" border="0" class="formHorControl">
+												<tr valign="top" class="errorNoticeOuter errorNoticeOff">
+													<td></td>
+													<td>
+														<div class="errorNotice">Itinerary name you have entered is not valid.</div></td>
+												</tr>
+												<tr valign="top">
+													<td nowrap="nowrap" class="formLabelArea"><span class="formLabelElement">Itinerary Name</span></td>
+													<td width="100%" class="formInArea">
+														<input type="text" class="formInput maxWidth" value="LAX-SFO [Thu, 17 Apr 2008 - Thu, 24 Apr 2008]" /></td>
+												</tr>
+											</table></div>
+										<div class="formSeparator">
+											<div class="spacer"><span></span></div></div></div>
+									<div class="formFooter">
+										<div><span></span></div></div></div>
+								<div class="spacerVert"><span></span></div>
+								<!-- BEGIN BOTTOM FLOW BUTTONS -->
+								<div align="right" class="pageButtonArea">
+									<table cellspacing="0" cellpadding="0" border="0">
+										<tr>
+											<td>
+												<a href="#" onClick="window.history.back()" class="button2" id="pgButtonBack"><span><span>Back</span></span></a></td>
+											<!--td>
+							<a href="#" class="button2" id="pgButtonSave"><span><span>Save without Booking</span></span></a></td-->
+											<td>
+												<a href="3.1 Booking Login.html" class="button1" id="pgButtonNext"><span><span>Next ></span></span></a></td>
+										</tr>
+									</table></div>
+								<!-- /END BOTTOM FLOW BUTTONS -->
+							</form></div>
+						<!-- /END BODY WIDE AREA --></td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td valign="bottom">
+			<!-- Enter Chat -->
+			<div class="enterChat">
+				<div class="headBlock">
+					<div><span></span></div></div>
+				<div class="bodyBlock">
+					<h3>Need Help?</h3>
+					<p>A representative is standing by to answer your question via our <a href="#" onClick="openWindow('chatSelect', '../../en/popups/Chat Selection.html', 700, 500, '');return false">online chat</a>.</p>
+					<p>You can also <a href="#">contact us by email</a> or call 1(507) 217-2671.</p></div>
+				<div class="footerBlock">
+					<div><span></span></div></div></div>
+			<!-- /Enter Chat -->
+			<!-- BEGIN LAYOUT FOOTER -->
+			<div class="layoutFooter">
+								
+				<!-- BMI FOOTER -->		
+		
+				<div class="footerStub"><img src="../../pictures/footer/footer-stub.gif" width="930" height="56" alt=""></div>
+						
+				<!-- /BMI FOOTER -->	
+					
+			</div>
+			<!-- /END LAYOUT FOOTER --></td>
+	</tr>
+</table>
+<!-- /END HEIGHT SCRETCHING -->
+</body>
+</html>
+

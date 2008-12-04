@@ -1,0 +1,1204 @@
+/******************************************************************************
+
+	POPUP STYLES
+
+******************************************************************************/
+
+.popupHeader {
+	text-align: center;
+	border-bottom: 10px solid #003366;
+	background: #000000;
+}
+
+.popupContent {
+	padding: 20px;
+}
+
+.popupText, .popupText td {
+	color: #003366;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.monoText, .monoText td, .monoText PRE {
+	color: #003366;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+}
+	
+.popupText p {
+	margin: 6px 0 0 0;
+}
+
+.popupClose {
+	margin: 0 20px 0 20px;
+}
+
+.popupFooter {
+	background-color: #E6E6E6;
+	color: #878787;
+	
+	font-family: Tahoma;
+	font-size: 10px;
+	
+	text-align: center;
+	
+	padding: 6px;
+}
+
+.printLayout {
+	width: 530px;
+}
+
+.popupError {
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	color: #B30000;
+}
+
+
+/******************************************************************************
+
+	FLIGHT POPUPS
+
+******************************************************************************/
+
+/* Flight Details */
+
+.popupBlockFlightDetails {
+	padding: 1px 1px 0 1px;
+}
+
+.popupBlockFlightDetails .flightInfo {
+	margin: 0 0 2px 0;
+}
+
+.popupBlockFlightDetails .flightInfo TH, 
+.popupBlockFlightDetails .flightInfo TD {
+	border-bottom: 1px solid #FFFFFF;
+	vertical-align: top;
+}
+
+.popupBlockFlightDetails .flightInfo TH {
+	background: #e5ecf2;
+	font-weight: bold;
+	text-align: left;
+}
+
+.popupBlockFlightDetails .flightInfo TD {
+	background: #ffffff;
+}
+
+.popupBlockFlightDetails .flightInfo TH DIV, 
+.popupBlockFlightDetails .flightInfo TD DIV {
+	padding: 2px 4px 4px 4px;
+}
+
+.popupBlockFlightDetails .flightInfo .colFlight, 
+.popupBlockFlightDetails .flightInfo .colAirline {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.popupBlockFlightDetails .flightInfo .colFlight DIV, 
+.popupBlockFlightDetails .flightInfo .colAirline DIV {
+	padding: 5px 4px 5px 4px;
+}
+
+
+.popupBlockFlightDetails .tripInfo TH, 
+.popupBlockFlightDetails .tripInfo TD {
+	border-bottom: 1px solid #FFFFFF;
+	vertical-align: top;
+}
+
+.popupBlockFlightDetails .tripInfo TH {
+	background: #e5ecf2;
+	font-weight: bold;
+	text-align: left;
+}
+
+.popupBlockFlightDetails .tripInfo TD {
+	background: #ffffff;
+}
+
+.popupBlockFlightDetails .tripInfo TH DIV, 
+.popupBlockFlightDetails .tripInfo TD DIV {
+	padding: 2px 4px 4px 4px;
+}
+
+.popupBlockFlightDetails .tripInfo .colDepart .place,
+.popupBlockFlightDetails .tripInfo .colArrive .place {
+	font-weight: bold;
+}
+
+.popupBlockFlightDetails .tripInfo .colComment {
+	border-bottom: none;
+}
+
+
+/* Taxes and Fees */
+
+.popupBlockTaxesFees {
+	padding: 1px 1px 0 1px;
+}
+
+.popupBlockTaxesFees .detailsTable THEAD TD {
+	background: #e2e6f2;
+}
+
+.popupBlockTaxesFees .detailsTable TBODY TD {
+	background: #f8f8f8;
+}
+
+.popupBlockTaxesFees .detailsTable TBODY .colAmount {
+	text-align: right;
+}
+
+.popupBlockTaxesFees .detailsTable .colTotal {
+	border-right: none;
+}
+
+.popupBlockTaxesFees .detailsTable TBODY .colTotal {
+	padding: 4px 3px;
+	font: bold 12px Arial;
+	text-align: right;
+}
+
+.popupBlockTaxesFees .detailsTable .rowLast TD {
+	border-bottom: none;
+}
+
+
+/* Surcharges */
+
+.popupBlockSurcharges {
+	padding: 1px 1px 0 1px;
+}
+
+.popupBlockSurcharges .detailsTable THEAD TD {
+	background: #e2e6f2;
+}
+
+.popupBlockSurcharges .detailsTable TBODY TD {
+	background: #f8f8f8;
+}
+
+.popupBlockSurcharges .detailsTable TBODY .colAmount {
+	text-align: right;
+}
+
+.popupBlockSurcharges .detailsTable .colTotal {
+	border-right: none;
+}
+
+.popupBlockSurcharges .detailsTable TBODY .colTotal {
+	padding: 4px 3px;
+	font: bold 12px Arial;
+	text-align: right;
+}
+
+.popupBlockSurcharges .detailsTable .rowLast TD {
+	border-bottom: none;
+}
+
+
+/* Tax Description */
+
+.popupBlockTaxDescription {
+	padding: 1px 1px 0 1px;
+}
+
+.popupBlockTaxDescription .taxDescription TH, 
+.popupBlockTaxDescription .taxDescription TD {
+	border-bottom: 1px solid #FFFFFF;
+	vertical-align: top;
+}
+
+.popupBlockTaxDescription .taxDescription TH {
+	background: #cdecf1;
+	border-right: 1px solid #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+}
+
+.popupBlockTaxDescription .taxDescription TD {
+	background: #f3f9ff;
+}
+
+.popupBlockTaxDescription .taxDescription TH DIV {
+	padding: 5px 7px 6px 7px; 
+}
+
+.popupBlockTaxDescription .taxDescription TD DIV {
+	padding: 5px 5px 6px 5px; 
+}
+
+.popupBlockTaxDescription .taxDescription .colAmount {
+	border-bottom: none;
+}
+
+
+/* Surcharge Description */
+
+.popupBlockSurchargeDescription {
+	padding: 1px 1px 0 1px;
+}
+
+.popupBlockSurchargeDescription .surchargeDescription TH, 
+.popupBlockSurchargeDescription .surchargeDescription TD {
+	border-bottom: 1px solid #FFFFFF;
+	vertical-align: top;
+}
+
+.popupBlockSurchargeDescription .surchargeDescription TH {
+	background: #cdecf1;
+	border-right: 1px solid #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+}
+
+.popupBlockSurchargeDescription .surchargeDescription TD {
+	background: #f3f9ff;
+}
+
+.popupBlockSurchargeDescription .surchargeDescription TH DIV {
+	padding: 5px 7px 6px 7px; 
+}
+
+.popupBlockSurchargeDescription .surchargeDescription TD DIV {
+	padding: 5px 5px 6px 5px; 
+}
+
+.popupBlockSurchargeDescription .surchargeDescription .colAmount {
+	border-bottom: none;
+}
+
+
+/* Preferences */
+
+.popupBlockPreferences {
+	padding: 5px 0 0 0;
+}
+
+.popupBlockPreferences .formHeader,
+.popupBlockPreferences .formFooter {
+	display: none;
+}
+
+
+/* Fare Breakdown */
+
+.popupBlockFareBreakdown {
+	padding: 1px 1px 0 1px;
+}
+
+.popupBlockFareBreakdown .detailsTable THEAD TD {
+	background: #cdecf1;
+	font-weight: normal;
+}
+
+.popupBlockFareBreakdown .detailsTable TBODY TD {
+	background: #f3f9ff;
+	border-bottom: 2px solid #FFFFFF;
+}
+
+.popupBlockFareBreakdown .detailsTable .colPrice {
+	text-align: right;
+}
+
+.popupBlockFareBreakdown .detailsTable .rowTotal TD {
+	background: #ffffff;
+	text-align: right;
+	font-size: 14px;
+	font-weight: bold;  
+	border-bottom: none;
+	padding: 2px 0;
+}
+
+.popupBlockFareBreakdown .detailsTable .rowTotal .colPrice {
+	background: #cdecf1;
+	border: none;
+}
+
+.popupBlockFareBreakdown .detailsTable .rowTotal TD DIV {
+	padding: 2px 5px 2px 5px;
+}
+
+.popupBlockFareBreakdown .footnote {
+	font-size: 11px;
+	color: #333333;
+	padding: 5px 3px 5px 3px;
+}
+
+
+/* Air Reprice */
+
+.popupBlockAirReprice {
+	padding: 5px 5px 0 5px;
+}
+
+.popupBlockAirReprice .textTitle {
+	padding: 7px 0 10px 0;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+}
+
+.popupBlockAirReprice .textBlock p {
+	margin: 0 0 15px 0;
+}
+
+.popupBlockAirReprice .textBlock .origPrice,
+.popupBlockAirReprice .textBlock .newPrice {
+	font-weight: bold;
+}
+
+.popupBlockAirReprice .textFooter {
+	display: none;
+}
+
+
+/* Fare Rules */
+
+.popupBlockFareRules {
+	padding: 12px 4px 4px 4px;
+}
+
+.popupBlockFareRules .introTextArea {
+	padding: 0 5px;
+}
+
+.popupBlockFareRules .links {
+	padding: 0 5px;
+}
+
+.popupBlockFareRules .print {
+	background: url(../pictures/icons/i_print.gif) no-repeat left center;
+	padding: 0 0 0 14px;
+}
+
+
+.popupBlockFareRules H3 {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 4px 5px 5px 5px;
+}
+
+/* Tabs */
+
+.tabsExtArea {
+	position: relative;
+}
+
+.tabsFixedArea {
+	table-layout: fixed;
+	width: 100%;	
+}
+
+.tabsOuterArea {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	margin: 0 0 -1px 0px;
+}
+
+.tabsOuterAreaClip {
+	border-left: 1px solid #BFB5BF;	
+	border-right: 1px solid #BFB5BF;	
+}
+
+.tabsNavArea {
+	width: 54px;
+	position: relative;	
+}
+
+.tabsNavArea A, .tabsNavArea SPAN {
+	float: left;
+	width: 12px;
+	height: 24px;
+}
+
+.tabsNavArea .prev {
+	background: url(../pictures/icons/navigation/i_prev_tab.gif) no-repeat center center;
+	margin: 0 2px 0 13px;
+}
+
+.tabsNavArea .next {
+	background: url(../pictures/icons/navigation/i_next_tab.gif) no-repeat center center;
+	margin: 0 0 0 2px;
+}
+
+.popupBlockFareRules .fareRulesTabs {
+	position: relative;
+}
+
+.popupBlockFareRules .fareRulesTabs TABLE {
+	position: relative;
+	border-top: 1px solid #bfb5bf;
+	border-right: 1px solid #bfb5bf;
+}
+
+.popupBlockFareRules .fareRulesTabs TD {
+	border-left: 1px solid #bfb5bf;
+	vertical-align: top;
+	white-space: nowrap;	
+}
+
+.popupBlockFareRules .fareRulesTabs DIV {
+	position: relative;
+	margin: 1px 1px 1px 1px;	
+	font-size: 12px;
+	background: #cdecf1;
+}
+
+.popupBlockFareRules .fareRulesTabs .actTab DIV {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 1px 1px 1px 1px;
+}
+
+.popupBlockFareRules .fareRulesTabs A,
+.popupBlockFareRules .fareRulesTabs A:hover,
+.popupBlockFareRules .fareRulesTabs SPAN {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	padding: 0 12px 0 12px;
+	line-height: 22px; 
+}
+
+
+.popupBlockFareRules .fareRulesInfoBlock .headBlock, 
+.popupBlockFareRules .fareRulesInfoBlock .footerBlock {
+	display: none;
+}
+
+.popupBlockFareRules .fareRulesInfoBlock .bodyBlock {
+	border: 1px solid #bfb5bf;
+	height: 400px; 
+}
+
+.popupBlockFareRules .fareRulesInfoBlock .fareRulesText {
+	padding: 7px;
+	font: 12px Arial;
+	color: #003366;
+}
+
+.popupBlockFareRules .fareRulesInfoBlock .fareRulesText .notesBlock {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px; 
+}
+
+
+/* Seat Map */
+
+.popupBlockSeatMap {
+	padding: 4px;
+}
+
+.popupBlockSeatMap .introTextArea {
+	padding: 0 8px;
+}
+
+.popupBlockSeatMap .seatSelectionArea {
+	padding: 0;
+}
+
+.popupBlockSeatMap .seatSelectionArea .headBlock, 
+.popupBlockSeatMap .seatSelectionArea .footerBlock {
+	display: none;
+}
+
+.popupBlockSeatMap .flightDetailsArea {
+	padding: 0 0 8px 0;
+}
+
+.popupBlockSeatMap .flightDetailsArea H3 {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 6px 0;
+}
+
+.popupBlockSeatMap .flightDetailsArea TH,
+.popupBlockSeatMap .flightDetailsArea TD {
+	border: 1px solid #c3c3c3;
+	padding: 1px 7px;
+}
+
+.popupBlockSeatMap .flightDetailsArea TH {
+	text-align: left;
+	background: #f6f3f3;
+	padding: 3px 7px 4px 7px;
+}
+
+.popupBlockSeatMap .flightDetailsArea TD.colDepart,
+.popupBlockSeatMap .flightDetailsArea TD.colArrive {
+	font-weight: bold;
+}
+
+/* Error Message */
+
+.popupBlockSeatMap .errorMessageBlock {
+	font-weight: bold;
+	color: #ff0000;
+	padding: 5px 0 0 0;
+}
+
+.popupBlockSeatMap .fareFamilyArea {
+	width: 140px;
+	border: 1px solid #c3c3c3;
+	background: #e1e6f6;
+	vertical-align: top;
+}
+
+.popupBlockSeatMap .fareFamilyArea H3 {
+	font-size: 11px;
+	font-weight: bold;
+	padding: 3px 7px 7px 7px;
+}
+
+.popupBlockSeatMap .fareFamilyArea TD {
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	padding: 0 0 1px 0;
+}
+
+.popupBlockSeatMap .fareFamilyArea .selectedFF TD {
+	background: #fff000;
+	font-weight: bold;
+}
+
+.popupBlockSeatMap .fareFamilyArea .colRadio {width: 18%}
+.popupBlockSeatMap .fareFamilyArea .colFF {width: 82%}
+
+
+.popupBlockSeatMap .seatMapArea {
+	width: 100%;
+	border: 1px solid #c3c3c3;
+	text-align: center;	
+	vertical-align: middle;
+}
+
+
+.popupBlockSeatMap .legendArea {
+	padding: 7px 0 2px 0;
+}
+
+.popupBlockSeatMap .seatsLegendBlock TABLE {
+	width: 520px;
+}
+
+/*  Terms  */
+
+.popupBlockAirTerms {
+	
+}
+
+
+/******************************************************************************
+
+	HOTEL POPUPS
+
+******************************************************************************/
+
+/*  Hotel Description  */
+
+.popupBlockHotelDescription {
+	padding: 15px 10px;
+}
+
+.popupBlockHotelDescription .colImages {
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+.popupBlockHotelDescription .colDescr {
+	width: 100%;
+	vertical-align: top;
+}
+
+.popupBlockHotelDescription .viewArea {
+	padding: 0 0 10px 0;
+}
+
+.popupBlockHotelDescription .hotelView {
+	padding: 0 0 5px 0;
+}
+
+.popupBlockHotelDescription .viewNavigation {
+	width: 100%;
+	margin: 0 0 5px 0;
+} 
+
+.popupBlockHotelDescription .viewNavigation a,
+.popupBlockHotelDescription .viewNavigation SPAN {
+	font: 10px Verdana;
+}
+
+.popupBlockHotelDescription .viewNavigation .navPrevDisabled,
+.popupBlockHotelDescription .viewNavigation .navNextDisabled {
+	color: #cccccc;
+	cursor: default;
+}
+
+.popupBlockHotelDescription .mapArea {
+	width: 195px;
+	height: 140px;
+	overflow: hidden;
+}
+
+.popupBlockHotelDescription .infoArea {
+	margin: 0 0 0 10px;
+	padding: 0 0 2px 0;
+	border-bottom: 1px solid #9D9D9D;
+}
+
+.popupBlockHotelDescription .infoTitle {
+	float: left;
+	width: auto;
+	font: bold 12px Verdana;
+	padding: 0 10px 5px 0;
+}
+
+.popupBlockHotelDescription .hotelStars {
+	float: left;
+	width: auto;
+	margin: -3px 0 0 0;
+}
+
+.popupBlockHotelDescription .infoText {
+	margin: 0 0 4px 0;
+	font: 10px Verdana;
+}
+
+.popupBlockHotelDescription .infoHotelAmenities {
+	padding: 2px 0;
+}
+
+.popupBlockHotelDescription .infoHotelAmenities IMG {
+	margin-right: 2px;
+}
+
+.popupBlockHotelDescription .descriptionArea {
+	margin: 3px 0 0 10px;
+	font: 10px Verdana;
+}
+
+.popupBlockHotelDescription .descriptionArea H3 {
+	font: bold 10px Verdana;
+	padding: 8px 0;
+}
+
+.popupBlockHotelDescription .descriptionArea H4 {
+	font: bold 10px Verdana;
+	padding: 3px 5px 4px 5px;
+	margin: 10px 0 0 0;
+	background-color: #DADADA;
+}
+
+.popupBlockHotelDescription .descriptionArea P {
+	padding: 3px 0;
+}
+
+
+/*  Hotel Price Breakdown  */
+
+.popupBlockHotelBreakdown .componentBlock {
+	border: none;
+}
+
+.popupBlockHotelBreakdown .componentBody .componentTitleArea {
+	background: #e9e9e9;
+}
+
+.popupBlockHotelBreakdown .componentBody .componentTitleArea H3 {
+	 font: bold 14px Verdana;
+	 padding: 0px 5px 2px 5px;
+}
+
+.popupBlockHotelBreakdown .componentBody .componentTitleArea .price {
+	 font: bold 14px Verdana;
+	 padding: 1px 5px;
+}
+
+.popupBlockHotelBreakdown .componentExtraDetails {
+	border-top: none;
+}
+
+.popupBlockHotelBreakdown .detailsSubBlock .header {
+	background: #e9e9e9;
+}
+
+.popupBlockHotelBreakdown .detailsSubBlock .body {
+	border: none;
+	padding: 2px 0;
+}
+
+.popupBlockHotelBreakdown  .detailsTable THEAD TD {
+	background: #e2e6f2;
+}
+
+.popupBlockHotelBreakdown  .detailsTable TBODY TD {
+	background: #f8f8f8;
+}
+
+
+/*  Location Map  */
+
+.popupBlockLocationMap {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.popupBlockLocationMap .locationMap {
+	border: 1px solid #979797; 
+	width: 500px; 
+	height: 400px;
+	margin: 0 auto;
+}
+
+
+/* Group Booking */
+
+.popupBlockGroupBooking {
+	padding: 75px 15px;
+}
+
+.popupBlockGroupBooking .textHeader,
+.popupBlockGroupBooking .textFooter {
+	display: none;
+}
+
+.popupBlockGroupBooking .textBlock {
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+/******************************************************************************
+
+	CAR POPUPS
+
+******************************************************************************/
+
+/*  Car Description  */
+
+.popupBlockCarDescription {
+	padding: 20px 15px 10px 15px;
+}
+
+.popupBlockCarDescription .infoArea .colImages {
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+.popupBlockCarDescription .infoArea .colInfo {
+	width: 100%;
+	vertical-align: top;
+}
+
+.popupBlockCarDescription .infoArea .carView {
+	padding: 0 10px 10px 0;
+}
+
+.popupBlockCarDescription .infoArea .infoTitle {
+	font: bold 12px Verdana;
+	padding: 0 0 7px 0;
+}
+
+.popupBlockCarDescription .infoArea .infoText {
+	padding: 0 0 10px 0;
+	font: 10px Verdana;
+}
+
+.popupBlockCarDescription .descriptionArea {
+	padding: 5px 0 0 0;
+	font: 10px Verdana;
+}
+
+.popupBlockCarDescription .descriptionArea .header {
+	font: bold 11px Verdana;
+	padding: 0 0 6px 0;
+	border-bottom: 1px solid #c3c3c3;
+}
+
+.popupBlockCarDescription .descriptionArea H3 {
+	font: bold 10px Verdana;
+	padding: 7px 0;
+}
+
+.popupBlockCarDescription .descriptionArea P {
+	padding: 3px 0;
+}
+
+.popupBlockCarDescription .descriptionArea UL {
+	list-style: none;
+	padding: 0;
+	margin: 3px 0;
+}
+
+.popupBlockCarDescription .descriptionArea LI {
+	background: url(../pictures/icons/bullets/bul_list.gif) no-repeat left 4px;
+	padding: 0 0 0 10px;
+}
+
+.popupBlockCarDescription .descriptionArea .notesBlock {
+	margin: 10px 0 0 0;
+	padding: 3px 0;
+	border-top: 1px solid #c3c3c3;
+}
+
+/*  Car Vendor  */
+
+.popupBlockCarVendor {
+	padding: 20px 15px;
+}
+
+.popupBlockCarVendor .infoArea .colIcon {
+	white-space: nowrap;
+}
+
+.popupBlockCarVendor .infoArea .colTitle {
+	width: 100%;
+}
+
+.popupBlockCarVendor .infoArea .infoIcon {
+	padding: 0 5px 0 0;
+}
+
+.popupBlockCarVendor .infoArea .infoTitle {
+	font: bold 14px Verdana;
+}
+
+.popupBlockCarVendor .infoArea .infoText {
+	padding: 5px 0;
+	font: 10px Verdana;
+}
+
+.popupBlockCarVendor .infoArea .infoText P {
+	padding: 0 0 5px 0;
+}
+
+.popupBlockCarVendor .descriptionArea {
+	padding: 8px 0 0 0;
+	border-top: 1px solid #c3c3c3;
+	font: 10px Verdana;
+}
+
+.popupBlockCarVendor .descriptionArea H3 {
+	font: bold 10px Verdana;
+	padding: 7px 0;
+}
+
+.popupBlockCarVendor .descriptionArea P {
+	padding: 3px 0;
+}
+
+.popupBlockCarVendor .descriptionArea UL {
+	list-style: none;
+	padding: 0;
+	margin: 3px 0;
+}
+
+.popupBlockCarVendor .descriptionArea LI {
+	background: url(../pictures/icons/bullets/bul_list.gif) no-repeat left 4px;
+	padding: 0 0 0 10px;
+}
+
+/*  Car Price Breakdown  */
+
+.popupBlockCarBreakdown .componentBlock {
+	border: none;
+}
+
+.popupBlockCarBreakdown .componentBody .componentTitleArea {
+	background: #e9e9e9;
+}
+
+.popupBlockCarBreakdown .componentExtraDetails {
+	border-top: none;
+}
+
+
+/******************************************************************************
+
+	INSURANCE POPUPS
+
+******************************************************************************/
+
+/*  Benefits  */
+
+.popupBlockInsuranceBenefits {
+	padding: 1px 1px 0 1px;
+}
+
+.popupBlockInsuranceBenefits .benefitsProductDescription {
+	font: bold 10px Verdana;
+	padding: 3px 3px 5px 3px;
+}
+
+.popupBlockInsuranceBenefits .detailsTable THEAD TD {
+	background: #e2e6f2;
+}
+
+.popupBlockInsuranceBenefits .detailsTable TBODY TD {
+	background: #f8f8f8;
+}
+
+.popupBlockInsuranceBenefits .detailsTable .colLimit {
+	border-right: none;
+}
+
+.popupBlockInsuranceBenefits .detailsTable TBODY .colLimit {
+	text-align: right;
+}
+
+.popupBlockInsuranceBenefits .detailsTable .rowLast TD {
+	border-bottom: none;
+}
+
+
+/*  Price Breakdown  */
+
+.popupBlockInsuranceBreakdown {
+	padding: 1px 1px 0 1px;
+}
+
+.popupBlockInsuranceBreakdown .detailsTable THEAD TD {
+	background: #e2e6f2;
+}
+
+.popupBlockInsuranceBreakdown .detailsTable TBODY TD {
+	background: #f8f8f8;
+}
+
+.popupBlockInsuranceBreakdown .detailsTable .colTerms {
+	border-right: none;
+}
+
+.popupBlockInsuranceBreakdown .detailsTable TBODY .colValue {
+	text-align: right;
+}
+
+.popupBlockInsuranceBreakdown .detailsTable TBODY .colTotal {
+	text-align: right;
+	font: bold 10px Verdana;
+	padding: 4px 3px;
+}
+
+.popupBlockInsuranceBreakdown .detailsTable .rowLast TD {
+	border-bottom: none;
+}
+
+.popupBlockInsuranceBreakdown .breakdownAddOnsDetails {
+	margin-top: 2px;
+}
+
+.popupBlockInsuranceBreakdown .breakdownAddOnsDetails .detailsTable .colDescr {
+	border-right: none;
+}
+
+
+/*  Terms  */
+
+.popupBlockInsuranceTerms {
+	
+}
+
+
+/******************************************************************************
+
+	COMMON POPUPS
+
+******************************************************************************/
+
+/* Session Expiration */
+
+.popupBlockSessionExp {
+	padding: 10px 15px 40px 15px;
+}
+
+.popupBlockSessionExp .textTitle {
+	padding: 10px 0 15px 0;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+}
+
+.popupBlockSessionExp .textBlock {
+	
+}
+
+.popupBlockSessionExp .textFooter {
+	display: none;
+}
+
+
+/* Security Code */
+
+.popupBlockSecurityCode {
+	padding: 20px 30px;
+}
+
+.popupBlockSecurityCode .textHeader,
+.popupBlockSecurityCode .textFooter {
+	display: none;
+}
+
+.popupBlockSecurityCode .textBlock {
+	margin: 0;
+}
+
+.popupBlockSecurityCode .textBlock TD {
+	vertical-align: top;
+}
+
+.popupBlockSecurityCode .textBlock .imageArea IMG {
+	margin: 0 30px 0 0;
+}
+
+.popupBlockSecurityCode .textBlock .textArea {
+	width: 100%;
+	font-size: 12px;
+}
+
+.popupBlockSecurityCode .textBlock .textArea h3 {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+/* Error Type 1 */
+
+.popupBlockError1 {
+	
+}
+
+.popupBlockError1 .popupBlockError1OuterTable {
+	height: 200px;
+	width: 100%;
+}
+
+.popupBlockError1 .popupBlockError1OuterTD {
+	vertical-align: middle;
+}
+
+.popupBlockError1 .popupErrorIcon {
+	padding: 20px 0 10px 0;
+	text-align: center;
+}
+
+.popupBlockError1 .popupErrorIcon DIV {
+	width: 32px;
+	height: 29px;
+	background: url(../pictures/icons/i_error2.gif) no-repeat left top;
+	margin: 0 auto;
+}
+
+.popupBlockError1 .popupErrorText {
+	padding: 5px 15px 20px 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+/* Loading Type 1 */
+
+.popupBlockLoading1 {
+	
+}
+
+.popupBlockLoading1 .popupBlockLoading1OuterTable {
+	height: 200px;
+	width: 100%;
+}
+
+.popupBlockLoading1 .popupBlockLoading1OuterTD {
+	vertical-align: middle;
+}
+
+.popupBlockLoading1 .popupLoadingIcon {
+	padding: 10px 0;
+	text-align: center;
+}
+
+.popupBlockLoading1 .popupLoadingIcon DIV {
+	width: 31px;
+	height: 31px;
+	background: url(../pictures/icons/ajax-loader.gif) no-repeat left top;
+	margin: 0 auto;
+}
+
+.popupBlockLoading1 .popupLoadingText {
+	padding: 3px 15px 10px 15px;
+	font-weight: bold;
+	color: #9a9a9a;
+	text-align: center;
+}
+
+
+/* Static Content */
+
+.popupBlockStaticContent {
+	padding: 8px 25px;
+}
+
+.popupBlockStaticContent .textHeader,
+.popupBlockStaticContent .textFooter {
+	display: none;
+}
+
+.popupBlockStaticContent .textBlock {
+	margin: 0;
+}
+
+.popupBlockStaticContent .textBlock h3 {
+	font-size: 12px;
+	font-weight: bold;
+	margin: 5px 0 10px 0;
+}
+
+.popupBlockStaticContent .textBlock p {
+	margin: 0 0 10px 0;
+}
+
+
+/* Chat Selection */
+
+.popupBlockChatSelection {
+	padding: 5px 10px 30px 10px;
+}
+
+.blockChatReference .headBlock,
+.blockChatReference .footerBlock {
+	display: none;
+}
+
+.blockChatReference .bodyBlock {
+	background: url(../pictures/misc/form_sep.gif) repeat-x left bottom;
+	font: bold 12px Verdana;
+	padding: 15px 30px 20px 30px;
+}
+
+.blockChatOption .headBlock,
+.blockChatOption .footerBlock {
+	display: none;
+}
+
+.blockChatOption .bodyBlock {
+	background: url(../pictures/misc/form_sep.gif) repeat-x left bottom;
+	font: 10px Verdana;
+	padding: 10px 30px 15px 30px;
+}
+
+.blockChatOption .bodyBlock A {
+	font: bold 12px Verdana;
+	text-decoration: none;
+}
+
+.blockChatOption .bodyBlock P {
+	padding: 7px 0 0 0;
+}

@@ -1,0 +1,442 @@
+/******************************************************************************
+
+	COMMON STYLES
+
+******************************************************************************/
+
+.profileMenu {
+	background-color: #F7931E;
+	color: #FFFFFF;
+	
+	border-top: 1px solid #FFFFFF;
+	
+	clear: both;
+
+	width: 100%;
+}
+
+.profileMenu,
+.profileMenu td {
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.profileMenu td {
+	margin: 0;
+	padding: 0 5px 0 5px;
+	
+	color: #FCCD97;
+
+	background-image: url(../pictures/decor/profile-menu-sep.gif);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+}
+
+.profileMenu a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.profileMenu a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.profileMenu span {
+	display: none;
+}
+
+.profileMenu a,
+.profileMenu strong {
+	height: 25px;
+	line-height: 25px;
+	padding: 0 5px 0 5px;
+}
+
+.profileMenu .navigationNextSelected,
+.profileMenu .navigationLastItem {
+	background-image: none;
+}
+
+.profileMenu .navigationSelectedItem {
+	background: none;
+	background-color: #FCCD97;
+	color: #003366;
+}
+
+
+/* Grid */
+
+.gridBlock {
+	border-top: 1px solid #FFF;
+	border-left: 1px solid #FFF;
+}
+
+.gridBlock TD{
+	vertical-align:top;
+	padding:5px 10px; 
+	border-bottom: 1px solid #FFF;
+	font-size: 12px;
+}
+
+.gridBlock .even TD{
+	color: #333333;
+	background: #E5ECF2;
+}
+
+.gridBlock .odd TD{
+	color: #333333;
+	background: #FFFFFF;
+}
+
+.gridBlock A IMG {
+	margin-top: 1px;
+}
+
+
+/******************************************************************************
+
+	LOGIN PAGES
+
+******************************************************************************/
+
+/* Create New Account */
+
+#fbPersonalInfo .formSeparator {
+	height: 4px;
+}
+
+#fbPersonalInfo .usernameValid {
+	margin: 0 0 0 5px;
+}
+
+#fbPersonalInfo .errorNotice {
+	padding: 3px 0 1px 6px;
+}
+
+/* Login */
+
+#fbLogin .formBody {
+	text-align: center;
+}
+
+#fbLogin .formHeader {
+	display: none;
+}
+
+#fbLogin .formBlock {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	text-align: left;
+}
+
+#fbLogin .formSeparator {
+	margin: 6px 0;
+}
+
+#fbLogin .formButtonArea {
+	padding: 5px 0 0 0;
+}
+
+/* Booking Login */
+
+#fbBookingLogin .formHeader {
+	display: none;
+}
+
+#fbBookingLogin .textBlock1 {
+	font-weight: bold;
+	margin: 6px 5px 0 5px;
+}
+
+#fbBookingLogin .formSep3 {
+	display: none;
+}
+
+/* Login With a Reset Password */
+
+#tbLoginWithResetPass .textHeader {
+	display: none;
+}
+
+#tbLoginWithResetPass .textBlock p {
+	margin: 3px 0 0 0;
+}
+
+#pgLoginWithResetPass .pageButtonArea A {
+	width: 29px;
+	width: '50px';
+	text-align: center;
+}
+
+/* Forgot Password Step 1 */
+
+#fbForgotPassStep1 .formHeader {
+	display: none;
+}
+
+#fbForgotPassStep1 .formBody {
+	margin: 6px 0 0 0;
+	text-align: center;
+}
+
+#fbForgotPassStep1 .formSubTitle {
+	width: 530px;
+	margin: 8px auto;
+	padding: 0 5px;
+	text-align: left; 
+	font-weight: normal;
+}
+
+#fbForgotPassStep1 .formBlock {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	text-align: left;
+}
+
+
+/* Forgot Password Step 2 */
+
+#tbForgotPassStep2 .textHeader {
+	display: none;
+}
+
+#tbForgotPassStep2 .textBlock p {
+	margin: 3px 0 0 0;
+}
+
+/* Forgot Password Confirmation Sent */
+
+#tbConfirmationSent .textHeader {
+	display: none;
+}
+
+#tbConfirmationSent .textBlock p {
+	margin: 3px 0 0 0;
+}
+
+
+
+/******************************************************************************
+
+	PROFILE PAGES
+
+******************************************************************************/
+
+/* Profile index page */
+
+#pgProfileIndex .formBody {
+	text-align: center;
+}
+
+#pgProfileIndex .formHeader {
+	text-align: left;
+}
+
+#pgProfileIndex .textBlock {
+	padding: 0;
+	text-align: left;
+}
+
+#pgProfileIndex .formBlock {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	text-align: left;
+}
+
+#pgProfileIndex .gridBlock {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	text-align: left;
+}
+
+#pgProfileIndex .formButtonArea {
+	width: 530px;
+	margin: 0 auto;
+}
+
+#pgProfileIndex .formButtonArea A {
+	width: 200px;	
+	text-align: center;	
+}
+
+/* Change Password */
+
+#pgChangePass #fbAccountInfo .formBody {
+	text-align: center;
+}
+
+#pgChangePass #fbAccountInfo .formBlock {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	text-align: left;
+}
+
+/* Account Settings */
+
+#pgAccountSettings #fbEmailInfo .formBody {
+	text-align: center;
+}
+
+#pgAccountSettings #fbEmailInfo .formBlock {
+	width: 530px;
+	margin: 5px auto 8px auto;
+	text-align: left;
+}
+
+#pgAccountSettings #fbFlightSearchPref .formBody {
+	text-align: center;
+}
+
+#pgAccountSettings #fbFlightSearchPref .formBlock {
+	width: 530px;
+	margin: 5px auto 8px auto;
+	text-align: left;
+}
+
+#pgAccountSettings #fbEmergencyContact .formBody {
+	text-align: center;
+}
+
+#pgAccountSettings #fbEmergencyContact .formBlock {
+	width: 530px;
+	margin: 5px auto 8px auto;
+	text-align: left;
+}
+
+#pgAccountSettings #fbPreferredDestinations .formBody {
+	text-align: center;
+}
+
+#pgAccountSettings #fbPreferredDestinations .formBlock {
+	width: 530px;
+	margin: 5px auto 8px auto;
+	text-align: left;
+}
+
+#pgAccountSettings #fbPreferredDestinations .formLabelArea {
+	padding-left: 0;
+}
+
+/* Maintain Traveller */
+
+#pgProfileTraveller #fbTravellerDetails .formBody {
+	text-align: center;
+}
+
+#pgProfileTraveller #fbTravellerDetails .formBlock {
+	width: 530px;
+	margin: 5px auto 8px auto;
+	text-align: left;
+}
+
+#pgProfileTraveller #fbTravellerRequests .formBody {
+	text-align: center;
+}
+
+#pgProfileTraveller #fbTravellerRequests .formBlock {
+	width: 530px;
+	margin: 5px auto 8px auto;
+	text-align: left;
+}
+
+#pgProfileTraveller #fbTravellerLoyalty .formBody {
+	text-align: center;
+}
+
+#pgProfileTraveller #fbTravellerLoyalty .formBlock {
+	width: 530px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#pgProfileTraveller #fbTravellerLoyalty .colProperty1 {width: 35%}
+#pgProfileTraveller #fbTravellerLoyalty .colProperty2 {width: 40%}
+#pgProfileTraveller #fbTravellerLoyalty .colFormButton {width: 25%}
+
+#pgProfileTraveller #fbTravellerLoyalty .formLabelArea {
+	padding-left: 6px;
+}
+
+#pgProfileTraveller #fbTravellerLoyalty .gridBlock {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	padding: 0 5px;
+	text-align: left;
+}
+
+#pgProfileTraveller #fbTravellerFOID .formBody {
+	text-align: center;
+}
+
+#pgProfileTraveller #fbTravellerFOID .formBlock {
+	width: 530px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#pgProfileTraveller #fbTravellerFOID .colProperty1 {width: 35%}
+#pgProfileTraveller #fbTravellerFOID .colProperty2 {width: 40%}
+#pgProfileTraveller #fbTravellerFOID .colFormButton {width: 25%}
+
+#pgProfileTraveller #fbTravellerFOID .formLabelArea {
+	padding-left: 6px;
+}
+
+#pgProfileTraveller #fbTravellerFOID .gridBlock {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	padding: 0 5px;
+	text-align: left;
+}
+
+#pgProfileTraveller .formButtonArea {
+	padding: 2px 0 0 5px;
+}
+
+/* Contact Details */
+
+#pgProfileContacts #fbContactInfo .formBody {
+	text-align: center;
+}
+
+#pgProfileContacts #fbContactInfo .formBlock {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	text-align: left;
+}
+
+/* Address */
+
+#pgProfileAddress #fbAddressInfo .formBody {
+	text-align: center;
+}
+
+#pgProfileAddress #fbAddressInfo .formBlock {
+	width: 530px;
+	margin: 5px auto 8px auto;
+	text-align: left;
+}
+
+/* Billing */
+
+#pgProfileBillingInfo #fbCardInfo .formBody {
+	text-align: center;
+}
+
+#pgProfileBillingInfo #fbCardInfo .formBlock {
+	width: 530px;
+	margin: 5px auto 8px auto;
+	text-align: left;
+}
+
+#pgProfileBillingInfo #fbBillingAddress .formBody {
+	text-align: center;
+}
+
+#pgProfileBillingInfo #fbBillingAddress .formBlock {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	text-align: left;
+}

@@ -1,0 +1,270 @@
+/******************************************************************************
+
+	STATIC STYLES
+
+******************************************************************************/
+
+.sitemapSubitems {
+	padding: 0 0 0 30px;
+}
+
+.speImages {
+	background-color: #E0E5F2;
+	border: 1px solid #E0E5F2;
+}
+
+.speBook {
+	border: 1px solid #E0E5F2;
+}
+
+.speList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.speList li {
+	background-image: url(../pictures/icons/bullets/bul1.gif);
+	background-position: 0 6px;
+	background-repeat: no-repeat;
+	
+	padding-left: 8px;
+	
+	font-family: Arial;
+	font-size: 11px;
+	color: #003366;
+}
+
+.speBlock {
+	margin: 0 5px 8px 5px;
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+.speSubTitle {
+	font: 12px Arial;
+	font-weight: bold;
+	
+	color: #003366;
+}
+
+
+
+/******************************************************************************
+
+	BOT STYLES
+
+******************************************************************************/
+
+/* bot tabs */
+.t-act{
+	background:#094B91;	
+	border-left:1px solid #B2B2B2;
+	border-right:1px solid #B2B2B2;	
+	border-top:1px solid #B2B2B2;
+}
+.t-act DIV{
+	background:#1669CA;	
+	border-top:1px solid #1E82F7;
+	border-bottom:1px solid #094B91;	
+}
+.m-tabs TD{
+	border-bottom:1px solid #B2B2B2;			
+}
+.m-tabs .m-act{
+	color: #003366;
+	background:#FFDFBA;
+	padding: 0 0 3px 0;
+	border-left:1px solid #B2B2B2;
+	border-right:1px solid #B2B2B2;	
+	border-bottom:0px;
+}
+.m-tabs .m-act-main{
+	color: #FFFFFF;
+	background:#F7931E;
+}
+
+.m-tabs A, .m-tabs A:hover{
+	color: #003366;
+	background:#B9C2DF;	
+	text-decoration: none;
+	display: block;
+	margin: 0 1px 1px 0;
+	height:20px
+}
+.m-tabs IMG{margin-bottom:-2px;}
+
+
+/* bot */
+
+.bot-cont{
+	background:#FFDFBA; /* url(../pictures/misc/bg_bot.gif); */
+	border-left:1px solid #B2B2B2;
+	border-right:1px solid #B2B2B2;
+	border-bottom:1px solid #B2B2B2;
+	border-top:0px;			
+	padding:0 13px 5px 13px;
+}
+
+.bot-cont-border{
+	border:1px solid #B2B2B2;
+}
+
+.bot-cont-main{
+	background:#F7931E;
+}
+
+
+.bot-cont TD, .bot-cont DIV{color:#003366}
+
+.bot-cont .desc-f{
+	font:bold 10px Tahoma;
+	color:#003366;
+	padding: 4px 0 2px 0;
+}
+.bot-cont .desc-f-hor{
+	font:bold 10px Tahoma;
+	color:#003366;
+	padding: 6px 5px 6px 0;
+}
+.bot-inp{
+	font:11px Arial;
+	color:#000;
+	margin:0;
+}
+.bot-pad1{padding:0 2px 0 0}
+.bot-pad2 TD, .bot-pad2{padding:2px 3px 0 0}
+.bot-pad3{padding:8px 0 0 0}
+.bot-pad3 TD{height: 20px}
+
+.bot-line{
+	background:#878787;
+	height:1px;
+	width: 100%;
+	margin: 5px 0 3px 0;
+}
+
+.bot-line1{
+	background: url(../pictures/misc/bot_sep.gif) repeat-x;
+	height:1px;
+	width: 100%;
+	margin: 8px 0 3px 0;
+}
+
+
+/******************************************************************************
+
+	WEATHER STYLES
+
+******************************************************************************/
+
+#weather TD{
+	font:9px verdana;
+	color:#003366;
+}
+#weather .pic{padding:2px 5px 0 0}
+#weather .t10{font:10px Tahoma;}
+#weather .t12{font:12px Tahoma;}
+#weather .a10{font:10px Arial;}
+#weather .a12{font:12px Arial;}
+#weather .a16{font:16px Arial;}
+
+#weather .yellow{color:#F7931E}
+#weather A{
+	color: #1E82F7;
+	text-decoration: underline;
+}
+
+
+/******************************************************************************
+
+	Static styles
+
+******************************************************************************/
+
+/* obsolete beg */
+.contactBlock1 {
+	background-color: #E0E5F2;
+}
+
+.contactBlock2 {
+	background-color: #FFFFFF;
+}
+
+.contactBlock1,
+.contactBlock2 {
+	color: #003366;
+	
+	font-family: Arial;
+	font-size: 11px;
+	
+	padding: 6px 10px 8px 10px;
+}
+/* obsolete end */
+
+
+#pgError500 #tbCustomerSupport {
+	text-align: center;
+	margin: 15px 0 0 0;
+}
+
+#pgError500 #tbCustomerSupport .textHeader, 
+#pgError500 #tbCustomerSupport .textFooter {
+	display: none;
+}
+
+#pgError500 #tbCustomerSupport .textBody {
+	background-color: #E0E5F2;
+	width: 530px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#pgError500 #tbCustomerSupport .textSubTitle {
+	padding: 7px 10px 0 10px;
+	margin: 0;
+}
+
+#pgError500 #tbCustomerSupport .textBlock {
+	padding: 0 0 7px 0;
+	margin: 0 10px;
+}
+
+#pgError500 #tbCustomerSupport .textBlock P {
+	margin: 0;
+}
+
+#pgError500 #tbTechnicalSupport {
+	text-align: center;
+}
+
+#pgError500 #tbTechnicalSupport .textHeader, 
+#pgError500 #tbTechnicalSupport .textFooter {
+	display: none;
+}
+
+#pgError500 #tbTechnicalSupport .textBody {
+	background-color: #FFFFFF;
+	width: 530px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#pgError500 #tbTechnicalSupport .textSubTitle {
+	padding: 7px 10px 0 10px;
+	margin: 0;
+}
+
+#pgError500 #tbTechnicalSupport .textBlock {
+	padding: 0 0 7px 0;
+	margin: 0 10px;
+}
+
+#pgError500 #tbTechnicalSupport .textBlock P {
+	margin: 0;
+}
+
+
+#pgErrorSessionExp .introTextArea p {
+	padding: 6px 0 0 0;
+}

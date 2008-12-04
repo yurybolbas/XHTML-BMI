@@ -1,0 +1,178 @@
+/******************************************************************************
+
+	DEFAULT FORM STYLES
+
+******************************************************************************/
+
+
+.tblFixed {
+	width: 100%;
+	border: 0;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 0;
+}
+
+.tblFixed TD {
+	padding: 0;
+}
+
+.formFixedControl {
+ table-layout: fixed;
+}
+
+
+.spacerHorForm {
+	width: 8px;
+	height: 1px;
+}
+
+.spacerVertForm {
+	width: 1px;
+	height: 8px;
+}
+
+.formHorControl{
+
+}
+
+.formHorControl .colFormLabel {
+	width: 25%
+}
+
+.formHorControl .colFormControl {
+	width: 40%
+}
+
+.formHorControl .colFormDesc {
+	width: 35%
+}
+
+.formVertControl .firstColumn, .formHorControl .firstColumn  {
+	padding-left: 0;
+}
+
+.formVertControl tr.errorNoticeOuter .errorNotice,
+.formHorControl tr.errorNoticeOuter .errorNotice {
+	padding: 7px 0 1px 6px;
+}
+
+.formLabelElement span {
+	display: none;
+}
+
+.mandatoryElement .formLabelElement span {
+	color: #B30000;
+	display: none;
+}
+
+.mandatoryElement .formLabelElement {
+	background: url(../pictures/icons/i_mandatory.gif) no-repeat 0px 0px; 
+}
+
+.formLabelArea {
+	padding: 8px 0 1px 0;
+	padding: "7px 0 0 0";
+	font-family: Arial;
+	font-size: 11px;
+	text-align: left;
+}
+
+.formLabelElementDisabled {
+	color: #6A6A6A;
+	font-weight: bold;
+	cursor: default;
+}
+
+.formLabelElement {
+	display: block;
+	font-weight: bold;
+	cursor: default;
+	padding: 0 0 0 8px;
+	background: url(../pictures/misc/x.gif); /* needed for dynamically set mandatory class in IE */  
+}
+
+.formInArea {
+	padding: 5px 0 1px 6px;
+	padding: "4px 0 0 6px";	
+}
+
+.formInput,
+.formSelect,
+.formTextarea {
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.formInput {
+		
+}
+
+.formSelect {
+	margin-top:expression("1px");
+}
+
+.formCheckbox {
+	/*
+	*/
+}
+
+.formRadio {
+	/*
+	*/
+}
+
+.formInArea .readOnlyValue {
+	font: bold 12px Arial;
+	padding: 2px 0 4px 0;
+	padding: "2px 0 5px 0";
+}
+
+.formDescArea {
+	padding: 7px 0 1px 6px;
+
+	font-family: Arial;
+	font-size: 10px;
+}
+
+.formDescElement {
+	/*
+	*/
+}
+
+.formErrorElement {
+	font-family: Arial;
+	font-size: 12px;
+	color:#B30000;
+}
+
+.formCalendarArea .calendarIcon {
+	padding: 2px 0 0 3px;
+}
+
+.formVertControl .creditCardsArea, 
+.formHorControl .creditCardsArea {
+	padding: 4px 0 0 6px;
+}
+
+.formVertControl .creditCardsArea IMG, 
+.formHorControl .creditCardsArea IMG {
+	margin: 0 4px 0 0;
+}
+
+
+.formBlock .phonesBlock .colTitle {width: 25%}
+.formBlock .phonesBlock .colCountry {width: 17%}
+.formBlock .phonesBlock .colArea {width: 14%}
+.formBlock .phonesBlock .colPhone {width: 27%}
+.formBlock .phonesBlock .colExt {}
+.formBlock .phonesBlock .colSpan4 {width: 75%}
+
+.formBlock .phonesBlock .formLabelArea {
+	padding-left: 6px;
+}
+
+.formBlock .phonesBlock .colTitle {
+	padding-left: 0;
+}

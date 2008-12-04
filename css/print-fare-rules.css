@@ -1,0 +1,31 @@
+
+body {
+	font: 9pt Arial;
+	padding: 15px;
+	margin: 0;	
+}
+
+h1 {
+	font: bold 14pt Arial;
+	margin: 0;		
+}
+
+h2 {
+	font: bold 10.5pt Arial;
+	margin: 0;		
+}
+
+h3 {
+	font: bold 9pt Arial;
+	margin: 0;		
+}
+
+li {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;	
+}
+
+.printLink {
+	float: right;
+	padding: .2em 0 0 5em;
+}

@@ -1,0 +1,1287 @@
+/******************************************************************************
+
+	Flight Selection by Airline block
+
+******************************************************************************/
+
+.flightSelectionByAirline {
+	margin: 20px 0;
+}
+
+.flightSelectionByAirline .headBlock h2 {
+	font: bold 14px Arial;
+}
+
+.flightSelectionByAirline .footerBlock {
+	display: none;
+}
+
+/*  Day Navigation  */
+
+.flightSelectionByAirline .dayNavigation {
+	float: right;
+	width: auto;
+	position: relative;
+	margin-top: -16px;
+}
+
+.flightSelectionByAirline .dayNavigation a,
+.flightSelectionByAirline .dayNavigation span {
+	font: 12px Arial;
+	color: #004982;
+	height: 18px;
+	display: block;
+	float: left;
+}
+
+.flightSelectionByAirline .dayNavigation .prevDay {
+	background: url(../pictures/icons/navigation/i_prev_day.gif) no-repeat left top;
+	padding: 0 0 0 20px;
+	margin: 0 13px 0 0;
+}
+
+.flightSelectionByAirline .dayNavigation .nextDay {
+	background: url(../pictures/icons/navigation/i_next_day.gif) no-repeat right top;
+	padding: 0 20px 0 0;
+	margin: 0 0 0 13px;
+}
+
+.flightSelectionByAirline .dayNavigation .prevDayDisabled {
+	background-image: url(../pictures/icons/navigation/i_prev_day_disabled.gif);
+	color: #cccccc;
+	cursor: default;
+}
+
+.flightSelectionByAirline .dayNavigation .nextDayDisabled {
+	background-image: url(../pictures/icons/navigation/i_next_day_disabled.gif);
+	color: #cccccc;
+	cursor: default;
+}
+
+/*  Comment Block  */
+
+.flightSelectionByAirline .commentBlock {
+	padding: 3px 0 4px 0;
+	font: 12px Arial;
+}
+
+/*  Results Area  */
+
+.flightSelectionByAirline .resultsArea {
+	padding: 0 0 2px 0;
+}
+
+.flightSelectionByAirline .resultsArea .colFlight {width: 9%}
+.flightSelectionByAirline .resultsArea .colDepart {width: 10%}
+.flightSelectionByAirline .resultsArea .colArrive {width: 10%}
+.flightSelectionByAirline .resultsArea .colAirports {width: 9%}
+.flightSelectionByAirline .resultsArea .colDuration {width: 10%}
+.flightSelectionByAirline .resultsArea .colSeats {width: 5%}
+.flightSelectionByAirline .resultsArea .colCost {width: auto}
+
+.flightSelectionByAirline .resultsArea TABLE {
+	border-collapse: separate;
+	border-right: 1px solid #787777;
+}
+
+.flightSelectionByAirline .resultsArea TABLE TABLE {
+	border-collapse: collapse;
+	border-right: none;
+	margin: 0 auto;
+}
+
+.flightSelectionByAirline .resultsArea TD {
+	border-bottom: 1px solid #d1cfcf;
+	border-left: 1px solid #d1cfcf;
+	padding: 5px 0;
+	font: 12px Arial;
+	text-align: center;
+}
+
+.flightSelectionByAirline .resultsArea TD TD {
+	border: none;
+	background: none;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.flightSelectionByAirline .resultsArea THEAD TD {
+	background: #cccaca;
+	border-top: 1px solid #d1cfcf;
+	padding: 5px 0;
+	font-weight: bold;
+}
+
+.flightSelectionByAirline .resultsArea TD DIV {
+	
+}
+
+.flightSelectionByAirline .resultsArea TD DIV DIV {
+	padding: 0;
+}
+
+.flightSelectionByAirline .resultsArea .combineRows TD {
+	border-bottom: none;
+}
+
+.flightSelectionByAirline .resultsArea .combineRows TD.colCost {
+	border-bottom: 1px solid #787777;
+}
+
+.flightSelectionByAirline .resultsArea TBODY .colFlight SPAN.ref {
+	margin-left: 3px;
+}
+
+.flightSelectionByAirline .resultsArea TBODY .colFlight SUP.ref {
+	font: 8px Tahoma;
+	line-height: 4px;
+}
+
+.flightSelectionByAirline .resultsArea TBODY .colDepart, 
+.flightSelectionByAirline .resultsArea TBODY .colArrive {
+	font-weight: bold;
+}
+
+.flightSelectionByAirline .resultsArea TBODY .colDepart SPAN, 
+.flightSelectionByAirline .resultsArea TBODY .colArrive SPAN {
+	font-weight: normal;
+}
+
+.flightSelectionByAirline .resultsArea .colCost {
+	text-align: center;
+	vertical-align: top;
+	border-bottom: 1px solid #787777;
+	border-left: 1px solid #787777;
+}
+
+.flightSelectionByAirline .resultsArea THEAD .colCost {
+	border-top: 1px solid #787777;
+	color: #FFFFFF;
+}
+
+.flightSelectionByAirline .resultsArea TBODY .colCost TABLE {
+	text-align: left;
+	margin: 0 auto;
+}
+
+.flightSelectionByAirline .resultsArea THEAD .colCost1 {
+	background: #7fa4bf;
+}
+
+.flightSelectionByAirline .resultsArea THEAD .colCost2 {
+	background: #4077a0;
+}
+
+.flightSelectionByAirline .resultsArea THEAD .colCost3 {
+	background: #004982;
+}
+
+.flightSelectionByAirline .resultsArea THEAD .colCost4 {
+	background: #c4701a;
+}
+
+.flightSelectionByAirline .resultsArea THEAD .colCost5 {
+	background: #8dc5fd;
+}
+
+.flightSelectionByAirline .resultsArea .colCostSelected {
+	background: #deb739;
+}
+
+.flightSelectionByAirline .resultsArea .resultWithFF1 TBODY .colCost DIV {
+	width: 380px;
+}
+
+.flightSelectionByAirline .resultsArea .resultWithFF2 TBODY .colCost DIV {
+	width: 185px;
+}
+
+.flightSelectionByAirline .resultsArea .resultWithFF3 TBODY .colCost DIV {
+	width: 120px;
+}
+
+.flightSelectionByAirline .resultsArea .resultWithFF4 TBODY .colCost DIV {
+	width: 85px;
+}
+
+.flightSelectionByAirline .resultsArea .resultWithFF1 .colCost DIV DIV,
+.flightSelectionByAirline .resultsArea .resultWithFF2 .colCost DIV DIV,
+.flightSelectionByAirline .resultsArea .resultWithFF3 .colCost DIV DIV,
+.flightSelectionByAirline .resultsArea .resultWithFF4 .colCost DIV DIV {
+	width: auto;
+}
+
+.flightSelectionByAirline .resultsArea .resultWithFF1 .colCost .colPrice,
+.flightSelectionByAirline .resultsArea .resultWithFF2 .colCost .colPrice,
+.flightSelectionByAirline .resultsArea .resultWithFF3 .colCost .colPrice,
+.flightSelectionByAirline .resultsArea .resultWithFF4 .colCost .colPrice {
+	width: 60px;
+}
+
+.flightSelectionByAirline .resultsArea .colCostDisabled .colPrice {
+	color: #747474;
+}
+
+.flightSelectionByAirline .resultsArea .footnote {
+	padding: 4px;
+	font: 10px Arial;
+	color: #333333;
+}
+
+.flightSelectionByAirline .resultsArea .footnote SPAN.ref {
+	margin-left: 3px;
+}
+
+.flightSelectionByAirline .resultsArea .footnote SUP.ref {
+	font: 8px Tahoma;
+	line-height: 4px;
+}
+
+
+/******************************************************************************
+
+	Flight Selection by Airline No Fare Families block
+
+******************************************************************************/
+
+.flightSelectionByAirlineNoFF {
+	margin: 9px 0 10px 0;
+}
+
+.flightSelectionByAirlineNoFF .headBlock h2 {
+	font: bold 13px Tahoma;
+	padding: 0 0 10px 0;
+}
+
+.flightSelectionByAirlineNoFF .footerBlock {
+	display: none;
+}
+
+
+/*  Day Navigation  */
+
+.flightSelectionByAirlineNoFF .dayNavigation {
+	float: right;
+	width: auto;
+	position: relative;
+	margin-top: -26px;
+}
+
+.flightSelectionByAirlineNoFF .dayNavigation a,
+.flightSelectionByAirlineNoFF .dayNavigation span {
+	font: 12px Arial;
+	color: #004982;
+	height: 18px;
+	display: block;
+	float: left;
+}
+
+.flightSelectionByAirlineNoFF .dayNavigation .prevDay {
+	background: url(../pictures/icons/navigation/i_prev_day.gif) no-repeat left top;
+	padding: 0 0 0 20px;
+	margin: 0 13px 0 0;
+}
+
+.flightSelectionByAirlineNoFF .dayNavigation .nextDay {
+	background: url(../pictures/icons/navigation/i_next_day.gif) no-repeat right top;
+	padding: 0 20px 0 0;
+	margin: 0 0 0 13px;
+}
+
+.flightSelectionByAirlineNoFF .dayNavigation .prevDayDisabled {
+	background-image: url(../pictures/icons/navigation/i_prev_day_disabled.gif);
+	color: #cccccc;
+	cursor: default;
+}
+
+.flightSelectionByAirlineNoFF .dayNavigation .nextDayDisabled {
+	background-image: url(../pictures/icons/navigation/i_next_day_disabled.gif);
+	color: #cccccc;
+	cursor: default;
+}
+
+
+/*  Results Area  */
+
+.flightSelectionByAirlineNoFF .resultsArea {
+	padding: 0 0 2px 0;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea .colCost {width: 14%}
+.flightSelectionByAirlineNoFF .resultsArea .colDepart {width: 25%}
+.flightSelectionByAirlineNoFF .resultsArea .colArrive {width: 25%}
+.flightSelectionByAirlineNoFF .resultsArea .colDuration {width: 13%}
+.flightSelectionByAirlineNoFF .resultsArea .colFlight {width: 12%}
+.flightSelectionByAirlineNoFF .resultsArea .colCabin {width: 11%}
+
+
+.flightSelectionByAirlineNoFF .resultsArea TABLE {
+	border-right: 1px solid #E6E6E6;
+	border-top: 1px solid #E6E6E6;	
+	border-collapse: separate;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea TABLE TABLE {
+	border: none;
+	border-collapse: collapse;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea TD {
+	border-bottom: 1px solid #E6E6E6;
+	border-left: 1px solid #E6E6E6;
+	font: 10px Verdana;
+	vertical-align: top;
+}
+
+
+.flightSelectionByAirlineNoFF .resultsArea .combineRows TD {
+	border-bottom: none;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea .combineRows TD.colCost {
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea TD TD {
+	border: none;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea THEAD TD {
+	background: #E6E6E6;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea THEAD TD DIV {
+	padding: 4px 5px;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea TD DIV {
+	padding: 3px 5px 2px 5px;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea TD DIV DIV {
+	padding: 0;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea td.colCost {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea .colCost TABLE {
+	margin: 0 auto;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea .colCost TABLE td {
+	vertical-align: middle;	
+}
+
+.flightSelectionByAirlineNoFF .resultsArea TBODY .colCost DIV {
+	padding: 0 4px;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea TBODY .colCost DIV DIV {
+	padding: 0;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea .colCost .colPrice {
+	width: 60px;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea TBODY .colDepart .place, 
+.flightSelectionByAirlineNoFF .resultsArea TBODY .colArrive .place {
+	font-weight: bold;
+}
+
+
+.flightSelectionByAirlineNoFF .resultsArea TBODY .colDepart .transf, 
+.flightSelectionByAirlineNoFF .resultsArea TBODY .colArrive .transf {
+	color: #999999;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea TBODY .colFlight IMG {
+	margin: 0 5px 0 0;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea TBODY .colFlight SPAN.ref {
+	margin-left: 3px;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea TBODY .colFlight SUP.ref {
+	font: 8px Tahoma;
+	line-height: 4px;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea .rowSelected TD {
+	background: #e8f012;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea .flightNotAvail TD,
+.flightSelectionByAirlineNoFF .resultsArea .flightNotAvail TD A,
+.flightSelectionByAirlineNoFF .resultsArea .flightNotAvail TD A:hover,
+.flightSelectionByAirlineNoFF .resultsArea .flightNotAvail TD .transf {
+	color: #CCCCCC;
+}
+
+
+.flightSelectionByAirlineNoFF .resultsArea .footnote {
+	padding: 4px 4px 0 4px;
+	font: 10px Verdana;
+	color: #000000;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea .footnote SPAN.ref {
+	margin-left: 3px;
+}
+
+.flightSelectionByAirlineNoFF .resultsArea .footnote SUP.ref {
+	font: 8px Tahoma;
+	line-height: 4px;
+}
+
+
+/******************************************************************************
+
+	Flight Selection One Way Combinable
+
+******************************************************************************/
+
+.flightSelectionOWC .commentBlock {
+	background: #e6e6e6;
+	padding: 3px 5px 4px 5px;
+}
+
+/*  Calendar Tabs  */
+
+.flightSelectionOWC .calendarTabsArea {
+	margin-top: 10px;
+}
+
+.flightSelectionOWC .tabsTable td {
+	border-bottom: none;
+	border-left: 1px solid #FFFFFF;
+	vertical-align: bottom;
+	text-align: center;
+	font: normal 11px Arial;
+	color: #333333;
+	cursor: pointer;
+}
+
+.flightSelectionOWC .tabsTable td div {
+	background: #FFFFFF url(../pictures/misc/owc_calendar_tab_bg.gif) no-repeat left top;
+	padding: 0 0 0 3px;
+}
+
+.flightSelectionOWC .tabsTable td div div {
+	background: #FFFFFF url(../pictures/misc/owc_calendar_tab_bg.gif) no-repeat right top;
+	padding: 3px 5px 3px 5px;
+}
+
+.flightSelectionOWC .tabsTable td.selectedTab {
+	font-weight: normal;
+	cursor: default;
+}
+
+.flightSelectionOWC .tabsTable td.selectedTab div {
+	background: #CDECF1 url(../pictures/misc/owc_calendar_tab_act_bg.gif) no-repeat left top;
+}
+
+.flightSelectionOWC .tabsTable td.selectedTab div div {
+	background: #CDECF1 url(../pictures/misc/owc_calendar_tab_act_bg.gif) no-repeat right top;
+	padding: 3px 3px 3px 1px;
+}
+
+.flightSelectionOWC .tabsTable td.disabledTab,
+.flightSelectionOWC .tabsTable td.disabledTab .price {
+	color: #CCCCCC;
+	cursor: default;
+}
+
+.flightSelectionOWC .tabsTable td .price {
+	font: 11px Arial;
+	color: #333333;
+}
+
+
+/******************************************************************************
+
+	Flight Selection Calendar block
+
+******************************************************************************/
+
+.flightSelectionCalendarCont {
+	margin: 10px 0 0 0;
+}
+
+.flightSelectionCalendar .headBlock {
+	padding: 0 0 10px 0;
+}
+
+.flightSelectionCalendar .headBlock h2 {
+	font: bold 14px Arial;
+}
+
+.flightSelectionCalendar .footerBlock {
+	display: none;
+}
+
+/*  Day Navigation  */
+
+.flightSelectionCalendar .dayNavigation {
+	text-align: right;
+}
+
+.flightSelectionCalendar .dayNavigation a,
+.flightSelectionCalendar .dayNavigation span {
+	font: 12px Arial;
+	color: #004982;
+	display: inline-block;
+}
+
+.flightSelectionCalendar .dayNavigation .prevDay {
+	background: url(../pictures/icons/navigation/i_prev_day.gif) no-repeat left top;
+	padding: 2px 0 2px 20px;
+	margin: 0 13px 0 0;
+}
+
+.flightSelectionCalendar .dayNavigation .nextDay {
+	background: url(../pictures/icons/navigation/i_next_day.gif) no-repeat right top;
+	padding: 2px 20px 2px 0;
+	margin: 0 0 0 13px;
+}
+
+.flightSelectionCalendar .dayNavigation .prevDayDisabled {
+	background-image: url(../pictures/icons/navigation/i_prev_day_disabled.gif);
+	color: #cccccc;
+	cursor: default;
+}
+
+.flightSelectionCalendar .dayNavigation .nextDayDisabled {
+	background-image: url(../pictures/icons/navigation/i_next_day_disabled.gif);
+	color: #cccccc;
+	cursor: default;
+}
+
+/* Calendar */
+
+.flightSelectionCalendar .calendarArea {
+	margin: 0 0 30px 0;
+}
+
+.flightSelectionCalendar .calendarTable {
+	width: 100%;
+}
+
+.flightSelectionCalendar .calendarTable TH {
+	width: 14.28%;
+	border-right: 1px solid #336d9b;
+	border-bottom: 1px solid #d1cfcf;
+	background-color: #004982;
+	padding: 9px 0;
+	font: bold 12px Arial;
+	color: #ffffff;
+	text-align: center;
+}
+
+.flightSelectionCalendar .calendarTable TH.colLast {
+	border-right: none;
+}
+
+.flightSelectionCalendar .calendarTable TD {
+	border-bottom: 1px solid #d1cfcf;
+	border-left: 1px solid #d1cfcf;
+	background-color: #e7e6e6;
+	height: 40px;
+	vertical-align: middle;
+	font: 12px Arial;
+	text-align: center;
+}
+
+.flightSelectionCalendar .calendarTable TD.colLast {
+	border-right: 1px solid #d1cfcf;
+}
+
+.flightSelectionCalendar .calendarTable TD TD {
+	background: none;
+	border: none;
+	text-align: left;
+}
+
+.flightSelectionCalendar .calendarTable TD.available {
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+.flightSelectionCalendar .calendarTable TD.available TD {
+	cursor: pointer;
+}
+
+.flightSelectionCalendar .calendarTable TD.selected {
+	background-color: #deb739;
+	font-weight: bold;
+	cursor: default;
+}
+
+.flightSelectionCalendar .calendarTable TD.selected TD {
+	font-weight: bold;
+	cursor: default;
+}
+
+.flightSelectionCalendar .calendarTable TD.empty {
+	background-color: #ffffff;
+}
+
+.flightSelectionCalendar .calendarTable .date {
+	padding: 2px 0 1px 0;
+}
+
+.flightSelectionCalendar .calendarTable div.avail {
+	display: none;
+}
+
+.flightSelectionCalendar .calendarTable table.avail {
+	margin: 0 auto;
+	display: none;
+}
+
+.flightSelectionCalendar .calendarTable TD.available table.avail {
+	display: table;
+	display: "block";
+}
+
+.flightSelectionCalendar .calendarTable table.avail TD {
+	height: 25px;
+	vertical-align: middle;
+}
+
+/* Check Availability */
+
+#fbCheckAvail {
+	margin: 0 0 11px 0;
+}
+
+#fbCheckAvail .formTitle {
+	background-color: #004982;
+	padding: 5px 23px;
+	text-transform: none;
+	font: bold 14px Arial;
+	color: #FFFFFF;
+}
+
+#fbCheckAvail .formBody {
+	border: 1px solid #e5e3e3;
+	border-top: none;
+	padding: 7px 18px 19px 18px;
+}
+
+#fbCheckAvail .formFooter {
+	display: none;
+}
+
+#fbCheckAvail .textBlock {
+	margin-bottom: 9px;
+	font: 12px Arial;
+}
+
+#fbCheckAvail .textBlock p {
+	margin-top: 0;
+	padding-top: 4px;
+}
+
+#fbCheckAvail .formBlock .fieldLabel {
+	font: bold 12px Arial;
+	padding: 0 0 3px 0;
+}
+
+#fbCheckAvail .formBlock .fieldSelect {
+	padding: 0 43px 0 0;
+}
+
+#fbCheckAvail .formBlock .fieldSelectLast {
+	padding: 0 41px 0 0;
+}
+
+#fbCheckAvail .formBlock .fieldSelect select {
+	width: 40px;
+	font: 12px Arial;
+}
+
+#fbCheckAvail .formBlock .buttonArea {
+	padding: 15px 0 0 0;
+}
+
+
+/******************************************************************************
+
+	Flight Selection Calendar One Way Combinable
+
+******************************************************************************/
+
+.flightSelectionCalendarOWC .calendarTable TD.available {
+	background: #e3f1ff;
+}
+
+.flightSelectionCalendarOWC .calendarTable TD.selected {
+	background-color: #f2ef1c;
+}
+
+.flightSelectionCalendarOWC .calendarTable TD.disabled,
+.flightSelectionCalendarOWC .calendarTable TD.disabled table.price TD {
+	color: #747474;
+}
+
+.flightSelectionCalendarOWC .calendarTable div.price {
+	padding: 6px 0 7px 0;
+}
+
+.flightSelectionCalendarOWC .calendarTable table.price {
+	margin: 0 auto;
+}
+
+.flightSelectionCalendarOWC .calendarTable table.price TD {
+	height: 25px;
+	vertical-align: middle;
+	color: #000000;
+}
+
+.flightSelectionCalendarOWC .calendarTable table.price .colPrice {
+	width: 60px;
+}
+
+/******************************************************************************
+
+	Flight Selection Fares Calendar block
+
+******************************************************************************/
+
+.flightSelectionFaresCalendar {
+	margin: 0 0 5px 0;
+}
+
+.flightSelectionFaresCalendar .headBlock h2 {
+	font: bold 14px Arial;
+}
+
+.flightSelectionFaresCalendar .footerBlock {
+	display: none;
+}
+
+.flightSelectionFaresCalendar .commentBlock {
+	font: 12px Arial;
+	padding: 3px 0 3px 0;
+}
+
+.flightSelectionFaresCalendar .subHeadBlock {
+	display: none;
+}
+
+.flightSelectionFaresCalendar .faresCalendar {
+	width: 100%;
+	border-collapse: separate;
+	margin: 12px 0 0 0;
+}
+
+.flightSelectionFaresCalendar .faresCalendar TH,
+.flightSelectionFaresCalendar .faresCalendar TD {
+	text-align: center;
+	vertical-align: middle;
+	font: 12px Arial;
+}
+
+.flightSelectionFaresCalendar .faresCalendar TH {
+	background: #004982;	
+	padding: 9px 0;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .inboundHead TH {
+	border-right: 1px solid #336d9b;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .inboundHead TH.colLast {
+	border-right: none;
+}
+
+.flightSelectionFaresCalendar .faresCalendar TH.outboundHead,
+.flightSelectionFaresCalendar .faresCalendar TH.navCell {
+	width: 16%;
+	border-bottom: 1px solid #336d9b;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .rowLast TH {
+	border-bottom: none;
+}
+
+.flightSelectionFaresCalendar .faresCalendar TH.current {
+	background: #deb739;
+	color: #000000;
+}
+
+.flightSelectionFaresCalendar .faresCalendar TD {
+	width: 12%;
+	background: #ffffff;
+	border-right: 1px solid #d1cfcf;
+	border-bottom: 1px solid #d1cfcf;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.flightSelectionFaresCalendar .faresCalendar TD TABLE {
+	margin: 0 auto;
+}
+
+.flightSelectionFaresCalendar .faresCalendar TD TD {
+	width: auto;
+	background: none;
+	border: none;
+}
+
+.flightSelectionFaresCalendar .faresCalendar TD A {
+	color: #333333;
+	text-decoration: none;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .notAvail {
+	background: #e7e6e6;
+	color: #bebebe;
+	cursor: default;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .notAvail DIV {
+	visibility: hidden;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .lowest {
+	border-right: 1px solid #d1cfcf;
+	border-bottom: 1px solid #d1cfcf;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .lowestOver {
+	border-bottom: 1px solid #d1cfcf;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .lowestPrev {
+	border-right: 1px solid #d1cfcf;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .selected {
+	background: #deb739;
+	border-right: 1px solid #d1cfcf;
+	border-bottom: 1px solid #d1cfcf;
+	cursor: default;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .selected TD {
+	cursor: default;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .selected A {
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	cursor: default;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .selectedOver {
+	border-bottom: 1px solid #d1cfcf;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .selectedPrev {
+	border-right: 1px solid #d1cfcf;
+}
+
+.flightSelectionFaresCalendar .faresCalendar .colPrice {
+	width: 50px;
+	text-align: left;
+}
+
+/* Legend */
+
+.flightSelectionFaresCalendar .faresCalendarLegend {
+	padding: 10px 10px 8px 55px;
+	border: 1px solid #d1cfcf;
+	border-top: none;
+}
+
+.flightSelectionFaresCalendar .faresCalendarLegend .colTitle {
+	font: 12px Arial;
+}
+
+.flightSelectionFaresCalendar .faresCalendarLegend .colSel,
+.flightSelectionFaresCalendar .faresCalendarLegend .colLow,
+.flightSelectionFaresCalendar .faresCalendarLegend .colNA {
+	font: 12px Arial;
+	padding: 0 10px 0 30px;
+}
+
+.flightSelectionFaresCalendar .faresCalendarLegend .colSelSamp,
+.flightSelectionFaresCalendar .faresCalendarLegend .colLowSamp,
+.flightSelectionFaresCalendar .faresCalendarLegend .colNASamp {
+	width: 25px;
+}
+
+.flightSelectionFaresCalendar .faresCalendarLegend .selectedSample {
+	background: #deb739;
+	border: 1px solid #d1cfcf;
+}
+
+.flightSelectionFaresCalendar .faresCalendarLegend .lowestSample {
+	background: #ffffff;
+	border: 1px solid #d1cfcf;
+}
+
+.flightSelectionFaresCalendar .faresCalendarLegend .notAvailSample {
+	background: #e7e6e6;
+	border: 1px solid #d1cfcf;
+}
+
+
+.flightSelectionFaresCalendar .blockSeparator {
+	display: none; 
+}
+
+
+/******************************************************************************
+
+	Flight Selection Schedule block
+
+******************************************************************************/
+
+/* Columns */
+
+.flightSelectionSchedule TABLE {table-layout: fixed}
+.flightSelectionSchedule .colRadio {width: 5%; text-align: center}
+.flightSelectionSchedule .colDepart {width: 29%}
+.flightSelectionSchedule .colArrive {width: 29%}
+.flightSelectionSchedule .colFlight {width: 18%}
+.flightSelectionSchedule .colDetails {width: 19%}
+.flightSelectionSchedule .colHeading {width: 95%}
+
+/* Header */
+
+.flightSelectionScheduleHeader {
+	margin: 6px 0 5px 0;
+}
+
+.flightSelectionScheduleHeader TD {
+	background: #CCCACB;
+	font: bold 12px Arial;
+}
+
+.flightSelectionScheduleHeader TD DIV {
+	padding: 7px 0 7px 3px;
+}
+
+/* Body */
+
+.flightSelectionScheduleBody .headBlock {
+	padding: 10px 0;
+}
+
+.flightSelectionScheduleBody .headBlock h2 {
+	font: bold 14px Arial;
+}
+
+.flightSelectionScheduleBody .footerBlock {
+	display: none;
+}
+
+.flightSelectionScheduleBody .bodyBlock {
+	border: 1px solid #CCCACB;
+	padding: 2px;
+	margin: 6px 0 5px 0;
+}
+
+.flightSelectionScheduleBody .flightHeading TD {
+	background: #CCCACB;
+	font: bold 12px Arial;
+	border-bottom: 2px solid #FFFFFF;
+}
+
+.flightSelectionScheduleBody .flightHeading TD DIV {
+	padding: 5px 0 5px 0;
+}
+
+.flightSelectionScheduleBody .flightLeg TD {
+	background: #ffffff;
+	font: 12px Arial;
+	vertical-align: top;
+}
+
+.flightSelectionScheduleBody .flightLeg TD DIV {
+	padding: 8px 5px 10px 0;
+}
+
+.flightSelectionScheduleBody .flightLeg .colComment DIV {
+	padding: 0 5px 10px 0;
+}
+
+.flightSelectionScheduleBody .flightLegSelected TD {
+	background: #deb739;
+}
+
+.flightSelectionScheduleBody .flightLegNotAvail .colComment {
+	color: #575757;
+}
+
+.flightSelectionScheduleBody .flightLeg .orig, 
+.flightSelectionScheduleBody .flightLeg .dest {
+	font-weight: bold;
+}
+
+.flightSelectionScheduleBody .flightLeg .time {
+	font-weight: bold;
+}
+
+.flightSelectionScheduleBody .flightLeg .flightNum IMG {
+	margin: 0 5px 0 0;
+}
+
+.flightSelectionScheduleBody .flightLeg .flightNum SPAN.ref {
+	margin-left: 3px;
+}
+
+.flightSelectionScheduleBody .flightLeg .flightNum SUP.ref {
+	font: 8px Tahoma;
+	line-height: 4px;
+}
+
+
+.flightSelectionScheduleBody .blockSeparator {
+	margin: 2px 0;
+}
+
+.flightSelectionSchedule .footnote {
+	padding: 4px 0 0 0;
+	font: 11px Arial;
+	color: #000000;
+}
+
+.flightSelectionScheduleBody .footnote SPAN.ref {
+	margin-left: 3px;
+}
+
+.flightSelectionScheduleBody .footnote SUP.ref {
+	font: 8px Tahoma;
+	line-height: 4px;
+}
+
+
+
+
+/******************************************************************************
+
+	Flight Selection Return Fares block
+
+******************************************************************************/
+
+/* Columns */
+
+.flightSelectionReturnFares .colDeparture {width: 23%}
+.flightSelectionReturnFares .colArrival {width: 23%}
+.flightSelectionReturnFares .colDuration {width: 19%}
+.flightSelectionReturnFares .colSeats {width: 8%}
+.flightSelectionReturnFares .colFlight {width: 16%}
+.flightSelectionReturnFares .colCabin {width: 11%}
+
+/* Header */
+
+.flightSelectionReturnFaresHeader .headBlock h2 {
+	font: bold 13px Tahoma;
+}
+
+.flightSelectionReturnFaresHeader {
+	margin: 4px 0;
+}
+
+.flightSelectionReturnFaresHeader .commentBlock {
+	font: 10px Verdana;
+	padding: 6px 0 7px 0;
+}
+
+.flightSelectionReturnFaresHeader TD {
+	background: #e6e6e6;
+	font: 10px Verdana;
+}
+
+.flightSelectionReturnFaresHeader TD DIV {
+	padding: 3px 4px 4px 4px;
+}
+
+.flightSelectionReturnFaresHeader .footerBlock {
+	display: none;
+}
+
+/* Body */
+
+.flightSelectionReturnFaresBody .headBlock {
+	background-color: #d3d0f8;
+	padding: 3px 5px;
+}
+
+.flightSelectionReturnFaresBody .headBlock .colPrice {
+	font: bold 12px Verdana;
+}
+
+.flightSelectionReturnFaresBody .headBlock .colPrice .link {
+	font: 10px Verdana;
+}
+
+.flightSelectionReturnFaresBody .headBlock .colPrice .cpn {
+	font: 10px Verdana;
+	position: relative;
+	top: -4px;
+	padding: 0 5px 0 2px;
+}
+
+.flightSelectionReturnFaresBody .headBlock .colPrice .cpnDiscount {
+	font: 10px Verdana;
+	padding: 0 0 0 20px;
+}
+
+.flightSelectionReturnFaresBody .headBlock .colInfo {
+	font: 10px Verdana;
+	text-align: right;
+	padding-right: 9px;
+}
+
+.flightSelectionReturnFaresBody .footerBlock {
+	clear: both;
+}
+
+.flightSelectionReturnFaresBody .resultsArea {
+	border: 1px solid #cccccc;
+	border-bottom: none;
+}
+
+.flightSelectionReturnFaresBody .resultsArea TD {
+	border-bottom: 1px solid #cccccc;
+	font: 10px Verdana;
+	vertical-align: top;
+}
+
+.flightSelectionReturnFaresBody .resultsArea .combineBottom TD {
+	border-bottom: none;
+	background: url(../pictures/misc/form_sep.gif) repeat-x left bottom;
+}
+
+.flightSelectionReturnFaresBody .resultsArea TD DIV {
+	padding: 3px 4px 2px 4px;
+}
+
+.flightSelectionReturnFaresBody .resultsArea .combineBottom TD DIV {
+	padding: 3px 4px 3px 4px;
+}
+
+.flightSelectionReturnFaresBody .resultsArea .transfer {
+	color: #919191;
+}
+
+.flightSelectionReturnFaresBody .resultsArea .place {
+	font-weight: bold;
+}
+
+.flightSelectionReturnFaresBody .flightNum SPAN.ref {
+	margin-left: 3px;
+}
+
+.flightSelectionReturnFaresBody .flightNum SUP.ref {
+	font: 8px Tahoma;
+	line-height: 4px;
+}
+
+.flightSelectionReturnFares .footnote {
+	padding: 4px 0 10px 0;
+	font: 10px Verdana;
+	color: #000000;
+	float: left;
+	width: 75%;
+}
+
+.flightSelectionReturnFaresBody .footnote SPAN.ref {
+	margin-left: 3px;
+}
+
+.flightSelectionReturnFaresBody .footnote SUP.ref {
+	font: 8px Tahoma;
+	line-height: 4px;
+}
+
+.flightSelectionReturnFaresBody .buttonArea {
+	padding: 12px 0;
+}
+
+.flightSelectionReturnFaresNotAvail {
+	padding: 0 0 20px 0;
+}
+
+.flightSelectionReturnFaresNotAvail .resultsArea TD,
+.flightSelectionReturnFaresNotAvail .resultsArea .combineBottom TD {
+	background-color: #F2F2F2;
+}
+
+.flightSelectionReturnFaresNotAvail .resultsArea .groupCB TD {
+	border-bottom: none;
+}
+
+.flightSelectionReturnFaresNotAvail .resultsArea .colComment DIV {
+	padding: 5px 4px;
+	color: #575757;
+}
+
+.flightSelectionReturnFaresNotAvail .buttonArea {
+	display: none;
+}
+
+/* button area - these styles must be deleted after old proto clean-up */
+
+.flightSelectionReturnFaresBody .buttonArea a.button1, 
+.flightSelectionReturnFaresBody .buttonArea a.button1:hover, 
+.flightSelectionReturnFaresBody .buttonArea a.button1:visited,
+.flightSelectionReturnFaresBody .buttonArea a.button1:link, 
+.flightSelectionReturnFaresBody .buttonArea a.button1:active, 
+.flightSelectionReturnFaresBody .buttonArea a.button1:focus {
+	background: #d3991b url(../pictures/misc/main-button-bg.gif) repeat-x left top;
+	border: none;
+	padding: 0;
+	display: block;
+	width: '100%';
+	font: bold 16px Arial;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.flightSelectionReturnFaresBody .buttonArea a.button1 span {
+	display: block;
+	background: url(../pictures/misc/main-button-left.gif) no-repeat left top;
+}
+
+.flightSelectionReturnFaresBody .buttonArea a.button1 span span {
+	background: url(../pictures/misc/main-button-right.gif) no-repeat right top;
+	padding: 3px 15px 3px 15px;
+}
+
+
+/******************************************************************************
+
+	Discount Info block
+
+******************************************************************************/
+
+.discountInfoBlock .headBlock, .discountInfoBlock .footerBlock {
+	display: none;
+}
+
+.discountInfoBlock .bodyBlock {
+	padding: 0 0 25px 0;
+	font: 12px Arial;
+}
+
+.discountInfoBlock .bodyBlock H3 {
+	font: bold 12px Arial;
+}
+
+.discountInfoBlock .bodyBlock P {
+	padding: 0 0 0 10px;
+}

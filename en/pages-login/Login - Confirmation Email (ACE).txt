@@ -1,0 +1,29 @@
+﻿Welcome, Mr. John Smith!
+
+Thank you for your registration to the Companyname.com.
+Your account information is:
+
+    Username: Johny72
+    Password: Manchester_88
+
+Now you have the possibility of manage your profile. You are able to specify 
+credit card and delivery options, your information will be encrypted and no 
+other person except for you will be able to see it. You will be able to select 
+your most frequent passengers and save their names, loyalty flyer numbers and 
+personal information, and when you make a reservation, just choose one travel 
+companion from a list.
+
+We will not only remember your personal information and complete the 
+reservation and purchase fields for you with them. The Reservations Tool on 
+the left of the page will also adjust to fit your preferences.When you log in 
+to your account, you will be able to see all the itineraries that you 
+reserved, purchased and looked up — you will be able to finish the booking 
+process for these with just one click. By being a registered user, you will 
+have access to exclusive discounts and benefits.
+
+If you have questions about your reservation please call Companyname
+at X-XXX-XXXXXXX and have the itinerary number ready.
+Thank you for choosing Companyname.com
+
+_______________________________________________________________________________
+Powered by Datalex.

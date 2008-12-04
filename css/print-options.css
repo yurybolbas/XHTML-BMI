@@ -1,0 +1,62 @@
+/*  Common Styles  */
+
+.blockOverLogo,
+.navigationTop,
+.blockUnderLogo {
+	display: none
+}
+
+.footerLine,
+.navigationBottom {
+	display: none;
+}
+
+.layoutBodyNarrowArea {
+	display: none;
+}
+
+.mainTopServicesTabs {
+	display: none;
+}
+
+.stepsNavAreaOuter {
+	display: none;
+}
+
+.pageTitleArea .links .print {
+	display: none;
+}
+
+.itineraryPricingBlock .collapsedSection .expandedPart {
+	display: block;
+}
+
+.itineraryPricingBlock .collapsedSection .collapsedPart {
+	display: none;
+}
+
+.componentBlock .componentHeader .links .fareRules {
+	display: none;
+}
+
+.pageButtonArea {
+	display: none;
+}
+
+
+/*  Summary Page  */
+
+#pgItinerarySummary .proceedOptionsBlock {
+	display: none;
+}
+
+#pgItinerarySummary #fbTripPlanner {
+	display: none;
+}
+
+
+/*  Confirmation Page  */
+
+#pgConfirmation #fbConfirmationEmail {
+	display: none;
+}

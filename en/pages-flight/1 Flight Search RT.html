@@ -1,0 +1,846 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DLEXPRD</title>
+<script language="JavaScript" type="text/javascript">
+<!--		
+function registerJS(jsName){
+	return;
+}
+--></script>
+<link rel="stylesheet" type="text/css" href="../../css/all.css" />
+<link rel="stylesheet" type="text/css" href="../../css/print.css" media="print" />
+<script src="../../js/bot_script.js" type="text/JavaScript"></script>
+<script src="../../js/calendar.js" type="text/JavaScript"></script>
+<script src="../../js/dialog.js" type="text/JavaScript"></script>
+<script src="../../js/drilldown.js" type="text/JavaScript"></script>
+<script src="../../js/global.js" type="text/JavaScript"></script>
+<script src="../../js/utils.js" type="text/JavaScript"></script>
+<script src="../../js/navigation.js" type="text/JavaScript"></script>
+<script src="../../js/prototype_source_loader.js" type="text/javascript"></script>
+<script src="../../js/seatmap.js" type="text/JavaScript"></script>
+<script src="../../js/version.js" type="text/JavaScript"></script>
+<script src="../../en/js/airport_data.js" type="text/JavaScript"></script>
+<script src="../../en/js/navigation.js" type="text/JavaScript"></script>
+<script src="../../en/js/popup_templates.js" type="text/JavaScript"></script>
+<script type="text/JavaScript">
+<!--
+			function showHideCouponForm(type) { 
+				document.getElementById('couponLinkBlock').style.display = (type == 1) ? 'none' : 'block';
+				document.getElementById('couponFormBlock').style.display = (type == 1) ? 'block' : 'none';
+			}
+		
+			function switchFlightType(type) {
+				switch (type) {
+					case 'OW':
+						document.getElementById('returnBlockDate').style.display = 'none';
+						document.getElementById('returnBlockTime').style.display = 'none';
+						document.getElementById('flightSearchOptionsGroup').style.display = 'block';
+						document.getElementById('flightSearchLocationsRT').style.display = 'block';
+						document.getElementById('flightSearchLocationsMC').style.display = 'none';
+						break;
+					case 'RT':
+						document.getElementById('returnBlockDate').style.display = 'block';
+						document.getElementById('returnBlockTime').style.display = 'block';
+						document.getElementById('flightSearchOptionsGroup').style.display = 'block';
+						document.getElementById('flightSearchLocationsRT').style.display = 'block';
+						document.getElementById('flightSearchLocationsMC').style.display = 'none';
+						break;
+					case 'MC':
+						document.getElementById('flightSearchOptionsGroup').style.display = 'none';
+						document.getElementById('flightSearchLocationsRT').style.display = 'none';
+						document.getElementById('flightSearchLocationsMC').style.display = 'block';
+						break;
+				}
+			}
+			
+			function handleSearchButtonClick() {
+				var searchType = getElementValue(document.getElementsByName('flightSearchType'));
+				if (searchType == 'MC') {
+					window.location = '2 Flight Selection Schedule.html';
+					return;
+				}
+				
+				var isFlexible = getElementValue(document.getElementsByName('flightSearchIsFlexible'));
+				if (isFlexible == 'true') {
+					window.location = '2 Flight Selection Fares Calendar.html';
+					return;
+				}
+				
+				window.location = '2 Flight Selection Airline.html';
+			}
+		//--></script>
+</head>
+<body>
+<!-- BEGIN HEIGHT SCRETCHING -->
+<table height="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="layoutMain">
+	<tr>
+		<td valign="top">
+			<!-- BEGIN LAYOUT HEADER -->
+			<div class="layoutHeader">
+			
+				<!-- BMI HEADER -->	
+			
+				<div class="headerStub"><img src="../../pictures/header/header-stub.gif" width="930" height="104" alt=""></div>
+				
+				<!-- /BMI HEADER -->	
+			
+				<div class="blockUnderLogo">
+					<table cellpadding="0" cellspacing="0" border="0" class="blockUnderLogoContent">
+						<tr valign="top">
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN LANGUAGE SELECTOR -->
+								<div class="languageSelector"><span>English</span><span class="delim"> | </span>
+									<a href="#">Espanol</a></div>
+								<!-- /END LANGUAGE SELECTOR --></td>
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN BREADCRUMB -->
+								<div class="navigationBreadcrumb">
+									<a href="../../en/index.html">Home</a><span> » </span>
+									<a href="../../en/pages-old/Reservations &amp; Services (SRS).html">Reservations &amp; Services</a><span> » </span><strong>Flights</strong></div>
+								<!-- /END BREADCRUMB --></td>
+							<td class="layoutCell" width="99%" align="right">
+								<!-- BEGIN LOGIN STATUS -->
+								<div class="auth">
+									<a href="../../en/pages-login/Login - Login Screen (ALG).html">Login</a></div>
+								<!-- /END LOGIN STATUS --></td>
+						</tr>
+					</table></div></div>
+			<!-- /END LAYOUT HEADER -->
+			<table cellpadding="0" cellspacing="0" border="0" class="layoutBody" align="center">
+				<tr valign="top">
+					<td class="layoutBodyWideArea">
+						<!-- BEGIN BODY WIDE AREA -->
+						<!-- error -->
+						<div class="errorBlock errorBlockType2" style="display:none">
+							<div class="errorHeader">
+								<div><span>&nbsp;</span></div></div>
+							<div class="errorBody">
+								<table width="100%">
+									<tr>
+										<td class="errorIcon">
+											<div><span></span></div></td>
+										<td width="100%" class="errorText">
+											<p>We are very sorry but departure time you've entered is less than Minimum Time to Departure. There are no available outbound flights for this time. </p>
+											<p>Please try to enter later departure time and search for flight(s) again.</p></td>
+									</tr>
+								</table></div>
+							<div class="errorFooter">
+								<div><span></span></div></div></div>
+						<!-- /error -->
+						<!-- BEGIN STEPS LINE -->
+						<div class="stepsNavAreaOuter">
+							<table class="stepsNavArea stepsNavAir">
+								<tr class="stepsNavRow" valign="top">
+									<td class="stepsNavFirstActive"><strong>Search</strong></td>
+									<td>
+										<div class="spacerStepsNav"><span></span></div></td>
+									<td class="stepsNavDefaultBefore">Selection</td>
+									<td>
+										<div class="spacerStepsNav"><span></span></div></td>
+									<td class="stepsNavDefaultBefore">Summary</td>
+									<td>
+										<div class="spacerStepsNav"><span></span></div></td>
+									<td class="stepsNavDefaultBefore">Passengers</td>
+									<td>
+										<div class="spacerStepsNav"><span></span></div></td>
+									<td class="stepsNavDefaultBefore">Purchase</td>
+									<td>
+										<div class="spacerStepsNav"><span></span></div></td>
+									<td class="stepsNavLastBefore">Confirmation</td>
+								</tr>
+							</table></div>
+						<!-- /END STEPS LINE -->
+						<!-- BEGIN PAGE TITLE LINE -->
+						<div class="pageTitleArea">
+							<div>
+								<h1>Flight Search</h1></div></div>
+						<!-- /END PAGE TITLE LINE -->
+						<!-- main search bot -->
+						<div class="searchBlockContainer">
+							<div class="searchBlock mainSearchBlock airMainSearchBlock airAdvancedSearchBlock">
+								<!-- Services Tabs -->
+								<div class="servicesTabs">
+									<table>
+										<tr>
+											<td class="air">
+												<div class="act">
+													<a href="../pages-flight/1 Flight Search RT.html">Flights</a></div></td>
+											<td class="hotel">
+												<div>
+													<a href="../pages-hotel/1 Hotel Search.html">Hotels</a></div></td>
+											<td class="car">
+												<div>
+													<a href="../pages-car/1 Car Search.html">Car</a></div></td>
+											<td class="package">
+												<div>
+													<a href="#">Packages</a></div></td>
+											<td class="insurance">
+												<div>
+													<a href="../pages-insurance/1 Insurance Search.html">Insurance</a></div></td>
+											<td class="discount">
+												<div>
+													<a href="#">Discount Cards</a></div></td>
+										</tr>
+									</table></div>
+								<!-- /Services Tabs -->
+								<div class="headBlock">
+									<div>
+										<h1>
+										</h1></div></div>
+								<div class="bodyBlock">
+									<div class="contentBodyBlock">
+										<form action="#" name="searchForm" id="searchForm">
+											<!-- flight Search Type Group  -->
+											<div class="flightSearchTypeGroup">
+												<table class="botHorRadioGroup">
+													<tr>
+														<td>
+															<div class="botField fieldRadio">
+																<input type="radio" id="flightSearchType1" name="flightSearchType" value="RT" checked="checked" onClick="switchFlightType(this.value)" /></div></td>
+														<td>
+															<div class="botLabelRight">
+																<label for="flightSearchType1" onClick="document.getElementById(this.htmlFor).click()">Round Trip</label></div></td>
+														<td>
+															<div class="botField fieldRadio">
+																<input type="radio" id="flightSearchType2" name="flightSearchType" value="OW" onClick="switchFlightType(this.value)" /></div></td>
+														<td>
+															<div class="botLabelRight">
+																<label for="flightSearchType2" onClick="document.getElementById(this.htmlFor).click()">One Way</label></div></td>
+														<td>
+															<div class="botField fieldRadio">
+																<input type="radio" id="flightSearchType3" name="flightSearchType" value="MC" onClick="switchFlightType(this.value)" /></div></td>
+														<td>
+															<div class="botLabelRight">
+																<label for="flightSearchType3" onClick="document.getElementById(this.htmlFor).click()">Multi City</label></div></td>
+													</tr>
+												</table>
+												<div class="sepLine1"><span></span></div></div>
+											<!-- /flight Search Type Group  -->
+											<!-- flight Search Locations RT/OW -->
+											<div class="flightSearchLocations" id="flightSearchLocationsRT">
+												<table width="100%">
+													<tr class="errorNoticeOuter errorNoticeOff">
+														<td colspan="3">
+															<div class="errorNotice">Depart date is a mandatory field.</div></td>
+													</tr>
+													<tr>
+														<td width="100%">
+															<div class="smLeftSpacer">
+																<div class="botLabelTop botMandatoryElement"><b><span>*</span> From</b></div>
+																<div class="botField fieldText">
+																	<table class="tblFixed">
+																		<tr>
+																			<td>
+																				<div>
+																					<input type="text" id="airSearchLocation1RT" name="airSearchLocation1RT" value="" class="maxWidth" onFocus="drillDownFramework.open({textField:this,valField:'airSearchLocationCode1RT'});" />
+																					<input type="hidden" id="airSearchLocationCode1RT" name="airSearchLocationCode1RT" value="" /></div></td>
+																		</tr>
+																	</table></div></div></td>
+														<!--td width="35px" nowrap="nowrap" align="right">
+									<div class="smLeftSpacer">
+										<div class="botLabelTop">&nbsp;</div>		
+										<div class="botLabel">Wed</div>										
+									</div>
+								</td-->
+														<td nowrap="nowrap">
+															<div class="smLeftSpacer">
+																<div class="botLabelTop botMandatoryElement"><b><span>*</span> Depart on</b></div>
+																<table>
+																	<tr>
+																		<td>
+																			<div class="botField fieldText">
+																				<input type="text" id="airport_DepartDate1RT" name="airport_DepartDate1RT" value="" style="width:80px" />
+																				<input type="hidden" name="airport_DepartDay1RT" id="airport_DepartDay1RT" value="" />
+																				<input type="hidden" name="airport_DepartMonth1RT" id="airport_DepartMonth1RT" value="" />
+																				<input type="hidden" name="airport_DepartYear1RT" id="airport_DepartYear1RT" value="" /></div></td>
+																		<td class="calendarArea">
+																			<div>
+																				<a href="#" onClick="calendar.show({sources:{idTextField:'airport_DepartDate1RT',systemFields:{d:'airport_DepartDay1RT',m:'airport_DepartMonth1RT',y:'airport_DepartYear1RT'},bookingBuffer:{start:1,end:330}},inputFunc:calendarOutboundInputFunc});return false"><img src="../../pictures/icons/i_calendar.gif" alt="" width="19" height="18" border="0" /></a></div></td>
+																	</tr>
+																</table></div></td>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botLabelTop"><b>Time</b></div>
+																<div class="botField fieldSelect">
+																	<select name="airSearchTime1" id="airSearchTime1">
+																		<option value="-1" selected="selected">Anytime</option>
+																	</select></div></div></td>
+														<!--td>
+									<div class="smLeftSpacer">
+										<div class="botLabelTop botMandatoryElement"><b><span>*</span> Cabin</b></div>		
+										<div class="botField fieldSelect">
+											<select name="airSearchCabin1" id="airSearchCabin1">
+												<option value="economy" selected="selected">Economy</option>
+											</select>
+										</div>										
+									</div>						
+								</td-->
+													</tr>
+													<tr class="errorNoticeOuter errorNoticeOff">
+														<td colspan="3">
+															<div class="errorNotice">Arrival location is a mandatory field.</div></td>
+													</tr>
+													<tr>
+														<td width="100%">
+															<div class="smLeftSpacer">
+																<div class="botLabelTop botMandatoryElement"><b><span>*</span> To</b></div>
+																<div class="botField fieldText">
+																	<table class="tblFixed">
+																		<tr>
+																			<td>
+																				<div>
+																					<input type="text" id="airSearchLocation2RT" name="airSearchLocation2RT" value="" class="maxWidth" onFocus="drillDownFramework.open({textField:this,valField:'airSearchLocationCode2RT'});" />
+																					<input type="hidden" id="airSearchLocationCode2RT" name="airSearchLocationCode2RT" value="" /></div></td>
+																		</tr>
+																	</table></div></div></td>
+														<!--td nowrap="nowrap" align="right">
+									<div class="smLeftSpacer" id="returnBlockDay">
+										<div class="botLabelTop">&nbsp;</div>		
+										<div class="botLabel">Wed</div>										
+									</div>
+								</td-->
+														<td nowrap="nowrap">
+															<div class="smLeftSpacer" id="returnBlockDate">
+																<div class="botLabelTop botMandatoryElement"><b><span>*</span> Return on</b></div>
+																<table>
+																	<tr>
+																		<td>
+																			<div class="botField fieldText">
+																				<input type="text" id="airport_DepartDate2RT" name="airport_DepartDate2RT" value="" style="width:80px" />
+																				<input type="hidden" name="airport_DepartDay2RT" id="airport_DepartDay2RT" value="" />
+																				<input type="hidden" name="airport_DepartMonth2RT" id="airport_DepartMonth2RT" value="" />
+																				<input type="hidden" name="airport_DepartYear2RT" id="airport_DepartYear2RT" value="" /></div></td>
+																		<td class="calendarArea">
+																			<div>
+																				<a href="#" onClick="calendar.show({sources:{idTextField:'airport_DepartDate2RT',systemFields:{d:'airport_DepartDay2RT',m:'airport_DepartMonth2RT',y:'airport_DepartYear2RT'},bookingBuffer:{start:1,end:330}},inputFunc:calendarOutboundInputFunc});return false"><img src="../../pictures/icons/i_calendar.gif" alt="" width="19" height="18" border="0" /></a></div></td>
+																	</tr>
+																</table></div></td>
+														<td>
+															<div class="smLeftSpacer" id="returnBlockTime">
+																<div class="botLabelTop"><b>Time</b></div>
+																<div class="botField fieldSelect">
+																	<select name="airSearchTime2" id="airSearchTime2">
+																		<option value="-1" selected="selected">Anytime</option>
+																	</select></div></div></td>
+														<!--td>
+ 									<div class="smLeftSpacer">
+										<div class="botLabelTop botMandatoryElement"><b><span>*</span> Cabin</b></div>		
+										<div class="botField fieldSelect">
+											<select name="airSearchCabin2" id="airSearchCabin2">
+												<option value="economy" selected="selected">Economy</option>
+											</select>
+										</div>										
+									</div>						
+								</td -->
+													</tr>
+												</table>
+												<div class="sepLine1"><span></span></div></div>
+											<!-- /flight Search Locations RT/OW -->
+											<!-- flight Search Locations MC -->
+											<div class="flightSearchLocations" id="flightSearchLocationsMC" style="display:none">
+												<table width="100%">
+													<tr>
+														<td width="50%">
+															<div class="smLeftSpacer">
+																<div class="botLabelTop botMandatoryElement"><b><span>*</span> From</b></div>
+																<div class="botField fieldText">
+																	<table class="tblFixed">
+																		<tr>
+																			<td>
+																				<div>
+																					<input type="text" id="airSearchFromLocation1MC" name="airSearchFromLocation1MC" value="" class="maxWidth" onFocus="drillDownFramework.open(this, returnAirportFromDrilldown);" /></div></td>
+																		</tr>
+																	</table></div></div></td>
+														<td width="50%">
+															<div class="smLeftSpacer">
+																<div class="botLabelTop botMandatoryElement"><b><span>*</span> To</b></div>
+																<div class="botField fieldText">
+																	<table class="tblFixed">
+																		<tr>
+																			<td>
+																				<div>
+																					<input type="text" id="airSearchToLocation1MC" name="airSearchToLocation1MC" value="" class="maxWidth" onFocus="drillDownFramework.open(this, returnAirportFromDrilldown);" /></div></td>
+																		</tr>
+																	</table></div></div></td>
+														<td nowrap="nowrap">
+															<div class="smLeftSpacer">
+																<div class="botLabelTop botMandatoryElement"><b><span>*</span> Depart on</b></div>
+																<table>
+																	<tr>
+																		<td>
+																			<div class="botField fieldText">
+																				<input type="text" id="airport_DepartDate1MC" name="airport_DepartDate1MC" value="" style="width:80px" />
+																				<input type="hidden" name="airport_DepartDay1MC" id="airport_DepartDay1MC" value="" />
+																				<input type="hidden" name="airport_DepartMonth1MC" id="airport_DepartMonth1MC" value="" />
+																				<input type="hidden" name="airport_DepartYear1MC" id="airport_DepartYear1MC" value="" /></div></td>
+																		<td class="calendarArea">
+																			<div>
+																				<a href="#" onClick="calendar.show({sources:{idTextField:'airport_DepartDate1MC',systemFields:{d:'airport_DepartDay1MC',m:'airport_DepartMonth1MC',y:'airport_DepartYear1MC'},bookingBuffer:{start:1,end:330}},inputFunc:calendarOutboundInputFunc});return false"><img src="../../pictures/icons/i_calendar.gif" alt="" width="19" height="18" border="0" /></a></div></td>
+																	</tr>
+																</table></div></td>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botLabelTop"><b>Time</b></div>
+																<div class="botField fieldSelect">
+																	<select name="airSearchTime1MC" id="airSearchTime1MC">
+																		<option value="-1" selected="selected">Anytime</option>
+																	</select></div></div></td>
+													</tr>
+													<tr>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botField fieldText">
+																	<table class="tblFixed">
+																		<tr>
+																			<td>
+																				<div>
+																					<input type="text" id="airSearchFromLocation2MC" name="airSearchFromLocation2MC" value="" class="maxWidth" onFocus="drillDownFramework.open(this, returnAirportFromDrilldown);" /></div></td>
+																		</tr>
+																	</table></div></div></td>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botField fieldText">
+																	<table class="tblFixed">
+																		<tr>
+																			<td>
+																				<div>
+																					<input type="text" id="airSearchToLocation2MC" name="airSearchToLocation2MC" value="" class="maxWidth" onFocus="drillDownFramework.open(this, returnAirportFromDrilldown);" /></div></td>
+																		</tr>
+																	</table></div></div></td>
+														<td nowrap="nowrap">
+															<div class="smLeftSpacer">
+																<table>
+																	<tr>
+																		<td>
+																			<div class="botField fieldText">
+																				<input type="text" id="airport_DepartDate2MC" name="airport_DepartDate2MC" value="" style="width:80px" />
+																				<input type="hidden" name="airport_DepartDay2MC" id="airport_DepartDay2MC" value="" />
+																				<input type="hidden" name="airport_DepartMonth2MC" id="airport_DepartMonth2MC" value="" />
+																				<input type="hidden" name="airport_DepartYear2MC" id="airport_DepartYear2MC" value="" /></div></td>
+																		<td class="calendarArea">
+																			<div>
+																				<a href="#" onClick="calendar.show({sources:{idTextField:'airport_DepartDate2MC',systemFields:{d:'airport_DepartDay2MC',m:'airport_DepartMonth2MC',y:'airport_DepartYear2MC'},bookingBuffer:{start:1,end:330}},inputFunc:calendarOutboundInputFunc});return false"><img src="../../pictures/icons/i_calendar.gif" alt="" width="19" height="18" border="0" /></a></div></td>
+																	</tr>
+																</table></div></td>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botField fieldSelect">
+																	<select name="airSearchTime2MC" id="airSearchTime2MC">
+																		<option value="-1" selected="selected">Anytime</option>
+																	</select></div></div></td>
+													</tr>
+													<tr>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botField fieldText">
+																	<table class="tblFixed">
+																		<tr>
+																			<td>
+																				<div>
+																					<input type="text" id="airSearchFromLocation3MC" name="airSearchFromLocation3MC" value="" class="maxWidth" onFocus="drillDownFramework.open(this, returnAirportFromDrilldown);" /></div></td>
+																		</tr>
+																	</table></div></div></td>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botField fieldText">
+																	<table class="tblFixed">
+																		<tr>
+																			<td>
+																				<div>
+																					<input type="text" id="airSearchToLocation3MC" name="airSearchToLocation3MC" value="" class="maxWidth" onFocus="drillDownFramework.open(this, returnAirportFromDrilldown);" /></div></td>
+																		</tr>
+																	</table></div></div></td>
+														<td nowrap="nowrap">
+															<div class="smLeftSpacer">
+																<table>
+																	<tr>
+																		<td>
+																			<div class="botField fieldText">
+																				<input type="text" id="airport_DepartDate3MC" name="airport_DepartDate3MC" value="" style="width:80px" />
+																				<input type="hidden" name="airport_DepartDay3MC" id="airport_DepartDay3MC" value="" />
+																				<input type="hidden" name="airport_DepartMonth3MC" id="airport_DepartMonth3MC" value="" />
+																				<input type="hidden" name="airport_DepartYear3MC" id="airport_DepartYear3MC" value="" /></div></td>
+																		<td class="calendarArea">
+																			<div>
+																				<a href="#" onClick="calendar.show({sources:{idTextField:'airport_DepartDate3MC',systemFields:{d:'airport_DepartDay3MC',m:'airport_DepartMonth3MC',y:'airport_DepartYear3MC'},bookingBuffer:{start:1,end:330}},inputFunc:calendarOutboundInputFunc});return false"><img src="../../pictures/icons/i_calendar.gif" alt="" width="19" height="18" border="0" /></a></div></td>
+																	</tr>
+																</table></div></td>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botField fieldSelect">
+																	<select name="airSearchTime3MC" id="airSearchTime3MC">
+																		<option value="-1" selected="selected">Anytime</option>
+																	</select></div></div></td>
+													</tr>
+													<tr>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botField fieldText">
+																	<table class="tblFixed">
+																		<tr>
+																			<td>
+																				<div>
+																					<input type="text" id="airSearchFromLocation4MC" name="airSearchFromLocation4MC" value="" class="maxWidth" onFocus="drillDownFramework.open(this, returnAirportFromDrilldown);" /></div></td>
+																		</tr>
+																	</table></div></div></td>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botField fieldText">
+																	<table class="tblFixed">
+																		<tr>
+																			<td>
+																				<div>
+																					<input type="text" id="airSearchToLocation4MC" name="airSearchToLocation4MC" value="" class="maxWidth" onFocus="drillDownFramework.open(this, returnAirportFromDrilldown);" /></div></td>
+																		</tr>
+																	</table></div></div></td>
+														<td nowrap="nowrap">
+															<div class="smLeftSpacer">
+																<table>
+																	<tr>
+																		<td>
+																			<div class="botField fieldText">
+																				<input type="text" id="airport_DepartDate4MC" name="airport_DepartDate4MC" value="" style="width:80px" />
+																				<input type="hidden" name="airport_DepartDay4MC" id="airport_DepartDay4MC" value="" />
+																				<input type="hidden" name="airport_DepartMonth4MC" id="airport_DepartMonth4MC" value="" />
+																				<input type="hidden" name="airport_DepartYear4MC" id="airport_DepartYear4MC" value="" /></div></td>
+																		<td class="calendarArea">
+																			<div>
+																				<a href="#" onClick="calendar.show({sources:{idTextField:'airport_DepartDate4MC',systemFields:{d:'airport_DepartDay4MC',m:'airport_DepartMonth4MC',y:'airport_DepartYear4MC'},bookingBuffer:{start:1,end:330}},inputFunc:calendarOutboundInputFunc});return false"><img src="../../pictures/icons/i_calendar.gif" alt="" width="19" height="18" border="0" /></a></div></td>
+																	</tr>
+																</table></div></td>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botField fieldSelect">
+																	<select name="airSearchTime4MC" id="airSearchTime4MC">
+																		<option value="-1" selected="selected">Anytime</option>
+																	</select></div></div></td>
+													</tr>
+													<tr>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botField fieldText">
+																	<table class="tblFixed">
+																		<tr>
+																			<td>
+																				<div>
+																					<input type="text" id="airSearchFromLocation5MC" name="airSearchFromLocation5MC" value="" class="maxWidth" onFocus="drillDownFramework.open(this, returnAirportFromDrilldown);" /></div></td>
+																		</tr>
+																	</table></div></div></td>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botField fieldText">
+																	<table class="tblFixed">
+																		<tr>
+																			<td>
+																				<div>
+																					<input type="text" id="airSearchToLocation5MC" name="airSearchToLocation5MC" value="" class="maxWidth" onFocus="drillDownFramework.open(this, returnAirportFromDrilldown);" /></div></td>
+																		</tr>
+																	</table></div></div></td>
+														<td nowrap="nowrap">
+															<div class="smLeftSpacer">
+																<table>
+																	<tr>
+																		<td>
+																			<div class="botField fieldText">
+																				<input type="text" id="airport_DepartDate5MC" name="airport_DepartDate5MC" value="" style="width:80px" />
+																				<input type="hidden" name="airport_DepartDay5MC" id="airport_DepartDay5MC" value="" />
+																				<input type="hidden" name="airport_DepartMonth5MC" id="airport_DepartMonth5MC" value="" />
+																				<input type="hidden" name="airport_DepartYear5MC" id="airport_DepartYear5MC" value="" /></div></td>
+																		<td class="calendarArea">
+																			<div>
+																				<a href="#" onClick="calendar.show({sources:{idTextField:'airport_DepartDate5MC',systemFields:{d:'airport_DepartDay5MC',m:'airport_DepartMonth5MC',y:'airport_DepartYear5MC'},bookingBuffer:{start:1,end:330}},inputFunc:calendarOutboundInputFunc});return false"><img src="../../pictures/icons/i_calendar.gif" alt="" width="19" height="18" border="0" /></a></div></td>
+																	</tr>
+																</table></div></td>
+														<td>
+															<div class="smLeftSpacer">
+																<div class="botField fieldSelect">
+																	<select name="airSearchTime5MC" id="airSearchTime5MC">
+																		<option value="-1" selected="selected">Anytime</option>
+																	</select></div></div></td>
+													</tr>
+												</table>
+												<div class="sepLine1"><span></span></div></div>
+											<!-- /flight Search Locations MC -->
+											<!-- flight options -->
+											<div class="flightSearchOptionsGroup" id="flightSearchOptionsGroup">
+												<table class="botHorRadioGroup">
+													<tr>
+														<td>
+															<div class="botField fieldRadio">
+																<input type="radio" id="flightSearchIsFlexible1" name="flightSearchIsFlexible" value="false" checked="checked" /></div></td>
+														<td>
+															<div class="botLabelRight">
+																<label for="flightSearchIsFlexible1" onClick="document.getElementById(this.htmlFor).click()">I must travel on these dates</label></div></td>
+														<td>
+															<div class="botField fieldRadio">
+																<input type="radio" id="flightSearchIsFlexible2" name="flightSearchIsFlexible" value="true" /></div></td>
+														<td>
+															<div class="botLabelRight">
+																<label for="flightSearchIsFlexible2" onClick="document.getElementById(this.htmlFor).click()">My travel dates are flexible</label></div></td>
+													</tr>
+												</table>
+												<div class="sepLine1"><span></span></div></div>
+											<!-- /flight options -->
+											<!-- cabin class and direct flight -->
+											<div class="flightSearchCabinAndDirect">
+												<table>
+													<tr>
+														<td>
+															<!-- cabin class -->
+															<div class="flightSearchCabin">
+																<table>
+																	<tr>
+																		<td nowrap="nowrap">
+																			<div class="botLabelLeft lgRightSpacer">Cabin Class</div></td>
+																		<td>
+																			<div class="botField fieldSelect">
+																				<select name="flightSearchCabin" id="flightSearchCabin">
+																					<option value="economy" selected="selected">Economy</option>
+																				</select></div></td>
+																	</tr>
+																</table></div>
+															<!-- /cabin class --></td>
+														<td>
+															<!-- is direct flight -->
+															<div class="flightSearchDirect">
+																<table class="botHorCheckboxGroup">
+																	<tr>
+																		<td>
+																			<div class="botField fieldCheckbox">
+																				<input type="checkbox" id="flightSearchIsDirectFlight" name="flightSearchIsDirectFlight" value="true" /></div></td>
+																		<td nowrap="nowrap">
+																			<div class="botLabelRight">
+																				<label for="flightSearchIsDirectFlight">Direct Flights Only</label></div></td>
+																	</tr>
+																</table></div>
+															<!-- /is direct flight --></td>
+													</tr>
+												</table>
+												<div class="sepLine1"><span></span></div></div>
+											<!-- /cabin class and direct flight -->
+											<!-- travelers -->
+											<div class="travelersCountView">
+												<div class="errorNoticeOuter errorNoticeOff">
+													<div class="errorNotice">A maximum of 9 total passengers is allowed.</div></div>
+												<div class="botLabelTop botMandatoryElement"><b><span>*</span> Passengers</b> (A maximum of 9 total passengers)</div>
+												<!-- ages group -->
+												<div class="passengersAgeView">
+													<table width="100%">
+														<tr>
+															<td>
+																<div class="passengerType">
+																	<p>Adults</p>
+																	<div>
+																		<input type="text" name="airSearch_ADTCount" id="airSearch_ADTCount" value="" onChange="showAgesForTraveller(this)" /></div></div></td>
+															<td width="100%">
+																<!-- first item is template -->
+																<div class="passengerDOB" style="display:none">
+																	<p>Date of Birth #$N$</p>
+																	<div>
+																		<input type="text" fakename="airSearch_ADTAge$N$" id="airSearch_ADTAge$N$" value="DD/MM/YYYY" /></div></div>
+																<!-- first item is template --></td>
+														</tr>
+													</table>
+													<div class="errorNoticeOuter errorNoticeOff">
+														<div class="errorNotice">Passengers combination is incorrect</div></div>
+													<table>
+														<tr>
+															<td>
+																<div class="passengerTypeSingle">
+																	<p>Children (2-11)</p>
+																	<div>
+																		<select name="airSearch_CHDCount" id="airSearch_CHDCount">
+																			<option value="0" selected="selected">0</option>
+																			<option value="1">1</option>
+																			<option value="2">2</option>
+																			<option value="3">3</option>
+																		</select></div></div></td>
+															<td>
+																<div class="passengerTypeSingle">
+																	<p>Infant with Seat</p>
+																	<div>
+																		<select name="airSearch_TCHCount" id="airSearch_TCHCount">
+																			<option value="0" selected="selected">0</option>
+																			<option value="1">1</option>
+																			<option value="2">2</option>
+																			<option value="3">3</option>
+																		</select></div></div></td>
+															<td>
+																<div class="passengerTypeSingle">
+																	<p>Infant on Lap</p>
+																	<div>
+																		<select name="airSearch_CNNCount" id="airSearch_CNNCount">
+																			<option value="0" selected="selected">0</option>
+																			<option value="1">1</option>
+																			<option value="2">3</option>
+																			<option value="3">4</option>
+																		</select></div></div></td>
+														</tr>
+													</table>
+													<table width="100%">
+														<tr>
+															<td>
+																<div class="passengerType">
+																	<p>Youth (15-24)</p>
+																	<div>
+																		<input type="text" name="airSearch_YTHCount" id="airSearch_YTHCount" value="" onChange="showAgesForTraveller(this)" /></div></div></td>
+															<td width="100%">
+																<!-- first item is template -->
+																<div class="passengerAge" style="display:none">
+																	<p>Age #$N$</p>
+																	<div>
+																		<input type="text" fakename="airSearch_YTHAge$N$" id="airSearch_YTHAge$N$" value="" /></div></div>
+																<!-- first item is template --></td>
+														</tr>
+													</table>
+													<table width="100%">
+														<tr>
+															<td>
+																<div class="passengerType">
+																	<p>Senior</p>
+																	<div>
+																		<input type="text" name="airSearch_SNRCount" id="airSearch_SNRCount" value="" onChange="showAgesForTraveller(this)" /></div></div></td>
+															<td width="100%">
+																<!-- first item is template -->
+																<div class="passengerAge" style="display:none">
+																	<p>Age #$N$</p>
+																	<div>
+																		<input type="text" fakename="airSearch_SNRAge$N$" id="airSearch_SNRAge$N$" value="" /></div></div>
+																<!-- first item is template --></td>
+														</tr>
+													</table></div>
+												<!-- ages group -->
+												<div class="sepLine1"><span></span></div></div>
+											<!-- /travelers -->
+											<!-- coupon -->
+											<div class="couponBlock">
+												<div id="couponLinkBlock" class="couponLinkBlock">
+													<a href="#" onClick="showHideCouponForm(1);return false" class="couponText">Do you have a coupon?</a></div>
+												<div id="couponFormBlock" class="couponFormBlock" style="display:none"><span class="couponText" onClick="showHideCouponForm(2);return false">Enter your coupon:</span>
+													<table>
+														<tr>
+															<td>
+																<div class="botField fieldText">
+																	<input type="text" id="coupon" name="coupon" value="" style="width:150px" /></div></td>
+															<td>
+																<div class="leftSpacer">
+																	<a href="#">Coupon Help</a></div></td>
+														</tr>
+													</table></div>
+												<div class="sepLine1"><span></span></div></div>
+											<!-- coupon -->
+											<!-- search for -->
+											<div class="flightAdvancedOptionsGroup">
+												<div class="flightSearchForAndFareOptionsGroup">
+													<table width="100%">
+														<tr>
+															<td width="50%">
+																<div class="flightSearchForBlock">
+																	<div class="botLabelTop"><b>Search For</b></div>
+																	<table class="botHorRadioGroup">
+																		<tr>
+																			<td>
+																				<div class="botField fieldRadio">
+																					<input type="radio" id="flightSearchFor1" name="flightSearchFor" value="1" checked="checked" /></div></td>
+																			<td>
+																				<div class="botLabelRight">
+																					<label for="flightSearchFor1" onClick="document.getElementById(this.htmlFor).click()">Lowest Fare</label></div></td>
+																			<td>
+																				<div class="botField fieldRadio">
+																					<input type="radio" id="flightSearchFor2" name="flightSearchFor" value="2" /></div></td>
+																			<td>
+																				<div class="botLabelRight">
+																					<label for="flightSearchFor2" onClick="document.getElementById(this.htmlFor).click()">By Schedule</label></div></td>
+																		</tr>
+																	</table></div></td>
+															<td width="50%">
+																<div class="flightFareOptionsBlock">
+																	<div class="botLabelTop"><b>Fare Options</b></div>
+																	<div class="botField fieldSelect">
+																		<select name="flightFareOptions" id="flightFareOptions" class="maxWidth">
+																			<option value="1" selected="selected">Fares with restrictions</option>
+																			<option value="2">Unrestricted fares</option>
+																		</select></div></div></td>
+														</tr>
+													</table>
+													<div class="sepLine1"><span></span></div></div>
+												<div class="flightPreferredAirlinesBlock">
+													<div class="botLabelTop"><b>Preferred Airlines</b></div>
+													<table width="100%">
+														<tr>
+															<td width="33%">
+																<div class="botField fieldSelect">
+																	<select name="flightPreferredAirline1" id="flightPreferredAirline1" class="maxWidth">
+																		<option value="1" selected="selected">No preference</option>
+																	</select></div></td>
+															<td width="33%">
+																<div class="leftSpacer">
+																	<div class="botField fieldSelect">
+																		<select name="flightPreferredAirline2" id="flightPreferredAirline2" class="maxWidth">
+																			<option value="1" selected="selected">No preference</option>
+																		</select></div></div></td>
+															<td width="33%">
+																<div class="leftSpacer">
+																	<div class="botField fieldSelect">
+																		<select name="flightPreferredAirline3" id="flightPreferredAirline3" class="maxWidth">
+																			<option value="1" selected="selected">No preference</option>
+																		</select></div></div></td>
+														</tr>
+													</table>
+													<div class="sepLine1"><span></span></div></div></div>
+											<!-- /search for -->
+											<!-- search button -->
+											<div class="botButtonArea">
+												<table class="botButton2 botButtonReset">
+													<tr>
+														<td nowrap="nowrap">
+															<a href="#"><span><span>Reset</span></span></a></td>
+													</tr>
+												</table>
+												<table class="botButton1 botButtonSearch">
+													<tr>
+														<td nowrap="nowrap">
+															<a href="#" onClick="handleSearchButtonClick();return false"><span><span>Search</span></span></a></td>
+													</tr>
+												</table>
+												<div class="clearSpacer"><span></span></div></div>
+											<!-- /search button -->
+										</form></div></div>
+								<div class="footerBlock">
+									<div><span></span></div></div></div></div>
+						<!-- /main search bot -->
+						<!-- /END BODY WIDE AREA --></td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td valign="bottom">
+			<!-- Enter Chat -->
+			<div class="enterChat">
+				<div class="headBlock">
+					<div><span></span></div></div>
+				<div class="bodyBlock">
+					<h3>Need Help?</h3>
+					<p>A representative is standing by to answer your question via our <a href="#" onClick="openWindow('chatSelect', '../../en/popups/Chat Selection.html', 700, 500, '');return false">online chat</a>.</p>
+					<p>You can also <a href="#">contact us by email</a> or call 1(507) 217-2671.</p></div>
+				<div class="footerBlock">
+					<div><span></span></div></div></div>
+			<!-- /Enter Chat -->
+			<!-- BEGIN LAYOUT FOOTER -->
+			<div class="layoutFooter">
+				
+				<!-- BMI FOOTER -->		
+		
+				<div class="footerStub"><img src="../../pictures/footer/footer-stub.gif" width="930" height="56" alt=""></div>
+						
+				<!-- /BMI FOOTER -->	
+					
+			</div>
+			<!-- /END LAYOUT FOOTER --></td>
+	</tr>
+</table>
+<!-- /END HEIGHT SCRETCHING -->
+</body>
+</html>
+

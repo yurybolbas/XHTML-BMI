@@ -1,0 +1,119 @@
+.cdrArea {
+	background: #f2efef;
+	padding: 5px 2px;
+}
+
+.cdrPanel {
+	padding: 5px 6px 3px 5px;
+}
+
+.cdrPanelSingle {
+	padding: 3px 5px 3px 5px;
+}
+
+.cdrMonthYear {
+
+}
+
+.cdrMonthYear select {
+	font: 11px Tahoma;
+	margin: 0 0 5px 0;
+}
+
+.cdrMonthYear .sMonth {
+	float: left;
+}
+
+.cdrMonthYear .sYear {
+	float: right;
+}
+
+.cdrHeader {
+	margin: 0 0 7px 0;
+}
+
+.cdrHeader h3 {
+	padding: 0;
+	margin: 0;
+	font: bold 10px Verdana;
+	text-align: center;
+}
+
+.cdrHeader a, .cdrHeader a:hover {
+	display: block;
+	text-decoration: none;
+	width: 5px;
+	height: 9px;
+	overflow: hidden;
+	margin-top: 2px;
+	}
+	
+.cdrHeader a:focus {
+	outline: none;
+	-moz-outline: none;
+}
+
+.cdrPanelLeft .cdrHeader a {
+	float: left;
+	background: url(../pictures/icons/calendar/prev.gif) no-repeat left top;
+}
+
+.cdrPanelRight .cdrHeader a {
+	float: right;
+	background: url(../pictures/icons/calendar/next.gif) no-repeat left top;
+}
+
+.cdrContent {
+	clear: both;	
+}
+
+.cdrContent td, .cdrContent th {
+	text-align: center;
+	vertical-align: middle;
+	cursor: default;
+	width: 23px;
+}
+
+.cdrContent th {
+	background: #cccccc;
+	padding: 2px 0 0 0;
+	font: 11px Arial;
+	color: #ffffff;
+}
+
+.cdrContent td {
+	background: #ffffff;
+	border: 1px solid #e6e6e6;
+	height: 19px;
+	font: 11px Tahoma;
+	color: #aaaaaa;
+}
+
+.cdrContent td span {
+	display: block;
+	padding: 2px 0 3px 0;
+}
+
+.cdrContent td a {
+	display: block;
+	padding: 2px 0 3px 0;
+	text-decoration: none;
+	font-weight: bold;
+	color: #1e82f7;
+}
+
+.cdrContent td a:hover {
+	background: #e6e6e6;
+}
+
+.cdrContent td.past {
+
+}
+
+.cdrContent td.current {
+
+}
+
+.cdrContent td.selected {
+	background: #e6e6e6;
+}

@@ -1,0 +1,485 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DLEXPRD</title>
+<script language="JavaScript" type="text/javascript">
+<!--		
+function registerJS(jsName){
+	return;
+}
+--></script>
+<link rel="stylesheet" type="text/css" href="../../css/all.css" />
+<link rel="stylesheet" type="text/css" href="../../css/print.css" media="print" />
+<script src="../../js/bot_script.js" type="text/JavaScript"></script>
+<script src="../../js/calendar.js" type="text/JavaScript"></script>
+<script src="../../js/dialog.js" type="text/JavaScript"></script>
+<script src="../../js/drilldown.js" type="text/JavaScript"></script>
+<script src="../../js/global.js" type="text/JavaScript"></script>
+<script src="../../js/utils.js" type="text/JavaScript"></script>
+<script src="../../js/navigation.js" type="text/JavaScript"></script>
+<script src="../../js/prototype_source_loader.js" type="text/javascript"></script>
+<script src="../../js/seatmap.js" type="text/JavaScript"></script>
+<script src="../../js/version.js" type="text/JavaScript"></script>
+<script src="../../en/js/airport_data.js" type="text/JavaScript"></script>
+<script src="../../en/js/navigation.js" type="text/JavaScript"></script>
+<script src="../../en/js/popup_templates.js" type="text/JavaScript"></script>
+<script type="text/JavaScript">
+<!--
+							
+		function _protoEnableStateProvinceField (countryVal, stateFieldId) {
+			var stateField = document.getElementById(stateFieldId);
+			var stateRow = stateField.parentNode.parentNode;
+			stateField.disabled = (countryVal == '-1') ? true : false;
+			stateRow.className = (countryVal != '-1') ? 'mandatoryElement' : '';
+		}
+		
+		function _protoShowHideIssueCountryAndCurrency (cardVal) {
+			var displayType = (cardVal == '-1') ? 'none' : '';
+			document.getElementById('rowCardIssueCountry').style.display = displayType;
+			document.getElementById('rowPaymentCurrency').style.display = displayType;
+		}
+		
+		function _protoEnableCurrencyField (countryVal) {
+			document.getElementById('paymentCurrency').disabled = (countryVal == '-1') ? true : false;
+		}
+		
+		function _protoShowHideEquivDetails (currencyVal) {
+			var displayType = (currencyVal == 1) ? '' : 'none';
+			document.getElementById('rowEquivTotal').style.display = displayType;
+			document.getElementById('rowInstallments').style.display = displayType;
+		}
+				
+		//--></script>
+</head>
+<body>
+<!-- BEGIN HEIGHT SCRETCHING -->
+<table height="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="layoutMain">
+	<tr>
+		<td valign="top">
+			<!-- BEGIN LAYOUT HEADER -->
+			<div class="layoutHeader">
+			
+				<!-- BMI HEADER -->	
+			
+				<div class="headerStub"><img src="../../pictures/header/header-stub.gif" width="930" height="104" alt=""></div>
+				
+				<!-- /BMI HEADER -->	
+			
+				<div class="blockUnderLogo">
+					<table cellpadding="0" cellspacing="0" border="0" class="blockUnderLogoContent">
+						<tr valign="top">
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN LANGUAGE SELECTOR -->
+								<div class="languageSelector"><span>English</span><span class="delim"> | </span>
+									<a href="#">Espanol</a></div>
+								<!-- /END LANGUAGE SELECTOR --></td>
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN BREADCRUMB -->
+								<div class="navigationBreadcrumb">
+									<a href="../../en/index.html">Home</a><span> » </span>
+									<a href="../../en/pages-old/Reservations &amp; Services (SRS).html">Reservations &amp; Services</a><span> » </span><strong>Flights</strong></div>
+								<!-- /END BREADCRUMB --></td>
+							<td class="layoutCell" width="99%" align="right">
+								<!-- BEGIN LOGIN STATUS -->
+								<div class="auth">
+									<a href="../../en/pages-login/Login - Login Screen (ALG).html">Login</a></div>
+								<!-- /END LOGIN STATUS --></td>
+						</tr>
+					</table></div></div>
+			<!-- /END LAYOUT HEADER -->
+			<table class="layoutBody" align="center">
+				<tr valign="top">
+					<td class="layoutBodyWideArea">
+						<!-- BEGIN BODY WIDE AREA -->
+						<div id="pgPayment">
+							<!-- BEGIN STEPS LINE -->
+							<div class="stepsNavAreaOuter">
+								<table class="stepsNavArea stepsNavAir">
+									<tr class="stepsNavRow" valign="top">
+										<td class="stepsNavFirstAfter">Search</td>
+										<td class="stepsNavSpacerAfter">
+											<div class="spacerStepsNav"><span></span></div></td>
+										<td class="stepsNavDefaultAfter">Selection</td>
+										<td class="stepsNavSpacerAfter">
+											<div class="spacerStepsNav"><span></span></div></td>
+										<td class="stepsNavDefaultAfter">Summary</td>
+										<td class="stepsNavSpacerAfter">
+											<div class="spacerStepsNav"><span></span></div></td>
+										<td class="stepsNavDefaultAfter">Travellers</td>
+										<td class="stepsNavSpacerAfter">
+											<div class="spacerStepsNav"><span></span></div></td>
+										<td class="stepsNavDefaultActive"><strong>Purchase</strong></td>
+										<td>
+											<div class="spacerStepsNav"><span></span></div></td>
+										<td class="stepsNavLastBefore">Confirmation</td>
+									</tr>
+								</table></div>
+							<!-- /END STEPS LINE -->
+							<!-- BEGIN PAGE TITLE LINE -->
+							<div class="pageTitleArea">
+								<div>
+									<h1 id="ptPayment">Add Payment Information and Purchase</h1></div></div>
+							<!-- /END PAGE TITLE LINE -->
+							<!-- BEGIN ITINERARY PRICING BLOCK -->
+							<div class="itineraryPricingBlock">
+								<div class="headBlock">
+									<div>
+										<h2>Your Selection</h2></div></div>
+								<div class="bodyBlock">
+									<div class="bodySection collapsedSection">
+										<div class="collapsedPart">
+											<table cellpadding="0" cellspacing="0" border="0" class="mainstream">
+												<tr>
+													<td class="icon">
+														<div>
+															<a href="#" onClick="collapsePriceSection(this,1);return false"><img src="../../pictures/icons/i_plus.gif" alt="" width="11" height="11" border="0" /></a></div></td>
+													<td class="item">
+														<div>Fare: Los Angeles (LAX) - San Francisco (SFO) - Los Angeles (LAX)</div></td>
+													<td class="price">
+														<div>800.00</div></td>
+												</tr>
+											</table></div>
+										<div class="expandedPart">
+											<table cellpadding="0" cellspacing="0" border="0" class="mainstream">
+												<tr>
+													<td class="icon">
+														<div>
+															<a href="#" onClick="collapsePriceSection(this,0);return false"><img src="../../pictures/icons/i_minus.gif" alt="" width="11" height="11" border="0" /></a></div></td>
+													<td class="item">
+														<div>Fare: Los Angeles (LAX) - San Francisco (SFO) - Los Angeles (LAX)</div></td>
+													<td class="price">
+														<div>&nbsp;</div></td>
+												</tr>
+											</table>
+											<table cellpadding="0" cellspacing="0" border="0" class="detailedPrice">
+												<tr class="rowOdd">
+													<td class="item">
+														<div>2 Adults + 1 Child. Thu, 17 Apr 2008, 04:36AM - Thu, 24 Apr 2008, 07:28AM</div></td>
+													<td class="price">
+														<div>550.00</div></td>
+												</tr>
+												<tr class="rowEven">
+													<td class="item">
+														<div>Surcharges</div></td>
+													<td class="price">
+														<div>125.00</div></td>
+												</tr>
+												<tr class="rowOdd">
+													<td class="item">
+														<div>Taxes</div></td>
+													<td class="price">
+														<div>125.00</div></td>
+												</tr>
+											</table></div></div>
+									<table cellpadding="0" cellspacing="0" border="0" class="totalPrice">
+										<tr>
+											<td class="item"></td>
+											<td class="price">
+												<div>TOTAL: USD 800.00</div></td>
+										</tr>
+									</table></div>
+								<div class="footerBlock">
+									<div><span></span></div></div></div>
+							<!-- /END ITINERARY PRICING BLOCK -->
+							<div id="fbBillingInfo">
+								<div class="formHeader">
+									<div>
+										<h2 class="formTitle" id="ftBillingInfo">Billing Information</h2></div></div>
+								<div class="formBody">
+									<div class="textBlock">
+										<p>To keep your information safe and secure, all transactions are protected by SSL encryption</p></div>
+									<div class="formSeparator formSep1">
+										<div class="spacer"><span></span></div></div>
+									<h3 class="formSubTitle formSubTitle1"><b>Card Information</b></h3>
+									<div class="formBlock formBlock1">
+										<table width="100%" class="formHorControl formFixedControl">
+											<tr class="colgroup">
+												<td class="colFormLabel"></td>
+												<td class="colFormControl"></td>
+												<td class="colFormDesc"></td>
+											</tr>
+											<tr valign="top" class="errorNoticeOuter errorNoticeOff">
+												<td></td>
+												<td colspan="2">
+													<div class="errorNotice">Card type is a mandatory field.</div></td>
+											</tr>
+											<tr valign="top">
+												<td align="right" class="formLabelArea mandatoryElement"><span class="formLabelElement"><span>*</span>  Card Type</span></td>
+												<td class="formInArea">
+													<select name="sel1" class="formSelect maxWidth" onChange="_protoShowHideIssueCountryAndCurrency(this.value)">
+														<option value="-1" selected="selected">Select a Card Type</option>
+														<option value="0">VISA</option>
+													</select></td>
+												<td class="formDescArea">
+													<!--span class="formDescElement"><a href="javascript:void(0);" onclick="openWindow ('CardType', '../../en/pages-old/Tell me more pages (IMR).html', 700, 500, '');">Click here</a> if you can't find your card in the list</span-->&nbsp;</td>
+											</tr>
+											<tr valign="top">
+												<td></td>
+												<td colspan="2" class="creditCardsArea"><img src="../../pictures/content/credit-card/icons/mastercard.gif" width="52" height="34" alt="MasterCard" /><img src="../../pictures/content/credit-card/icons/visa.gif" width="52" height="34" alt="VISA" /><img src="../../pictures/content/credit-card/icons/american-express.gif" width="52" height="34" alt="American Express Cards" /><img src="../../pictures/content/credit-card/icons/discover.gif" width="52" height="34" alt="Discover" /><img src="../../pictures/content/credit-card/icons/diners-club.gif" width="52" height="34" alt="Diners Club International" /><img src="../../pictures/content/credit-card/icons/frontier.gif" width="52" height="34" alt="Frontier" /></td>
+											</tr>
+											<tr valign="top" class="errorNoticeOuter errorNoticeOff">
+												<td></td>
+												<td colspan="2">
+													<div class="errorNotice">Please select card issue country.</div></td>
+											</tr>
+											<tr valign="top" class="mandatoryElement" id="rowCardIssueCountry" style="display:none">
+												<td align="right" class="formLabelArea"><span class="formLabelElement"><span>*</span>  Card Issued In</span></td>
+												<td class="formInArea">
+													<select name="sel1" class="formSelect maxWidth" onChange="_protoEnableCurrencyField(this.value)">
+														<option value="-1" selected="selected">Select a Country</option>
+														<option value="0">Colombia</option>
+													</select></td>
+												<td></td>
+											</tr>
+											<tr valign="top" id="rowPaymentCurrency" style="display:none">
+												<td align="right" class="formLabelArea"><span class="formLabelElement">Currency</span></td>
+												<td class="formInArea">
+													<select name="sel1" class="formSelect maxWidth" id="paymentCurrency" disabled="disabled" onChange="_protoShowHideEquivDetails(this.value)">
+														<option value="-1" selected="selected">Select a Currency</option>
+														<option value="0">US Dollar</option>
+														<option value="1">Colombian Peso</option>
+													</select></td>
+												<td></td>
+											</tr>
+											<tr valign="top" id="rowEquivTotal" style="display:none">
+												<td align="right" class="formLabelArea">&nbsp;</td>
+												<td colspan="2">
+													<div class="equivTotal">
+														<div class="text">Total Amount paying by Colombian Peso:</div>
+														<div class="price">COP 2,500,000</div></div></td>
+											</tr>
+											<tr valign="top" id="rowInstallments" style="display:none">
+												<td align="right" class="formLabelArea"><span class="formLabelElement">Installments</span></td>
+												<td colspan="2">
+													<table>
+														<tr>
+															<td class="formInArea">
+																<select name="sel1" class="formSelect">
+																	<option value="0" selected="selected">5</option>
+																</select></td>
+															<td class="formDescArea"><span class="formDescElement">Monthly payment: <span>COP 500,000</span></span></td>
+														</tr>
+													</table></td>
+											</tr>
+											<tr valign="top" class="errorNoticeOuter errorNoticeOff">
+												<td></td>
+												<td colspan="2">
+													<div class="errorNotice">Card number you have entered is not valid.</div></td>
+											</tr>
+											<tr valign="top" class="mandatoryElement">
+												<td align="right" class="formLabelArea"><span class="formLabelElement"><span>*</span>  Card Number</span></td>
+												<td class="formInArea">
+													<input type="text" name="f1" value=" " class="formInput maxWidth" /></td>
+												<td></td>
+											</tr>
+											<tr valign="top" class="errorNoticeOuter errorNoticeOff">
+												<td></td>
+												<td colspan="2">
+													<div class="errorNotice">Please select card expiration date.</div></td>
+											</tr>
+											<tr valign="top" class="mandatoryElement">
+												<td align="right" class="formLabelArea"><span class="formLabelElement"><span>*</span>  Expiration Date</span></td>
+												<td>
+													<table>
+														<tr>
+															<td class="formInArea">
+																<select name="sel1" class="formSelect">
+																	<option value="1" selected="selected">MMM</option>
+																</select></td>
+															<td class="formInArea">
+																<select name="sel1" class="formSelect">
+																	<option value="1" selected="selected">YYYY</option>
+																</select></td>
+														</tr>
+													</table></td>
+												<td></td>
+											</tr>
+											<tr valign="top" class="errorNoticeOuter errorNoticeOff">
+												<td></td>
+												<td colspan="2">
+													<div class="errorNotice">Security Code you have entered is not valid.</div></td>
+											</tr>
+											<tr valign="top" class="mandatoryElement">
+												<td align="right" class="formLabelArea"><span class="formLabelElement"><span>*</span>  Security Code</span></td>
+												<td class="formInArea">
+													<input type="text" name="f1" value=" " class="formInput" style="width:45px" /></td>
+												<td class="formDescArea"><span class="formDescElement"><a href="#" onClick="popupFramework.show({id:'popupSecurityCode',ajaxConfig:{},opacity:true,templateName:'securityCodePopup',size:{w:650},position:'centered'});return false">Tell me more...</a></span></td>
+											</tr>
+											<tr valign="top" class="errorNoticeOuter errorNoticeOff">
+												<td></td>
+												<td colspan="2">
+													<div class="errorNotice">Cardholder's name is a mandatory field.</div></td>
+											</tr>
+											<tr valign="top" class="mandatoryElement">
+												<td align="right" class="formLabelArea"><span class="formLabelElement"><span>*</span>  Cardholder's Name</span></td>
+												<td class="formInArea">
+													<input type="text" name="f1" value=" " class="formInput maxWidth" /></td>
+												<td class="formDescArea"><span class="formDescElement">Enter name as it appears on the card</span></td>
+											</tr>
+										</table></div>
+									<div class="formSeparator formSep2">
+										<div class="spacer"><span></span></div></div>
+									<h3 class="formSubTitle formSubTitle2"><b>Billing Address Information</b></h3>
+									<div class="formBlock formBlock2">
+										<table width="100%" class="formHorControl formFixedControl">
+											<tr class="colgroup">
+												<td class="colFormLabel"></td>
+												<td class="colFormControl"></td>
+												<td class="colFormDesc"></td>
+											</tr>
+											<tr valign="top" class="mandatoryElement">
+												<td align="right" class="formLabelArea"><span class="formLabelElement"><span>*</span>  Address Line 1</span></td>
+												<td class="formInArea">
+													<input type="text" name="f1" value="" class="formInput maxWidth" /></td>
+												<td></td>
+											</tr>
+											<tr valign="top">
+												<td align="right" class="formLabelArea"><span class="formLabelElement">Address Line 2</span></td>
+												<td class="formInArea">
+													<input type="text" name="f1" value="" class="formInput maxWidth" /></td>
+												<td></td>
+											</tr>
+											<tr valign="top" class="mandatoryElement">
+												<td align="right" class="formLabelArea"><span class="formLabelElement"><span>*</span>  City</span></td>
+												<td class="formInArea">
+													<input type="text" name="f1" value="" class="formInput maxWidth" /></td>
+												<td></td>
+											</tr>
+											<tr valign="top">
+												<td align="right" class="formLabelArea"><span class="formLabelElement">Region/County</span></td>
+												<td class="formInArea">
+													<input type="text" name="f1" value="" class="formInput maxWidth" /></td>
+												<td></td>
+											</tr>
+											<tr valign="top">
+												<td align="right" class="formLabelArea"><span class="formLabelElement">Postal/Zip Code</span></td>
+												<td class="formInArea">
+													<input type="text" name="f1" value="" class="formInput" style="width:105px" /></td>
+												<td></td>
+											</tr>
+											<tr valign="top" class="mandatoryElement">
+												<td align="right" class="formLabelArea"><span class="formLabelElement"><span>*</span>  Country</span></td>
+												<td class="formInArea">
+													<select name="sel1" class="formSelect maxWidth" onChange="_protoEnableStateProvinceField(this.value, 'billingStateProvince')">
+														<option value="-1" selected="selected">Select a Country</option>
+														<option value="0">USA</option>
+													</select></td>
+												<td></td>
+											</tr>
+											<tr valign="top">
+												<td align="right" class="formLabelArea"><span class="formLabelElement"><span>*</span>  State/Province</span></td>
+												<td class="formInArea">
+													<select name="sel1" class="formSelect maxWidth" id="billingStateProvince" disabled="disabled">
+														<option value="-1" selected="selected">Select</option>
+														<option value="0">Minnesota</option>
+														<option value="1">Mississippi</option>
+													</select></td>
+												<td class="formDescArea">
+													<!--span class="formDescElement"><Mandatory for USA, Canada and  Australia</span-->&nbsp;</td>
+											</tr>
+										</table></div></div>
+								<div class="formFooter">
+									<div><span></span></div></div></div>
+							<!-- Update Account block -->
+							<!--
+			<div class="updateAccountBlock">
+				<div class="headBlock"><div><h1></h1></div></div>
+				<div class="bodyBlock">
+					<div class="blockSeparator blockSep1"><span></span></div>
+					<div class="option">
+						<table>
+						<tr>
+							<th class="c1"><input type="checkbox" name="updateAccount" id="updateAccount" value="0" /></th>
+							<td class="c2"><h3><label for="updateAccount">I'd like to update my account with these details</label></h3></td>
+						</tr>
+						<tr>
+							<td colspan="2">Your account will be automatically updated with all information entered or changed within this page. <a href="javascript:void(0);" onclick="openWindow ('TellMeMore', '../../en/pages-old/Tell me more pages (IMR).html', 700, 500, '');">Tell me more...</a></td>
+						</tr>
+						</table>
+					</div>
+					<div class="blockSeparator blockSep2"><span></span></div>
+				</div>
+				<div class="footerBlock"><div><span></span></div></div>
+			</div>
+			-->
+							<!-- /Update Account block -->
+							<div id="tbTermsConditions">
+								<div class="textHeader">
+									<div>
+										<h2 class="textTitle" id="ttTermsConditions">Terms and Conditions / Fare Rules</h2></div></div>
+								<div class="textBody">
+									<div class="textBlock">
+										<p>To complete your purchase you must agree to our terms and conditions and fare rules that apply to your ticket.</p></div>
+									<div class="linksBlock">
+										<a href="#" onClick="popupFramework.show({id:'popupAirTerms',ajaxConfig:{},opacity:true,templateName:'airTermsPopup',size:{w:650},position:'centered'});return false">Terms and Conditions</a>
+										<a href="#" onClick="popupFramework.show({id:'popupFareRules',ajaxConfig:{},opacity:true,templateName:'fareRulesPopup',size:{w:650},position:'centered'});return false">Fare Rules</a></div>
+									<div class="formBlock">
+										<table width="100%" class="formHorControl">
+											<tr>
+												<td class="col1"></td>
+												<td class="col2">
+													<table width="100%">
+														<tr valign="top">
+															<td class="formInArea">
+																<input type="checkbox" name="check1" id="check1" value="" /></td>
+															<td width="100%" class="formLabelArea"><span class="formLabelElement"><label for="check1">I have read and agree to all the terms and conditions and fare rules specified above</label></span></td>
+														</tr>
+													</table></td>
+											</tr>
+										</table></div>
+									<div class="textSeparator">
+										<div class="spacer"><span></span></div></div></div>
+								<div class="textFooter">
+									<div><span></span></div></div></div>
+							<div id="tbOnlinePayment">
+								<div class="textHeader">
+									<div>
+										<h2 class="textTitle">
+										</h2></div></div>
+								<div class="textBody">
+									<div class="textBlock">
+										<p>It may take as long as 60 seconds to make the online payments. Please do not click Reload, Refresh or Back browser buttons.</p></div></div>
+								<div class="textFooter">
+									<div><span></span></div></div></div>
+							<div class="spacerVert"><span></span></div>
+							<div align="right" class="pageButtonArea">
+								<table>
+									<tr>
+										<td>
+											<a href="6 Flight Confirmation.html" class="button1" id="pgButtonPurchase"><span><span>Purchase</span></span></a></td>
+									</tr>
+								</table></div></div>
+						<!-- /END BODY WIDE AREA --></td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td valign="bottom">
+			<!-- Enter Chat -->
+			<div class="enterChat">
+				<div class="headBlock">
+					<div><span></span></div></div>
+				<div class="bodyBlock">
+					<h3>Need Help?</h3>
+					<p>A representative is standing by to answer your question via our <a href="#" onClick="openWindow('chatSelect', '../../en/popups/Chat Selection.html', 700, 500, '');return false">online chat</a>.</p>
+					<p>You can also <a href="#">contact us by email</a> or call 1(507) 217-2671.</p></div>
+				<div class="footerBlock">
+					<div><span></span></div></div></div>
+			<!-- /Enter Chat -->
+			<!-- BEGIN LAYOUT FOOTER -->
+			<div class="layoutFooter">
+								
+				<!-- BMI FOOTER -->		
+		
+				<div class="footerStub"><img src="../../pictures/footer/footer-stub.gif" width="930" height="56" alt=""></div>
+						
+				<!-- /BMI FOOTER -->	
+					
+			</div>
+			<!-- /END LAYOUT FOOTER --></td>
+	</tr>
+</table>
+<!-- /END HEIGHT SCRETCHING -->
+</body>
+</html>
+

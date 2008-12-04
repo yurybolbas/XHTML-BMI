@@ -1,0 +1,543 @@
+/******************************************************************************
+
+	DEFAULT STYLES
+
+******************************************************************************/
+
+.styleIsLoaded {
+	display: inline;
+}
+
+div {
+	/*
+	border: 1px solid red;
+	width: '100%';
+	*/
+	width: expression("100%");
+}
+
+html, body,
+p, form, label,
+h1, h2, h3, h4
+{
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+/* bug under IE5.2 MAC in POPUP
+	height: 100%;
+*/	
+}
+
+body {
+	background-color: #FFFFFF;
+}
+
+img {
+	border: 0;
+}
+
+body, td, th {
+	font: 11px Arial;
+	color: #333333;
+}
+
+TABLE {
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 0;
+}
+
+TABLE TD, TABLE TH {
+	padding: 0;
+} 
+
+.TableFixed{
+	width: 100%;
+	border: 0;
+	table-layout: fixed;
+}
+
+a {
+	color: #004982;
+	text-decoration: underline;
+}
+
+a.lnk1 {
+	color: #1E82F7;
+	text-decoration: underline;
+}
+
+a.lnk2 {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+a.button1, a.button1:hover, a.button1:visited,
+a.button1:link, a.button1:active, a.button1:focus {
+	font: bold 10px tahoma;
+	
+	background: #1E82F7;
+	color: #FFFFFF;
+	
+	text-decoration: none;
+	
+	border-top: 1px solid #5DAAFF;
+	border-left: 1px solid #5DAAFF;
+	border-bottom: 1px solid #1669CA;
+	border-right: 1px solid #1669CA;		
+	
+	padding: 2px 9px 3px 10px;
+	display: block;
+	width: '100%';
+}
+
+a.button2, a.button2:hover, a.button2:visited,
+a.button2:link, a.button2:active, a.button2:focus {
+	font: 10px tahoma;
+	
+	background: #878787;
+	color: #FFFFFF;
+	
+	text-decoration: none;
+	
+	border-top: 1px solid #B2B2B2;
+	border-left: 1px solid #B2B2B2;
+	border-bottom: 1px solid #878787;
+	border-right: 1px solid #878787;		
+	
+	padding: 2px 10px 3px 10px;
+	display: block;
+	width: '100%';
+}
+
+/* New Style Buttons */
+
+.pageButtonArea a.button1, .pageButtonArea a.button1:hover, .pageButtonArea a.button1:visited,
+.pageButtonArea a.button1:link, .pageButtonArea a.button1:active, .pageButtonArea a.button1:focus,
+.formButtonArea a.button1, .formButtonArea a.button1:hover, .formButtonArea a.button1:visited,
+.formButtonArea a.button1:link, .formButtonArea a.button1:active, .formButtonArea a.button1:focus,
+.componentButtonArea a.button1, .componentButtonArea a.button1:hover, .componentButtonArea a.button1:visited,
+.componentButtonArea a.button1:link, .componentButtonArea a.button1:active, .componentButtonArea a.button1:focus {
+	background: #d3991b url(../pictures/misc/main-button-bg.gif) repeat-x left top;
+	border: none;
+	padding: 0;
+	display: block;
+	width: '100%';
+	font: bold 16px Arial;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.pageButtonArea a.button1 span, .formButtonArea a.button1 span, .componentButtonArea a.button1 span {
+	display: block;
+	background: url(../pictures/misc/main-button-left.gif) no-repeat left top;
+}
+
+.pageButtonArea a.button1 span span, .formButtonArea a.button1 span span, .componentButtonArea a.button1 span span {
+	background: url(../pictures/misc/main-button-right.gif) no-repeat right top;
+	padding: 3px 15px 3px 15px;
+}
+
+.pageButtonArea a.button2, .pageButtonArea a.button2:hover, .pageButtonArea a.button2:visited,
+.pageButtonArea a.button2:link, .pageButtonArea a.button2:active, .pageButtonArea a.button2:focus,
+.formButtonArea a.button2, .formButtonArea a.button2:hover, .formButtonArea a.button2:visited,
+.formButtonArea a.button2:link, .formButtonArea a.button2:active, .formButtonArea a.button2:focus,
+.componentButtonArea a.button2, .componentButtonArea a.button2:hover, .componentButtonArea a.button2:visited,
+.componentButtonArea a.button2:link, .componentButtonArea a.button2:active, .componentButtonArea a.button2:focus {
+	background: #1673b2 url(../pictures/misc/alt-button-bg.gif) repeat-x left top;
+	border: none;
+	padding: 0;
+	display: block;
+	width: '100%';
+	font: bold 12px Arial;
+	text-decoration: none;
+	color: #FFFFFF;
+	margin: 2px 0 0 0;
+}
+
+.pageButtonArea a.button2 span, .formButtonArea a.button2 span, .componentButtonArea a.button2 span {
+	display: block;
+	background: url(../pictures/misc/alt-button-left.gif) no-repeat left top;
+}
+
+.pageButtonArea a.button2 span span, .formButtonArea a.button2 span span, .componentButtonArea a.button2 span span {
+	background: url(../pictures/misc/alt-button-right.gif) no-repeat right top;
+	padding: 2px 25px 4px 25px;
+}
+
+
+.button1Disabled {
+	background: #e9cb8d url(../pictures/misc/button1-disabled-bg.gif) repeat-x left top;
+	border: none;
+	padding: 0;
+	display: block;
+	width: '100%';
+	font: bold 16px Arial;
+	text-decoration: none;
+	color: #FFFFFF;
+	cursor: default;
+}
+
+.button1Disabled span {
+	display: block;
+	background: url(../pictures/misc/button1-disabled-left.gif) no-repeat left top;
+}
+
+.button1Disabled span span {
+	background: url(../pictures/misc/button1-disabled-right.gif) no-repeat right top;
+	padding: 3px 15px 3px 15px;
+}
+
+.button2Disabled {
+	background: #8ab9d8 url(../pictures/misc/button2-disabled-bg.gif) repeat-x left top;
+	border: none;
+	padding: 0;
+	display: block;
+	width: '100%';
+	font: bold 12px Arial;
+	text-decoration: none;
+	color: #FFFFFF;
+	cursor: default;
+	margin: 2px 0 0 0;
+}
+
+.button2Disabled span {
+	display: block;
+	background: url(../pictures/misc/button2-disabled-left.gif) no-repeat left top;
+}
+
+.button2Disabled span span {
+	background: url(../pictures/misc/button2-disabled-right.gif) no-repeat right top;
+	padding: 2px 25px 4px 25px;
+}
+
+.pageButtonArea TD {
+	padding: 0 0 0 7px	
+}
+
+.spacer {
+	width: 1px;
+	height: 1px;
+}
+
+.spacerHor {
+	width: 10px;
+	height: 1px;
+}
+
+.spacerVert {
+	width: 1px;
+	height: 10px;
+}
+
+.spacerText {
+	width: 1px;
+	height: 7px;
+}
+
+.maxWidth {
+	width: 100%;
+}
+
+.clearSpacer {
+	clear: both;
+}
+
+/******************************************************************************
+
+	Text sizes
+
+******************************************************************************/
+
+.textSmallest {
+	font-size: 10px;
+}
+
+.textSmall {
+	font-size: 11px;
+}
+
+.textStandart {
+	font-size: 12px;
+}
+
+.textBig {
+	font-size: 13px;
+}
+
+.textBiggest {
+	font-size: 14px;
+}
+
+
+/******************************************************************************
+
+	Fonts
+
+******************************************************************************/
+
+.fontArial {
+	font-family: Arial;
+}
+
+.fontTahoma {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.fontVerdana {
+	font-family: Verdana;
+}
+
+
+/******************************************************************************
+
+	Layout elements
+
+******************************************************************************/
+
+#includeContent {
+	margin: 5% 15% 1% 15%;
+}
+
+.layoutCell {
+	/*
+	*/
+}
+
+.layoutMain,
+.layoutHeader,
+.layoutBody,
+.layoutFooter {
+	width: 930px;
+}
+
+.layoutBody {
+	margin: 20px auto;
+}
+
+.layoutBodyNarrowArea {
+	width: 225px;
+}
+
+.layoutBodyFreeArea {
+	width: 112px;
+}
+
+.layoutBodyWideArea {
+/*	width: 530px; */
+}
+
+.layoutBodySpaceArea {
+	width: 15px;
+}
+
+.layoutLeftAreaBot,
+.layoutRightAreaBot {
+	margin: 0 auto 10px auto;
+}
+
+
+/******************************************************************************
+
+	Blocks
+
+******************************************************************************/
+
+.standartBlock {
+	padding: 10px;
+}
+
+.textBlock {
+	margin: 0 0 8px 0;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.textBlock p {
+	margin: 8px 0 0 0;
+	padding: 0;
+}
+
+.textBlock ul {
+	margin: 8px 0 0 0;
+	padding: 0 0 0 20px;
+}
+
+.formBlock {
+	margin: 0 5px 8px 5px;
+}
+
+.formFooter {
+	display: none;
+}
+
+.formSeparator,
+.textSeparator,
+.blockSeparator {
+	background-image: url(../pictures/misc/form_sep.gif);
+	background-repeat: repeat-x;
+	height:1px;
+}
+
+
+/******************************************************************************
+
+	Headers
+
+******************************************************************************/
+
+.pageTitle {
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+
+	color: #F7931E;
+}
+
+.popupContent .pageTitle,
+.pageTitle2,
+.popupTitle {
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+
+	color: #003366;
+}
+
+.pageSubTitle{
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size:12px;
+		
+	color:#003366;
+}
+
+.tableTitle,
+.formTitle,
+.textTitle {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px 0;
+	border-bottom: 1px solid #cccacb;
+}
+
+.titleLinkArea{
+	font:normal 10px Verdana;
+
+	padding-right: 5px;
+}
+
+.titleLinkArea A{
+	color: #FFFFFF;
+}
+
+
+.formSubTitle {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	
+	color: #000000;
+	
+	margin: 6px 0 0 5px;
+}
+
+.textSubTitle {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	
+	color: #000000;
+	
+	margin: 6px 0 0 0;
+}
+
+.staticTitle {
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: bold;
+	
+	color: #000000;
+}
+
+
+/******************************************************************************
+
+	Text
+
+******************************************************************************/
+
+.defaultText {
+	font-family: Verdana;
+	font-size: 10px;
+	
+	padding-top: 6px;
+}
+
+.introText {
+	font-family: Arial;
+	font-size: 11px;
+	
+	color: #003366;
+}
+
+.footnote {
+	font-family: Arial;
+	font-size: 10px;
+	
+	color: #003366;
+}
+
+.onFill,
+.onSubmit {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.onFill {
+	color: #878787;
+}
+
+.onSubmit {
+	color: #003366;
+}
+
+.markText{
+	color: #F7931E;
+}
+
+.staticText {
+	font-family: Arial;
+	font-size: 11px;
+	
+	color: #000000;
+}
+
+
+/******************************************************************************
+
+	Form
+
+******************************************************************************/
+.radio {
+	margin:0;
+	padding:0;
+}
+
+.inp {
+	font-family: Arial;
+	font-size: 11px;
+	color:#000;
+	margin:0;
+}
+
+
+.inactiveFadeOut {
+	-moz-opacity: 0.55;
+	opacity: .55;
+	background: #FFF;
+	filter: alpha(opacity=55);	
+}

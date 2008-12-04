@@ -1,0 +1,381 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DLEXPRD</title>
+<script language="JavaScript" type="text/javascript">
+<!--		
+function registerJS(jsName){
+	return;
+}
+--></script>
+<link rel="stylesheet" type="text/css" href="../../css/all.css" />
+<link rel="stylesheet" type="text/css" href="../../css/print.css" media="print" />
+<script src="../../js/bot_script.js" type="text/JavaScript"></script>
+<script src="../../js/calendar.js" type="text/JavaScript"></script>
+<script src="../../js/dialog.js" type="text/JavaScript"></script>
+<script src="../../js/drilldown.js" type="text/JavaScript"></script>
+<script src="../../js/global.js" type="text/JavaScript"></script>
+<script src="../../js/utils.js" type="text/JavaScript"></script>
+<script src="../../js/navigation.js" type="text/JavaScript"></script>
+<script src="../../js/prototype_source_loader.js" type="text/javascript"></script>
+<script src="../../js/seatmap.js" type="text/JavaScript"></script>
+<script src="../../js/version.js" type="text/JavaScript"></script>
+<script src="../../en/js/airport_data.js" type="text/JavaScript"></script>
+<script src="../../en/js/navigation.js" type="text/JavaScript"></script>
+<script src="../../en/js/popup_templates.js" type="text/JavaScript"></script>
+<script type="text/JavaScript">
+<!--
+function deleteTraveller()
+{
+	var str = '"Are you sure you want to delete this traveller?"';
+	
+	window.confirm (str);
+	
+	return false;
+}
+function deleteAddress()
+{
+	var str = '"Are you sure you want to delete this address?"';
+		
+	window.confirm (str);
+	
+	return false;
+}
+function deleteBillingInf()
+{
+	var str = '"Are you sure you want to delete this billing information?"';
+	
+	window.confirm (str);
+	
+	return false;
+}
+function deleteAccount()
+{
+	var str = '"Are you sure you want to delete your account and associated profile? This action can not be undone!"';
+	
+	if (window.confirm (str))
+	{
+		window.location = '../index.html';
+	}
+	
+	return false;
+}
+//--></script>
+</head>
+<body>
+<!-- BEGIN HEIGHT SCRETCHING -->
+<table height="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="layoutMain">
+	<tr>
+		<td valign="top">
+			<!-- BEGIN LAYOUT HEADER -->
+			<div class="layoutHeader">
+			
+				<!-- BMI HEADER -->	
+			
+				<div class="headerStub"><img src="../../pictures/header/header-stub.gif" width="930" height="104" alt=""></div>
+				
+				<!-- /BMI HEADER -->	
+			
+				<div class="blockUnderLogo">
+					<table cellpadding="0" cellspacing="0" border="0" class="blockUnderLogoContent">
+						<tr valign="top">
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN LANGUAGE SELECTOR -->
+								<div class="languageSelector"><span>English</span><span class="delim"> | </span>
+									<a href="#">Espanol</a></div>
+								<!-- /END LANGUAGE SELECTOR --></td>
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN BREADCRUMB -->
+								<div class="navigationBreadcrumb">
+									<a href="../../en/index.html">Home</a><span> » </span><strong>My Profile</strong></div>
+								<!-- /END BREADCRUMB --></td>
+							<td class="layoutCell" width="99%" align="right">
+								<!-- BEGIN LOGIN STATUS -->
+								<div class="auth"><strong>Welcome, John Smith   johns123</strong><span> | </span>
+									<a href="../../en/pages-profile/Profile - Indexpage (AHP).html">My Profile</a><span> | </span>
+									<a href="../../en/pages-old/Trip Planner - 1 Control Panel (PHP).html">Trip Planner</a><span> | </span>
+									<a href="../../en/index.html" onClick="return window.confirm ('&quot;Are you sure you want to Log off?&quot;')">Logoff</a></div>
+								<!-- /END LOGIN STATUS --></td>
+						</tr>
+					</table></div></div>
+			<!-- /END LAYOUT HEADER -->
+			<table cellpadding="0" cellspacing="0" border="0" class="layoutBody" align="center">
+				<tr valign="top">
+					<!--td class="layoutBodyNarrowArea">
+		<xml:include>include-profile-menu.xhtml</xml:include>
+		<div class="spacerVert"><span /></div>		
+		<xml:include>content-block-help.xhtml</xml:include>		
+	</td>
+	
+	<td class="layoutBodySpaceArea"><div class="spacer"><span /></div></td-->
+					<td class="layoutBodyWideArea">
+						<!-- BEGIN BODY WIDE AREA -->
+						<div id="pgProfileIndex">
+							<!-- BEGIN PAGE TITLE LINE -->
+							<div class="pageTitleArea">
+								<div>
+									<h1>Welcome, Mr. John Smith</h1></div></div>
+							<!-- /END PAGE TITLE LINE -->
+							<!-- BEGIN INTRO TEXT AREA -->
+							<div class="introTextArea">
+								<p>This control panel screen allows you to manage your profile and all related information.</p></div>
+							<!-- /END INTRO TEXT AREA -->
+							<div class="spacerVert"><span></span></div>
+							<a name="profilePassword" id="profilePassword"></a>
+							<div id="fbProfilePassword">
+								<div class="formHeader">
+									<div>
+										<h2 class="formTitle" id="ftProfilePassword">Password</h2></div></div>
+								<div class="formBody">
+									<div class="textBlock">
+										<p>Manage your password information here.</p></div>
+									<div class="formBlock">
+										<table width="100%" cellpadding="0" cellspacing="0" border="0" class="formHorControl">
+											<tr valign="top">
+												<td class="formLabelArea firstColumn"><span class="formLabelElement">Mr. John Smith  (Johny12341_4)</span></td>
+											</tr>
+										</table></div>
+									<div align="right" class="formButtonArea">
+										<table cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td>
+													<a href="Profile - Change Password (ACP).html" class="button1" id="fbButtonChangePassword"><span><span>Change Password</span></span></a></td>
+											</tr>
+										</table></div></div>
+								<div class="formFooter">
+									<div><span></span></div></div></div>
+							<div class="spacerVert"><span></span></div>
+							<a name="profileAccountSettings" id="profileAccountSettings"></a>
+							<div id="fbProfileAccountInformation">
+								<div class="formHeader">
+									<div>
+										<h2 class="formTitle" id="ftProfileAccountInformation">Account Information and Settings</h2></div></div>
+								<div class="formBody">
+									<div class="textBlock">
+										<p>Manage your email, search preferences and emergency contact information here.</p></div>
+									<div class="formBlock">
+										<table width="100%" cellpadding="0" cellspacing="0" border="0" class="formHorControl">
+											<tr valign="top">
+												<td class="formLabelArea firstColumn"><span class="formLabelElement">John.smith@company.com</span></td>
+											</tr>
+											<tr valign="top">
+												<td class="formLabelArea firstColumn"><span class="formLabelElement">Emergency Contact: none</span></td>
+											</tr>
+										</table></div>
+									<div align="right" class="formButtonArea">
+										<table cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td>
+													<a href="Profile - Account Settings (AIS).html" class="button1" id="fbButtonEditSettings"><span><span>Edit Account Settings</span></span></a></td>
+											</tr>
+										</table></div></div>
+								<div class="formFooter">
+									<div><span></span></div></div></div>
+							<div class="spacerVert"><span></span></div>
+							<a name="profileTravellers" id="profileTravellers"></a>
+							<div id="fbProfileTravellerDetails">
+								<div class="formHeader">
+									<div>
+										<h2 class="formTitle" id="ftProfileTravellerDetails">Traveller Details</h2></div></div>
+								<div class="formBody">
+									<div class="textBlock">
+										<p>Manage traveller details, air preferences and loyalty membership here.</p></div>
+									<div class="gridBlock">
+										<table width="100%" cellpadding="0" cellspacing="0" border="0">
+											<tr valign="top" class="even rowFirst">
+												<td class="colFirst">
+													<a href="Profile - Edit Traveller (AET).html">Mr. John Smith</a></td>
+												<td width="2%">
+													<a href="Profile - Edit Traveller (AET).html"><img src="../../pictures/icons/edit.gif" width="12" height="12" alt="" /></a></td>
+												<td class="colLast" width="2%">&nbsp;</td>
+											</tr>
+											<tr valign="top" class="odd">
+												<td class="colFirst">
+													<a href="Profile - Edit Traveller (AET).html">Mr. Mike Smirnoff</a></td>
+												<td>
+													<a href="Profile - Edit Traveller (AET).html"><img src="../../pictures/icons/edit.gif" width="12" height="12" alt="" /></a></td>
+												<td class="colLast">
+													<a href="#" onClick="deleteTraveller();"><img src="../../pictures/icons/delete.gif" width="12" height="12" alt="" /></a></td>
+											</tr>
+											<tr valign="top" class="even">
+												<td>
+													<a href="Profile - Edit Traveller (AET).html">Mr. Dary Taylor</a></td>
+												<td>
+													<a href="Profile - Edit Traveller (AET).html"><img src="../../pictures/icons/edit.gif" width="12" height="12" alt="" /></a></td>
+												<td class="colLast">
+													<a href="#" onClick="deleteTraveller();"><img src="../../pictures/icons/delete.gif" width="12" height="12" alt="" /></a></td>
+											</tr>
+											<tr valign="top" class="odd rowLast">
+												<td class="colFirst">
+													<a href="Profile - Edit Traveller (AET).html">Mr. Mike Smile</a></td>
+												<td>
+													<a href="Profile - Edit Traveller (AET).html"><img src="../../pictures/icons/edit.gif" width="12" height="12" alt="" /></a></td>
+												<td class="colLast">
+													<a href="#" onClick="deleteTraveller();"><img src="../../pictures/icons/delete.gif" width="12" height="12" alt="" /></a></td>
+											</tr>
+										</table></div>
+									<div align="right" class="formButtonArea">
+										<table cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td>
+													<a href="Profile - Add New Traveller (AAT).html" class="button1" id="fbAddNewTraveller"><span><span>Add New Traveller</span></span></a></td>
+											</tr>
+										</table></div></div>
+								<div class="formFooter">
+									<div><span></span></div></div></div>
+							<div class="spacerVert"><span></span></div>
+							<a name="profileContacts" id="profileContacts"></a>
+							<div id="fbProfileContactDetails">
+								<div class="formHeader">
+									<div>
+										<h2 class="formTitle" id="ftProfileContactDetails">Contact Details</h2></div></div>
+								<div class="formBody">
+									<div class="textBlock">
+										<p>Manage contact telephone details here.</p></div>
+									<div class="formBlock">
+										<table width="100%" cellpadding="0" cellspacing="0" border="0" class="formHorControl">
+											<tr valign="top">
+												<td width="10%" class="formLabelArea firstColumn"><span class="formLabelElement">Home:</span></td>
+												<td class="formLabelArea"><span class="formLabelElement">+1-609-123123123</span></td>
+											</tr>
+											<tr valign="top">
+												<td class="formLabelArea firstColumn"><span class="formLabelElement">Business:</span></td>
+												<td class="formLabelArea"><span class="formLabelElement">+1-609-123123123</span></td>
+											</tr>
+											<tr valign="top">
+												<td class="formLabelArea firstColumn"><span class="formLabelElement">Mobile:</span></td>
+												<td class="formLabelArea"><span class="formLabelElement">+1-609-123123123</span></td>
+											</tr>
+											<tr valign="top">
+												<td class="formLabelArea firstColumn"><span class="formLabelElement">Fax:</span></td>
+												<td class="formLabelArea"><span class="formLabelElement">+1-609-123123123</span></td>
+											</tr>
+										</table></div>
+									<div align="right" class="formButtonArea">
+										<table cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td>
+													<a href="Profile - Edit Contacts (AEC).html" class="button1" id="fbEditContacts"><span><span>Edit Contacts</span></span></a></td>
+											</tr>
+										</table></div></div>
+								<div class="formFooter">
+									<div><span></span></div></div></div>
+							<div class="spacerVert"><span></span></div>
+							<a name="profileAddresses" id="profileAddresses"></a>
+							<div id="fbProfileAddresses">
+								<div class="formHeader">
+									<div>
+										<h2 class="formTitle" id="ftProfileAddresses">Addresses</h2></div></div>
+								<div class="formBody">
+									<div class="textBlock">
+										<p>Manage address information here.</p></div>
+									<div class="gridBlock">
+										<table width="100%" cellpadding="0" cellspacing="0" border="0">
+											<tr valign="top" class="even rowFirst">
+												<td class="colFirst">
+													<a href="Profile - Edit Address (AEA).html">24 South 34th Street, Suite 345,  Minneapolis, Minnesota (MN), USA (default address)</a></td>
+												<td width="2%">
+													<a href="Profile - Edit Address (AEA).html"><img src="../../pictures/icons/edit.gif" width="12" height="12" alt="" /></a></td>
+												<td class="colLast" width="2%">
+													<a href="#" onClick="deleteAddress();"><img src="../../pictures/icons/delete.gif" width="12" height="12" alt="" /></a></td>
+											</tr>
+											<tr valign="top" class="odd rowLast">
+												<td class="colFirst">
+													<a href="Profile - Edit Address (AEA).html">19 Central Park, Build. 34, Minneapolis, Minnesota (MN), USA</a></td>
+												<td>
+													<a href="Profile - Edit Address (AEA).html"><img src="../../pictures/icons/edit.gif" width="12" height="12" alt="" /></a></td>
+												<td class="colLast">
+													<a href="#" onClick="deleteAddress();"><img src="../../pictures/icons/delete.gif" width="12" height="12" alt="" /></a></td>
+											</tr>
+										</table></div>
+									<div align="right" class="formButtonArea">
+										<table cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td>
+													<a href="Profile - Add New Address (AAA).html" class="button1" id="fbAddAddress"><span><span>Add New Address</span></span></a></td>
+											</tr>
+										</table></div></div>
+								<div class="formFooter">
+									<div><span></span></div></div></div>
+							<div class="spacerVert"><span></span></div>
+							<a name="profileBillingInformation" id="profileBillingInformation"></a>
+							<div id="fbProfileBillingInfo">
+								<div class="formHeader">
+									<div>
+										<h2 class="formTitle" id="ftProfileBillingInfo">Billing Information</h2></div></div>
+								<div class="formBody">
+									<div class="textBlock">
+										<p>Manage billing information here.</p></div>
+									<div class="gridBlock">
+										<table width="100%" cellpadding="0" cellspacing="0" border="0">
+											<tr valign="top" class="even rowFirst">
+												<td class="colFirst">
+													<a href="Profile - Edit Billing Info (AEB).html">VISA GOLD  XXXX-XXXX-XXXX-5699, valid thru 12/2005 (default card)</a></td>
+												<td width="2%">
+													<a href="Profile - Edit Billing Info (AEB).html"><img src="../../pictures/icons/edit.gif" width="12" height="12" alt="" /></a></td>
+												<td class="colLast" width="2%">
+													<a href="#" onClick="deleteBillingInf();"><img src="../../pictures/icons/delete.gif" width="12" height="12" alt="" /></a></td>
+											</tr>
+											<tr valign="top" class="odd rowLast">
+												<td class="colFirst">
+													<a href="Profile - Edit Billing Info (AEB).html">MASTERCARD  XXXX-XXXX-XXXX-1203, valid thru  07/2006</a></td>
+												<td>
+													<a href="Profile - Edit Billing Info (AEB).html"><img src="../../pictures/icons/edit.gif" width="12" height="12" alt="" /></a></td>
+												<td class="colLast">
+													<a href="#" onClick="deleteBillingInf();"><img src="../../pictures/icons/delete.gif" width="12" height="12" alt="" /></a></td>
+											</tr>
+										</table></div>
+									<div align="right" class="formButtonArea">
+										<table cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td>
+													<a href="Profile - Add New Billing Info (AAB).html" class="button1" id="fbAddBillingInfo"><span><span>Add New Billing Info</span></span></a></td>
+											</tr>
+										</table></div></div>
+								<div class="formFooter">
+									<div><span></span></div></div></div>
+							<div class="spacerVert"><span></span></div>
+							<div class="formSeparator">
+								<div class="spacer"><span></span></div></div>
+							<div class="spacerVert"><span></span></div>
+							<div class="pageButtonArea">
+								<table cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td>
+											<a href="#" class="button1" onClick="deleteAccount();return false" id="pbDeleteAccount"><span><span>Delete Account</span></span></a></td>
+									</tr>
+								</table></div></div>
+						<!-- /END BODY WIDE AREA --></td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td valign="bottom">
+			<!-- Enter Chat -->
+			<div class="enterChat">
+				<div class="headBlock">
+					<div><span></span></div></div>
+				<div class="bodyBlock">
+					<h3>Need Help?</h3>
+					<p>A representative is standing by to answer your question via our <a href="#" onClick="openWindow('chatSelect', '../../en/popups/Chat Selection.html', 700, 500, '');return false">online chat</a>.</p>
+					<p>You can also <a href="#">contact us by email</a> or call 1(507) 217-2671.</p></div>
+				<div class="footerBlock">
+					<div><span></span></div></div></div>
+			<!-- /Enter Chat -->
+			<!-- BEGIN LAYOUT FOOTER -->
+			<div class="layoutFooter">
+								
+				<!-- BMI FOOTER -->		
+		
+				<div class="footerStub"><img src="../../pictures/footer/footer-stub.gif" width="930" height="56" alt=""></div>
+						
+				<!-- /BMI FOOTER -->	
+					
+			</div>
+			<!-- /END LAYOUT FOOTER --></td>
+	</tr>
+</table>
+<!-- /END HEIGHT SCRETCHING -->
+</body>
+</html>
+

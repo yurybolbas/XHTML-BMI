@@ -1,0 +1,3420 @@
+/******************************************************************************
+
+	summary block
+
+******************************************************************************/
+
+
+.summaryBlock {
+	font: 10px/14px Verdana;
+}
+
+.summaryBlock TH, .summaryBlock TD {
+	font: 10px Verdana;
+	text-align: left;
+	vertical-align: top;
+	padding: 1px 0;
+}
+
+.summaryBlock .headBlock {
+	background: #DADADA url(../pictures/misc/summary_con_t_l.gif) no-repeat;
+}
+
+.summaryBlock .headBlock DIV {
+	background: url(../pictures/misc/summary_con_t_r.gif) no-repeat top right;
+}						
+
+.summaryBlock .headBlock DIV H1 {
+	font: bold 10px Verdana;
+	padding: 5px 10px 5px 10px;
+}
+
+.summaryBlock .bodyBlock {
+	border: 1px solid #BFB5BF;
+	background: #F3F3DB;
+	padding: 3px 9px 5px 9px;
+}
+
+.summaryBlock .bodyBlock .viewCartLink {
+	text-align: right;
+	font-weight: bold;
+}
+
+.summaryBlock .bodyBlock .contentBodyBlock {
+
+}						
+
+.summaryBlock .bodyBlock H1 {
+	font: bold 11px Verdana;
+	padding: 3px 0px 3px 0px;	
+}
+
+.summaryBlock .bodyBlock H1 SPAN {
+	padding: 0 5px 0 0;
+}
+
+.summaryBlock .bodyBlock H1 SPAN A {
+	text-decoration: none;
+	padding: 0 3px;
+}
+
+.summaryBlock .bodyBlock .contentBodyBlockCollapsed H1 SPAN {
+	background: url(../pictures/icons/i_plus.gif) no-repeat left center;
+}
+
+.summaryBlock .bodyBlock .contentBodyBlockExpanded H1 SPAN {
+	background: url(../pictures/icons/i_minus.gif) no-repeat left center;
+}
+
+.summaryBlock .bodyBlock .infoBlock {
+
+}
+
+.summaryBlock .bodyBlock .infoBlock .details {
+	padding: 0 0 0 15px;
+}
+
+.summaryBlock .bodyBlock .contentBodyBlockCollapsed .collapsedBlock,
+.summaryBlock .bodyBlock .contentBodyBlockExpanded .expandedBlock {
+	display: block;
+}
+
+.summaryBlock .bodyBlock .contentBodyBlockCollapsed .expandedBlock,
+.summaryBlock .bodyBlock .contentBodyBlockExpanded .collapsedBlock {
+	display: none;
+}
+
+.summaryBlock .bodyBlock .expandedBlock .name {
+	font-weight: bold;
+}
+
+.summaryBlock .bodyBlock .pricing TD,
+.summaryBlock .bodyBlock .subTotal TD {
+	text-align: right;
+}
+
+.summaryBlock .bodyBlock .sepSpacer {
+	height:5px;
+}
+
+.summaryBlock .bodyBlock .sepLine1 {
+	height:1px;
+	background:url(../pictures/misc/form_sep.gif) repeat-x;
+	margin:4px 0 4px 15px;
+}
+
+.summaryBlock .bodyBlock .sepLine2 {
+	height:1px;
+	background: #C3C3C3;
+	margin:4px 0;
+}
+
+.summaryBlock .totalBlock TD,
+.summaryBlock .totalBlock TH {
+	font: bold 12px Tahoma;
+}
+
+.summaryBlock .totalBlock TD {
+	text-align: right;
+}
+
+.summaryBlock .footerBlock {
+	background: #BFB5BF url(../pictures/misc/summary_con_b_l.gif) no-repeat left bottom;
+}
+
+.summaryBlock .footerBlock DIV {
+	background: url(../pictures/misc/summary_con_b_r.gif) no-repeat bottom right;
+	height: 11px;
+}	
+
+
+/*  Flight Summary  */
+
+.summaryBlock .bodyBlock .contentBodyBlockFlight .collapsedBlock .name {
+	padding: 0 0 4px 0;
+}
+
+.summaryBlock .bodyBlock .contentBodyBlockFlight .collapsedBlock .sepLine1 {
+	margin-top: 0;
+}
+
+
+/******************************************************************************
+
+	Travel Assistant
+
+******************************************************************************/
+
+
+.travelAssistant {
+	font: 10px Verdana;
+}
+
+.travelAssistant .headBlock {
+	background: #CDECF1 url(../pictures/misc/block_t_l.gif) no-repeat;
+}
+
+.travelAssistant .headBlock DIV {
+	background: url(../pictures/misc/block_t_r.gif) no-repeat top right;
+}						
+
+.travelAssistant .headBlock DIV H1 {
+	font: bold 10px Verdana;
+	padding: 6px 10px 5px 10px;
+}
+
+.travelAssistant .bodyBlock {
+	border: 1px solid #A8C2E9;
+	background: #F3F3DB;
+	padding: 5px 10px;
+}
+
+.travelAssistant .bodyBlock .contentBodyBlock {
+
+}		
+
+.travelAssistant .bodyBlock p {
+	margin: 10px 0;
+	color: #5C3E29;
+}			
+
+.travelAssistant .footerBlock {
+	background: #A8C2E9 url(../pictures/misc/block_b_l.gif) no-repeat left bottom;
+}
+
+.travelAssistant .footerBlock DIV {
+	background: url(../pictures/misc/block_b_r.gif) no-repeat bottom right;
+	height: 8px;
+}	
+
+/******************************************************************************
+
+	Related Links
+
+******************************************************************************/
+
+
+.relatedLinks {
+	font: 10px Verdana;
+}
+
+.relatedLinks .headBlock {
+	background: #CDECF1 url(../pictures/misc/block_t_l.gif) no-repeat;
+}
+
+.relatedLinks .headBlock DIV {
+	background: url(../pictures/misc/block_t_r.gif) no-repeat top right;
+}						
+
+.relatedLinks .headBlock DIV H1 {
+	font: bold 10px Verdana;
+	padding: 6px 10px 5px 10px;
+}
+
+.relatedLinks .bodyBlock {
+	border: 1px solid #A8C2E9;
+	background: #F3F3DB;
+	padding: 5px 10px;
+}
+
+.relatedLinks .bodyBlock .contentBodyBlock {
+
+}		
+
+.relatedLinks .bodyBlock ul {
+	margin: 10px 0;
+	padding: 0;
+	list-style-type: none;
+}	
+
+.relatedLinks .bodyBlock li {
+	margin: 0 0 5px 0;
+}	
+
+.relatedLinks .bodyBlock a {
+	color: #0000FF;
+	text-decoration: none; 
+}	
+
+.relatedLinks .footerBlock {
+	background: #A8C2E9 url(../pictures/misc/block_b_l.gif) no-repeat left bottom;
+}
+
+.relatedLinks .footerBlock DIV {
+	background: url(../pictures/misc/block_b_r.gif) no-repeat bottom right;
+	height: 8px;
+}	
+
+/******************************************************************************
+
+	common Search Block
+
+******************************************************************************/
+
+
+/* bot form elements */
+
+.searchBlock TD {
+	font: 12px Arial;
+}
+
+.searchBlock .botLabelTop {
+	margin: 4px 0 3px 0;
+	font: 12px Arial;
+}
+
+.searchBlock .botLabelLeft {
+	padding: 0 5px 0 0;
+	font: 12px Arial;
+}
+
+
+.searchBlock .botLabelRight, .searchBlock .botLabel {
+	font: 12px Arial;
+}
+
+.searchBlock .botMandatoryElement {
+	padding-left: 8px;
+	background: url(../pictures/icons/i_mandatory.gif) no-repeat left top;  
+}
+
+.searchBlock .botMandatoryElement SPAN {
+	display: none;
+}
+	
+.searchBlock .botField {
+
+}
+
+.searchBlock .fieldSelect {
+
+}
+
+.searchBlock .fieldSelect SELECT {
+	font: 12px Arial;
+}
+
+.searchBlock .fieldText {
+
+}
+
+.searchBlock .fieldText INPUT {
+	font: 12px Arial;
+}
+
+.searchBlock .fieldCheckbox {
+
+}
+
+.searchBlock .botHorRadioGroup {
+
+}
+
+.searchBlock .botVerRadioGroup {
+
+}
+
+.searchBlock .botVerRadioGroup TD,
+.searchBlock .botHorRadioGroup TD {
+	height: 20px;
+}
+
+.searchBlock .fieldRadio {
+	width: 20px;
+	text-align: center;
+}
+
+.searchBlock .botField .maxWidth {
+	width: 100%;
+}
+
+.searchBlock .botField .halfMaxWidth {
+	width: 50%;
+}
+
+.searchBlock .smLeftSpacer {
+	padding-left: 3px;
+}
+
+.searchBlock .leftSpacer {
+	padding-left: 8px;
+}
+
+.searchBlock .rightSpacer {
+	padding-right: 8px;
+}
+
+.searchBlock .lgRightSpacer {
+	padding-right: 15px;
+}
+
+.searchBlock .calendarArea {
+	padding-left: 3px;
+}
+
+.searchBlock .hiddenCell {
+	display: none;
+}
+
+/******************************************************************************
+
+	Main Search Block (common for all flows)
+
+******************************************************************************/
+
+.searchBlockContainer {
+	text-align: center;
+}
+
+.mainSearchBlock {
+	width: 530px;
+	margin: 15px auto 0 auto;
+	text-align: left;
+	font: 12px Arial;
+}
+
+.mainSearchBlock .headBlock {
+	display: none;
+}
+
+.mainSearchBlock .bodyBlock {
+	border: 1px solid #c1c1c1;
+	background: #F2F1F1;
+}
+
+.mainSearchBlock .bodyBlock .contentBodyBlock {
+	padding: 15px 20px 20px 20px;	
+}						
+
+.mainSearchBlock A, .mainSearchBlock A:hover {
+	color: #0000FF;
+}	
+
+/*
+.mainSearchBlock .bodyBlock .sepSpacer {
+	height:5px;
+}
+*/
+
+.mainSearchBlock .bodyBlock .sepLine1 {
+	height:1px;
+	background:url(../pictures/misc/form_sep.gif) repeat-x;
+	margin: 4px 0;
+}
+
+.mainSearchBlock .bodyBlock .sepLine2 {
+	height:1px;
+	background: #C3C3C3;
+	margin: 7px 0;
+	
+	display: none;
+}
+
+
+.mainSearchBlock .bodyBlock .vertGroupArea {
+	padding: 0 5px 5px 5px;
+	background: #FFF;
+}
+
+.mainSearchBlock .footerBlock {
+	display: none
+}
+
+/* bot form elements */
+
+.mainSearchBlock .botButtonArea {
+	padding: 3px 0 0px 0;
+}
+
+.mainSearchBlock .botButton1 {
+	background: url(../pictures/misc/bot-button-bg1.gif) repeat-x left top;
+	float: right;
+	margin: 0 0 0 5px;	
+}
+
+.mainSearchBlock .botButton1 TD {
+	background: url(../pictures/misc/bot-button-left1.gif) no-repeat left top;
+}
+
+.mainSearchBlock .botButton1 TD A,
+.mainSearchBlock .botButton1 TD A:hover {
+	background: url(../pictures/misc/bot-button-right1.gif) no-repeat right top;
+	display: block;
+	padding: 5px 15px 5px 15px;
+	font: bold 11px Arial;
+	text-decoration: none;
+	color: #004a91;
+}
+
+.mainSearchBlock .botButton2 {
+	background: url(../pictures/misc/bot-button-bg2.gif) repeat-x left top;
+	float: right;
+	margin: 3px 0 2px 5px;		
+}
+
+.mainSearchBlock .botButton2 TD {
+	background: url(../pictures/misc/bot-button-left2.gif) no-repeat left top;
+}
+
+.mainSearchBlock .botButton2 TD A,
+.mainSearchBlock .botButton2 TD A:hover {
+	background: url(../pictures/misc/bot-button-right2.gif) no-repeat right top;
+	display: block;
+	padding: 5px 15px 5px 15px;
+	font: bold 11px Arial;
+	text-decoration: none;
+	color: #004a91;
+}
+
+
+.mainSearchBlock .botButtonReset {
+	display: none;
+}
+
+
+/******************************************************************************
+
+	Travelers block
+
+******************************************************************************/
+
+.travelersCountView TD {
+	vertical-align: top;
+	padding: 0 0 2px 0;
+}
+
+.travelersCountView P {
+	padding: 2px 0 1px 0;
+}
+
+.travelersCountView DIV DIV {
+	padding: 1px 0 1px 0;
+	padding: "0";
+}
+
+.travelersCountView INPUT,
+.travelersCountView select {
+	
+}
+	
+.passengerTypeSingle {
+	width: 125px;
+	overflow: hidden;	
+}		
+
+.passengerTypeSingle INPUT,
+.passengerTypeSingle select {
+	width: 35px;
+}		
+							
+.passengerType {
+	width: 125px;
+	overflow: hidden;	
+}		
+
+.passengerType INPUT,
+.passengerType select {
+	width: 35px;
+}						
+
+.passengerAge,
+.passengerDOB
+{
+	float:left;
+	width: 125px;
+	overflow: hidden;	
+}	
+
+.passengerAge INPUT,
+.passengerAge select {
+	width: 35px;
+}		
+
+.passengerDOB INPUT {
+	width: 80px;
+}
+
+.passengersAgeView TD {
+	vertical-align: top;
+	padding: 0 0 2px 0;
+}
+
+.passengersAgeView P {
+	padding: 2px 0 1px 0;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 115px;
+}
+
+.passengersAgeView DIV DIV {
+	padding: 1px 0 1px 0;
+	padding: "0";
+}
+
+.srhAgesRoomGroup {
+	margin: 16px 0 0 5px;	
+}
+
+.srhAgesRoomGroup .srhAgesRoomLabel {
+	font-weight: bold;
+	padding: 2px 10px 0 0;
+}
+
+
+.srhAgesRoomGroup .passengerTypeSingle,
+.srhAgesRoomGroup .passengerType,
+.srhAgesRoomGroup .passengerAge,
+.srhAgesRoomGroup .passengerDOB {
+	width: 115px;
+}
+
+.srhAgesRoomGroup .passengersAgeView P {
+	width: 105px;
+}
+
+/* USED ON JSP ONLY refactoring begin */
+.srhLabelTop {
+	padding: 4px 0 3px 0;
+	font: 10px Verdana;
+}
+
+.srhSelectArea SELECT {
+	font: 11px Arial;
+}
+/* USED ON JSP ONLY refactoring end */
+
+
+/*  Amenities  */
+
+.amenityItem {
+	padding: 2px 0 1px 0;
+}
+
+.amenityItemRightSpacer {
+	padding: 2px 5px 1px 0;
+}
+
+.amenityItem .fieldCheckbox {
+	padding: 0 2px 0 0;
+}
+
+.amenityItem .fieldRadio {
+	padding: 0 2px 0 0;
+}
+
+.amenityItem .icon {
+	padding: 0 5px 0 0;
+}
+
+.amenityItem .labelRight {
+	font: 10px Verdana;
+}
+
+.amenityItem .labelTop {
+	font: 10px Verdana;
+	padding: 2px 0 4px 0;
+}
+
+
+/******************************************************************************
+
+	Drill Down list
+
+******************************************************************************/
+
+#drillDown {
+	position: absolute;
+	visibility: hidden;
+	width: 'auto';
+	z-index: 9999;
+	background: #FFF;
+}
+
+#drillDown .drillDownIfrCont {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#drillDown IFRAME {
+	width: 100%;
+	height: 100%;	
+	filter: alpha(opacity=0, style=0);
+	display: none;
+	display: "block";
+}
+
+#drillDown TABLE {
+	border: 1px solid #B2B2B2;
+	_margin-left: 1px;
+}
+
+#drillDownItems {
+	position: relative;
+	width: 'auto';
+	aoverflow: auto;
+	aoverflow: 'visible';	
+	aoverflow-y: auto;
+}
+
+#drillDownItems A {
+	display: block;
+	position: relative;
+	color: #000;
+	text-decoration: none;
+	white-space: nowrap;		
+	background: #FFF;	
+	padding: 0 3px 1px 3px;
+}
+
+#drillDownItems A.active {
+	display: block;
+	color: #FFF;	
+	text-decoration: none;		
+	background: #316AC5;
+}
+
+
+/******************************************************************************
+
+	Main Search Block (air flow)
+
+******************************************************************************/
+
+.airMainSearchBlock .flightSearchTypeGroup {
+	margin-top: 3px;
+}
+	
+.airMainSearchBlock .flightSearchTypeGroup .botLabelRight {
+	margin: 0 15px 0 3px;
+}
+
+.airMainSearchBlock .flightSearchOptionsGroup .botHorRadioGroup .botLabelRight {
+	margin: 0 5px 0 5px;
+}
+
+.airMainSearchBlock .flightSearchOptionsGroup .botHorCheckboxGroup .botLabelRight {
+	margin: 0 10px 0 0;
+}
+
+.airMainSearchBlock .flightSearchCabin {
+	padding-right: 15px;
+}
+
+.airMainSearchBlock .botButtonArea .botButtonLink {
+	float: right;
+	margin: 3px 10px 0 0;
+}
+
+.airMainSearchBlock .flightSearchForBlock .botLabelRight {
+	margin: 0 15px 0 3px;
+}
+
+.airMainSearchBlock .couponLinkBlock {
+	padding: 2px 0 4px 0;
+}
+
+.airMainSearchBlock .couponLinkBlock .couponText {
+	padding: 0 0 0 10px;
+	background: url(../pictures/icons/bullets/bul3.gif) no-repeat left 3px;
+}
+
+.airMainSearchBlock .couponFormBlock {
+	padding: 2px 0 4px 0;
+}
+
+.airMainSearchBlock .couponFormBlock .couponText {
+	padding: 0 0 0 10px;
+	background: url(../pictures/icons/bullets/bul4.gif) no-repeat left 5px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.airMainSearchBlock .couponFormBlock .botField {
+	margin: 5px 0 0 0;
+}
+
+
+/******************************************************************************
+
+	Main Search Block (insurance flow)
+
+******************************************************************************/
+
+.insuranceMainSearchBlock .bodyBlock .contentBodyBlock {
+	padding-top: 11px;
+}
+
+
+/******************************************************************************
+
+	Main Search Block (timetable)
+
+******************************************************************************/
+
+.timetableMainSearchBlock {
+	margin: 15px auto 0 auto;
+}
+
+.timetableMainSearchBlock .bodyBlock .contentBodyBlock {
+	padding: 10px 9px 9px 9px;
+}
+
+.timetableMainSearchBlock .botField {
+	padding: 2px 0;
+}
+
+
+/******************************************************************************
+
+	Main Search Block (flight information)
+
+******************************************************************************/
+
+.flightInfoMainSearchBlock {
+	margin: 15px auto 0 auto;
+}
+
+.flightInfoMainSearchBlock .bodyBlock .contentBodyBlock {
+	padding: 10px 9px 9px 9px;
+}
+
+.flightInfoMainSearchBlock .botField {
+	padding: 2px 0;
+}
+
+
+/******************************************************************************
+
+	Left Search Block
+
+******************************************************************************/
+
+.leftSearchBlock {
+	font: 10px Verdana;
+}
+
+.leftSearchBlock .headBlock {
+	background: #DADADA url(../pictures/misc/summary_con_t_l.gif) no-repeat;
+}
+
+.leftSearchBlock .headBlock DIV {
+	background: url(../pictures/misc/summary_con_t_r.gif) no-repeat top right;
+}						
+
+.leftSearchBlock .headBlock DIV H1 {
+	font: bold 10px Verdana;
+	padding: 6px 10px 5px 10px;
+}
+
+.airLeftSearchBlock .headBlock DIV H1 {
+	background: url(../pictures/icons/tabs/i_sevice_flight.gif) no-repeat -6px 0px;
+	margin-left: 10px;
+	padding-left: 22px;
+}
+
+.hotelLeftSearchBlock .headBlock DIV H1 {
+	background: url(../pictures/icons/tabs/i_sevice_hotel.gif) no-repeat -7px 0px;
+	margin-left: 10px;
+	padding-left: 22px;
+}
+
+.carLeftSearchBlock .headBlock DIV H1 {
+	background: url(../pictures/icons/tabs/i_sevice_car.gif) no-repeat -1px 0px;
+	margin-left: 5px;
+	padding-left: 30px;
+}
+
+.insuranceLeftSearchBlock .headBlock DIV H1 {
+	background: url(../pictures/icons/tabs/i_sevice_insurance.gif) no-repeat -7px 0px;
+	margin-left: 10px;
+	padding-left: 22px;
+}
+
+
+.leftSearchBlock .bodyBlock {
+	border: 1px solid #BFB5BF;
+	background: #F3F3DB;
+	padding: 3px 9px 9px 9px;
+}
+
+.leftSearchBlock .bodyBlock .contentBodyBlock {
+
+}			
+
+.leftSearchBlock a, .leftSearchBlock a:hover {
+	color: #0000FF;
+}				
+
+/*
+.leftSearchBlock .bodyBlock .sepSpacer {
+	height:5px;
+}
+*/
+
+.leftSearchBlock .bodyBlock .sepLine1 {
+	height:1px;
+	background:url(../pictures/misc/form_sep.gif) repeat-x;
+	margin: 7px 0;
+}
+
+.leftSearchBlock .bodyBlock .sepLine2 {
+	height:1px;
+	background: #C3C3C3;
+	margin: 7px 0;
+}
+
+.leftSearchBlock .footerBlock {
+	background: #BFB5BF url(../pictures/misc/summary_con_b_l.gif) no-repeat left bottom;
+}
+
+.leftSearchBlock .footerBlock DIV {
+	background: url(../pictures/misc/summary_con_b_r.gif) no-repeat bottom right;
+	height: 8px;
+}	
+
+/* bot form elements */
+
+.leftSearchBlock .botVerRadioGroup {
+	margin: 5px 0 0 0;
+}
+
+.leftSearchBlock .botNotice {
+
+}
+
+.leftSearchBlock .botNotice a {
+	color: #0000FF;
+}
+
+.leftSearchBlock .botButtonArea {
+	padding: 3px 0 0px 0;
+}
+
+.leftSearchBlock .botButton {
+	background: url(../pictures/misc/bot-button-bg1.gif) repeat-x left top;
+	float: right;
+}
+
+.leftSearchBlock .botButton TD {
+	background: url(../pictures/misc/bot-button-left1.gif) no-repeat left top;
+}
+
+.leftSearchBlock .botButton TD A,
+.leftSearchBlock .botButton TD A:hover {
+	background: url(../pictures/misc/bot-button-right1.gif) no-repeat right top;
+	display: block;
+	padding: 2px 10px 3px 10px;
+	font: bold 10px Verdana;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+/******************************************************************************
+
+	Log In
+
+******************************************************************************/
+
+
+.loginBlock {
+	font: 10px Verdana;
+}
+
+.loginBlock A, .loginBlock A:hover {
+	color: #0000FF;
+}
+
+.loginBlock .headBlock {
+	background: #CDECF1 url(../pictures/misc/block_t_l.gif) no-repeat;
+}
+
+.loginBlock .headBlock DIV {
+	background: url(../pictures/misc/block_t_r.gif) no-repeat top right;
+}						
+
+.loginBlock .headBlock DIV H1 {
+	font: bold 10px Verdana;
+	padding: 6px 10px 5px 10px;
+}
+
+.loginBlock .bodyBlock {
+	border: 1px solid #A8C2E9;
+	background: #F3F3DB;
+	padding: 5px 8px;
+}
+
+.loginBlock .bodyBlock .contentBodyBlock {
+
+}		
+
+.loginBlock .loginUserNameArea {
+	float: left;
+	width: 49%;
+}
+
+.loginBlock .loginPasswordArea {
+	float: right;
+	width: 49%;
+}
+
+.loginBlock .loginRememberArea {
+	clear: both;
+	float: left;
+	width: auto;
+	margin: 3px 0 0 0;
+}
+
+.loginBlock .botButtonArea {
+	float: right;
+	width: auto;
+	margin: 5px 0 0 0;
+}
+
+.loginBlock .loginLinks {
+	clear: both;
+	margin: 5px 0 0 0;
+}
+
+.loginBlock .footerBlock {
+	background: #A8C2E9 url(../pictures/misc/block_b_l.gif) no-repeat left bottom;
+}
+
+.loginBlock .footerBlock DIV {
+	background: url(../pictures/misc/block_b_r.gif) no-repeat bottom right;
+	height: 8px;
+}	
+
+/* bot form elements */
+
+.loginBlock .botLabelTop {
+	font: bold 10px Verdana;
+	margin-bottom: 1px;
+}
+
+.loginBlock .botLabelRight {
+	font: 10px Verdana;
+}
+
+.loginBlock .fieldText {
+
+}
+
+.loginBlock .fieldText INPUT {
+	font: 11px Arial;
+	width: 100%;
+}
+
+.leftSearchBlock .fieldCheckbox {
+
+}
+
+.loginBlock .botButton {
+	background: url(../pictures/misc/login-button-bg.gif) repeat-x left top;
+}
+
+.loginBlock .botButton TD {
+	background: url(../pictures/misc/login-button-left.gif) no-repeat left top;
+}
+
+.loginBlock .botButton TD A,
+.loginBlock .botButton TD A:hover {
+	background: url(../pictures/misc/login-button-right.gif) no-repeat right top;
+	display: block;
+	padding: 2px 10px 3px 10px;
+	font: 10px Verdana;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+
+/******************************************************************************
+
+	Left Banner Block
+
+******************************************************************************/
+
+.leftBannerBlock {
+
+}
+
+/******************************************************************************
+
+	Service Tabs Block
+
+******************************************************************************/
+
+.servicesTabs {
+	display: none;
+	border-bottom: 1px solid #B2B2B2;
+}
+
+.servicesTabs TABLE {
+	border-top: 1px solid #B2B2B2;
+	border-right: 1px solid #B2B2B2;	
+}
+
+.servicesTabs TD {
+	border-left: 1px solid #B2B2B2;
+	background: #FFF;
+	vertical-align: top;
+}
+
+.servicesTabs DIV {
+	position: relative;
+	margin: 1px 1px 0px 1px;	
+	font: 10px Verdana;
+	background-color: #DADADA;
+	background-repeat: no-repeat;	
+}
+
+.servicesTabs DIV.act {
+	background-color: #F3F3DB;
+}
+
+.servicesTabs A,
+.servicesTabs A:hover,
+.servicesTabs SPAN {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	padding: 0px 5px 0px 30px;
+	line-height: 22px; 
+}
+
+.servicesTabs .air DIV {
+	background-image: url(../pictures/icons/tabs/i_sevice_flight.gif);
+}
+
+.servicesTabs .hotel DIV {
+	background-image: url(../pictures/icons/tabs/i_sevice_hotel.gif);
+}
+
+.servicesTabs .car DIV {
+	background-image: url(../pictures/icons/tabs/i_sevice_car.gif);
+}
+
+.servicesTabs .package DIV {
+	background-image: url(../pictures/icons/tabs/i_sevice_package.gif);
+}
+
+.servicesTabs .insurance DIV {
+	background-image: url(../pictures/icons/tabs/i_sevice_insurance.gif);
+}
+
+.servicesTabs .discount DIV {
+	background-image: url(../pictures/icons/tabs/i_sevice_discount.gif);
+}
+
+.mainSearchBlock .servicesTabs {
+	border-bottom: 0px;
+}
+
+.mainSearchBlock .servicesTabs DIV.act {
+	border: 1px solid #FFF;
+	border-bottom: 0px;
+	margin: 0 0 -2px 0;
+	padding-bottom: 2px;
+	z-index:1;	
+}
+
+.mainTopServicesTabs {
+	padding: 0 0 10px 0;
+}
+
+
+/* page title area */
+
+.pageTitleArea {
+	margin: 0 0 5px 8px;
+}
+
+.pageTitleArea A,
+.pageTitleArea A:hover { 
+	color: #0000FF;
+}
+
+.pageTitleArea TABLE {
+	width: 100%;
+}
+
+.pageTitleArea TABLE TD {
+	width: 100%;
+}
+
+.pageTitleArea TD, .pageTitleArea TH {
+	vertical-align: bottom;
+}
+
+.pageTitleArea H1 {
+	font: bold 16px Arial;
+	color: #666666;
+}
+
+.pageTitleArea H1 SPAN {
+	font-size: 11px;
+}
+
+.pageTitleArea .links {
+	text-align: right;
+}
+
+.pageTitleArea .links A,
+.pageTitleArea .links A:hover {
+	color: #FFF;
+}
+
+.pageTitleArea .links .print {
+	font: 11px Arial;
+	background: url(../pictures/icons/i_print.gif) no-repeat left center;
+	padding: 0 0 0 14px;
+}
+
+/* intro text area */
+.introTextArea {
+	font: 12px Arial;
+	clear: both;
+}
+
+/* sorting Options Area */
+.sortingOptionsArea {
+	border: 1px solid #C3C3C3;
+	background: #F3FAFF;
+	margin: 0 0 5px 0;
+	padding: 3px 5px 3px 5px;
+}
+
+.sortingOptionsArea .label {
+	font: 10px Verdana;
+	padding: 0 2px 0 0;	
+}
+
+.sortingOptionsArea SELECT {
+	font: 10px Verdana;
+	margin: 0 5px 0 0;			
+}
+
+
+
+.componentSearchCriteria H2 {
+	font: 10px Verdana;
+	padding: 0 0 4px 0;
+}
+
+/* Page Total Price */
+
+.pageTotalPrice TD {
+	vertical-align: top;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 0 0 0;
+}
+
+.pageTotalPrice .colTotal {
+	text-align: right;
+	padding-right: 30px;
+}
+
+.pageTotalPrice .colCard {
+	
+}
+
+/* itinerary pricing block */
+
+.itineraryPricingBlock {
+	margin: 0 0 5px 0;
+	clear: both;
+}
+
+.itineraryPricingBlock .expandedSection .collapsedPart,
+.itineraryPricingBlock .collapsedSection .expandedPart {
+	display: none;
+}
+
+.itineraryPricingBlock .collapsedSection .collapsedPart,
+.itineraryPricingBlock .expandedSection .expandedPart {
+	display: block;
+}
+
+
+.itineraryPricingBlock TABLE {
+	width: 100%;
+	border-collapse: separate;
+}
+
+.itineraryPricingBlock .headBlock {
+	background: #004982;
+	font: bold 14px Arial;
+	color: #ffffff;
+	padding: 5px 22px;
+}
+
+.itineraryPricingBlock .headBlock TABLE {
+	border-collapse: collapse;
+}
+
+.itineraryPricingBlock .headBlock TD {
+	width: 100%;
+}
+
+.itineraryPricingBlock .headBlock TH {
+	font: 10px Arial;
+}
+
+.itineraryPricingBlock .headBlock h2 {
+	font: bold 14px Arial;
+	padding: 0;	
+}
+
+.itineraryPricingBlock .footerBlock {
+	display: none;
+}
+
+.itineraryPricingBlock .bodyBlock {
+	border: 1px solid #CCCACB;
+	border-top: none;
+	padding: 10px 22px;
+}
+
+.itineraryPricingBlock .bodyBlock TD {
+	background: #FFFFFF;
+	padding: 3px 7px 3px 3px;
+	font: 12px Arial;
+	color: #333333;
+	vertical-align: top;
+}
+
+.itineraryPricingBlock .bodyBlock .rowEven TD {
+	background-color: #E5ECF2;
+}
+
+.itineraryPricingBlock .bodyBlock .expandedPart .mainstream TD {
+	border-bottom: 0px;
+	padding-bottom: 1px;	
+}
+
+.itineraryPricingBlock TD.item {
+	width: 100%;
+}
+
+.itineraryPricingBlock .bodyBlock .mainstream TD.icon {
+	padding: 4px 3px 0 4px;	
+}
+
+.itineraryPricingBlock .bodyBlock .mainstream TD.item{
+	font-weight: bold;
+}
+
+.itineraryPricingBlock .bodyBlock .detailedPrice TD.item{
+	padding-left: 21px;
+}
+
+.itineraryPricingBlock TD.price {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.itineraryPricingBlock .totalPrice TD {
+	padding: 3px 7px 1px 1px;
+	font: bold 14px Arial;
+}
+
+.itineraryPricingBlock .totalPrice TD.price {
+	text-align: right;
+}
+
+/* component Block */
+
+.componentBlock {
+	
+}
+
+.componentBlock .componentBodySep {
+	height: 1px;
+	background: #cccacb;
+}
+
+.componentBlockDelimiter {
+	height: 5px;
+}
+
+
+.componentBlock A,
+.componentBlock A:hover { 
+	
+}
+
+.componentBlock .componentHeader {
+	
+}
+
+.componentBlock .componentHeader TD {
+	vertical-align: top;
+	padding: 0 6px 0 0; 
+}
+
+
+.componentBlock .componentHeader H2 {
+	 font: bold 14px Arial;
+	 padding: 5px 0 7px 0; 	
+}
+
+.componentBlock .componentHeader .links {
+	 font-size: 12px;
+	 padding: 4px 0 0 0;	
+}
+
+.componentBlock .componentHeader .remove {
+	background: url(../pictures/icons/i_remove.gif) no-repeat right 3px;
+	padding: 0 15px 0 10px;		
+}
+
+.componentBody {
+	border: 1px solid #cccacb;
+	padding: 5px 25px;
+}
+
+.componentBody .componentBodyInner1 {
+		
+}
+
+.componentBody .componentTitleArea {
+	background: #DADADA;	
+}
+
+.componentBody .componentTitleArea .icon {
+	padding: 2px 2px 2px 2px;
+} 
+
+.componentBody .componentTitleArea H3 {
+	 font: bold 15px Verdana;
+	 padding: 0px 5px 3px 5px; 
+	 float: left;	
+}
+
+.componentBody .componentTitleArea .hotelStars {
+	 float: left;
+	 width: 'auto'			
+}
+
+.componentBody .componentTitleArea .price {
+	 font: bold 15px Verdana;
+	 color: #000;
+	 padding: 1px 5px 2px 5px;	
+}
+
+.componentBody .componentTitleArea .price SPAN {
+	font: 10px Verdana;	
+}
+
+.componentSubTitle {
+	font: bold 12px Verdana;
+	padding: 3px 4px 2px 4px;
+}
+
+.componentDetails {
+	padding: 2px 0 0 0;
+}
+
+.componentDetails .header {
+	font: 10px Verdana;	
+	background: #E0E5F2;
+	padding: 3px 5px 2px 5px;
+}
+
+.componentDetails .header IMG {
+	margin: 0 5px -1px 0;
+}
+
+.componentDetails .body {
+
+}
+
+.componentDetails .body .hotelImage {
+	padding: 4px 7px 2px 2px;	
+}
+
+.componentDetails .body .hotelDetails {
+	padding: 12px 0 0 0;		
+}
+
+.componentDetails .body .hotelAmenities {
+	padding: 0;
+}
+
+.componentDetails .body .hotelInfo {
+	font: 10px Verdana;	
+	padding: 5px 0 0 0;	
+}
+
+.componentDetails .body .hotelLinks {
+	font: 10px Verdana;	
+	padding: 3px 0 0 0;	
+}
+
+
+.componentDetails .body .carDetails {
+	padding: 0 25px 5px 25px;		
+}
+
+.componentDetails .body .carInfo {
+	font: 10px Verdana;	
+	padding: 5px 0 0 0;	
+}
+
+
+.componentTotal {
+	padding: 4px 4px 6px 4px;
+	text-align: right;
+	font-size: 12px;
+}
+
+.componentSaving {
+	padding: 0 4px 6px 4px;
+	text-align: right;
+	font-size: 12px;
+	color: #fe0101;
+}
+
+
+
+/*  Flight Details  */
+
+.flightDetailsBlock {
+	
+}
+
+.flightDetailsBlock .headBlock, .flightDetailsBlock .footerBlock {
+	display: none;
+}
+
+.flightDetailsBlock .bodyBlock {
+	padding: 0 0 5px 0;
+}
+
+.flightDetailsBlock .flightLeg {
+	padding: 5px 0 0 0;
+}
+
+.flightDetailsBlock TABLE {
+	width: 100%;
+	table-layout: fixed;
+}
+
+.flightDetailsBlock TD {
+	font: 12px Arial;
+	vertical-align: top;
+}
+
+.flightDetailsBlock .colDeparture {width: 30%}
+.flightDetailsBlock .colArrival {width: 30%}
+.flightDetailsBlock .colFlight {width: 20%}
+.flightDetailsBlock .colDetails {width: 20%}
+
+.flightDetailsBlock TD DIV {
+	padding: 4px 5px 0 5px;
+}
+
+.flightDetailsBlock .colDeparture DIV {
+	padding: 4px 0 0 0;
+}
+
+.flightDetailsBlock .colAircraft DIV {
+	padding: 0 0 6px 0;
+}
+
+.flightDetailsBlock .orig, 
+.flightDetailsBlock .dest {
+	font-weight: bold;
+}
+
+.flightDetailsBlock .time {
+	font-weight: bold;
+}
+
+/* USED ON JSP ONLY refactoring begin */
+.flightDetailsBlock .seats {
+	margin: 0 0 0 7px;
+}
+/* USED ON JSP ONLY refactoring end */
+
+.flightDetailsBlock .flightNum SPAN.ref {
+	margin-left: 3px;
+}
+
+.flightDetailsBlock .flightNum SUP.ref {
+	font: 8px Tahoma;
+	line-height: 4px;
+}
+
+.flightDetailsBlock .flightNum IMG {
+	margin: 0 5px 0 0;
+}
+
+.flightDetailsBlock .footnote {
+	font-size: 10px;
+	color: #333333;
+	padding: 0 0 6px 0;
+}
+
+.flightDetailsBlock .footnote SUP.ref {
+	font: 8px Tahoma;
+	line-height: 4px;
+}
+
+
+/*  Delivery Options block  */
+
+.deliveryOptionsBlock {
+	border-left: 1px solid #cccacb;
+	border-right: 1px solid #cccacb;
+}
+
+.deliveryOptionsBlock .option {
+	padding: 7px 0;
+}
+
+.deliveryOptionsBlock .optionActive {
+	padding: 7px 0;
+	background: #deb739;
+}
+
+.deliveryOptionsBlock TD {
+	padding:0px 5px;
+	font:12px Arial;
+}
+
+.deliveryOptionsBlock TABLE{width:100%}
+.deliveryOptionsBlock .c1 {width:4%}
+.deliveryOptionsBlock .c2 {width:80%}
+.deliveryOptionsBlock .c3 {width:16%}
+
+.deliveryOptionsBlock .c3 b {
+	margin-right: 24px;
+}
+
+.deliveryOptionsBlock .blockSeparator {
+	background: #cccacb;
+}
+
+
+/*  Selected Delivery block  */
+
+.selectedDeliveryBlock {
+
+}
+
+.selectedDeliveryBlock TABLE {
+	width: 100%;
+}
+
+.selectedDeliveryBlock TD {
+	vertical-align: top;
+	font-size: 12px;
+}
+
+.selectedDeliveryBlock .colOption {
+	width: 80%;
+	padding: 0 0 8px 0;
+}
+
+.selectedDeliveryBlock .colPrice {
+	width: 20%;
+	padding: 8px 30px 8px 0;
+	text-align: right;
+	font-weight: bold;
+}
+
+.selectedDeliveryWithPrice TD {
+	border-bottom: 1px solid #cccacb;
+}
+
+
+
+/* Proceed Options Block  */
+
+.proceedOptionsBlock {
+	
+}
+
+.proceedOptionsBlock .headBlock {
+	padding: 5px 0 12px 0;
+}
+
+.proceedOptionsBlock .headBlock h1 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.proceedOptionsBlock .footerBlock {
+	display: none;
+}
+
+.proceedOptionsBlock .bodyBlock {
+	border-left: 1px solid #cccacb;
+	border-right: 1px solid #cccacb;
+}
+
+.proceedOptionsBlock .option {
+	padding: 7px 0;
+}
+
+.proceedOptionsBlock .optionActive {
+	padding: 7px 0;
+	background: #deb739;
+}
+
+.proceedOptionsBlock TD {
+	padding:0px 5px;
+	font:12px Arial;
+}
+
+.proceedOptionsBlock h3 {
+	font-size: 15px;
+	margin: 0 0 2px 0;
+}
+
+.proceedOptionsBlock TABLE{width:100%}
+.proceedOptionsBlock .c1 {width:4%}
+.proceedOptionsBlock .c2 {width:96%}
+
+.proceedOptionsBlock .blockSeparator {
+	background: #cccacb;
+}
+
+/******************************************************************************
+
+	Seats block
+
+******************************************************************************/
+
+.seatSelectionArea {
+	padding: 5px 0 0 0;
+}
+
+.seatSelectionArea .seatsBlock {
+	border: 1px solid #c3c3c3;
+}
+
+.seatsBlock .headBlock,
+.seatsBlock .footerBlock {
+	display: none;
+}
+
+/* Passengers */
+
+.seatsBlock .passengersArea {
+	padding: 10px;
+}
+
+.seatsBlock .passengersArea .warningMsg {
+	padding: 0 0 5px 0;
+	color: #ff0202;
+}
+
+.seatsBlock .legsTableOuter {
+	overflow:hidden;
+}
+
+.seatsBlock .legsTable td {
+	vertical-align: top;
+}
+
+.seatsBlock .legsTable thead td.nameArea {	
+	vertical-align: middle;
+} 
+
+.seatsBlock .legsTable thead .nameArea .name {
+	font: bold 10px Verdana;
+	white-space: nowrap;
+	padding: 15px 0 1px 0;
+	width: 100%; 
+}
+
+.seatsBlock .legsTable thead .nameArea .prevLegLink {
+	vertical-align: middle;
+	text-align: right;
+}
+
+.seatsBlock .legsTable thead .nextLegLink {
+	vertical-align: middle;
+}
+
+.seatsBlock .legsTable thead .nextLegLink a,
+.seatsBlock .legsTable thead .prevLegLink a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../pictures/icons/seats/i_leg_nav.gif) 8px 4px no-repeat;
+}
+
+.seatsBlock .legsTable thead .nextLegLink a {
+	background-position: 7px -46px;
+}
+
+.seatsBlock .legsTable thead .prevLegLink a.disabled {
+	background-position: -42px 4px;
+	cursor: default;
+}
+
+.seatsBlock .legsTable thead .nextLegLink a.disabled {
+	background-position: -43px -46px;
+	cursor: default;	
+}
+
+
+.seatsBlock .legsTable thead .prevLegLink a.hidden {
+	visibility: hidden;
+}
+
+.seatsBlock .legsTable thead .nextLegLink a.hidden {
+	display:none;
+}
+.seatsBlock .legsTable thead .legArea {
+	font: 10px Verdana;
+	text-align: center;
+	border: 2px solid #FFF;
+	background: #cdecf1;
+}
+
+.seatsBlock .legsTable thead .legArea .route {
+	padding: 3px 2px 0 3px;
+	white-space: nowrap;
+}
+
+.seatsBlock .legsTable thead .legArea .link {
+	padding: 0 2px 3px 3px;
+}
+
+.seatsBlock .legsTable thead .actLegArea {
+	background: #ffe6ba;
+}
+
+.seatsBlock .legsTable thead .actLegArea .route {
+	font-weight: bold;
+}
+
+.seatsBlock .legsTable thead .actLegArea .link {
+	display: none;
+}
+
+.seatsBlock .legsTable tbody .nameArea .code {
+	font: 10px Verdana;
+	padding: 5px 0px 0 0;	
+	white-space: nowrap;
+}
+
+.seatsBlock .legsTable tbody .nameArea .name {	
+	font: 10px Verdana;
+	padding: 5px 3px 0 0;	
+}
+
+.seatsBlock .legsTable tbody .legArea {
+	text-align: center;
+	background: #F8F8F8;
+	border: 2px solid #FFF;
+	border-width: 0 2px 0 2px;
+	padding: 1px 0 1px 0;	
+}
+
+.seatsBlock .legsTable tbody .legArea input {
+	font: 10px Verdana;
+	color: #717171;
+	border: 1px solid #c9c7ba;
+	background: #eeeeee;
+	margin: 1px 0;
+	margin: "0px";
+	padding-right: 2px;
+	text-align: center;
+	width: 37px;
+}
+
+.seatsBlock .legsTable tbody .legArea input.actField {
+	color: #333;
+}
+
+.seatsBlock .legsTable tbody .legArea input.hiddenField {
+	visibility: hidden;
+}
+
+/* Flight Info */
+
+
+.seatsBlock .flightInfoArea {
+	font: 10px Verdana;
+	padding: 0 6px 6px 6px;
+}
+
+.seatsBlock .flightInfoArea .flight {
+	font-weight: bold;
+}
+
+/* Error Message */
+
+.seatsBlock .errorMessageArea {
+	font: bold 10px Verdana;
+	color: #ff0000;
+	padding: 4px 6px 8px 6px;
+}
+
+
+.seatsBlock .seatMapArea .blockSeparator {
+	margin: 0 6px;
+}
+
+.seatSelectionArea .buttonArea1 {
+	padding: 13px 0;
+}
+
+.seatSelectionArea .buttonArea2 {
+	padding: 10px 0 0 0;
+}
+
+
+
+/******************************************************************************
+	Confirmation Info block
+
+******************************************************************************/
+
+.confirmationInfoBlock .headBlock,
+.confirmationInfoBlock .footerBlock {
+	display: none;
+}
+
+.confirmationInfoBlock .bodyBlock {
+	background: #f2f2f2;
+	border: 1px solid #CCCCCC;
+	margin: 8px 0 3px 0;
+}
+
+.confirmationInfoBlock TD DIV {
+	padding: 5px 10px 8px 10px;
+}
+
+.confirmationInfoBlock TD DIV DIV {
+	padding: 0;
+}
+
+.confirmationInfoBlock .colNumText {
+	width: 28%;
+	font: bold 16px Arial;
+}
+
+.confirmationInfoBlock .colConfirmNum {
+	width: 20%;
+	font: bold 22px Arial;
+}
+
+.confirmationInfoBlock .colManage {
+	width: 52%;
+	font: 12px Arial;
+}
+
+.confirmationInfoBlock .colManage .option {
+	font: bold 16px Arial;
+}
+
+
+/******************************************************************************
+
+	Passenger Info block
+
+******************************************************************************/
+
+.passengerInfoBlock {
+	padding: 3px 0 0 0;
+}
+
+.passengerInfoBlock .headBlock {
+	padding: 3px 0;
+}
+
+.passengerInfoBlock .headBlock h1 {
+	font: bold 14px Arial;
+	border-bottom: 1px solid #cccacb;
+	padding: 0 0 5px 0;
+}
+
+.passengerInfoBlock .footerBlock {
+	display: none;
+}
+
+.passengerInfoBlock TD {
+	font: 12px Arial;
+	vertical-align: top;
+}
+
+.passengerInfoBlock .rowLast TD {
+	border-bottom: 1px solid #c3c3c3;
+}
+
+.passengerInfoBlock .groupLast .rowLast TD {
+	border: none;
+}
+
+.passengerInfoBlock TD DIV {
+	padding: 5px 5px 5px 5px;
+}
+
+.passengerInfoBlock .colName {
+	width: 25%;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.passengerInfoBlock .colName DIV {
+	padding: 5px 5px 5px 0;
+}
+
+.passengerInfoBlock .colComponent {
+	width: 15%;
+	font-weight: bold;
+	border-bottom: 1px solid #dedede;
+}
+
+.passengerInfoBlock .colInfo {
+	border-bottom: 1px solid #dedede;
+}
+
+.passengerInfoBlock .route {
+	font-weight: bold;
+}
+
+.passengerInfoBlock .details TD {
+	border: none;
+	padding: 3px 0 0 0;
+}
+
+.passengerInfoBlock .details .colDetailName {
+	width: 100px;
+}
+
+.passengerInfoBlock .footnote {
+	font-size: 10px;
+	color: #333333;
+	padding: 0 0 5px 0;
+}
+
+.passengerInfoBlock .footnote SUP.ref {
+	font: 8px Tahoma;
+	line-height: 4px;
+}
+
+
+/* Trip Status Area */
+.tripStatusArea {
+	font: bold 14px Arial;
+	padding: 5px 0;
+}
+
+
+/* Reference Id Area */
+.referenceIdArea {
+	font: 12px Arial;
+	text-align: right;
+}
+
+
+/* Equivalent Total */
+.equivTotal {
+	padding: 3px 6px;
+	font: bold 12px Arial;
+}
+
+.equivTotal .price {
+	font: bold 15px Arial;
+	color: #333333;
+}
+
+
+
+/* Insurance Component Area */
+
+.insuranceComponentArea {
+	
+}
+
+.insuranceComponentArea .detailsTable TD {
+	border-right: none;
+}
+
+.insuranceComponentArea .componentButtonArea {
+	padding: 5px 3px 3px 0;
+}
+
+
+.componentSearchResult {
+
+}
+
+.componentSearchResult .header {
+	font: 10px Verdana;	
+	background: #FBEFA9;
+	border-top: 1px solid #8C8C8C;
+}
+
+.componentSearchResult .header TD {
+	font: 10px Verdana;
+	padding: 3px 0 5px 0;
+}
+
+.componentSearchResult .header .roomGuests {
+	font-weight: bold;
+}
+
+.componentSearchResult .header .roomGuests SPAN {
+	font-size: 11px;
+}
+
+.componentSearchResult .header .headerTotal {
+	border-left: 1px solid #8C8C8C;
+	font-weight: bold;
+}
+
+.componentSearchResult .header .headerTotal div {
+	padding: 0 0 0 5px;
+}
+
+.componentSearchResult .header IMG {
+	margin: 0 5px -2px 6px;
+}
+
+.componentSearchResult .body {
+
+}
+
+.componentSearchResult .body TD {
+	font: 10px Verdana;
+	border-top: 1px solid #8C8C8C;
+	border-right: 1px solid #8C8C8C;
+	background: #FFFBE4;
+}
+
+.componentSearchResult .body THEAD TD {
+	background: #FBEFA9;
+	font-weight: bold;
+}
+
+.componentSearchResult .body TD.colLast {
+	border-right: 0px solid #8C8C8C;
+}
+
+.componentSearchResult .body TD DIV {
+	padding: 4px 5px 4px 5px;
+}
+
+.componentSearchResult .body TD.colFirst {
+	text-align: center;
+}
+
+.componentSearchResult .body TD.colFirst DIV {
+	padding: 0;
+}
+
+.componentSearchResult .body .actRow TD {
+	background: #E7E1BE !important;
+}
+
+.componentButtonArea {
+	padding: 5px 0px 10px 0px;
+}				
+
+
+
+.componentExtraDetails {
+	border-top: 1px solid #8C8C8C;
+	padding: 2px 2px 0px 2px;
+}
+
+.componentReservationParameters {
+	font: 10px Verdana;
+	padding: 1px 5px 5px 5px;
+}
+
+.componentSimpleTextArea {
+	font: 10px Verdana;
+	padding: 4px 5px 5px 5px
+}
+
+/* details Sub Block */
+
+.detailsSubBlocksHeader  {
+	font: 10px Verdana;	
+	background: #E0E5F2;
+	padding: 2px 5px 3px 5px;
+	margin: 0 0 2px 0;
+}
+
+.detailsSubBlocksHeader IMG {
+	margin: 1px 5px -2px 0;
+}
+
+.detailsSubBlocksBody {
+
+}
+
+.detailsSubBlock {
+	margin: 0 0 2px 0;
+}
+
+.detailsSubBlock .header {
+	font: bold 12px Arial;
+	background: #cccacb;
+	padding: 3px 10px 3px 10px;
+}
+
+.detailsSubBlock .body {
+	border: 1px solid #cccacb;
+	padding: 2px 2px 2px 2px
+}
+
+.detailsTable {
+
+}
+
+.detailsTable TD {
+	border-right: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	vertical-align: top;	
+}
+
+.detailsTable .rowLast TD {
+	border-bottom: 0px solid #FFF;	
+}
+
+.detailsTable TD.colLast {
+	border-right: 0px solid #FFF;	
+}
+
+
+
+.detailsTable THEAD TD {
+	font: bold 12px Arial;
+	padding: 2px 3px 3px 3px;
+	background: #DDE8F3;	
+}
+
+.detailsTable TBODY TD {
+	font: 12px Arial;
+	padding: 4px 3px 4px 3px;
+	background: #F3F9FF;	
+}
+
+.detailsTable TBODY TD.colSelect {
+	padding: 2px 2px 2px 2px;
+}
+
+.detailsTable SELECT {
+	font: 10px Verdana;
+}
+
+.detailsTable TBODY TD.colCheck {
+	padding: 1px 0px 0px 0px;
+	text-align: center;
+}
+
+.detailsTable TBODY TD.colRadio {
+	padding: 1px 0px 0px 0px;
+	text-align: center;
+}
+
+.detailsTable TBODY TD.colTotal {
+	padding: 1px 3px 1px 3px;
+	font: bold 15px Verdana;
+}
+
+.detailsTable .rowTotal TD {
+	background-color: #FFFFFF;
+}
+
+.detailsTable .rowTotal TD.colPrice {
+	border: 2px solid #6D6D6D;
+	padding: 3px 1px 1px 1px;
+}
+
+.detailsTable TBODY TD.colStatus {
+	text-align: center;
+}
+
+.detailsTable TBODY TD.colStatus IMG {
+	margin: 1px 0 0 0; 
+}
+
+
+.hotelStars div	{height: 20px; background: url(../pictures/icons/hotel/star_yellow.gif) left center repeat-x};
+.hotelStars .s1	{width: 14px;}
+.hotelStars .s2	{width: 28px;}
+.hotelStars .s3	{width: 42px;}
+.hotelStars .s4	{width: 56px;}
+.hotelStars .s5	{width: 70px;}
+
+
+/* car icons */
+
+.iconCarPassengers IMG, .iconCarBaggage IMG {
+	margin: -1px 0 -2px 0;
+}
+
+
+/* information Block */
+
+.informationBlock {
+
+}
+
+.informationBlock .header {
+	font: bold 10px Verdana;
+	text-transform: uppercase;
+	background: #DADADA;
+	padding: 3px 5px 3px 5px;
+}
+
+.informationBlock .body {
+	font: 10px Verdana;
+	padding: 0px 5px 5px 5px;
+}
+
+.informationBlock .body P {
+	padding: 3px 0px 0px 0px;
+}
+
+.informationBlock .body TD {
+	font: 10px Verdana;
+}
+
+.informationBlock .body A,
+.informationBlock .body A:hover {
+	color: #00F;
+}
+
+.informationBlock .footer {
+	display: none;
+}
+
+/* itinerary Name Block */
+
+.itineraryNameBlock {
+	background: url(../pictures/misc/form_sep.gif) repeat-x top left;
+	margin: 0 0 10px 0
+}
+
+.itineraryNameBlock TABLE {
+	background: url(../pictures/misc/form_sep.gif) repeat-x bottom left;
+}
+
+.itineraryNameBlock .label {
+	font: bold 10px Verdana;
+	padding: 5px 3px 6px 5px;
+}
+
+.itineraryNameBlock .field {
+	padding: 7px 0 7px 0;
+}
+
+.itineraryNameBlock INPUT {
+	font: 10px Verdana;
+	width: 100%;
+}
+
+/* main buttons */
+
+.buttonMain {
+	background: #1E82F7 url(../pictures/misc/main-button-bg.gif) repeat-x left top;
+	float: right;
+	margin: 0 0 0 5px;		
+}
+
+.buttonMain TD {
+	background: url(../pictures/misc/main-button-left.gif) no-repeat left top;
+}
+
+.buttonMain TD A,
+.buttonMain TD A:hover {
+	background: url(../pictures/misc/main-button-right.gif) no-repeat right top;
+	display: block;
+	padding: 2px 10px 3px 10px;
+	font: bold 10px Verdana;
+	text-decoration: none;
+	color: #FFF;
+}	
+
+.buttonAlt {
+	background: #EEE url(../pictures/misc/alt-button-bg.gif) repeat-x left top;
+	float: right;
+	margin: 0 0 0 5px;		
+}
+
+.buttonAlt TD {
+	background: url(../pictures/misc/alt-button-left.gif) no-repeat left top;
+}
+
+.buttonAlt TD A,
+.buttonAlt TD A:hover {
+	background: url(../pictures/misc/alt-button-right.gif) no-repeat right top;
+	display: block;
+	padding: 2px 10px 3px 10px;
+	font: 10px Verdana;
+	text-decoration: none;
+	color: #000000;
+}	
+
+.pageFlowButtonArea {
+	padding: 0px 0px 10px 0px;
+}	
+
+
+/******************************************************************************
+
+	Summary Fare Breakdown
+
+******************************************************************************/
+
+.detailsSubBlockFareBreakdown .body {
+	border: none;
+	padding: 1px 0;
+}
+
+.detailsSubBlockFareBreakdown .detailsTable THEAD TD {
+	font-weight: normal;
+	background: #f2f1f1;	
+	padding: 2px 10px 3px 10px;
+}
+
+.detailsSubBlockFareBreakdown .detailsTable TBODY TD {
+	background: #ffffff;
+}
+
+.detailsSubBlockFareBreakdown .detailsTable TBODY TD.colPrice {
+	text-align: right;
+}
+
+.detailsSubBlockFareBreakdown .detailsTable TBODY TD.colLast b {
+	font-weight: normal;
+}
+
+.detailsSubBlockFareBreakdown .detailsTable TBODY .rowTotal .colCaption  {
+	font: bold 15px Arial;
+	text-align: right;
+}
+
+.detailsSubBlockFareBreakdown .detailsTable TBODY .rowTotal .colPrice  {
+	border: none;
+	border-left: 1px solid #ffffff;
+	background: #CDECF1;
+	padding: 4px 3px 4px 3px;
+	white-space: nowrap;
+	font: bold 15px Arial;
+}
+
+.detailsSubBlockFareBreakdown .footnote {
+	font: 11px Arial;
+	color: #000000;
+	padding: 0 5px;
+}
+
+/******************************************************************************
+
+	Summary Fare Family Extras
+
+******************************************************************************/
+
+.detailsSubBlockFareFamilyExtras .header {
+	padding: 7px 3px 4px 3px;	
+	background: none;
+	text-transform: none;
+}
+
+.detailsSubBlockFareFamilyExtras .extrasTabs TABLE {
+	border-top: 1px solid #bfb5bf;
+	border-right: 1px solid #bfb5bf;
+}
+
+.detailsSubBlockFareFamilyExtras .extrasTabs TD {
+	border-left: 1px solid #bfb5bf;
+	background: #ffffff;
+	vertical-align: top;
+}
+
+.detailsSubBlockFareFamilyExtras .extrasTabs DIV {
+	position: relative;
+	margin: 1px 1px 0px 1px;	
+	font: 10px Verdana;
+	background: #cdecf1;
+}
+
+.detailsSubBlockFareFamilyExtras .extrasTabs .actTab DIV {
+	background-color: #f3f9ff;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	margin: 1px 0 -3px 0;
+	padding-bottom: 3px;
+	z-index:1;
+}
+
+.detailsSubBlockFareFamilyExtras .extrasTabs A,
+.detailsSubBlockFareFamilyExtras .extrasTabs A:hover,
+.detailsSubBlockFareFamilyExtras .extrasTabs SPAN {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	padding: 0 17px 0 12px;
+	line-height: 22px; 
+}
+
+.detailsSubBlockFareFamilyExtras .body {
+	border: 1px solid #bfb5bf;
+	padding: 1px;
+}
+
+.detailsSubBlockFareFamilyExtras .detailsTable THEAD TD {
+	background: #F3F9FF;
+	font-weight: bold;
+	text-align: center;
+}
+
+.detailsSubBlockFareFamilyExtras .tableAdditionalItems THEAD TD {
+	text-align: left;
+}
+
+.detailsSubBlockFareFamilyExtras .blockSeparator {
+	height: 5px;
+	background-position: left center;
+}
+
+
+/******************************************************************************
+
+	Extra Services block
+
+******************************************************************************/
+
+.blockExtraServices .componentBody .componentBodyInner1 {
+	padding: 0;
+}
+
+.detailsSubBlockExtraServices {
+	border-bottom: 1px solid #bfb5bf;
+}
+
+.detailsSubBlockExtraServices .header {
+	display: none;
+}
+
+.detailsSubBlockExtraServices .body {
+	border: none;
+	padding: 0 2px 2px 2px;
+}
+
+
+/******************************************************************************
+
+	Insurance Cross Sell block
+
+******************************************************************************/
+
+.blockInsuranceCrossSell .componentBody .componentBodyInner1 {
+	padding: 2px 0;
+}
+
+.insuranceCrossSell TD {
+	vertical-align: top;
+	font: 10px Verdana;
+}
+
+.insuranceCrossSell .colPurchase {
+	padding: 5px 0;
+}
+
+.insuranceCrossSell .colPurchase .check {
+	padding: 0 5px 0 0;
+	vertical-align: middle;
+}
+
+.insuranceCrossSell .colPurchase .radio {
+	padding: 0 5px 0 0;
+	vertical-align: middle;
+}
+
+.insuranceCrossSell .colPurchase .label {
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.insuranceCrossSell .colPurchase p {
+	padding: 3px 0 0 0;
+	font-weight: bold;
+	color: #0000ff;
+}
+
+.insuranceCrossSell .colIcon {
+	padding: 5px 14px 10px 8px;
+	white-space: nowrap;
+	border-bottom: 1px solid #bfb5bf;
+}
+
+.insuranceCrossSell .colInfo {
+	width: 100%;
+	padding: 2px 8px 10px 0;
+	border-bottom: 1px solid #bfb5bf;
+}
+
+.insuranceCrossSell .borderBottom TD {
+	border-bottom: 1px solid #bfb5bf;
+}
+
+.insuranceCrossSell .borderBottom TD TD {
+	border: none;
+}
+
+
+/******************************************************************************
+
+	Flight Selection block
+
+******************************************************************************/
+
+.flightSelectionBlock {
+	margin: 9px 0 10px 0;
+}
+
+.flightSelectionBlock .headBlock h2 {
+	font: bold 13px Tahoma;
+}
+
+.flightSelectionBlock .footerBlock {
+	display: none;
+}
+
+/*  Calendar Tabs  */
+
+.flightSelectionBlock .calendarTabsArea {
+	background: transparent url(../pictures/misc/calendar_tab_bottom_bg.gif) repeat-x left bottom;
+	
+}
+
+.calendarTabsArea .tabsTable {
+
+}
+
+.calendarTabsArea .tabsTable td {
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #FFFFFF;
+	vertical-align: bottom;
+	text-align: center;
+	font: normal 10px Verdana;
+	color: #000000;
+	cursor: pointer;
+}
+
+.calendarTabsArea .tabsTable td div {
+	background: #D2D2D2 url(../pictures/misc/calendar_tab_bg.gif) no-repeat left top;
+	padding: 0 0 0 3px;
+}
+
+.calendarTabsArea .tabsTable td div div {
+	background: #D2D2D2 url(../pictures/misc/calendar_tab_bg.gif) no-repeat right top;
+	padding: 8px 7px 7px 2px;
+}
+
+.calendarTabsArea .tabsTable td.selectedTab {
+	border-bottom: none;
+	font-weight: bold;
+}
+
+.calendarTabsArea .tabsTable td.selectedTab div {
+	background: #E6E6E6 url(../pictures/misc/calendar_tab_act_bg.gif) no-repeat left top;
+}
+
+.calendarTabsArea .tabsTable td.selectedTab div div {
+	background: #E6E6E6 url(../pictures/misc/calendar_tab_act_bg.gif) no-repeat right top;
+	padding: 4px 3px 4px 1px;
+}
+
+/*  Route  */
+
+.flightSelectionBlock .routeArea {
+	background-color: #e6e6e6;
+	border: 1px solid #cccccc;
+	border-top: none;
+	padding: 3px 7px 4px 7px;
+	font: bold 10px Verdana;
+}
+
+.flightSelectionBlock .routeArea span {
+	font-weight: normal;
+}
+
+/*  Sorting  */
+
+.flightSelectionBlock .sortingArea {
+	background-color: #e6e6e6;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	padding: 1px 7px 1px 7px;
+	font: bold 10px Verdana;
+}
+
+.flightSelectionBlock .sortingArea .sortingHeader {
+	font: bold 11px Verdana;
+}
+
+.flightSelectionBlock .sortingArea .radioButton {
+	width: 20px;
+	text-align: center;
+}
+
+.flightSelectionBlock .sortingArea .labelArea {
+	font: 10px Verdana;
+	padding: 0 7px 0 0;
+}
+
+/*  Results  */
+
+.flightSelectionBlock .resultsArea {
+	
+}
+
+.flightResultHeader {
+	border: 1px solid #CCC;
+	border-width: 1px 1px 0px 1px; 	
+}	
+						
+.flightResultHeader table {
+
+}					
+	
+.flightResultHeader th {
+	font: 10px Verdana;
+	border: 1px solid #CCC;
+	border-width: 0 1px 0 0; 
+	padding: 2px 3px 4px 3px;
+	text-align: left;	 	
+}
+
+.flightResultHeader th a {
+	color: #0000FF;
+}		
+
+.flightResultBody {
+	overflow-y: scroll;
+	border: 1px solid #CCC;	
+	height: 216px;
+}	
+	
+.flightResultBody td {
+	font: 10px Verdana;
+	border: 1px solid #CCC;
+	border-width: 0 1px 1px 0; 
+	padding: 3px 3px 3px 3px; 
+}		
+
+.flightResultBody td td {
+	border-width: 0px; 
+	padding: 0
+}
+
+.flightResultBody td a {
+	color: #0000FF;
+}					
+
+.flightResultHeader .colFlight,
+.flightResultHeader .colDepart,
+.flightResultHeader .colArrive,	
+.flightResultBody .colFlight,
+.flightResultBody .colDepart,
+.flightResultBody .colArrive
+ {
+	text-align: left;
+	vertical-align: top;
+	border-right: 0px; 	
+}		
+
+.flightResultBody .colDepart .time,
+.flightResultBody .colArrive .time
+ {
+ 	font-weight: bold;
+}	
+
+.flightResultBody .colDuration {
+	text-align: left;
+	vertical-align: top;
+}					
+
+.flightResultHeader .colCost,
+.flightResultBody .colCost {
+	text-align: center;
+	vertical-align: middle;
+}		
+
+.flightResultBody .colCost {
+	padding-left: 0;
+}	
+
+.flightResultBody .colBestCost {
+	background: #EAEAEA;
+}
+
+.flightResultBody .colCost table {
+	margin: 0 auto;
+}	
+
+.flightResultBody .colCost .colPrice {
+	width: 77px;
+}		
+	
+.flightResultPaging	td {
+	font: 10px Verdana;
+}
+
+
+/*  Special Info Block  */
+
+.flightSpecialInfoBlock {
+	background: #eaeaea;
+	padding: 7px 8px 17px 8px;
+	font: 10px Verdana;
+	margin-top: 5px;
+}
+
+
+/******************************************************************************
+
+	Styles for popups
+
+******************************************************************************/
+
+.dialogLayout {
+	width:100%;
+	height:100%;
+}
+
+.dialogLayout .dialogTopLayout {
+	vertical-align: top;
+	padding: 3px; 			
+}		
+
+.dialogLayout .dialogHeader {
+	background: #CDECF1;
+}	
+
+.dialogLayout .dialogHeader H1 {
+	font: bold 11px Verdana;
+	padding: 4px 9px 5px 9px
+}	
+		
+
+.dialogLayout .dialogBottomLayout {
+	vertical-align: bottom;
+	padding: 0px 3px 3px 3px; 
+}		
+		
+.dialogLayout .dialogContent {
+	padding: 3px 0 0px 0;
+}	
+
+.innerDialogContent1 {
+	width: 100%;
+	height: 155px;
+}
+
+.innerDialogContent1 TD {
+	font: 10px Verdana;		
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px 10px 10px 10px;
+}
+
+
+
+.dialogLayout .dialogFooter {
+	background: #CDECF1 url(../pictures/misc/dialog-footer-right-con.gif) no-repeat right bottom;
+	border-top: 1px solid #DADADA;
+	margin: 3px 0px 3px 0;
+}	
+		
+.dialogLayout .dialogFooter DIV {
+	background: url(../pictures/misc/dialog-footer-left-con.gif) no-repeat left bottom;
+}
+	
+.dialogLayout .dialogFooter P {
+	font: 10px Verdana;
+	color: #838282;
+	text-align: center;
+	padding: 3px 5px 4px 5px;
+}					
+	
+.dialogLayout .dialogButtonArea {
+	background: #A8C2E9;
+	padding: 8px 5px 8px 5px;
+}				
+
+.dialogButton {
+	background: url(../pictures/misc/dialog-button-bg.gif) repeat-x left top;
+	float: left;
+	margin: 0 3px 0 3px;		
+}
+
+.dialogButton TD {
+	background: url(../pictures/misc/dialog-button-left.gif) no-repeat left top;
+}
+
+.dialogButton TD A,
+.dialogButton TD A:hover {
+	background: url(../pictures/misc/dialog-button-right.gif) no-repeat right top;
+	display: block;
+	padding: 2px 10px 3px 10px;
+	font: 10px Verdana;
+	text-decoration: none;
+	color: #000000;
+}	
+
+
+/* Dialog Details Area */
+
+.dialogDetailsArea {
+	padding: 5px;
+	font: 10px Verdana;
+} 
+
+.dialogDetailsArea .infoTitle {
+	float: left;
+	width: auto;
+	font: 12px Verdana;
+	padding: 0 10px 5px 0;
+}
+
+.dialogDetailsArea .hotelStars {
+	float: left;
+	width: auto;
+	margin: -3px 0 0 0;
+}
+
+.dialogDetailsArea .infoText {
+	margin: 0 0 3px 0;
+}
+
+.dialogDetailsArea .detailsTextBlock {
+	
+}
+
+.dialogDetailsArea .detailsTextBlock H3 {
+	font: bold 10px Verdana;
+	padding: 5px 0 7px 0;
+}
+
+.dialogDetailsArea .detailsTextBlock H4 {
+	font: bold 10px Verdana;
+	padding: 3px 4px 4px 4px;
+	margin: 10px 0 0 0;
+	background-color: #DADADA;
+}
+
+.dialogDetailsArea .detailsTextBlock P {
+	padding: 3px 0;
+}
+
+.dialogDetailsArea .detailsTextBlock UL {
+	padding: 0;
+	margin: 6px 0 25px 16px;
+}
+
+.dialogDetailsArea .infoHotelAmenities {
+	padding: 2px 0;
+}
+
+.dialogDetailsArea .infoHotelAmenities IMG {
+	margin-right: 2px;
+}
+
+.dialogDetailsArea .textSeparator {
+	padding: 0;
+	height: 1px;
+	background: #9D9D9D;	
+	margin: 2px 0;
+}
+
+
+/* Hotel Description - Images Area */
+
+.hotelDescriptionArea .appearanceArea {
+	padding: 5px 5px 0 5px;
+}
+
+.hotelDescriptionArea .appearanceArea .view {
+	padding: 0 0 5px 0;
+}
+
+.hotelDescriptionArea .viewNavigation SPAN {
+	font: 10px Verdana;
+} 
+
+.hotelDescriptionArea .viewNavigation a {
+	color: #0000FF;
+}
+
+.hotelDescriptionArea .mapArea {
+	margin: 5px 5px 5px 5px;
+	width: 195px;
+	height: 140px;
+	overflow: hidden;
+}
+
+
+
+/******************************************************************************
+
+	interstitial styles
+
+******************************************************************************/
+
+#interstShimOuter {
+	position:fixed;
+	position:'absolute';
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	height: expression(parseInt(document.body.clientHeight, 10) + 'px');	
+	top: expression(parseInt(document.body.scrollTop, 10) + 'px');
+	left: expression(parseInt(document.body.scrollLeft, 10) + 'px');		
+	z-index: 10000;
+	display: none;
+}
+
+.interstStyle1 {
+	a-moz-opacity: 0.5;
+	aopacity: .50;
+	abackground: #FFF;
+	afilter: alpha(opacity=50);		
+}
+
+.interstStyle2 {
+	background: #FFF;
+}
+	
+#interstShimOuter IFRAME {
+	display: none;
+	display: 'block';
+	position: absolute; 
+	filter: alpha(opacity=0, style=0);
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;	
+}
+
+.interstOuterDiv {
+	position:fixed;
+	position: 'absolute';
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	height: expression(parseInt(document.body.clientHeight, 10) + 'px');	
+	top: expression(parseInt(document.body.scrollTop, 10) + 'px');
+	left: expression(parseInt(document.body.scrollLeft, 10) + 'px');		
+	margin: 0 auto;
+	z-index: 10001;
+	text-align: center;
+}
+	
+.interstOuterTable {
+	width: auto;
+	height: 100%;
+	margin: 0 auto;		
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 0;	
+}
+	
+.interstOuterTD {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.interstAjax {
+	width:100%;
+	height:100%;
+	cursor: wait;
+}
+
+.interstAjax .indicator1 {
+	background: url(../pictures/icons/ajax-loader1.gif) no-repeat left top;
+	width: 32px;
+	height: 32px;
+}
+
+.interstAjax .indicator2 {
+	background: url(../pictures/icons/ajax-loader2.gif) no-repeat left top;
+	width: 16px;
+	height: 16px;
+}
+
+.pgInterstSearch {
+	text-align: center;
+}
+
+.interstSearch {
+	width: 645px;
+	height: 395px;
+	border: 1px solid #CCC;
+}
+
+.interstSearchInner {
+	padding: 35px 35px 35px 35px;	
+	text-align: left;
+}
+
+.interstSearch .brandHead {
+	border-bottom: 1px solid #C6C6C6;
+}
+
+.interstSearch .brandHead .logo {
+	width: 183px;
+	height: 70px;
+	overflow: hidden;
+	background: url(../pictures/decor/interst-logo.gif) 0px 0px no-repeat;
+	margin: 0 0 25px 23px;
+}
+
+.interstSearch .title {
+	font: bold 12px Verdana;
+	padding: 42px 0 32px 48px;
+}
+
+.interstSearch .bar {
+	height: 8px;
+	overflow: hidden;
+	background: red;
+	margin: 0 0 0 48px;
+	background: url(../pictures/misc/booking_bar3.gif) no-repeat;	
+}
+
+.interstSearch .text {
+	font: 10px/14px Verdana;
+	padding: 45px 0 0 48px;	
+}
+
+
+
+/******************************************************************************
+
+	Popup styles
+
+******************************************************************************/
+
+#popupShimOuter {
+	position:fixed;
+	position:'absolute';
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	height: expression(parseInt(document.body.clientHeight, 10) + 'px');	
+	top: expression(parseInt(document.body.scrollTop, 10) + 'px');
+	left: expression(parseInt(document.body.scrollLeft, 10) + 'px');		
+	z-index: -1;
+	display: none;
+}
+
+.popupShimOuterOpacity {
+	-moz-opacity: 0.5;
+	opacity: .50;
+	background: #FFFFFF;
+	filter: alpha(opacity=50);	
+}
+	
+#popupShimOuter IFRAME {
+	display: none;
+	display: 'block';
+	position: absolute; 
+	filter: alpha(opacity=0, style=0);
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;	
+}
+
+.popupOuterDiv {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	margin: 0 auto;
+	z-index: -1;
+	text-align: center;
+}
+	
+.popupOuterDivRelative {
+
+} 
+
+.popupOuterDivFixed,
+.popupOuterDivCentered {
+	position:fixed;
+	position: 'absolute';
+	height: expression(parseInt(document.body.clientHeight, 10) + 'px');	
+	top: expression(parseInt(document.body.scrollTop, 10) + 'px');
+	left: expression(parseInt(document.body.scrollLeft, 10) + 'px');	
+}
+	
+.popupOuterTable {
+	width: 930px;
+	height:100%;
+	margin: 0 auto;		
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 0;	
+}
+	
+.popupOuterDivCentered .popupOuterTable {
+	width:auto;
+}
+	
+.popupOuterTD {
+	text-align: left;
+	vertical-align: top;
+	padding: 0;	
+}
+	
+.popupOuterDivCentered .popupOuterTD {
+	text-align: center;
+	vertical-align: middle;
+}
+	
+.tabBlocker {
+	position: absolute;
+	display: block;
+	awidth: 1px;
+	aheight: 1px;
+	aoverflow: hidden;	
+}
+
+
+
+.defaultDialogFrame {
+	display: block;
+	width:'auto';
+	border-top: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
+	border-right: 2px solid #838383;
+	border-bottom: 2px solid #838383;
+	background: #FFF;
+	text-align: left;
+}
+
+.dialogBrandHead {
+	padding: 0 1px;
+}
+
+.dialogBrandHead .dialogHeadBg {
+	padding: 0 0 1px 0;
+	border-bottom: 9px solid #4b90cd;
+}
+
+.dialogBrandHead .dialogLogo {
+	background: #000000 url(../pictures/decor/popup-logo.jpg) no-repeat center top;
+	height: 82px;
+}
+
+.dialogHeader {
+	padding: 1px 1px 0px 1px;
+}
+
+.dialogHeaderInner {	
+	background: #E2E2E2	url("../pictures/decor/bg_popup_header.gif") repeat-x left bottom;	
+}
+
+.dialogTitle {
+	font-weight: bold;
+	padding: 5px 5px 5px 10px;
+}
+
+.dialogTitle SPAN {
+	font-weight: normal;
+}
+
+
+.dialogClose {
+	padding: 4px 6px 5px 6px;
+}
+
+.dialogClose A, .dialogClose A:hover{
+	color: #333333;
+}
+
+.dialogClose IMG {
+	margin: 0px 0px -2px 5px;
+}
+
+.dialogContent {
+	soverflow: auto;
+}
+
+.dialogFloatContent {
+	overflow:auto;
+	AAoverflow-x:hidden;
+}
+
+.dialogFooter {
+	text-align: center;
+	border: 1px solid #FFF;
+	background: #E4E6F0;
+	padding: 6px 5px 5px 5px;	
+}
+
+.dialogFooter table {
+	margin: 0 auto;
+}
+
+.dialogFooter TD {
+	padding: 0 0 0 7px	
+}
+
+.dialogFooter a.button1, .dialogFooter a.button1:hover, .dialogFooter a.button1:visited,
+.dialogFooter a.button1:link, .dialogFooter a.button1:active, .dialogFooter a.button1:focus {
+	background: #f8f8f6 url(../pictures/misc/popup-button-bg.gif) repeat-x left top;
+	border: none;
+	padding: 0;
+	display: block;
+	width: '100%';
+	font: 11px Arial;
+	text-decoration: none;
+	color: #333333;
+}
+
+.dialogFooter a.button1 span {
+	display: block;
+	background: url(../pictures/misc/popup-button-left.gif) no-repeat left top;
+}
+
+.dialogFooter a.button1 span span {
+	background: url(../pictures/misc/popup-button-right.gif) no-repeat right top;
+	padding: 1px 12px 2px 12px;
+}
+
+
+.dialogFooter a.button2, .dialogFooter a.button2:hover, .dialogFooter a.button2:visited,
+.dialogFooter a.button2:link, .dialogFooter a.button2:active, .dialogFooter a.button2:focus {
+	background: #f8f8f6 url(../pictures/misc/popup-button-bg.gif) repeat-x left top;
+	border: none;
+	padding: 0;
+	display: block;
+	width: '100%';
+	font: 11px Arial;
+	text-decoration: none;
+	color: #333333;
+}
+
+.dialogFooter a.button2 span {
+	display: block;
+	background: url(../pictures/misc/popup-button-left.gif) no-repeat left top;
+}
+
+.dialogFooter a.button2 span span {
+	background: url(../pictures/misc/popup-button-right.gif) no-repeat right top;
+	padding: 1px 12px 2px 12px;
+}
+
+
+/******************************************************************************
+
+	Tool Tip styles
+
+******************************************************************************/
+
+.toolTipInfo {
+	position: absolute;
+	display: none;
+}
+
+.toolTip {
+	position: absolute;
+	z-index:10000;
+	width: auto;
+	display: none;
+}
+
+.simpleToolTip {
+	width: 240px;
+	background: #FFFFFF;
+	border: 1px solid #787777;
+	font: 12px Arial;
+}
+
+.simpleToolTip H3 {
+	font: bold 14px Arial;
+	color: #FFFFFF;
+	padding: 6px 12px;
+}
+
+.simpleToolTip P {
+	padding: 12px 12px 3px 12px;
+}
+
+.simpleToolTip UL {
+	margin: 0 12px 12px 12px;
+	padding: 0;
+	list-style: none;
+}
+
+.simpleToolTip LI {
+	margin: 0 0 2px 2px;
+	padding: 0 0 0 12px;
+	background: url(../pictures/icons/bullets/bul_list.gif) no-repeat left 5px;
+}
+
+
+
+.toolTipFareFamily1 H3 {
+	background-color: #7fa4bf;
+}
+
+.toolTipFareFamily2 H3 {
+	background-color: #4077a0;
+}
+
+.toolTipFareFamily3 H3 {
+	background-color: #004982;
+}
+
+.toolTipFareFamily4 H3 {
+	background-color: #c4701a;
+}
+
+
+/******************************************************************************
+
+	Chat Entry
+
+******************************************************************************/
+
+.enterChat {
+	
+}
+
+.enterChat .headBlock, .enterChat .footerBlock {
+	display: none;
+}
+
+.enterChat .bodyBlock {
+	border-top: 1px solid #B2B2B2;
+	background: url(../pictures/decor/enter_chat.gif) no-repeat 10px center;
+	font: 10px Verdana;
+	padding: 4px 5px 7px 55px;
+}
+
+.enterChat .bodyBlock h3 {
+	font: bold 14px Verdana;
+	margin: 0 0 4px 0;
+}
+
+.enterChat .bodyBlock p {
+	padding: 0 0 3px 0;
+}

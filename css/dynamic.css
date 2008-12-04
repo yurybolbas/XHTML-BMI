@@ -1,0 +1,672 @@
+/******************************************************************************
+
+	DYNAMIC STYLES
+
+******************************************************************************/
+
+.s-tbl-row3{background:#FFDFBA}
+
+
+/* table type 2 */
+
+.tableType2{
+	border-top: 1px solid #FFF;
+	border-left: 1px solid #FFF;
+}
+
+.tableType2 TD{
+	vertical-align:top;
+	padding:5px 10px; 
+	border-bottom: 1px solid #FFF;
+}
+
+.tableType2 TD.r{
+	text-align:right
+}
+
+
+.tableType2 .borderRight TD, .tableType2 TD.borderRight{
+	border-right: 1px solid #FFF;
+}
+
+.tableType2 .cellType1, .tableType2 .cellType1 TD{
+	font:10px Verdana;
+	color:#003366;
+	background: #CDD7E1;
+}
+
+.tableType2 .cellType2, .tableType2 .cellType2 TD{
+	color:#000;
+	background: #F3F9FF;
+}
+
+.tableType2 .cellType3, .tableType2 .cellType3 TD{
+	color:#000;
+	background: #DDE8F3;
+}
+
+.tableType2 .cellType4, .tableType2 .cellType4 TD{
+	color:#000;
+	background: #C3CED9;
+}
+
+.tableType2 .cellType5, .tableType2 .cellType5 TD{
+	color:#000;
+	background: #F5E47A;
+}
+
+.tableType2 .cellType6, .tableType2 .cellType6 TD{
+	color:#000;
+	background: #FFFBE4;
+}
+
+.tableType2 .fontBig, .tableType2 .fontBig TD{
+	font-size: 12px;	
+}
+
+.tableType2 .extraColor1{
+	color: #003366;	
+}
+
+.tableType2 .extraColor2{
+	color: #F7931E;	
+}
+
+
+
+.div-radio{
+	padding:7px 0;
+}
+.div-radio-act{
+	padding:7px 0;
+	background:#FFDFBA;
+}
+
+
+
+/* error block */
+.err-blk{border:1px solid #B30000;}
+.err-head{
+	font:10px Verdana;
+	color:#FFF;
+	padding:2px 0 4px 5px;
+	background:#B30000;
+}
+.err-txt{
+	font:10px Verdana;
+	color:#B30000;
+	padding:5px 10px 8px 10px;
+}
+.err-icon{
+	vertical-align: top;
+	padding:9px 0 6px 8px;
+}
+.err-color{color:#B30000}
+
+
+/*  Error Block  */
+
+.errorBlock {
+	padding: 0 0 10px 0;
+}
+
+.errorHeader {
+	padding: 3px 0 3px 7px;
+	background: #BFBDBD;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.errorBody {
+	border: 1px solid #BFBDBD;
+}
+
+.errorBody .errorIcon {
+	vertical-align: top;
+	padding: 15px 12px 20px 25px;
+}
+
+.errorBody .errorIcon DIV {
+	width: 32px;
+	height: 29px;
+	background: url(../pictures/icons/i_error2.gif) no-repeat left top;
+}
+
+.errorBody .errorText {
+	padding:5px 10px 0 10px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.errorBody .errorText p {
+	padding: 0 0 8px 0;
+}
+
+.errorFooter {
+	display: none;
+}
+
+.errorButtons {
+	text-align: center;
+	padding: 10px 0 15px 0;
+}
+
+.errorButtons table {
+	margin: 0 auto;
+}
+
+.errorButtons a.button1, .errorButtons a.button1:hover, .errorButtons a.button1:visited,
+.errorButtons a.button1:link, .errorButtons a.button1:active, .errorButtons a.button1:focus {
+	background: #d3991b url(../pictures/misc/main-button-bg.gif) repeat-x left top;
+	border: none;
+	padding: 0;
+	display: block;
+	width: '100%';
+	font: bold 16px Arial;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.errorButtons a.button1 span {
+	display: block;
+	background: url(../pictures/misc/main-button-left.gif) no-repeat left top;
+}
+
+.errorButtons a.button1 span span {
+	background: url(../pictures/misc/main-button-right.gif) no-repeat right top;
+	padding: 3px 15px 3px 15px;
+}
+
+.errorButtons a.button2, .errorButtons a.button2:hover, .errorButtons a.button2:visited,
+.errorButtons a.button2:link, .errorButtons a.button2:active, .errorButtons a.button2:focus {
+	background: #1673b2 url(../pictures/misc/alt-button-bg.gif) repeat-x left top;
+	border: none;
+	padding: 0;
+	display: block;
+	width: '100%';
+	font: bold 12px Arial;
+	text-decoration: none;
+	color: #FFFFFF;
+	margin: 2px 0 0 0;
+}
+
+.errorButtons a.button2 span {
+	display: block;
+	background: url(../pictures/misc/alt-button-left.gif) no-repeat left top;
+}
+
+.errorButtons a.button2 span span {
+	background: url(../pictures/misc/alt-button-right.gif) no-repeat right top;
+	padding: 2px 25px 4px 25px;
+}
+
+
+/*  error block 1  */
+
+.errorBlockType1 {
+	
+}
+
+/*  error block 2  */
+
+.errorBlockType2 .errorHeader {
+	background: #f44d3f;
+	color: #ffffff;
+}
+
+.errorBlockType2 .errorBody {
+	border: 1px solid #f44d3f;
+}
+
+.errorBlockType2 .errorBody .errorIcon {
+	padding: 15px 9px 15px 24px;
+}
+
+.errorBlockType2 .errorBody .errorIcon DIV {
+	width: 36px;
+	height: 34px;
+	background: url(../pictures/icons/i_error.gif) no-repeat left top;
+}
+
+/*  error block 3  */
+
+.errorBlockType3 .errorHeader {
+	background: #d5d5d5;
+}
+
+.errorBlockType3 .errorBody {
+	border: 1px solid #d5d5d5;
+}
+
+.errorBlockType3 .errorBody .errorIcon {
+	padding: 15px 11px 19px 27px;
+}
+
+.errorBlockType3 .errorBody .errorIcon DIV {
+	width: 31px;
+	height: 30px;
+	background: url(../pictures/icons/i_warning2.gif) no-repeat left top;
+}
+
+
+/* errors for ajax popups */
+
+.dialogErrorBlock .errorHeader,
+.dialogErrorBlock .errorFooter {
+	display: none;
+} 
+
+.dialogErrorBlock .errorBody {
+	border: 0px;
+}
+
+.dialogErrorBlock .errorBody .errorText {
+	color: #B30000;
+}
+
+
+
+/*  Error Field  */
+
+.errorNoticeOuter {
+
+}
+
+.errorNoticeOff {
+	display: none;
+}
+
+.errorNotice {
+	font: bold 10px Verdana;
+	color:#B30000;
+}
+
+input.errorField, select.errorField {
+	background: #FFB5B5 url(../pictures/misc/bg_err_field.gif);	
+}
+
+.errorField select, .errorField input {
+	background: #F29083;
+	color: #FFFFFF;
+}
+
+tr.errorNoticeOuter .errorNotice {
+	padding: 7px 0 1px 6px;
+}
+
+div.errorNoticeOuter .errorNotice {
+	padding: 3px 0;
+}
+
+
+
+/* trip planner status */
+
+.statusNotBooked{
+	color: #003366;	
+}
+
+.statusCancelled{
+	color: #F7931E;	
+}
+
+.statusBooked{
+	color: #2B6600;	
+}
+
+
+/******************************************************************************
+
+	Seat Selector styles
+
+******************************************************************************/
+
+/* Seat Map */
+
+.seatMapLoadingBlock {
+	font: bold 10px Verdana;
+	padding: 10px 10px 10px 10px;
+	text-align: center;	
+}
+
+.seatMapBlock {
+	margin: 2px 2px 0 2px;
+	text-align: center;
+}
+
+.seatMapBlock .seatMapInner {
+	margin: 0 auto;
+	text-align: left;
+}
+
+.seatMapBlock A:focus {
+	-moz-outline: none; 
+	outline: none;
+}
+
+.planeNavigation A {
+	font: bold 10px Verdana;
+	color: #0000ff;
+	text-decoration: none;
+}
+
+.planeNavigation SPAN {
+	font: bold 10px Verdana;
+	display: none;
+}
+
+.planeNavigation .navFront {
+	padding: 0 0 5px 26px;
+}
+
+.planeNavigation .navRear {
+	text-align: right;
+	padding: 0 27px 5px 0;
+}
+
+.planeFitsWidth .planeNavigation A {
+	display: none;
+}
+
+.planeFitsWidth .planeNavigation SPAN {
+	display: inline;
+}
+
+
+.planeView TD {
+	font: 10px Verdana;
+	vertical-align: top;	
+}
+
+.planeView .planeTopSeatNumbers TD {
+	padding: 2px 0;
+	border-bottom: 1px solid #E6E6E6;
+	text-align: center;
+}
+
+.planeView .planeBottomSeatNumbers TD {
+	padding: 2px 0;
+	border-top: 1px solid #E6E6E6;
+	text-align: center;	
+}
+
+
+.planeView .planeLeftSeatLetter DIV {
+	padding: 3px 5px 0px 11px;
+}
+
+.planeView .planeRightSeatLetter DIV {
+	padding: 3px 8px 0px 9px;
+}
+
+.planeView .wing {
+	background-color: #B9C2DF;
+}
+
+.planeView .exit {
+	background-color: #FFC000;
+}
+
+.planeView .planeSeats TD {
+	background-color: #F2F2F2;
+}
+
+.planeView .firstPlaneRow TD {
+	padding-top: 4px;	
+}
+
+.planeView .lastPlaneRow TD {
+	padding-bottom: 4px;	
+}
+
+.planeView TD.exitSeat DIV {
+	background-color: #FFC000;
+}
+
+.planeView TD.availableSeat DIV,
+.planeView TD.occupiedSeat DIV,
+.planeView TD.blockedSeat DIV,
+.planeView TD.funcSpace DIV
+{
+	width: 19px;
+	height: 19px;
+	background-position: 2px 2px;
+	background-repeat: no-repeat;	
+}
+
+.planeView TD.availableSeat DIV {
+	background-image: url(../pictures/icons/seats/i_seat_avail_f.gif);
+}
+
+.planeView TD.occupiedSeat DIV {
+	background-image: url(../pictures/icons/seats/i_seat_occup_f.gif);
+}
+
+.planeView TD.blockedSeat DIV {
+	background-image: url(../pictures/icons/seats/i_seat_blocked_f.gif);
+}
+
+.planeView TD.availableSeat DIV.guest {
+	background-image: url(../pictures/icons/seats/i_guest_f.gif);
+	background-position: 0px 0px;	
+}
+
+.planeView TD.availableSeat DIV.currentGuest {
+	background-image: url(../pictures/icons/seats/i_current_guest_f.gif);
+	background-position: 0px 0px;	
+}
+
+.planeView TD.availableSeat DIV.guest SPAN,
+.planeView TD.availableSeat DIV.currentGuest SPAN
+{
+	font: bold 10px Tahoma; 
+	color: #000;
+	display: block;
+	padding: 3px 0 0 0;
+	text-align: center;
+}
+
+.planeView TD.availableSeat DIV DIV {
+	background: none;
+	padding: 2px;	
+}
+
+.planeView TD.availableSeat DIV DIV DIV {
+	cursor: pointer;
+	background: none;
+	width: 15px;
+	height: 15px;
+	padding: 0px;		
+}
+
+
+.planeScroll {
+	padding: 23px 27px 0 26px;
+}
+
+.planeScroll .scrollPane {
+	background-color: #f2f2f2;
+	width: 100%;
+}
+
+.planeScroll .scrollFront a,
+.planeScroll .scrollRear a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../pictures/icons/seats/i_arr_front.gif) no-repeat;
+}
+
+.planeScroll .scrollRear a {
+	background: url(../pictures/icons/seats/i_arr_rear.gif) no-repeat;
+}
+
+.planeScroll .scrollRear {
+	text-align: right;
+}
+
+.planeFitsWidth .planeScroll {
+	visibility: hidden;
+}
+
+
+/* Legend */
+
+.seatsLegendBlock {
+	border: 1px solid #c3c3c3;
+	padding: 3px 8px 4px 8px;
+}
+
+.seatsLegendBlock .headBlock,
+.seatsLegendBlock .footerBlock {
+	display: none;
+}
+
+.seatsLegendBlock H3 {
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0 0 6px 0;
+}
+
+.seatsLegendBlock TD {
+	vertical-align: top;
+}
+
+.seatsLegendBlock .colText {
+	width: 25%
+}
+
+.seatsLegendBlock .colIcon DIV {
+	padding: 0 0 7px 0;
+}
+
+.seatsLegendBlock .colText DIV {
+	padding: 1px 7px 1px 5px;
+}
+
+/******************************************************************************
+
+	Step navigation
+
+******************************************************************************/
+
+.stepsNavArea {
+	background: url(../pictures/icons/steps-bifl/area-before.gif) center bottom repeat-x;
+	margin: 0 0 0 auto;
+}
+
+.stepsNavSpacerAfter {
+	background: url(../pictures/icons/steps-bifl/area-after.gif) center bottom repeat-x;
+}
+
+.stepsNavRow td {
+	font: 11px Verdana;
+	color: #000;
+}
+
+.stepsNavFirstBefore {
+	background: url(../pictures/icons/steps-bifl/first-before.gif) center bottom no-repeat;
+}
+
+.stepsNavFirstAfter {
+	background: url(../pictures/icons/steps-bifl/first-after.gif) center bottom no-repeat;
+}
+
+.stepsNavFirstActive {
+	background: url(../pictures/icons/steps-bifl/first-active.gif) center bottom no-repeat;
+}
+
+.stepsNavDefaultBefore {
+	background: url(../pictures/icons/steps-bifl/default-before.gif) center bottom no-repeat;
+}
+
+.stepsNavDefaultAfter {
+	background: url(../pictures/icons/steps-bifl/default-after.gif) center bottom no-repeat;
+}
+
+.stepsNavDefaultActive {
+	background: url(../pictures/icons/steps-bifl/default-active.gif) center bottom no-repeat;
+}
+
+.stepsNavLastBefore {
+	background: url(../pictures/icons/steps-bifl/last-before.gif) center bottom no-repeat;
+}
+
+.stepsNavLastAfter {
+	background: url(../pictures/icons/steps-bifl/last-after.gif) center bottom no-repeat;
+}
+
+.stepsNavLastActive {
+	background: url(../pictures/icons/steps-bifl/last-active.gif) center bottom no-repeat;
+}
+
+
+
+.stepsNavAir .stepsNavFirstActive {
+	background: url(../pictures/icons/steps-bifl/first-active-air.gif) center bottom no-repeat;
+}
+
+.stepsNavAir .stepsNavDefaultActive {
+	background: url(../pictures/icons/steps-bifl/default-active-air.gif) center bottom no-repeat;
+}
+
+.stepsNavAir .stepsNavLastActive {
+	background: url(../pictures/icons/steps-bifl/last-active-air.gif) center bottom no-repeat;
+}
+
+.stepsNavHotel .stepsNavFirstActive {
+	background: url(../pictures/icons/steps-bifl/first-active-hotel.gif) center bottom no-repeat;
+}
+
+.stepsNavHotel .stepsNavDefaultActive {
+	background: url(../pictures/icons/steps-bifl/default-active-hotel.gif) center bottom no-repeat;
+}
+
+.stepsNavHotel .stepsNavLastActive {
+	background: url(../pictures/icons/steps-bifl/last-active-hotel.gif) center bottom no-repeat;
+}
+
+.stepsNavCar .stepsNavFirstActive {
+	background: url(../pictures/icons/steps-bifl/first-active-hotel.gif) center bottom no-repeat;
+}
+
+.stepsNavCar .stepsNavDefaultActive {
+	background: url(../pictures/icons/steps-bifl/default-active-hotel.gif) center bottom no-repeat;
+}
+
+.stepsNavCar .stepsNavLastActive {
+	background: url(../pictures/icons/steps-bifl/last-active-hotel.gif) center bottom no-repeat;
+}
+
+.stepsNavInsurance .stepsNavFirstActive {
+	background: url(../pictures/icons/steps-bifl/first-active-hotel.gif) center bottom no-repeat;
+}
+
+.stepsNavInsurance .stepsNavDefaultActive {
+	background: url(../pictures/icons/steps-bifl/default-active-hotel.gif) center bottom no-repeat;
+}
+
+.stepsNavInsurance .stepsNavLastActive {
+	background: url(../pictures/icons/steps-bifl/last-active-hotel.gif) center bottom no-repeat;
+}
+
+.stepsNavAreaOuter {
+	padding: 0 0 7px 0;
+	text-align: right;
+}
+
+.spacerStepsNav {
+	width: 20px;
+	height: 30px;
+}
+
+/* added new block */
+
+.paymentInfo {
+	color: #F7931E;
+}
+
+.paymentInfo IMG{
+	position: relative;
+	margin: 0 5px -4px 0;
+}

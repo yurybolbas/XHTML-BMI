@@ -1,0 +1,18 @@
+﻿Mr. John Smith.
+
+Your password has been reset now. Please use this password and log in the 
+system immediately.
+Your new account information is:
+
+    Username: Johny72
+    Password: Ku_aIJf893sdtG39
+
+Some text regarding password recovery rules goes here. Some text regarding 
+password recovery rules goes here. Some text regarding password recovery rules 
+goes here.Some text regarding password recovery rules goes here.
+
+If you have questions about your reservation please call Companyname
+at X-XXX-XXXXXXX and have the itinerary number ready.
+Thank you for choosing Companyname.com
+
+Powered by Datalex.

@@ -1,0 +1,125 @@
+/******************************************************************************
+
+	HEADER STYLES
+
+******************************************************************************/
+
+
+/******************************************************************************
+
+	Block over logo
+
+******************************************************************************/
+
+
+
+/******************************************************************************
+
+	Logo
+
+******************************************************************************/
+
+
+/******************************************************************************
+
+	Navigation Top
+
+******************************************************************************/
+
+
+/******************************************************************************
+
+	Block under logo
+
+******************************************************************************/
+
+.blockUnderLogo {
+	margin: 2px 0 0 0;
+	background: #999999 url(../pictures/misc/under-logo-left-corner.gif) no-repeat left bottom;
+	color: #FFFFFF;
+}
+
+.blockUnderLogo,
+.blockUnderLogo table {
+	width: 100%;
+}
+
+.blockUnderLogo table {
+	background: url(../pictures/misc/under-logo-right-corner.gif) no-repeat right bottom;
+}
+
+.blockUnderLogo,
+.blockUnderLogo td {
+	font-size: 12px;
+}
+
+.blockUnderLogo td,
+.blockUnderLogo a {
+	color: #FFFFFF;
+}
+
+
+/******************************************************************************
+
+	Language selector
+
+******************************************************************************/
+
+.languageSelector {
+	padding: 0 10px 2px 10px;
+	margin-left: -4px;
+	margin-left: '0';
+	border-right: 1px solid #ffffff;
+}
+
+.languageSelector a, .languageSelector span {
+	margin-left: 4px;
+	line-height: 23px;
+}
+
+.languageSelector span.delim {
+	margin: 0;
+}
+
+
+/******************************************************************************
+
+	Breadcrumb
+
+******************************************************************************/
+
+.navigationBreadcrumb {
+	padding: 0 0 0 10px;
+}
+
+.navigationBreadcrumb span,
+.navigationBreadcrumb strong,
+.navigationBreadcrumb a {
+	line-height: 23px;
+}
+
+.navigationBreadcrumb span {
+	margin: 0 3px 0 0;
+}
+
+
+/******************************************************************************
+
+	Authorization status
+
+******************************************************************************/
+
+.auth {
+	padding: 0 10px 0 10px;
+}
+
+.auth span,
+.auth strong,
+.auth a {
+	line-height: 23px;
+}
+
+.auth span {
+	margin: '0 3px 0 0';
+	padding: 0 3px 0 3px;
+}

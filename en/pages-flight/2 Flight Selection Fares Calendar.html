@@ -1,0 +1,498 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DLEXPRD</title>
+<script language="JavaScript" type="text/javascript">
+<!--		
+function registerJS(jsName){
+	return;
+}
+--></script>
+<link rel="stylesheet" type="text/css" href="../../css/all.css" />
+<link rel="stylesheet" type="text/css" href="../../css/print.css" media="print" />
+<script src="../../js/bot_script.js" type="text/JavaScript"></script>
+<script src="../../js/calendar.js" type="text/JavaScript"></script>
+<script src="../../js/dialog.js" type="text/JavaScript"></script>
+<script src="../../js/drilldown.js" type="text/JavaScript"></script>
+<script src="../../js/global.js" type="text/JavaScript"></script>
+<script src="../../js/utils.js" type="text/JavaScript"></script>
+<script src="../../js/navigation.js" type="text/JavaScript"></script>
+<script src="../../js/prototype_source_loader.js" type="text/javascript"></script>
+<script src="../../js/seatmap.js" type="text/JavaScript"></script>
+<script src="../../js/version.js" type="text/JavaScript"></script>
+<script src="../../en/js/airport_data.js" type="text/JavaScript"></script>
+<script src="../../en/js/navigation.js" type="text/JavaScript"></script>
+<script src="../../en/js/popup_templates.js" type="text/JavaScript"></script>
+<script type="text/JavaScript">
+<!--
+		_protoFareLighting = {
+			tableId: 'faresCalendar',
+			actPos: null,
+			
+			selectFare: function (pos) {
+				var table = document.getElementById(this.tableId);	
+				if (table.rows[pos.row].cells[pos.col].className.match('notAvail')) return;
+				
+				if (this.actPos) {
+					table.rows[this.actPos.row].cells[this.actPos.col].className = table.rows[this.actPos.row].cells[this.actPos.col].className.replace('selected','');
+					table.rows[this.actPos.row].cells[this.actPos.col-1].className = table.rows[this.actPos.row].cells[this.actPos.col-1].className.replace('selectedPrev','');
+					table.rows[this.actPos.row-1].cells[this.actPos.col].className = table.rows[this.actPos.row-1].cells[this.actPos.col].className.replace('selectedOver','');
+										
+					table.rows[this.actPos.row].cells[0].className = table.rows[this.actPos.row].cells[0].className.replace('current','');
+					table.rows[0].cells[this.actPos.col].className = table.rows[0].cells[this.actPos.col].className.replace('current','');
+				}
+				
+				table.rows[pos.row].cells[pos.col].className += ' selected';
+				table.rows[pos.row].cells[pos.col-1].className += ' selectedPrev';
+				table.rows[pos.row-1].cells[pos.col].className += ' selectedOver';
+				
+				table.rows[pos.row].cells[0].className += ' current';
+				table.rows[0].cells[pos.col].className += ' current';
+				
+				this.actPos = pos;
+				if (!document.all) {
+					table.innerHTML = table.innerHTML;
+				}
+				table.rows[pos.row].cells[pos.col].getElementsByTagName('INPUT')[0].checked = true;
+			}
+		}
+		
+		window.onload = function () {
+			_protoFareLighting.selectFare({row:4,col:4});
+		}
+		//--></script>
+</head>
+<body>
+<!-- BEGIN HEIGHT SCRETCHING -->
+<table height="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="layoutMain">
+	<tr>
+		<td valign="top">
+			<!-- BEGIN LAYOUT HEADER -->
+			<div class="layoutHeader">
+			
+				<!-- BMI HEADER -->	
+			
+				<div class="headerStub"><img src="../../pictures/header/header-stub.gif" width="930" height="104" alt=""></div>
+				
+				<!-- /BMI HEADER -->	
+			
+				<div class="blockUnderLogo">
+					<table cellpadding="0" cellspacing="0" border="0" class="blockUnderLogoContent">
+						<tr valign="top">
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN LANGUAGE SELECTOR -->
+								<div class="languageSelector"><span>English</span><span class="delim"> | </span>
+									<a href="#">Espanol</a></div>
+								<!-- /END LANGUAGE SELECTOR --></td>
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN BREADCRUMB -->
+								<div class="navigationBreadcrumb">
+									<a href="../../en/index.html">Home</a><span> » </span>
+									<a href="../../en/pages-old/Reservations &amp; Services (SRS).html">Reservations &amp; Services</a><span> » </span><strong>Flights</strong></div>
+								<!-- /END BREADCRUMB --></td>
+							<td class="layoutCell" width="99%" align="right">
+								<!-- BEGIN LOGIN STATUS -->
+								<div class="auth">
+									<a href="../../en/pages-login/Login - Login Screen (ALG).html">Login</a></div>
+								<!-- /END LOGIN STATUS --></td>
+						</tr>
+					</table></div></div>
+			<!-- /END LAYOUT HEADER -->
+			<table class="layoutBody" align="center">
+				<tr valign="top">
+					<td class="layoutBodyWideArea">
+						<!-- BEGIN BODY WIDE AREA -->
+						<div id="pgFlightSelection">
+							<form action="#" method="post">
+								<!-- Services Tabs -->
+								<div class="mainTopServicesTabs">
+									<div class="servicesTabs">
+										<table>
+											<tr>
+												<td class="air">
+													<div>
+														<a href="../pages-flight/1 Flight Search RT.html">Flights</a></div></td>
+												<td class="hotel">
+													<div>
+														<a href="../pages-hotel/1 Hotel Search.html">Hotels</a></div></td>
+												<td class="car">
+													<div>
+														<a href="../pages-car/1 Car Search.html">Car</a></div></td>
+												<td class="package">
+													<div>
+														<a href="#">Packages</a></div></td>
+												<td class="insurance">
+													<div>
+														<a href="../pages-insurance/1 Insurance Search.html">Insurance</a></div></td>
+												<td class="discount">
+													<div>
+														<a href="#">Discount Cards</a></div></td>
+											</tr>
+										</table></div></div>
+								<!-- /Services Tabs -->
+								<!-- BEGIN STEPS LINE -->
+								<div class="stepsNavAreaOuter">
+									<table class="stepsNavArea stepsNavAir">
+										<tr class="stepsNavRow" valign="top">
+											<td class="stepsNavFirstAfter">Search</td>
+											<td class="stepsNavSpacerAfter">
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavDefaultActive"><strong>Selection</strong></td>
+											<td>
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavDefaultBefore">Summary</td>
+											<td>
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavDefaultBefore">Passengers</td>
+											<td>
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavDefaultBefore">Purchase</td>
+											<td>
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavLastBefore">Confirmation</td>
+										</tr>
+									</table></div>
+								<!-- /END STEPS LINE -->
+								<!-- BEGIN PAGE TITLE LINE -->
+								<div class="pageTitleArea">
+									<table>
+										<tr>
+											<td>
+												<h1>Select Your Flight</h1></td>
+										</tr>
+									</table></div>
+								<!-- /END PAGE TITLE LINE -->
+								<!-- BEGIN FLIGHT SELECTION FARES CALENDAR BLOCK -->
+								<div class="flightSelectionFaresCalendar">
+									<div class="headBlock">
+										<div>
+											<h2>Los Angeles (LAX) - San Francisco (SFO) - Los Angeles (LAX)</h2></div></div>
+									<div class="bodyBlock">
+										<div class="commentBlock">
+											<p>Prices are in US Dollars USD for 1 Adult, including taxes and fees</p></div>
+										<div class="subHeadBlock">
+											<div>
+												<h3>Best Fares</h3></div></div>
+										<table cellpadding="0" cellspacing="0" border="0" class="faresCalendar" id="faresCalendar">
+											<tr class="inboundHead">
+												<th class="navCell">&nbsp;</th>
+												<th class="colFirst">Inbound<br /><b>21 Apr</b></th>
+												<th>Inbound<br /><b>22 Apr</b></th>
+												<th>Inbound<br /><b>23 Apr</b></th>
+												<th>Inbound<br /><b>24 Apr</b></th>
+												<th>Inbound<br /><b>25 Apr</b></th>
+												<th>Inbound<br /><b>26 Apr</b></th>
+												<th class="colLast">Inbound<br /><b>27 Apr</b></th>
+											</tr>
+											<tr class="rowFirst">
+												<th class="outboundHead">Outbound<br /><b>14 Apr</b></th>
+												<td class="colFirst notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail lowestOver">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="colLast notAvail">
+													<div>N/A</div></td>
+											</tr>
+											<tr>
+												<th class="outboundHead">Outbound<br /><b>15 Apr</b></th>
+												<td class="colFirst notAvail lowestPrev">
+													<div>N/A</div></td>
+												<td class="lowest lowestOver" onClick="_protoFareLighting.selectFare({row:2,col:2})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">300.00</a></div></td>
+														</tr>
+													</table></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="colLast notAvail">
+													<div>N/A</div></td>
+											</tr>
+											<tr>
+												<th class="outboundHead">Outbound<br /><b>16 Apr</b></th>
+												<td class="colFirst notAvail lowestPrev lowestOver">
+													<div>N/A</div></td>
+												<td class="lowest lowestOver" onClick="_protoFareLighting.selectFare({row:3,col:2})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">300.00</a></div></td>
+														</tr>
+													</table></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="lowestOver" onClick="_protoFareLighting.selectFare({row:3,col:4})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">375.00</a></div></td>
+														</tr>
+													</table></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="colLast notAvail">
+													<div>N/A</div></td>
+											</tr>
+											<tr>
+												<th class="outboundHead lowestPrev">Outbound<br /><b>17 Apr</b></th>
+												<td class="colFirst lowest lowestPrev" onClick="_protoFareLighting.selectFare({row:4,col:1})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">300.00</a></div></td>
+														</tr>
+													</table></td>
+												<td class="lowest" onClick="_protoFareLighting.selectFare({row:4,col:2})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">300.00</a></div></td>
+														</tr>
+													</table></td>
+												<td class="notAvail lowestPrev">
+													<div>N/A</div></td>
+												<td class="lowest" onClick="_protoFareLighting.selectFare({row:4,col:4})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">300.00</a></div></td>
+														</tr>
+													</table></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="colLast" onClick="_protoFareLighting.selectFare({row:4,col:7})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">400.00</a></div></td>
+														</tr>
+													</table></td>
+											</tr>
+											<tr>
+												<th class="outboundHead">Outbound<br /><b>18 Apr</b></th>
+												<td class="colFirst notAvail lowestOver">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td onClick="_protoFareLighting.selectFare({row:5,col:4})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">400.00</a></div></td>
+														</tr>
+													</table></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="colLast" onClick="_protoFareLighting.selectFare({row:5,col:7})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">400.00</a></div></td>
+														</tr>
+													</table></td>
+											</tr>
+											<tr>
+												<th class="outboundHead lowestPrev">Outbound<br /><b>19 Apr</b></th>
+												<td class="colFirst lowest" onClick="_protoFareLighting.selectFare({row:6,col:1})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">300.00</a></div></td>
+														</tr>
+													</table></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td onClick="_protoFareLighting.selectFare({row:6,col:4})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">400.00</a></div></td>
+														</tr>
+													</table></td>
+												<td onClick="_protoFareLighting.selectFare({row:6,col:5})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">375.00</a></div></td>
+														</tr>
+													</table></td>
+												<td onClick="_protoFareLighting.selectFare({row:6,col:6})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">400.00</a></div></td>
+														</tr>
+													</table></td>
+												<td class="colLast" onClick="_protoFareLighting.selectFare({row:6,col:7})">
+													<table>
+														<tr>
+															<td>
+																<div class="colRadio">
+																	<input type="radio" name="radioGrFares" value="" /></div></td>
+															<td>
+																<div class="colPrice">
+																	<a href="#" onClick="return false">450.00</a></div></td>
+														</tr>
+													</table></td>
+											</tr>
+											<tr class="rowLast">
+												<th class="outboundHead">Outbound<br /><b>20 Apr</b></th>
+												<td class="colFirst notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="notAvail">
+													<div>N/A</div></td>
+												<td class="colLast notAvail">
+													<div>N/A</div></td>
+											</tr>
+										</table>
+										<div class="faresCalendarLegend">
+											<table>
+												<tr>
+													<td class="colTitle">Legend:</td>
+													<td class="colSel">Selected Fare</td>
+													<td class="colSelSamp">
+														<div class="selectedSample">&nbsp;</div></td>
+													<td class="colLow">Lowest Fare</td>
+													<td class="colLowSamp">
+														<div class="lowestSample">&nbsp;</div></td>
+													<td class="colNA">Fares are Unavailable</td>
+													<td class="colNASamp">
+														<div class="notAvailSample">&nbsp;</div></td>
+												</tr>
+											</table></div>
+										<div class="blockSeparator"><span></span></div></div>
+									<div class="footerBlock">
+										<div><span></span></div></div></div>
+								<!-- /END FLIGHT SELECTION FARES CALENDAR BLOCK -->
+								<div class="spacerVert"><span></span></div>
+								<!-- BEGIN BUTTON AREA -->
+								<div align="right" class="pageButtonArea">
+									<table>
+										<tr>
+											<td>
+												<a href="1 Flight Search RT.html" class="button2" id="pgButtonNewSearch"><span><span>New Search</span></span></a></td>
+											<td>
+												<a href="2 Flight Selection Airline.html" class="button1" id="pgButtonSelectFare"><span><span>Select this Fare</span></span></a><span class="button1Disabled" id="pgButtonSelectFareDisabled" style="display:none"><span><span>Select this Fare</span></span></span></td>
+										</tr>
+									</table></div>
+								<!-- /END BUTTON AREA -->
+							</form></div>
+						<!-- /END BODY WIDE AREA --></td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td valign="bottom">
+			<!-- Enter Chat -->
+			<div class="enterChat">
+				<div class="headBlock">
+					<div><span></span></div></div>
+				<div class="bodyBlock">
+					<h3>Need Help?</h3>
+					<p>A representative is standing by to answer your question via our <a href="#" onClick="openWindow('chatSelect', '../../en/popups/Chat Selection.html', 700, 500, '');return false">online chat</a>.</p>
+					<p>You can also <a href="#">contact us by email</a> or call 1(507) 217-2671.</p></div>
+				<div class="footerBlock">
+					<div><span></span></div></div></div>
+			<!-- /Enter Chat -->
+			<!-- BEGIN LAYOUT FOOTER -->
+			<div class="layoutFooter">
+								
+				<!-- BMI FOOTER -->		
+		
+				<div class="footerStub"><img src="../../pictures/footer/footer-stub.gif" width="930" height="56" alt=""></div>
+						
+				<!-- /BMI FOOTER -->	
+					
+			</div>
+			<!-- /END LAYOUT FOOTER --></td>
+	</tr>
+</table>
+<!-- /END HEIGHT SCRETCHING -->
+</body>
+</html>
+

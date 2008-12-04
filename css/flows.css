@@ -1,0 +1,792 @@
+/******************************************************************************
+
+	AIR FLOW
+
+******************************************************************************/
+
+/* Flight Selection */
+
+#pgFlightSelection .pageTitleArea {
+	margin: 0 450px 20px 0;
+}
+
+#pgFlightSelection .pageButtonArea {
+	padding: 5px 0 15px 0;
+}
+
+
+
+/* Summary */
+
+#pgItinerarySummary #pgButtonNext {
+	width: 80px;
+	text-align: center;
+}
+
+#pgItinerarySummary .proceedOptionsBlock {
+	margin: 8px 0 0 0;
+}
+
+#pgItinerarySummary #fbTripPlanner {
+	margin-top: 10px;
+}
+
+#pgItinerarySummary #fbTripPlanner .formBlock {
+	margin: 0 0 8px 0; 
+}
+
+#pgItinerarySummary #fbTripPlanner .formLabelElement {
+	padding-left: 0;
+}
+
+#pgItinerarySummary #fbTripPlanner .errorNotice {
+	padding: 0 0 1px 6px;
+}
+
+
+
+/* Login */
+
+#pgBookingLogin #fbBookingLogin {
+	text-align: center;
+}
+
+#pgBookingLogin #fbBookingLogin .formSubTitle {
+	width: 530px;
+	margin: 6px auto 0  auto;
+	text-align: left;
+}
+
+#pgBookingLogin #fbBookingLogin .formBlock {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	text-align: left;
+}
+
+#pgBookingLogin #fbBookingLogin .textBlock1 {
+	width: 530px;
+	margin: 6px auto 0 auto;
+	text-align: left;
+}
+
+#pgBookingLogin #fbBookingLogin .textBlock2 {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	text-align: left;
+}
+
+#pgBookingLogin #fbBookingLogin .formBlock1 .formButtonArea {
+	padding: 5px 0 0 0;
+}
+
+#pgBookingLogin #fbBookingLogin .formBlock2 .formButtonArea {
+	padding: 12px 0 5px 0;
+}
+
+
+
+/* Create Account */
+
+#pgCreateNewAccount #fbPersonalInfo {
+	margin: 15px 0 0 0;
+	text-align: center;
+}
+
+#pgCreateNewAccount #fbPersonalInfo .formHeader {
+	display: none;
+}
+
+#pgCreateNewAccount #fbPersonalInfo .formBlock {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	text-align: left;
+}
+
+#pgCreateNewAccount #fbPersonalInfo .formButtonArea TD {
+	padding: 8px 0 0 7px;
+}
+
+#pgCreateNewAccount #fbPersonalInfo .formBlock2 .formButtonArea TD {
+	padding: 0;
+}
+
+
+
+/* Travellers */
+
+
+#pgTravellers #fbTravellerDetails {
+	margin: 5px 0 0 0;
+}
+
+#pgTravellers #fbTravellerDetails .formBody {
+	text-align: center;
+}
+
+#pgTravellers #fbTravellerDetails .passengerBlock {
+	margin: 0 auto 8px auto;
+	width: 530px;
+	text-align: left;
+}
+	
+#pgTravellers #fbTravellerDetails .formSubTitle {
+	margin: 6px auto 0 auto;
+	width: 530px;
+	text-align: left;
+	font-size: 12px;
+	padding: 10px 0;
+}
+
+#pgTravellers .passengerBlock .col1,
+#pgTravellers .passengerBlock .col3 {
+	width: 20%;
+}
+
+#pgTravellers .passengerBlock .col2,
+#pgTravellers .passengerBlock .col4 {
+	width: 30%;
+}
+
+#pgTravellers .passengerBlock .colSpan3 {
+	width: 80%;
+}
+
+#pgTravellers .passengerBlock .colSpan4 {
+	width: 100%;
+	padding-left: 0;
+}
+
+#pgTravellers .passengerBlock .formLabelArea {
+	padding-left: 6px;
+}
+
+#pgTravellers .passengerBlock .col1 {
+	padding-left: 0;
+}
+
+#pgTravellers .passengerBlock .passengerSep DIV {
+	background: #cccccc;
+	width: 100%;
+	height: 1px;
+	overflow: hidden;
+	margin: 5px 0;
+}
+
+#pgTravellers #fbTravellerDetails .textBlock {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	text-align: left;
+}
+
+#pgTravellers #fbTravellerDetails .textBlock p {
+	margin: 0;
+}
+
+#pgTravellers #fbTravellerDetails .textBlock1 {
+	width: auto;
+	margin: 0 0 8px 0;
+}
+
+#pgTravellers #fbTravellerDetails .textBlock1 p {
+	margin: 8px 0 0 0;
+}
+
+#pgTravellers #fbTravellerDetails .formSep1 {
+	display: none;
+}
+
+#pgTravellers #fbTravellerDetails .travelerAddRequest .formInArea {
+	padding: 0;
+}
+
+#pgTravellers #fbTravellerDetails .travelerAddRequest .formLabelArea {
+	padding-top: 3px;
+	padding-left: 0;
+}
+
+#pgTravellers #fbTravellerDetails .travelerAddRequest .formLabelElement {
+	font: 12px Arial;
+}
+
+#pgTravellers #fbTravellerDetails .travelerRequests {
+	padding: 0 0 5px 0;
+}
+
+#pgTravellers #fbTravellerDetails .travelerRequests .formInArea {
+	width: 250px;
+}
+
+#pgTravellers #fbTravellerDetails .travelerRequests .formLabelArea {
+	padding-left: 0;
+}
+
+#pgTravellers #fbTravellerDetails .allocatedItems {
+	padding: 5px 0 0 0;
+}
+
+#pgTravellers #fbTravellerDetails .allocatedItems .header {
+	border-top: 1px solid #c3c3c3;
+	background: #e6e6e6;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2px 15px 4px 15px;
+}
+
+#pgTravellers #fbTravellerDetails .allocatedItems .body {
+	padding: 0 12px;
+}
+
+#pgTravellers #fbTravellerDetails .allocatedItems .formInArea {
+	padding-left: 0;
+}
+
+#pgTravellers #fbTravellerDetails .allocatedItems .formLabelArea {
+	padding-left: 0;
+}
+
+#pgTravellers #fbTravellerDetails .allocatedItems .formLabelElement {
+	font: 12px Arial;
+}
+
+#pgTravellers #fbContactInfo .formBody {
+	text-align: center;
+}
+
+#pgTravellers #fbContactInfo .formBlock {
+	margin: 0 auto 8px auto;
+	width: 530px;
+	text-align: left;
+}
+
+#pgTravellers #fbContactInfo .col1 {width: 20%}
+#pgTravellers #fbContactInfo .col2 {width: 80%}
+
+#pgTravellers #fbContactInfo .textBlock {
+	text-align: left;
+}
+
+#pgTravellers #fbEmergencyContactInfo .formBody {
+	text-align: center;
+}
+
+#pgTravellers #fbEmergencyContactInfo .formBlock {
+	margin: 0 auto 8px auto;
+	width: 530px;
+	text-align: left;
+}
+
+#pgTravellers #fbEmergencyContactInfo .col1 {width: 20%}
+#pgTravellers #fbEmergencyContactInfo .col2 {width: 30%}
+#pgTravellers #fbEmergencyContactInfo .colSpan2 {width: 80%}
+
+#pgTravellers #fbEmergencyContactInfo .textBlock {
+	text-align: left;
+}
+
+#pgTravellers .formBlock .phonesBlock .colTitle {width: 20%}
+#pgTravellers .formBlock .phonesBlock .colCountry {width: 17%}
+#pgTravellers .formBlock .phonesBlock .colArea {width: 14%}
+#pgTravellers .formBlock .phonesBlock .colPhone {width: 32%}
+#pgTravellers .formBlock .phonesBlock .colExt {width: 17%}
+#pgTravellers .formBlock .phonesBlock .colSpan4 {width: 80%}
+
+
+#pgTravellers tr.errorNoticeOuter .errorNotice {
+	padding: 4px 0 2px 6px;
+}
+
+
+
+/* Seat Selection */
+
+#pgSeatSelection {
+	text-align: center;
+}
+
+#pgSeatSelection .pageTitleArea .links {
+	font: 11px Arial;
+	margin: 15px 0 0 -350px;
+	position: absolute;
+	width: 144px;
+	text-align: right;
+}
+
+#pgSeatSelection .pageTitleArea .links A,
+#pgSeatSelection .pageTitleArea .links A:hover {
+	color: #004982;
+}
+
+#pgSeatSelection .seatSelectionArea {
+	width: 530px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 15px 0 0 0;
+}
+
+
+/* Payment */
+
+#pgPayment #fbDeliveryInfo {
+	margin: 5px 0 0 0;
+}
+
+#pgPayment #fbDeliveryInfo .formBlock {
+	margin: 0;
+}
+
+#pgPayment #fbDeliveryInfo .selectedDeliveryBlock {
+	margin: 0;
+}
+
+#pgPayment #fbBillingInfo {
+	margin: 8px 0 0 0;
+}
+
+#pgPayment #fbBillingInfo .formBody {
+	text-align: center;
+}
+
+#pgPayment #fbBillingInfo .formSubTitle {
+	margin: 6px auto 0 auto;
+	width: 530px;
+	text-align: left;
+}
+
+#pgPayment #fbBillingInfo .formSep1 {
+	display: none;
+}
+
+#pgPayment #fbBillingInfo .formBlock,
+#pgPayment #fbBillingInfo .textBlock2 {
+	margin: 0 auto 8px auto;
+	width: 530px;
+	text-align: left;
+}
+
+#pgPayment #fbBillingInfo .textBlock {
+	text-align: left;
+	font-weight: bold;
+}
+
+#pgPayment #fbBillingInfo .textBlock2 {
+	font-weight: normal;
+}
+
+#pgPayment #fbDeliveryAddress .formBody {
+	text-align: center;
+}
+
+#pgPayment #fbDeliveryAddress .formHorControl {
+	margin: 0 auto;
+	width: 530px;
+	text-align: left;
+}
+
+#pgPayment #tbTermsConditions .textBody {
+	text-align: center;
+}
+
+#pgPayment #tbTermsConditions .textBlock {
+	text-align: left;
+}
+
+#pgPayment #tbTermsConditions .formBlock {
+	width: 530px;
+	margin: 0 auto 8px auto;
+	text-align: left;
+}
+
+#pgPayment #tbTermsConditions .formLabelArea {
+	font-size: 12px;
+}
+
+#pgPayment #tbTermsConditions .linksBlock {
+	width: 530px;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 12px;
+	padding: 0 0 5px 10px;
+}
+
+#pgPayment #tbTermsConditions .linksBlock A {
+	padding: 0 30px 0 0;
+}
+
+#pgPayment #tbOnlinePayment .textHeader {
+	display: none;
+}
+
+#pgPayment #tbOnlinePayment .textBlock {
+	font-weight: bold;
+}
+
+
+
+/* Confirmation */
+
+#pgConfirmation #tbItineraryName {
+	margin: 5px 0 0 0;
+}
+
+#pgConfirmation #fbConfirmationEmail {
+	margin: 20px 0 0 0;
+}
+
+#pgConfirmation #fbConfirmationEmail .formHeader {
+	padding: 0 0 5px 0;
+}
+
+#pgConfirmation #fbConfirmationEmail .formLabelArea {
+	text-align: right;
+}
+
+#pgConfirmation #fbConfirmationEmail .formLabelArea,
+#pgConfirmation #fbConfirmationEmail .formDescArea {
+	font-size: 12px;
+}
+
+#pgConfirmation #fbConfirmationEmail .errorNotice {
+	padding: 0;
+}
+
+#pgConfirmation #fbConfirmationEmail .formButtonArea {
+	padding: 3px 0 0 2px;
+}
+
+#pgConfirmation #fbConfirmationEmail #fbButtonSend {
+	text-align: center;
+	width: 82px;
+}
+
+#pgConfirmation #fbConfirmationEmail #fbButtonSending {
+	text-align: center;
+	width: 82px;
+	cursor: default;
+}
+
+#pgConfirmation #tbContactInfo {
+	margin: 15px 0 0 0;
+}
+
+#pgConfirmation #tbContactInfo .textHeader {
+	padding: 0 0 5px 0;
+}
+
+#pgConfirmation #tbContactInfo .textSeparator {
+	display: none;
+}
+
+
+
+/******************************************************************************
+
+	HOTEL FLOW
+
+******************************************************************************/
+
+/*  Travellers page  */
+
+#pgTravellers #fbTravellerDetails .formFooter {
+	display: none;
+} 
+
+#pgTravellers #fbContactInfo .formFooter {
+	display: none;
+} 
+
+#pgTravellers #fbEmergencyContactInfo .formFooter {
+	display: none;
+} 
+
+#pgTravellers #fbDeliveryInfo .formFooter {
+	display: none;
+} 
+
+/*  Payment page  */
+
+#pgPayment #fbBillingInfo .formFooter {
+	display: none;
+}
+
+#pgPayment #fbConfirmationEmail .textBlock {
+	margin-bottom: 0;
+}
+
+#pgPayment #fbDeliveryAddress .formFooter {
+	display: none;
+}
+
+#pgPayment #fbConfirmationEmail .formFooter {
+	display: none;
+}
+
+#pgPayment #fbDeliveryAddress .formBlock {
+	margin-top: 5px;
+}
+
+#pgPayment #tbCollectionRules .textFooter {
+	display: none;
+}
+
+/******************************************************************************
+
+	CAR FLOW
+
+******************************************************************************/
+
+
+/******************************************************************************
+
+	INSURANCE FLOW
+
+******************************************************************************/
+
+
+/******************************************************************************
+
+	FLIGHT INFORMATION FLOW
+
+******************************************************************************/
+
+.flightInfoHeader {
+	font: bold 12px Verdana;
+	padding: 9px 0 0 0;
+}
+
+.flightInfoHeader .flight {
+	margin: 0 0 3px 0;
+}
+
+.flightInfoHeader .flight IMG {
+	margin: 0 5px 0 0;
+}
+
+.flightInfoHeader .route {
+	padding: 0 0 1px 0;
+}
+
+
+.flightInfoResultsLeg {
+	border: 1px solid #c2c2c2;
+	padding: 2px 0;
+	margin: 12px 0 0 0;
+}
+
+.flightInfoResultsLeg .headBlock {
+	background: #e6e6e6;
+	margin: 0 2px;
+	padding: 3px 4px 4px 4px;
+}
+
+.flightInfoResultsLeg .headBlock h2 {
+	font: bold 10px Verdana;
+}
+
+.flightInfoResultsLeg .footerBlock {
+	display: none;
+}
+
+.departArriveTable {
+	width: 100%;
+}
+
+.departArriveTable TH.colDepart,
+.departArriveTable TH.colArrive {width: 15%}
+.departArriveTable TD.colDepart,
+.departArriveTable TD.colArrive {width: 35%}
+
+.departArriveTable TH {
+	text-align: left;
+	vertical-align: top;
+	font: bold 10px Verdana;
+	background: #f7f6f6;
+	border: 1px solid #ffffff;
+	border-left-width: 2px;
+	border-right-width: 2px;
+}
+
+.departArriveTable TH DIV {
+	padding: 5px 3px;
+}
+
+.departArriveTable TD {
+	font: 10px Verdana;
+	border: 1px solid #ffffff;
+	border-left-width: 2px;
+	border-right-width: 2px;
+}
+
+.departArriveTable TD DIV {
+	padding: 5px 4px;
+}
+
+.departArriveTable TD DIV DIV {
+	padding: 0;
+}
+
+.departArriveTable TD .airport,
+.departArriveTable TD .country,
+.departArriveTable TD .date,
+.departArriveTable TD .terminal SPAN,
+.departArriveTable TD .gate SPAN,
+.departArriveTable TD .time SPAN,
+.departArriveTable TD .actTime SPAN  {
+	font-weight: bold;
+}
+
+.departArriveTable TD .terminal {
+	margin-top: 12px;
+}
+
+.departArriveTable TD .actTime .highlight {
+	color: #ff0202;
+}
+
+.aircraftDetails {
+	border-top: 1px solid #c2c3c1;
+	padding: 2px 5px 2px 5px;
+	font: 10px Verdana;
+}
+
+.aircraftDetails DIV {
+	padding: 3px 0 2px 0;
+}
+
+.aircraftDetails .airline SPAN,
+.aircraftDetails .equipment SPAN {
+	font-weight: bold;
+}
+
+
+#pgFlightInfoResults #tbImportantInfo {
+	margin: 12px 0 0 0;
+}
+
+#pgFlightInfoResults #tbImportantInfo .textFooter {
+	display: none;
+}
+
+
+/******************************************************************************
+
+	TIMETABLE FLOW
+
+******************************************************************************/
+
+.timetableResultsBlock .headBlock {
+	margin: 0 0 6px 0;
+}
+
+.timetableResultsBlock .headBlock TH {
+	font: 10px Verdana;
+	vertical-align: bottom;
+	text-align: right;
+}
+
+.timetableResultsBlock .headBlock H2 {
+	font: bold 13px Tahoma;
+}
+
+.timetableResultsBlock .headBlock .print {
+	font: 10px Verdana;
+	background: url(../pictures/icons/i_print.gif) no-repeat left center;
+	padding: 0 0 0 14px;
+}
+
+.timetableResultsBlock .bodyBlock {
+	border: 1px solid #cccccc;
+	padding: 2px;
+}
+
+.timetableResults {
+	width: 100%;
+}
+
+.timetableResults .colDays {width: 16%}
+.timetableResults .colTime {width: 10%}
+.timetableResults .colDepart {width: 18%}
+.timetableResults .colArrive {width: 18%}
+.timetableResults .colFlight {width: 17%}
+.timetableResults .colDuration {width: 11%}
+.timetableResults .colDetails {width: 10%}
+
+.timetableResults THEAD TD {
+	background: #e6e6e6;
+	padding: 3px 0 5px 0;
+	font: bold 10px Verdana;
+	color: #000000;
+}
+
+.timetableResults TBODY TD {
+	font: 10px Verdana;
+	vertical-align: top;
+}
+
+.timetableResults TBODY TD DIV {
+	padding: 3px 8px 0 0;
+}
+
+.timetableResults TBODY TD DIV DIV {
+	padding: 0;
+}
+
+.timetableResults TBODY .colDays DIV {
+	padding: 6px 0 0 0;
+}
+
+.timetableResults .colDays SPAN {
+	display: block;
+	float: left;
+	width: 11px;
+	text-align: center;
+}
+
+.timetableResults .colDays SPAN.day4 {
+	width: 13px;
+}
+
+.timetableResults .colDays .dayOn {
+	background: url(../pictures/icons/i_day_on1.gif) no-repeat center center;
+}
+
+.timetableResults .colDays .dayOff {
+	background: url(../pictures/icons/i_day_off.gif) no-repeat center center;
+}
+
+.timetableResults .colTime {
+	font-weight: bold;
+}
+
+.timetableResults .colArrive .time {
+	font-weight: bold;
+}
+
+.timetableResults .colFlight .airline {
+	padding: 0 0 3px 0;
+}
+
+.timetableResults .colFlight .airline IMG {
+	margin: 0 5px 0 0;
+}
+
+.timetableResults .colDuration {
+	font-weight: bold;
+}
+
+.timetableResults .colButton {
+	background: url(../pictures/misc/form_sep.gif) repeat-x left bottom;
+}
+
+.timetableResults .groupLast .colButton {
+	background: none;
+}
+
+.timetableResults .colButton .componentButtonArea {
+	padding: 0 6px 6px 0;
+}
+
+#pgTimetableResults .footnote {
+	font: 10px Verdana;
+	color: #000000;
+	padding: 5px 0 0 0;
+}

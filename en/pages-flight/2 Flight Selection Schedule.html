@@ -1,0 +1,426 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DLEXPRD</title>
+<script language="JavaScript" type="text/javascript">
+<!--		
+function registerJS(jsName){
+	return;
+}
+--></script>
+<link rel="stylesheet" type="text/css" href="../../css/all.css" />
+<link rel="stylesheet" type="text/css" href="../../css/print.css" media="print" />
+<script src="../../js/bot_script.js" type="text/JavaScript"></script>
+<script src="../../js/calendar.js" type="text/JavaScript"></script>
+<script src="../../js/dialog.js" type="text/JavaScript"></script>
+<script src="../../js/drilldown.js" type="text/JavaScript"></script>
+<script src="../../js/global.js" type="text/JavaScript"></script>
+<script src="../../js/utils.js" type="text/JavaScript"></script>
+<script src="../../js/navigation.js" type="text/JavaScript"></script>
+<script src="../../js/prototype_source_loader.js" type="text/javascript"></script>
+<script src="../../js/seatmap.js" type="text/JavaScript"></script>
+<script src="../../js/version.js" type="text/JavaScript"></script>
+<script src="../../en/js/airport_data.js" type="text/JavaScript"></script>
+<script src="../../en/js/navigation.js" type="text/JavaScript"></script>
+<script src="../../en/js/popup_templates.js" type="text/JavaScript"></script>
+<script type="text/JavaScript">
+<!--
+		_protoScheduleLighting = {
+			actElmPool: {},
+			
+			setActFlight: function (radName,act) {
+				var actObj = (act.obj) ? act.obj : document.getElementsByName(radName)[act.num];
+				if (actObj) {
+					radName = escape(radName).replace(/[\W]/gi,'_');
+					if (this.actElmPool[radName]) this.setSelected(this.actElmPool[radName],false);
+					this.actElmPool[radName] = actObj;
+					this.setSelected(actObj,true);
+				}
+			},
+			
+			selectFlight: function (o) {
+				this.setActFlight(o.name,{obj:o});
+			},
+			
+			setSelected: function (o, isSelected) {
+				var parent = o.parentNode;
+				while ((parent.nodeName != 'DIV') || (!parent.className.match('flightLeg'))) {
+					parent = parent.parentNode;
+				}
+				if (isSelected) {
+					o.checked = true;
+					parent.className += ' flightLegSelected';
+				}
+				else {
+					o.checked = false;
+					parent.className = parent.className.replace('flightLegSelected','');
+				}
+			}
+		}
+		//--></script>
+</head>
+<body>
+<!-- BEGIN HEIGHT SCRETCHING -->
+<table height="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="layoutMain">
+	<tr>
+		<td valign="top">
+			<!-- BEGIN LAYOUT HEADER -->
+			<div class="layoutHeader">
+			
+				<!-- BMI HEADER -->	
+			
+				<div class="headerStub"><img src="../../pictures/header/header-stub.gif" width="930" height="104" alt=""></div>
+				
+				<!-- /BMI HEADER -->	
+			
+				<div class="blockUnderLogo">
+					<table cellpadding="0" cellspacing="0" border="0" class="blockUnderLogoContent">
+						<tr valign="top">
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN LANGUAGE SELECTOR -->
+								<div class="languageSelector"><span>English</span><span class="delim"> | </span>
+									<a href="#">Espanol</a></div>
+								<!-- /END LANGUAGE SELECTOR --></td>
+							<td class="layoutCell" width="1%" nowrap="nowrap">
+								<!-- BEGIN BREADCRUMB -->
+								<div class="navigationBreadcrumb">
+									<a href="../../en/index.html">Home</a><span> » </span>
+									<a href="../../en/pages-old/Reservations &amp; Services (SRS).html">Reservations &amp; Services</a><span> » </span><strong>Flights</strong></div>
+								<!-- /END BREADCRUMB --></td>
+							<td class="layoutCell" width="99%" align="right">
+								<!-- BEGIN LOGIN STATUS -->
+								<div class="auth">
+									<a href="../../en/pages-login/Login - Login Screen (ALG).html">Login</a></div>
+								<!-- /END LOGIN STATUS --></td>
+						</tr>
+					</table></div></div>
+			<!-- /END LAYOUT HEADER -->
+			<table class="layoutBody" align="center">
+				<tr valign="top">
+					<td class="layoutBodyWideArea">
+						<!-- BEGIN BODY WIDE AREA -->
+						<div id="pgFlightSelection">
+							<form action="#" method="post">
+								<!-- Services Tabs -->
+								<div class="mainTopServicesTabs">
+									<div class="servicesTabs">
+										<table>
+											<tr>
+												<td class="air">
+													<div>
+														<a href="../pages-flight/1 Flight Search RT.html">Flights</a></div></td>
+												<td class="hotel">
+													<div>
+														<a href="../pages-hotel/1 Hotel Search.html">Hotels</a></div></td>
+												<td class="car">
+													<div>
+														<a href="../pages-car/1 Car Search.html">Car</a></div></td>
+												<td class="package">
+													<div>
+														<a href="#">Packages</a></div></td>
+												<td class="insurance">
+													<div>
+														<a href="../pages-insurance/1 Insurance Search.html">Insurance</a></div></td>
+												<td class="discount">
+													<div>
+														<a href="#">Discount Cards</a></div></td>
+											</tr>
+										</table></div></div>
+								<!-- /Services Tabs -->
+								<!-- BEGIN STEPS LINE -->
+								<div class="stepsNavAreaOuter">
+									<table class="stepsNavArea stepsNavAir">
+										<tr class="stepsNavRow" valign="top">
+											<td class="stepsNavFirstAfter">Search</td>
+											<td class="stepsNavSpacerAfter">
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavDefaultActive"><strong>Selection</strong></td>
+											<td>
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavDefaultBefore">Summary</td>
+											<td>
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavDefaultBefore">Passengers</td>
+											<td>
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavDefaultBefore">Purchase</td>
+											<td>
+												<div class="spacerStepsNav"><span></span></div></td>
+											<td class="stepsNavLastBefore">Confirmation</td>
+										</tr>
+									</table></div>
+								<!-- /END STEPS LINE -->
+								<!-- BEGIN PAGE TITLE LINE -->
+								<div class="pageTitleArea">
+									<table>
+										<tr>
+											<td>
+												<h1>Select Your Flight</h1></td>
+										</tr>
+									</table></div>
+								<!-- /END PAGE TITLE LINE -->
+								<!-- BEGIN INTRO TEXT AREA -->
+								<div class="introTextArea">
+									<p>Static Textual Information goes here</p></div>
+								<!-- /END INTRO TEXT AREA -->
+								<!-- BEGIN FLIGHT SELECTION SCHEDULE -->
+								<div class="flightSelectionSchedule">
+									<!-- BEGIN FLIGHT SELECTION SCHEDULE HEADER -->
+									<div class="flightSelectionScheduleHeader">
+										<div class="headBlock">
+											<div><span></span></div></div>
+										<div class="bodyBlock">
+											<table width="100%">
+												<tr>
+													<td class="colRadio">
+														<div>&nbsp;</div></td>
+													<td class="colDeparture">
+														<div>Departure</div></td>
+													<td class="colArrival">
+														<div>Arrival</div></td>
+													<td class="colFlight">
+														<div>Flight</div></td>
+													<td class="colDetails">
+														<div>Details</div></td>
+												</tr>
+											</table></div>
+										<div class="footerBlock">
+											<div><span></span></div></div></div>
+									<!-- /END FLIGHT SELECTION SCHEDULE HEADER -->
+									<!-- BEGIN FLIGHT SELECTION SCHEDULE BODY -->
+									<div class="flightSelectionScheduleBody">
+										<div class="headBlock">
+											<div>
+												<h2>Cordoba (COR) - San Juan (SJU) - Thu 20 Apr 2008</h2></div></div>
+										<div class="bodyBlock">
+											<!-- heading  -->
+											<div class="flightHeading">
+												<table width="100%">
+													<tr>
+														<td class="colRadio">
+															<div>&nbsp;</div></td>
+														<td class="colHeading">
+															<div>Select a Flight</div></td>
+													</tr>
+												</table></div>
+											<!-- /heading -->
+											<!-- flight leg  -->
+											<div class="flightLeg flightLegOdd">
+												<table width="100%">
+													<tr>
+														<td class="colRadio">
+															<div>
+																<input type="radio" name="radioGrFlight1" value="" onClick="_protoScheduleLighting.selectFlight(this)" /></div></td>
+														<td class="colDeparture">
+															<div><span class="orig">Cordoba International Apt (COR)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">04:36 AM</span></div></td>
+														<td class="colArrival">
+															<div><span class="transf">Panama, Tocumen Apt (PTY)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">09:11 AM</span></div></td>
+														<td class="colFlight">
+															<div><span class="flightNum"><img src="../../pictures/icons/i_airline_noimage.gif" width="15" height="15" alt="" align="absmiddle" /><a href="#" onClick="popupFramework.show({id:'popupFlightDetails',ajaxConfig:{},opacity:true,templateName:'flightDetailsPopup',size:{w:650},position:'centered'});return false">CM489</a></span><br /><span class="airline">Copa Airlines</span></div></td>
+														<td class="colDetails">
+															<div><span class="cabin">Economy</span><br /><span class="stops">1 Stop: 1h 50m</span></div></td>
+													</tr>
+													<tr>
+														<td class="colRadio">
+															<div>&nbsp;</div></td>
+														<td class="colDeparture">
+															<div><span class="transf">Panama, Tocumen Apt (PTY)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">11:24 AM</span></div></td>
+														<td class="colArrival">
+															<div><span class="dest">San Juan Intl (SJU)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">15:12 PM</span></div></td>
+														<td class="colFlight">
+															<div><span class="flightNum"><img src="../../pictures/icons/i_airline_noimage.gif" width="15" height="15" alt="" align="absmiddle" /><a href="#" onClick="popupFramework.show({id:'popupFlightDetails',ajaxConfig:{},opacity:true,templateName:'flightDetailsPopup',size:{w:650},position:'centered'});return false">CM710</a><span class="ref">*</span></span><br /><span class="airline">Aero Republica</span></div></td>
+														<td class="colDetails">
+															<div>&nbsp;</div></td>
+													</tr>
+												</table></div>
+											<!-- /flight leg  -->
+											<div class="blockSeparator blockSep1"><span></span></div>
+											<!-- flight leg  -->
+											<div class="flightLeg flightLegEven">
+												<table width="100%">
+													<tr>
+														<td class="colRadio">
+															<div>
+																<input type="radio" name="radioGrFlight1" value="" onClick="_protoScheduleLighting.selectFlight(this)" /></div></td>
+														<td class="colDeparture">
+															<div><span class="orig">Cordoba International Apt (COR)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">09:50 AM</span></div></td>
+														<td class="colArrival">
+															<div><span class="dest">San Juan Intl (SJU)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">16:08 PM</span></div></td>
+														<td class="colFlight">
+															<div><span class="flightNum"><img src="../../pictures/icons/i_airline_noimage.gif" width="15" height="15" alt="" align="absmiddle" /><a href="#" onClick="popupFramework.show({id:'popupFlightDetails',ajaxConfig:{},opacity:true,templateName:'flightDetailsPopup',size:{w:650},position:'centered'});return false">CM489</a></span><br /><span class="airline">Copa Airlines</span></div></td>
+														<td class="colDetails">
+															<div><span class="cabin">Economy</span><br /><span class="stops">Non stop</span></div></td>
+													</tr>
+												</table></div>
+											<!-- /flight leg  --></div>
+										<div class="footerBlock">
+											<div><span></span></div></div></div>
+									<!-- /END FLIGHT SELECTION SCHEDULE BODY -->
+									<!-- BEGIN FLIGHT SELECTION SCHEDULE BODY -->
+									<div class="flightSelectionScheduleBody">
+										<div class="headBlock">
+											<div>
+												<h2>San Juan (SJU) - Mexico City, Juarez Intl (MEX) - Thu 20 Apr 2008</h2></div></div>
+										<div class="bodyBlock">
+											<!-- heading  -->
+											<div class="flightHeading">
+												<table width="100%">
+													<tr>
+														<td class="colRadio">
+															<div>&nbsp;</div></td>
+														<td class="colHeading">
+															<div>Select a Flight</div></td>
+													</tr>
+												</table></div>
+											<!-- /heading -->
+											<!-- flight leg  -->
+											<div class="flightLeg flightLegOdd">
+												<table width="100%">
+													<tr>
+														<td class="colRadio">
+															<div>
+																<input type="radio" name="radioGrFlight2" value="" onClick="_protoScheduleLighting.selectFlight(this)" /></div></td>
+														<td class="colDeparture">
+															<div><span class="orig">San Juan (SJU)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">09:51 AM</span></div></td>
+														<td class="colArrival">
+															<div><span class="dest">Mexico City, Juarez Intl (MEX)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">16:08 PM</span></div></td>
+														<td class="colFlight">
+															<div><span class="flightNum"><img src="../../pictures/icons/i_airline_noimage.gif" width="15" height="15" alt="" align="absmiddle" /><a href="#" onClick="popupFramework.show({id:'popupFlightDetails',ajaxConfig:{},opacity:true,templateName:'flightDetailsPopup',size:{w:650},position:'centered'});return false">CM489</a></span><br /><span class="airline">Copa Airlines</span></div></td>
+														<td class="colDetails">
+															<div><span class="cabin">Economy</span><br /><span class="stops">Non stop</span></div></td>
+													</tr>
+												</table></div>
+											<!-- /flight leg  --></div>
+										<div class="footerBlock">
+											<div><span></span></div></div></div>
+									<!-- /END FLIGHT SELECTION SCHEDULE BODY -->
+									<!-- BEGIN FLIGHT SELECTION SCHEDULE BODY -->
+									<div class="flightSelectionScheduleBody">
+										<div class="headBlock">
+											<div>
+												<h2>Mexico City, Juarez Intl (MEX) - Panama, Tocumen Intl (PTY) - Thu 20 Apr 2008</h2></div></div>
+										<div class="bodyBlock">
+											<!-- heading  -->
+											<div class="flightHeading">
+												<table width="100%">
+													<tr>
+														<td class="colRadio">
+															<div>&nbsp;</div></td>
+														<td class="colHeading">
+															<div>Select a Flight</div></td>
+													</tr>
+												</table></div>
+											<!-- /heading -->
+											<!-- flight leg  -->
+											<div class="flightLeg flightLegOdd">
+												<table width="100%">
+													<tr>
+														<td class="colRadio">
+															<div>
+																<input type="radio" name="radioGrFlight3" value="" onClick="_protoScheduleLighting.selectFlight(this)" /></div></td>
+														<td class="colDeparture">
+															<div><span class="orig">Mexico City, Juarez Intl (MEX)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">07:44 AM</span></div></td>
+														<td class="colArrival">
+															<div><span class="dest">Panama, Tocumen Apt (PTY)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">10:44 AM</span></div></td>
+														<td class="colFlight">
+															<div><span class="flightNum"><img src="../../pictures/icons/i_airline_noimage.gif" width="15" height="15" alt="" align="absmiddle" /><a href="#" onClick="popupFramework.show({id:'popupFlightDetails',ajaxConfig:{},opacity:true,templateName:'flightDetailsPopup',size:{w:650},position:'centered'});return false">CM195</a></span><br /><span class="airline">Copa Airlines</span></div></td>
+														<td class="colDetails">
+															<div><span class="cabin">Economy</span><br /><span class="stops">Non stop</span></div></td>
+													</tr>
+												</table></div>
+											<!-- /flight leg  -->
+											<div class="blockSeparator blockSep1"><span></span></div>
+											<!-- flight leg  -->
+											<div class="flightLeg flightLegEven">
+												<table width="100%">
+													<tr>
+														<td class="colRadio">
+															<div>
+																<input type="radio" name="radioGrFlight3" value="" onClick="_protoScheduleLighting.selectFlight(this)" /></div></td>
+														<td class="colDeparture">
+															<div><span class="orig">Mexico City, Juarez Intl (MEX)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">14:34 PM</span></div></td>
+														<td class="colArrival">
+															<div><span class="dest">Panama, Tocumen Apt (PTY)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">18:14 PM</span></div></td>
+														<td class="colFlight">
+															<div><span class="flightNum"><img src="../../pictures/icons/i_airline_noimage.gif" width="15" height="15" alt="" align="absmiddle" /><a href="#" onClick="popupFramework.show({id:'popupFlightDetails',ajaxConfig:{},opacity:true,templateName:'flightDetailsPopup',size:{w:650},position:'centered'});return false">CM165</a></span><br /><span class="airline">Copa Airlines</span></div></td>
+														<td class="colDetails">
+															<div><span class="cabin">Economy</span><br /><span class="stops">Non stop</span></div></td>
+													</tr>
+												</table></div>
+											<!-- /flight leg  -->
+											<div class="blockSeparator blockSep1"><span></span></div>
+											<!-- flight leg  -->
+											<div class="flightLeg flightLegOdd flightLegNotAvail">
+												<table width="100%">
+													<tr>
+														<td class="colRadio">
+															<div>&nbsp;</div></td>
+														<td class="colDeparture">
+															<div><span class="orig">Mexico City, Juarez Intl (MEX)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">14:34 PM</span></div></td>
+														<td class="colArrival">
+															<div><span class="dest">Panama, Tocumen Apt (PTY)</span><br /><span class="date">Thu, 20 Apr</span>, <span class="time">18:14 PM</span></div></td>
+														<td class="colFlight">
+															<div><span class="flightNum"><img src="../../pictures/icons/i_airline_noimage.gif" width="15" height="15" alt="" align="absmiddle" /><a href="#" onClick="popupFramework.show({id:'popupFlightDetails',ajaxConfig:{},opacity:true,templateName:'flightDetailsPopup',size:{w:650},position:'centered'});return false">CM165</a></span><br /><span class="airline">Copa Airlines</span></div></td>
+														<td class="colDetails">
+															<div><span class="cabin">Economy</span><br /><span class="stops">Non stop</span></div></td>
+													</tr>
+													<tr>
+														<td class="colRadio">
+															<div>&nbsp;</div></td>
+														<td colspan="4" class="colComment">
+															<div>We are sorry, but this flight can't be booked using online booking. To book the flight and make reservation please call us: +State-Area-XXX-XXX.</div></td>
+													</tr>
+												</table></div>
+											<!-- /flight leg  --></div>
+										<div class="footerBlock">
+											<div><span></span></div></div></div>
+									<!-- /END FLIGHT SELECTION SCHEDULE BODY -->
+									<div class="footnote"><span class="ref">*</span> Flight is operated by another airline</div></div>
+								<!-- /END FLIGHT SELECTION SCHEDULE -->
+								<div class="spacerVert"><span></span></div>
+								<!-- BEGIN BUTTON AREA -->
+								<div align="right" class="pageButtonArea">
+									<table>
+										<tr>
+											<td>
+												<a href="1 Flight Search RT.html" class="button2" id="pgButtonNewSearch"><span><span>New Search</span></span></a></td>
+											<td>
+												<a href="2 Flight Selection Airline.html" class="button1" id="pgButtonSelectFlights"><span><span>Select Flights</span></span></a><span class="button1Disabled" id="pgButtonSelectFlightsDisabled" style="display:none"><span><span>Select Flights</span></span></span></td>
+										</tr>
+									</table></div>
+								<!-- /END BUTTON AREA -->
+							</form></div>
+						<!-- /END BODY WIDE AREA --></td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td valign="bottom">
+			<!-- Enter Chat -->
+			<div class="enterChat">
+				<div class="headBlock">
+					<div><span></span></div></div>
+				<div class="bodyBlock">
+					<h3>Need Help?</h3>
+					<p>A representative is standing by to answer your question via our <a href="#" onClick="openWindow('chatSelect', '../../en/popups/Chat Selection.html', 700, 500, '');return false">online chat</a>.</p>
+					<p>You can also <a href="#">contact us by email</a> or call 1(507) 217-2671.</p></div>
+				<div class="footerBlock">
+					<div><span></span></div></div></div>
+			<!-- /Enter Chat -->
+			<!-- BEGIN LAYOUT FOOTER -->
+			<div class="layoutFooter">
+								
+				<!-- BMI FOOTER -->		
+		
+				<div class="footerStub"><img src="../../pictures/footer/footer-stub.gif" width="930" height="56" alt=""></div>
+						
+				<!-- /BMI FOOTER -->	
+					
+			</div>
+			<!-- /END LAYOUT FOOTER --></td>
+	</tr>
+</table>
+<!-- /END HEIGHT SCRETCHING -->
+</body>
+</html>
+
