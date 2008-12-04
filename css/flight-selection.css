@@ -1238,7 +1238,7 @@
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: bold 10px Verdana;
+	font: bold 11px Arial;
 	text-decoration: none;
 	color: #004a91;
 }
@@ -1250,7 +1250,7 @@
 
 .flightSelectionReturnFaresBody .buttonArea a.button1 span span {
 	background: url(../pictures/misc/main-button-right.gif) no-repeat right top;
-	padding: 6px 15px 6px 15px;
+	padding: 5px 15px 5px 15px;
 }
 
 

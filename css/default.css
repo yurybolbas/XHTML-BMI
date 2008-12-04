@@ -126,7 +126,7 @@ a.button2:link, a.button2:active, a.button2:focus {
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: bold 10px Verdana;
+	font: bold 11px Arial;
 	text-decoration: none;
 	color: #004a91;
 }
@@ -138,7 +138,7 @@ a.button2:link, a.button2:active, a.button2:focus {
 
 .pageButtonArea a.button1 span span, .formButtonArea a.button1 span span, .componentButtonArea a.button1 span span {
 	background: url(../pictures/misc/main-button-right.gif) no-repeat right top;
-	padding: 6px 15px 6px 15px;
+	padding: 5px 15px 5px 15px;
 }
 
 .pageButtonArea a.button2, .pageButtonArea a.button2:hover, .pageButtonArea a.button2:visited,
@@ -152,7 +152,7 @@ a.button2:link, a.button2:active, a.button2:focus {
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: bold 10px Verdana;
+	font: bold 11px Arial;
 	text-decoration: none;
 	color: #004a91;
 }
@@ -164,7 +164,7 @@ a.button2:link, a.button2:active, a.button2:focus {
 
 .pageButtonArea a.button2 span span, .formButtonArea a.button2 span span, .componentButtonArea a.button2 span span {
 	background: url(../pictures/misc/alt-button-right.gif) no-repeat right top;
-	padding: 6px 15px 6px 15px;
+	padding: 5px 15px 5px 15px;
 }
 
 
@@ -174,7 +174,7 @@ a.button2:link, a.button2:active, a.button2:focus {
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: bold 10px Verdana;
+	font: bold 11px Arial;
 	text-decoration: none;
 	color: #729bc2;
 	cursor: default;
@@ -187,7 +187,7 @@ a.button2:link, a.button2:active, a.button2:focus {
 
 .button1Disabled span span {
 	background: url(../pictures/misc/button1-disabled-right.gif) no-repeat right top;
-	padding: 6px 15px 6px 15px;
+	padding: 5px 15px 5px 15px;
 }
 
 .button2Disabled {
@@ -196,7 +196,7 @@ a.button2:link, a.button2:active, a.button2:focus {
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: bold 10px Verdana;
+	font: bold 11px Arial;
 	text-decoration: none;
 	color: 729bc2;
 	cursor: default;
@@ -209,7 +209,7 @@ a.button2:link, a.button2:active, a.button2:focus {
 
 .button2Disabled span span {
 	background: url(../pictures/misc/button2-disabled-right.gif) no-repeat right top;
-	padding: 6px 15px 6px 15px;
+	padding: 5px 15px 5px 15px;
 }
 
 .pageButtonArea TD {
@@ -349,7 +349,7 @@ a.button2:link, a.button2:active, a.button2:focus {
 }
 
 .textBlock {
-	margin: 0 0 8px 0;
+	margin: 0 8px 8px 8px;
 	font-family: Arial;
 	font-size: 12px;
 }
@@ -415,8 +415,8 @@ a.button2:link, a.button2:active, a.button2:focus {
 .textTitle {
 	font-size: 12px;
 	font-weight: bold;
-	padding: 5px 0;
-	border-bottom: 1px solid #cccacb;
+	padding: 5px 8px;
+	border-bottom: 1px solid #c3c3c3;
 }
 
 .titleLinkArea{
@@ -434,9 +434,6 @@ a.button2:link, a.button2:active, a.button2:focus {
 	font-family: Arial;
 	font-size: 12px;
 	font-weight: bold;
-	
-	color: #000000;
-	
 	margin: 6px 0 0 5px;
 }
 

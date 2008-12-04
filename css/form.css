@@ -81,13 +81,11 @@
 
 .formLabelElementDisabled {
 	color: #6A6A6A;
-	font-weight: bold;
 	cursor: default;
 }
 
 .formLabelElement {
 	display: block;
-	font-weight: bold;
 	cursor: default;
 	padding: 0 0 0 8px;
 	background: url(../pictures/misc/x.gif); /* needed for dynamically set mandatory class in IE */  
@@ -102,7 +100,7 @@
 .formSelect,
 .formTextarea {
 	font-family: Arial;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 .formInput {

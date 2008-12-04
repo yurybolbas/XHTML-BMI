@@ -162,7 +162,7 @@
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: bold 10px Verdana;
+	font: bold 11px Arial;
 	text-decoration: none;
 	color: #004a91;
 }
@@ -174,7 +174,7 @@
 
 .errorButtons a.button1 span span {
 	background: url(../pictures/misc/main-button-right.gif) no-repeat right top;
-	padding: 6px 15px 6px 15px;
+	padding: 5px 15px 5px 15px;
 }
 
 .errorButtons a.button2, .errorButtons a.button2:hover, .errorButtons a.button2:visited,
@@ -184,7 +184,7 @@
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: bold 10px Verdana;
+	font: bold 11px Arial;
 	text-decoration: none;
 	color: #004a91;
 }
@@ -196,7 +196,7 @@
 
 .errorButtons a.button2 span span {
 	background: url(../pictures/misc/alt-button-right.gif) no-repeat right top;
-	padding: 6px 15px 6px 15px;
+	padding: 5px 15px 5px 15px;
 }
 
 
@@ -276,7 +276,7 @@
 }
 
 .errorNotice {
-	font: bold 10px Verdana;
+	font-weight: bold;
 	color:#B30000;
 }
 
@@ -323,13 +323,13 @@ div.errorNoticeOuter .errorNotice {
 /* Seat Map */
 
 .seatMapLoadingBlock {
-	font: bold 10px Verdana;
+	font-weight: bold;
 	padding: 10px 10px 10px 10px;
 	text-align: center;	
 }
 
 .seatMapBlock {
-	margin: 2px 2px 0 2px;
+	margin: 7px 2px 0 2px;
 	text-align: center;
 }
 
@@ -344,13 +344,13 @@ div.errorNoticeOuter .errorNotice {
 }
 
 .planeNavigation A {
-	font: bold 10px Verdana;
+	font-weight: bold;
 	color: #0000ff;
 	text-decoration: none;
 }
 
 .planeNavigation SPAN {
-	font: bold 10px Verdana;
+	font-weight: bold;
 	display: none;
 }
 
@@ -373,7 +373,6 @@ div.errorNoticeOuter .errorNotice {
 
 
 .planeView TD {
-	font: 10px Verdana;
 	vertical-align: top;	
 }
 

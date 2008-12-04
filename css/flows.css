@@ -129,7 +129,7 @@
 	margin: 6px auto 0 auto;
 	width: 530px;
 	text-align: left;
-	font-size: 12px;
+	font: bold 13px Tahoma;
 	padding: 10px 0;
 }
 
@@ -161,7 +161,7 @@
 }
 
 #pgTravellers .passengerBlock .passengerSep DIV {
-	background: #cccccc;
+	background: #c3c3c3;
 	width: 100%;
 	height: 1px;
 	overflow: hidden;
@@ -172,6 +172,7 @@
 	width: 530px;
 	margin: 0 auto 8px auto;
 	text-align: left;
+	font-size: 11px;
 }
 
 #pgTravellers #fbTravellerDetails .textBlock p {
@@ -180,7 +181,8 @@
 
 #pgTravellers #fbTravellerDetails .textBlock1 {
 	width: auto;
-	margin: 0 0 8px 0;
+	margin: 0 8px 8px 8px;
+	font-size: 12px;
 }
 
 #pgTravellers #fbTravellerDetails .textBlock1 p {
@@ -201,7 +203,7 @@
 }
 
 #pgTravellers #fbTravellerDetails .travelerAddRequest .formLabelElement {
-	font: 12px Arial;
+	
 }
 
 #pgTravellers #fbTravellerDetails .travelerRequests {
@@ -222,8 +224,7 @@
 
 #pgTravellers #fbTravellerDetails .allocatedItems .header {
 	border-top: 1px solid #c3c3c3;
-	background: #e6e6e6;
-	font-size: 12px;
+	background: #dddddd;
 	font-weight: bold;
 	padding: 2px 15px 4px 15px;
 }
@@ -241,7 +242,7 @@
 }
 
 #pgTravellers #fbTravellerDetails .allocatedItems .formLabelElement {
-	font: 12px Arial;
+	
 }
 
 #pgTravellers #fbContactInfo .formBody {
@@ -291,6 +292,10 @@
 	padding: 4px 0 2px 6px;
 }
 
+#pgTravellers #tbSeatSelector .textSeparator {
+	display: none;
+}
+
 
 
 /* Seat Selection */
@@ -301,7 +306,7 @@
 
 #pgSeatSelection .pageTitleArea .links {
 	font: 11px Arial;
-	margin: 15px 0 0 -350px;
+	margin: 0 0 0 -350px;
 	position: absolute;
 	width: 144px;
 	text-align: right;

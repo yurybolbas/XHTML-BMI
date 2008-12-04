@@ -1153,14 +1153,17 @@
 }
 
 .pageTitleArea .links {
-	font-size: 11px;
-	font-weight: normal;
-	padding: 0 0 1px 0;
+	font: 11px Arial;
+	margin: 9px 0 0 -150px;
+	_margin-top: 8px;
+	position: absolute;
+	width: 144px;
+	text-align: right;
 }
 
 .pageTitleArea .links A,
 .pageTitleArea .links A:hover {
-
+	
 }
 
 .pageTitleArea .links .print {
@@ -1168,6 +1171,7 @@
 	background: url(../pictures/icons/i_print.gif) no-repeat left center;
 	padding: 0 0 0 14px;
 }
+
 
 
 /* intro text area */
@@ -1728,7 +1732,8 @@
 } 
 
 .seatsBlock .legsTable thead .nameArea .name {
-	font: bold 10px Verdana;
+	font-weight: bold;
+	font-size: 12px;
 	white-space: nowrap;
 	padding: 15px 0 1px 0;
 	width: 100%; 
@@ -1774,7 +1779,6 @@
 	display:none;
 }
 .seatsBlock .legsTable thead .legArea {
-	font: 10px Verdana;
 	text-align: center;
 	border: 2px solid #FFF;
 	background: #cdecf1;
@@ -1802,13 +1806,11 @@
 }
 
 .seatsBlock .legsTable tbody .nameArea .code {
-	font: 10px Verdana;
 	padding: 5px 0px 0 0;	
 	white-space: nowrap;
 }
 
 .seatsBlock .legsTable tbody .nameArea .name {	
-	font: 10px Verdana;
 	padding: 5px 3px 0 0;	
 }
 
@@ -1821,7 +1823,7 @@
 }
 
 .seatsBlock .legsTable tbody .legArea input {
-	font: 10px Verdana;
+	font-size: 11px;
 	color: #717171;
 	border: 1px solid #c9c7ba;
 	background: #eeeeee;
@@ -1844,8 +1846,7 @@
 
 
 .seatsBlock .flightInfoArea {
-	font: 10px Verdana;
-	padding: 0 6px 6px 6px;
+	padding: 0 6px 10px 6px;
 }
 
 .seatsBlock .flightInfoArea .flight {
@@ -1855,7 +1856,7 @@
 /* Error Message */
 
 .seatsBlock .errorMessageArea {
-	font: bold 10px Verdana;
+	font-weight: bold;
 	color: #ff0000;
 	padding: 4px 6px 8px 6px;
 }
@@ -1876,6 +1877,7 @@
 
 
 /******************************************************************************
+	
 	Confirmation Info block
 
 ******************************************************************************/
