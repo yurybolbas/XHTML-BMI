@@ -3066,18 +3066,22 @@
 .interstSearchInner {
 	padding: 35px 35px 35px 35px;	
 	text-align: left;
+	color: #000;
 }
 
 .interstSearch .brandHead {
-	border-bottom: 1px solid #C6C6C6;
+	Aborder-bottom: 1px solid #C6C6C6;
+	background: #000;
+	margin: 0 -20px 0 -20px;
+	width: auto;	
 }
 
 .interstSearch .brandHead .logo {
-	width: 183px;
-	height: 70px;
+	width: 102px;
+	height: 83px;
 	overflow: hidden;
 	background: url(../pictures/decor/interst-logo.gif) 0px 0px no-repeat;
-	margin: 0 0 25px 23px;
+	margin: 0 0 0 0;
 }
 
 .interstSearch .title {
