@@ -35,7 +35,8 @@
 .cdrHeader h3 {
 	padding: 0;
 	margin: 0;
-	font: bold 10px Verdana;
+	font-weight: bold;
+	font-size: 11px;
 	text-align: center;
 }
 

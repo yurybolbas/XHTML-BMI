@@ -3063,7 +3063,8 @@
 }
 
 .interstSearch .title {
-	font: bold 12px Verdana;
+	font-size: 14px;
+	font-weight: bold;
 	padding: 42px 0 32px 48px;
 }
 
@@ -3076,7 +3077,7 @@
 }
 
 .interstSearch .text {
-	font: 10px/14px Verdana;
+	font-size: 12px;
 	padding: 45px 0 0 48px;	
 }
 
@@ -3260,14 +3261,14 @@
 
 .dialogFooter a.button1, .dialogFooter a.button1:hover, .dialogFooter a.button1:visited,
 .dialogFooter a.button1:link, .dialogFooter a.button1:active, .dialogFooter a.button1:focus {
-	background: #f8f8f6 url(../pictures/misc/popup-button-bg.gif) repeat-x left top;
+	background: url(../pictures/misc/popup-button-bg.gif) repeat-x left top;
 	border: none;
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: 11px Arial;
+	font: bold 11px Arial;
 	text-decoration: none;
-	color: #333333;
+	color: #004a91;
 }
 
 .dialogFooter a.button1 span {
@@ -3277,20 +3278,20 @@
 
 .dialogFooter a.button1 span span {
 	background: url(../pictures/misc/popup-button-right.gif) no-repeat right top;
-	padding: 1px 12px 2px 12px;
+	padding: 5px 15px 5px 15px;
 }
 
 
 .dialogFooter a.button2, .dialogFooter a.button2:hover, .dialogFooter a.button2:visited,
 .dialogFooter a.button2:link, .dialogFooter a.button2:active, .dialogFooter a.button2:focus {
-	background: #f8f8f6 url(../pictures/misc/popup-button-bg.gif) repeat-x left top;
+	background: url(../pictures/misc/popup-button-bg.gif) repeat-x left top;
 	border: none;
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: 11px Arial;
+	font: bold 11px Arial;
 	text-decoration: none;
-	color: #333333;
+	color: #004a91;
 }
 
 .dialogFooter a.button2 span {
@@ -3300,7 +3301,7 @@
 
 .dialogFooter a.button2 span span {
 	background: url(../pictures/misc/popup-button-right.gif) no-repeat right top;
-	padding: 1px 12px 2px 12px;
+	padding: 5px 15px 5px 15px;
 }
 
 

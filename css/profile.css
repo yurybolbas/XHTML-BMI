@@ -77,21 +77,16 @@
 	vertical-align:top;
 	padding:5px 10px; 
 	border-bottom: 1px solid #FFF;
-	font-size: 12px;
 }
 
 .gridBlock .even TD{
-	color: #333333;
-	background: #E5ECF2;
+	color:#333333;
+	background: #DDE8F3;
 }
 
 .gridBlock .odd TD{
-	color: #333333;
-	background: #FFFFFF;
-}
-
-.gridBlock A IMG {
-	margin-top: 1px;
+	color:#333333;
+	background: #F3F9FF;
 }
 
 
@@ -257,7 +252,7 @@
 }
 
 #pgProfileIndex .formButtonArea A {
-	width: 200px;	
+	width: 150px;	
 	text-align: center;	
 }
 
