@@ -366,11 +366,10 @@
 
 #pgPayment #fbBillingInfo .textBlock {
 	text-align: left;
-	font-weight: bold;
 }
 
 #pgPayment #fbBillingInfo .textBlock2 {
-	font-weight: normal;
+	font-size: 11px;
 }
 
 #pgPayment #fbDeliveryAddress .formBody {
@@ -399,6 +398,7 @@
 
 #pgPayment #tbTermsConditions .formLabelArea {
 	font-size: 12px;
+	font-weight: bold;
 }
 
 #pgPayment #tbTermsConditions .linksBlock {

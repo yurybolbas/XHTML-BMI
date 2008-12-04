@@ -1597,7 +1597,7 @@
 .deliveryOptionsBlock .c3 {width:16%}
 
 .deliveryOptionsBlock .c3 b {
-	margin-right: 24px;
+	margin-right: 2px;
 }
 
 .deliveryOptionsBlock .blockSeparator {
@@ -1622,12 +1622,12 @@
 
 .selectedDeliveryBlock .colOption {
 	width: 80%;
-	padding: 0 0 8px 0;
+	padding: 0 8px 8px 8px;
 }
 
 .selectedDeliveryBlock .colPrice {
 	width: 20%;
-	padding: 8px 30px 8px 0;
+	padding: 8px 7px 8px 0;
 	text-align: right;
 	font-weight: bold;
 }
