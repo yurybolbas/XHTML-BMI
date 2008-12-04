@@ -1176,6 +1176,7 @@
 .introTextArea {
 	font: 12px Arial;
 	clear: both;
+	padding: 0 8px;
 }
 
 /* sorting Options Area */

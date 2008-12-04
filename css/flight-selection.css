@@ -263,7 +263,10 @@
 }
 
 .flightSelectionByAirlineNoFF .headBlock h2 {
-	font: bold 13px Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color: #004a91;
+	padding: 0 8px;
 }
 
 .flightSelectionByAirlineNoFF .footerBlock {
@@ -280,7 +283,7 @@
 
 .flightSelectionByAirlineNoFF .dayNavigation a,
 .flightSelectionByAirlineNoFF .dayNavigation span {
-	font: bold 10px Verdana;
+	font-weight: bold;
 	color: #0000FF;
 	text-decoration: none;
 }
@@ -325,8 +328,8 @@
 
 
 .flightSelectionByAirlineNoFF .resultsArea TABLE {
-	border-right: 1px solid #E6E6E6;
-	border-top: 1px solid #E6E6E6;	
+	border-right: 1px solid #DDDDDD;
+	border-top: 1px solid #DDDDDD;	
 	border-collapse: separate;
 }
 
@@ -336,9 +339,8 @@
 }
 
 .flightSelectionByAirlineNoFF .resultsArea TD {
-	border-bottom: 1px solid #E6E6E6;
-	border-left: 1px solid #E6E6E6;
-	font: 10px Verdana;
+	border-bottom: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
 	vertical-align: top;
 }
 
@@ -348,7 +350,7 @@
 }
 
 .flightSelectionByAirlineNoFF .resultsArea .combineRows TD.colCost {
-	border-bottom: 1px solid #E6E6E6;
+	border-bottom: 1px solid #DDDDDD;
 }
 
 .flightSelectionByAirlineNoFF .resultsArea TD TD {
@@ -356,7 +358,7 @@
 }
 
 .flightSelectionByAirlineNoFF .resultsArea THEAD TD {
-	background: #E6E6E6;
+	background: #DDDDDD;
 }
 
 .flightSelectionByAirlineNoFF .resultsArea THEAD TD DIV {
@@ -404,7 +406,7 @@
 
 .flightSelectionByAirlineNoFF .resultsArea TBODY .colDepart .transf, 
 .flightSelectionByAirlineNoFF .resultsArea TBODY .colArrive .transf {
-	color: #999999;
+	color: #ABABAB;
 }
 
 .flightSelectionByAirlineNoFF .resultsArea TBODY .colFlight IMG {
@@ -428,14 +430,14 @@
 .flightSelectionByAirlineNoFF .resultsArea .flightNotAvail TD A,
 .flightSelectionByAirlineNoFF .resultsArea .flightNotAvail TD A:hover,
 .flightSelectionByAirlineNoFF .resultsArea .flightNotAvail TD .transf {
-	color: #CCCCCC;
+	color: #DDDDDD;
 }
 
 
 .flightSelectionByAirlineNoFF .resultsArea .footnote {
 	padding: 4px 4px 0 4px;
-	font: 10px Verdana;
-	color: #000000;
+	font: 11px Arial;
+	color: #666666;
 }
 
 .flightSelectionByAirlineNoFF .resultsArea .footnote SPAN.ref {
@@ -512,11 +514,14 @@
 ******************************************************************************/
 
 .flightSelectionCalendarCont {
-	margin: 15px 0 0 0;
+	
 }
 
 .flightSelectionCalendar .headBlock h2 {
-	font: bold 13px Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color: #004a91;
+	padding: 15px 8px 0 8px;
 }
 
 .flightSelectionCalendar .footerBlock {
@@ -532,7 +537,7 @@
 
 .flightSelectionCalendar .dayNavigation a,
 .flightSelectionCalendar .dayNavigation span {
-	font: bold 10px Verdana;
+	font-weight: bold;
 	color: #0000FF;
 	text-decoration: none;
 }
@@ -577,7 +582,7 @@
 	border-bottom: 1px solid #cccccc;
 	background-color: #0063ab;
 	padding: 2px 0 4px 0;
-	font: bold 10px Verdana;
+	font-weight: bold;
 	color: #ffffff;
 	text-align: center;
 }
@@ -590,7 +595,6 @@
 	border-bottom: 1px solid #cccccc;
 	border-left: 1px solid #bfb5bf;
 	background-color: #e3f1ff;
-	font: 10px Verdana;
 	text-align: center;
 	cursor: default;
 }
@@ -653,19 +657,20 @@
 /* Check Availability */
 
 #fbCheckAvail {
-	margin: 3px 0 11px 0;
+	margin: 10px 0;
 }
 
 #fbCheckAvail .formTitle {
 	background-color: #e3f1ff;
-	color: #000000;
 	text-transform: none;
 	border: 1px solid #CCCCCC;
+	padding: 5px 8px;
 }
 
 #fbCheckAvail .formBody {
 	border: 1px solid #CCCCCC;
 	border-top: none;
+	padding: 0 8px;
 }
 
 #fbCheckAvail .formFooter {
@@ -682,7 +687,7 @@
 }
 
 #fbCheckAvail .formBlock .fieldLabel {
-	font: 10px Verdana;
+	font-size: 12px;
 	padding: 0 0 3px 0;
 }
 
@@ -696,7 +701,6 @@
 
 #fbCheckAvail .formBlock .fieldSelect select {
 	width: 40px;
-	font: 10px Verdana;
 }
 
 #fbCheckAvail .formBlock .buttonArea {
@@ -720,7 +724,7 @@
 
 .flightSelectionCalendarOWC .calendarTable TD.disabled,
 .flightSelectionCalendarOWC .calendarTable TD.disabled table.price TD {
-	color: #747474;
+	color: #ABABAB;
 }
 
 .flightSelectionCalendarOWC .calendarTable div.price {
@@ -734,7 +738,7 @@
 .flightSelectionCalendarOWC .calendarTable table.price TD {
 	height: 25px;
 	vertical-align: middle;
-	color: #000000;
+	color: #666666;
 }
 
 .flightSelectionCalendarOWC .calendarTable table.price .colPrice {
@@ -748,7 +752,10 @@
 ******************************************************************************/
 
 .flightSelectionFaresCalendar .headBlock h2 {
-	font: bold 13px Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color: #004a91;
+	padding: 0 8px;
 }
 
 .flightSelectionFaresCalendar .footerBlock {
@@ -756,18 +763,19 @@
 }
 
 .flightSelectionFaresCalendar .commentBlock {
-	font: 10px Verdana;
-	padding: 3px 0 3px 0;
+	font-size: 12px;
+	padding: 3px 8px 3px 8px;
 }
 
 .flightSelectionFaresCalendar .subHeadBlock {
-	background: #e6e6e6;
-	padding: 5px 5px 6px 5px;
+	background: #dddddd;
+	padding: 5px 8px 6px 8px;
 	margin: 5px 0 1px 0;
 }
 
 .flightSelectionFaresCalendar .subHeadBlock h3 {
-	font: bold 10px Verdana;
+	font-size: 11px;
+	font-weight: bold;
 }
 
 .flightSelectionFaresCalendar .faresCalendar {
@@ -779,7 +787,6 @@
 .flightSelectionFaresCalendar .faresCalendar TD {
 	text-align: center;
 	vertical-align: middle;
-	font: 10px Verdana;
 }
 
 .flightSelectionFaresCalendar .faresCalendar TH {
@@ -893,13 +900,12 @@
 }
 
 .flightSelectionFaresCalendar .faresCalendarLegend .colTitle {
-	font: bold 10px Verdana;
+	font-weight: bold;
 }
 
 .flightSelectionFaresCalendar .faresCalendarLegend .colSel,
 .flightSelectionFaresCalendar .faresCalendarLegend .colLow,
 .flightSelectionFaresCalendar .faresCalendarLegend .colNA {
-	font: 10px Verdana;
 	padding: 0 12px 0 12px;
 }
 
@@ -949,7 +955,7 @@
 
 .flightSelectionScheduleHeader TD {
 	background: #e6e6e6;
-	font: bold 10px Verdana;
+	font-weight: bold;
 }
 
 .flightSelectionScheduleHeader TD DIV {
@@ -959,7 +965,10 @@
 /* Body */
 
 .flightSelectionScheduleBody .headBlock h2 {
-	font: bold 13px Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color: #004a91;
+	padding: 0 8px;
 }
 
 .flightSelectionScheduleBody .footerBlock {
@@ -974,7 +983,7 @@
 
 .flightSelectionScheduleBody .flightHeading TD {
 	background: #e6e6e6;
-	font: bold 10px Verdana;
+	font-weight: bold;
 	border-bottom: 2px solid #FFFFFF;
 }
 
@@ -984,7 +993,6 @@
 
 .flightSelectionScheduleBody .flightLeg TD {
 	background: #ffffff;
-	font: 10px Verdana;
 	vertical-align: top;
 }
 
@@ -1032,8 +1040,8 @@
 
 .flightSelectionSchedule .footnote {
 	padding: 4px 0 0 0;
-	font: 10px Verdana;
-	color: #000000;
+	font-size: 11px;
+	color: #666666;
 }
 
 .flightSelectionScheduleBody .footnote SPAN.ref {
@@ -1065,7 +1073,10 @@
 /* Header */
 
 .flightSelectionReturnFaresHeader .headBlock h2 {
-	font: bold 13px Tahoma;
+	font-weight: bold;
+	font-size: 12px;
+	color: #004a91;
+	padding: 0 8px;
 }
 
 .flightSelectionReturnFaresHeader {
@@ -1073,17 +1084,16 @@
 }
 
 .flightSelectionReturnFaresHeader .commentBlock {
-	font: 10px Verdana;
-	padding: 6px 0 7px 0;
+	font-size: 12px;
+	padding: 6px 8px 7px 8px;
 }
 
 .flightSelectionReturnFaresHeader TD {
-	background: #e6e6e6;
-	font: 10px Verdana;
+	background: #dddddd;
 }
 
 .flightSelectionReturnFaresHeader TD DIV {
-	padding: 3px 4px 4px 4px;
+	padding: 3px 8px 4px 8px;
 }
 
 .flightSelectionReturnFaresHeader .footerBlock {
@@ -1094,33 +1104,33 @@
 
 .flightSelectionReturnFaresBody .headBlock {
 	background-color: #d3d0f8;
-	padding: 3px 5px;
+	padding: 3px 8px;
 }
 
 .flightSelectionReturnFaresBody .headBlock .colPrice {
-	font: bold 12px Verdana;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .flightSelectionReturnFaresBody .headBlock .colPrice .link {
-	font: 10px Verdana;
+	font: 11px Arial;
 }
 
 .flightSelectionReturnFaresBody .headBlock .colPrice .cpn {
-	font: 10px Verdana;
+	font: 11px Arial;
 	position: relative;
 	top: -4px;
 	padding: 0 5px 0 2px;
 }
 
 .flightSelectionReturnFaresBody .headBlock .colPrice .cpnDiscount {
-	font: 10px Verdana;
+	font: 11px Arial;
 	padding: 0 0 0 20px;
 }
 
 .flightSelectionReturnFaresBody .headBlock .colInfo {
-	font: 10px Verdana;
 	text-align: right;
-	padding-right: 9px;
+	padding-right: 30px;
 }
 
 .flightSelectionReturnFaresBody .footerBlock {
@@ -1134,7 +1144,6 @@
 
 .flightSelectionReturnFaresBody .resultsArea TD {
 	border-bottom: 1px solid #cccccc;
-	font: 10px Verdana;
 	vertical-align: top;
 }
 
@@ -1152,7 +1161,7 @@
 }
 
 .flightSelectionReturnFaresBody .resultsArea .transfer {
-	color: #919191;
+	color: #ABABAB;
 }
 
 .flightSelectionReturnFaresBody .resultsArea .place {
@@ -1174,8 +1183,8 @@
 
 .flightSelectionReturnFares .footnote {
 	padding: 4px 0 10px 0;
-	font: 10px Verdana;
-	color: #000000;
+	font-size: 11px;
+	color: #666666;
 	float: left;
 	width: 75%;
 }
@@ -1223,14 +1232,14 @@
 .flightSelectionReturnFaresBody .buttonArea a.button1:link, 
 .flightSelectionReturnFaresBody .buttonArea a.button1:active, 
 .flightSelectionReturnFaresBody .buttonArea a.button1:focus {
-	background: #1E82F7 url(../pictures/misc/main-button-bg.gif) repeat-x left top;
+	background: url(../pictures/misc/main-button-bg.gif) repeat-x left top;
 	border: none;
 	padding: 0;
 	display: block;
 	width: '100%';
 	font: bold 10px Verdana;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #004a91;
 }
 
 .flightSelectionReturnFaresBody .buttonArea a.button1 span {
@@ -1240,7 +1249,7 @@
 
 .flightSelectionReturnFaresBody .buttonArea a.button1 span span {
 	background: url(../pictures/misc/main-button-right.gif) no-repeat right top;
-	padding: 2px 10px 3px 10px;
+	padding: 6px 15px 6px 15px;
 }
 
 

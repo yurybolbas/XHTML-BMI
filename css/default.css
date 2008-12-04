@@ -408,14 +408,13 @@ a.button2:link, a.button2:active, a.button2:focus {
 .pageSubTitle{
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 	font-size:12px;
-		
 	color:#003366;
 }
 
 .tableTitle,
 .formTitle,
 .textTitle {
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: bold;
 	padding: 5px 0;
 	border-bottom: 1px solid #cccacb;

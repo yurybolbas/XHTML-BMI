@@ -157,14 +157,14 @@
 
 .errorButtons a.button1, .errorButtons a.button1:hover, .errorButtons a.button1:visited,
 .errorButtons a.button1:link, .errorButtons a.button1:active, .errorButtons a.button1:focus {
-	background: #d3991b url(../pictures/misc/main-button-bg.gif) repeat-x left top;
+	background: url(../pictures/misc/main-button-bg.gif) repeat-x left top;
 	border: none;
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: bold 16px Arial;
+	font: bold 10px Verdana;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #004a91;
 }
 
 .errorButtons a.button1 span {
@@ -174,20 +174,19 @@
 
 .errorButtons a.button1 span span {
 	background: url(../pictures/misc/main-button-right.gif) no-repeat right top;
-	padding: 3px 15px 3px 15px;
+	padding: 6px 15px 6px 15px;
 }
 
 .errorButtons a.button2, .errorButtons a.button2:hover, .errorButtons a.button2:visited,
 .errorButtons a.button2:link, .errorButtons a.button2:active, .errorButtons a.button2:focus {
-	background: #1673b2 url(../pictures/misc/alt-button-bg.gif) repeat-x left top;
+	background: url(../pictures/misc/alt-button-bg.gif) repeat-x left top;
 	border: none;
 	padding: 0;
 	display: block;
 	width: '100%';
-	font: bold 12px Arial;
+	font: bold 10px Verdana;
 	text-decoration: none;
-	color: #FFFFFF;
-	margin: 2px 0 0 0;
+	color: #004a91;
 }
 
 .errorButtons a.button2 span {
@@ -197,7 +196,7 @@
 
 .errorButtons a.button2 span span {
 	background: url(../pictures/misc/alt-button-right.gif) no-repeat right top;
-	padding: 2px 25px 4px 25px;
+	padding: 6px 15px 6px 15px;
 }
 
 
