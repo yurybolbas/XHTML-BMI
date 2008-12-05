@@ -1642,7 +1642,7 @@
 /* Proceed Options Block  */
 
 .proceedOptionsBlock {
-	
+	display: none;
 }
 
 .proceedOptionsBlock .headBlock {
@@ -1915,6 +1915,10 @@
 .confirmationInfoBlock .colManage {
 	width: 52%;
 	font: 12px Arial;
+}
+
+.confirmationInfoBlock .colManage DIV {
+	display: none;
 }
 
 .confirmationInfoBlock .colManage .option {

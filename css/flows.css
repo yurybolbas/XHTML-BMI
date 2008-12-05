@@ -219,6 +219,7 @@
 }
 
 #pgTravellers #fbTravellerDetails .allocatedItems {
+	display: none;
 	padding: 5px 0 0 0;
 }
 
