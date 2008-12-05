@@ -805,7 +805,10 @@ dateFormatSettings = new function (){
 var toolTip = {
 	oToolTip: null,
 	oCurrentOver: null,
-	
+	timerHandlerOver: null,	
+	timerHandlerOut: null,
+	displayDelay: 300,	
+		
 	init: function (o) {
 		if (!this.oToolTip) {
 			this.oToolTip = document.createElement('DIV');
@@ -819,7 +822,17 @@ var toolTip = {
 	over: function (o, e) {
 		this.init(o);
 		
+		if(this.timerHandlerOut){
+			clearTimeout(this.timerHandlerOut);
+			this.timerHandlerOut = null;
+		}
+
 		if(this.oCurrentOver != o){
+			if(this.timerHandlerOver){
+				clearTimeout(this.timerHandlerOver);
+				this.timerHandlerOver = null;
+			}		
+		
 			this.oCurrentOver = o;
 			this.oToolTip.style.display = 'none';
 			
@@ -840,21 +853,32 @@ var toolTip = {
 			
 			if (!o.onmouseout){ o.onmouseout = function () {toolTip.out(this)}};
 			if (!o.onmousemove){ o.onmousemove = function (evt) {toolTip.move(this,evt)}};
+			
+			this.timerHandlerOver = setTimeout(function(){if(!toolTip.timerHandlerOut){toolTip.setDisplay();} toolTip.timerHandlerOver=null;},this.displayDelay);			
+			
 		}
 		this.setPosition(e);
-		this.oToolTip.style.display = 'block';
-
+		if(!this.timerHandlerOver){
+			this.setDisplay();
+		}
 	}
 	,
 	
 	out: function (o) {
 		this.oToolTip.style.display = 'none';
+		this.timerHandlerOut = setTimeout(function(){clearTimeout(toolTip.timerHandlerOver);toolTip.timerHandlerOver=null;toolTip.oCurrentOver=null},50);
 	}
 	,
 	
 	move: function (o, e) {
 		this.setPosition(e);
-	},
+	}
+	,
+	
+	setDisplay: function(){
+		this.oToolTip.style.display = 'block';	
+	}
+	,
 	
 	setPosition: function (e) {
 		var x, y;
