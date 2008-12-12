@@ -295,7 +295,7 @@
 /* Fare Breakdown */
 
 .popupBlockFareBreakdown {
-	padding: 1px 1px 0 1px;
+	padding: 1px;
 }
 
 .popupBlockFareBreakdown .detailsTable THEAD TD {
@@ -326,14 +326,16 @@
 }
 
 .popupBlockFareBreakdown .detailsTable .rowTotal TD DIV {
-	padding: 2px 5px 2px 5px;
+	padding: 2px 3px 2px 3px;
 }
 
+/* USED ON JSP ONLY refactoring begin */
 .popupBlockFareBreakdown .footnote {
 	font-size: 11px;
 	color: #333333;
 	padding: 5px 3px 5px 3px;
 }
+/* USED ON JSP ONLY refactoring end */
 
 
 /* Air Reprice */
