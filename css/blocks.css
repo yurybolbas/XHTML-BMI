@@ -3325,7 +3325,7 @@
 	position: absolute;
 	z-index:10000;
 	width: auto;
-	display: none;
+	margin: -1000em 0 0 -1000em;
 }
 
 .simpleToolTip {

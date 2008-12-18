@@ -834,7 +834,7 @@ var toolTip = {
 			}		
 		
 			this.oCurrentOver = o;
-			this.oToolTip.style.display = 'none';
+			this.show(false);
 			
 			var arrDivs = o.getElementsByTagName("DIV");
 			var oTtoolTipInfo = null;
@@ -854,18 +854,18 @@ var toolTip = {
 			if (!o.onmouseout){ o.onmouseout = function () {toolTip.out(this)}};
 			if (!o.onmousemove){ o.onmousemove = function (evt) {toolTip.move(this,evt)}};
 			
-			this.timerHandlerOver = setTimeout(function(){if(!toolTip.timerHandlerOut){toolTip.setDisplay();} toolTip.timerHandlerOver=null;},this.displayDelay);			
+			this.timerHandlerOver = setTimeout(function(){if(!toolTip.timerHandlerOut){toolTip.show(true);} toolTip.timerHandlerOver=null;},this.displayDelay);			
 			
 		}
 		this.setPosition(e);
 		if(!this.timerHandlerOver){
-			this.setDisplay();
+			this.show(true);
 		}
 	}
 	,
 	
 	out: function (o) {
-		this.oToolTip.style.display = 'none';
+		this.show(false);
 		this.timerHandlerOut = setTimeout(function(){clearTimeout(toolTip.timerHandlerOver);toolTip.timerHandlerOver=null;toolTip.oCurrentOver=null},50);
 	}
 	,
@@ -875,8 +875,8 @@ var toolTip = {
 	}
 	,
 	
-	setDisplay: function(){
-		this.oToolTip.style.display = 'block';	
+	show: function(isShown){
+		this.oToolTip.style.margin = (isShown) ? '0' : '-1000em 0 0 -1000em';
 	}
 	,
 	
@@ -891,7 +891,15 @@ var toolTip = {
 		else if (e.clientX || e.clientY){
 			x = e.clientX + document.body.scrollLeft;
 			y = e.clientY + document.body.scrollTop;
-		}		
+		}
+		
+		if ((document.body.clientWidth + document.body.scrollLeft) <= (x + 10 + this.oToolTip.clientWidth)){
+			x = x - this.oToolTip.clientWidth - 20;	
+		}
+		
+		if ((document.body.clientHeight + document.body.scrollTop) <= (y + 5 + this.oToolTip.clientHeight)){
+			y = y - this.oToolTip.clientHeight - 10;	
+		}
 		
 		this.oToolTip.style.left = x + 10;
 		this.oToolTip.style.top = y + 5;
