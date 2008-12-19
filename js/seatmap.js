@@ -137,6 +137,7 @@ seatMapFramework = {
 		oLegList: [],
 		fVisSeg: 1,
 		nVisSegs: 0,
+		nMinVisSegs: 2,
 		nSeg: 0,
 		
 		init: function(nSeg){
@@ -146,13 +147,15 @@ seatMapFramework = {
 			if(this.oTbl.offsetWidth <= oArea.offsetWidth) return;
 	
 			this.nSeg = nSeg;
-	
-			this.oPrevLegLink = document.getElementById("idPrevLegLink").getElementsByTagName("A")[0];
-			this.oPrevLegLink.className = "disabled";
-			this.oPrevLegLink.onclick = function() {seatMapFramework.segmentsViewCorrector.prevLeg();return false};
-			this.oNextLegLink = document.getElementById("idNextLegLink").getElementsByTagName("A")[0];		
-			this.oNextLegLink.className = "";
-			this.oNextLegLink.onclick = function() {seatMapFramework.segmentsViewCorrector.nextLeg();return false};			
+			
+			if(nSeg>this.nMinVisSegs){
+				this.oPrevLegLink = document.getElementById("idPrevLegLink").getElementsByTagName("A")[0];
+				this.oPrevLegLink.className = "disabled";
+				this.oPrevLegLink.onclick = function() {seatMapFramework.segmentsViewCorrector.prevLeg();return false};
+				this.oNextLegLink = document.getElementById("idNextLegLink").getElementsByTagName("A")[0];		
+				this.oNextLegLink.className = "";
+				this.oNextLegLink.onclick = function() {seatMapFramework.segmentsViewCorrector.nextLeg();return false};			
+			}
 			
 			for(i=0; i<nSeg; i++){
 				this.oLegList[i] = [];
@@ -161,13 +164,26 @@ seatMapFramework = {
 				}
 			}
 			
-			for(var i=nSeg; i>1; i--){
+			for(var i=nSeg; i>this.nMinVisSegs; i--){
 				if(this.oTbl.offsetWidth <= oArea.offsetWidth){
 					break;
 				}
 				this.setColDisplay(i,false);
 			}
+
 			this.nVisSegs = i;
+			
+			if(this.oTbl.offsetWidth > oArea.offsetWidth){
+				var oDivs = this.oTbl.getElementsByTagName("DIV");
+				var tWidth = oArea.offsetWidth - (this.oTbl.offsetWidth - this.oTbl.rows[0].cells[0].offsetWidth) + "px";
+				for(var i in oDivs){
+					if(oDivs[i].className=="nameAreaWrap"){
+						oDivs[i].style.width = tWidth;
+						oDivs[i].style.overflow = "hidden";
+					}
+				}					
+			}
+
 		}
 		,
 		

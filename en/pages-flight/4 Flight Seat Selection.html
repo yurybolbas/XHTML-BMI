@@ -69,7 +69,8 @@ function registerJS(jsName){
 								<!-- BEGIN LOGIN STATUS -->
 								<div class="auth"><strong>Welcome, John Smith   johns123</strong><span> | </span>
 									<a href="../../en/pages-profile/Profile - Indexpage (AHP).html">My Profile</a><span> | </span>
-									<a href="../../en/index.html" onClick="return window.confirm ('&quot;Are you sure you want to Log off?&quot;')">Logoff</a></div>
+									<a href="../../en/pages-old/Trip Planner - 1 Control Panel (PHP).html">Trip Planner</a><span> | </span>
+									<a href="../../en/index.html" onclick="return window.confirm ('&quot;Are you sure you want to Log off?&quot;')">Logoff</a></div>
 								<!-- /END LOGIN STATUS --></td>
 						</tr>
 					</table></div></div>
@@ -152,101 +153,104 @@ function registerJS(jsName){
 										<div class="passengersArea">
 											<div class="warningMsg">Exit row passengers must be capable of providing emergency assistance. You will be checked on-board.</div>
 											<div id="idLegSegmentsArea" class="legsTableOuter">
-											<table class="legsTable">
-												<thead>
-													<tr>
-														<td class="nameArea">
-															<table width="100%">
-																<tr>
-																	<td class="name">
-																		<div>Passenger Name</div></td>
+												<table class="legsTable">
+													<thead>
+														<tr>
+															<td class="nameArea">
+																<table width="100%">
+																	<tr>
+																		<td class="name">
+																			<div>Passenger Name</div></td>
 																		<td class="prevLegLink" id="idPrevLegLink">
-																		<div>
+																			<div>
 																				<a href="#" class="hidden"></a></div></td>
-																</tr>
-															</table></td>
-														<td class="legArea legArea1 legAreaFirst" id="idLegSegment_0">
-															<div class="route">LAX-SJC</div>
-															<div class="link">
-																<a href="#" onClick="seatMapFramework.directSegment(0);this.blur();return false">View</a></div></td>
-														<td class="legArea legArea2 legArea" id="idLegSegment_1">
-															<div class="route">SJC-SFO</div>
-															<div class="link">
-																<a href="#" onClick="seatMapFramework.directSegment(1);this.blur();return false">View</a></div></td>
-														<td class="legArea legArea3 legAreaLast" id="idLegSegment_2">
-															<div class="route">SFO-LAX</div>
-															<div class="link">
-																<a href="#" onClick="seatMapFramework.directSegment(2);this.blur();return false">View</a></div></td>
+																	</tr>
+																</table></td>
+															<td class="legArea legArea1 legAreaFirst" id="idLegSegment_0">
+																<div class="route">LAX-SJC</div>
+																<div class="link">
+																	<a href="#" onClick="seatMapFramework.directSegment(0);this.blur();return false">View</a></div></td>
+															<td class="legArea legArea2 legArea" id="idLegSegment_1">
+																<div class="route">SJC-SFO</div>
+																<div class="link">
+																	<a href="#" onClick="seatMapFramework.directSegment(1);this.blur();return false">View</a></div></td>
+															<td class="legArea legArea3 legAreaLast" id="idLegSegment_2">
+																<div class="route">SFO-LAX</div>
+																<div class="link">
+																	<a href="#" onClick="seatMapFramework.directSegment(2);this.blur();return false">View</a></div></td>
 															<td class="nextLegLink" id="idNextLegLink">
-															<div>
+																<div>
 																	<a href="#" class="hidden"></a></div></td>
-													</tr>
-												</thead>
-												<tbody>
-													<tr class="rowOdd rowFirst">
-														<td class="nameArea">
-															<table>
-																<tr>
-																	<td class="code">
-																		<div>(1) Adult - </div></td>
-																	<td class="name">
-																		<div>John Smith</div></td>
-																</tr>
-															</table></td>
-														<td class="legArea legArea1 legAreaFirst">
-															<div>
-																<input type="text" name="legSegment_0_seatField_1" id="legSegment_0_seatField_1" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,1,0);" onFocus="seatMapFramework.setCurrentGuestSeat(1,0);" /></div></td>
-														<td class="legArea legArea2">
-															<div>
-																<input type="text" name="legSegment_1_seatField_1" id="legSegment_1_seatField_1" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,1,1);" onFocus="seatMapFramework.setCurrentGuestSeat(1,1);" /></div></td>
-														<td class="legArea legArea3 legAreaLast">
-															<div>
-																<input type="text" name="legSegment_2_seatField_1" id="legSegment_2_seatField_1" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,1,2);" onFocus="seatMapFramework.setCurrentGuestSeat(1,2);" /></div></td>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="rowOdd rowFirst">
+															<td class="nameArea">
+																<div class="nameAreaWrap">
+																	<table>
+																		<tr>
+																			<td class="code">
+																				<div>(1) Adult - </div></td>
+																			<td class="name">
+																				<div>John Smith</div></td>
+																		</tr>
+																	</table></div></td>
+															<td class="legArea legArea1 legAreaFirst">
+																<div>
+																	<input type="text" name="legSegment_0_seatField_1" id="legSegment_0_seatField_1" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,1,0);" onFocus="seatMapFramework.setCurrentGuestSeat(1,0);" /></div></td>
+															<td class="legArea legArea2">
+																<div>
+																	<input type="text" name="legSegment_1_seatField_1" id="legSegment_1_seatField_1" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,1,1);" onFocus="seatMapFramework.setCurrentGuestSeat(1,1);" /></div></td>
+															<td class="legArea legArea3 legAreaLast">
+																<div>
+																	<input type="text" name="legSegment_2_seatField_1" id="legSegment_2_seatField_1" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,1,2);" onFocus="seatMapFramework.setCurrentGuestSeat(1,2);" /></div></td>
 															<td></td>
-													</tr>
-													<tr class="rowEven">
-														<td class="nameArea">
-															<table>
-																<tr>
-																	<td class="code">
-																		<div>(2) Adult - </div></td>
-																	<td class="name">
-																		<div>Mrs. Mary Smith</div></td>
-																</tr>
-															</table></td>
-														<td class="legArea legArea1 legAreaFirst">
-															<div>
-																<input type="text" name="legSegment_0_seatField_2" id="legSegment_0_seatField_2" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,2,0);" onFocus="seatMapFramework.setCurrentGuestSeat(2,0);" /></div></td>
-														<td class="legArea legArea2">
-															<div>
-																<input type="text" name="legSegment_1_seatField_2" id="legSegment_1_seatField_2" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,2,1);" onFocus="seatMapFramework.setCurrentGuestSeat(2,1);" /></div></td>
-														<td class="legArea legArea3 legAreaLast">
-															<div>
-																<input type="text" name="legSegment_2_seatField_2" id="legSegment_2_seatField_2" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,2,2);" onFocus="seatMapFramework.setCurrentGuestSeat(2,2);" /></div></td>
+														</tr>
+														<tr class="rowEven">
+															<td class="nameArea">
+																<div class="nameAreaWrap">
+																	<table>
+																		<tr>
+																			<td class="code">
+																				<div>(2) Adult - </div></td>
+																			<td class="name">
+																				<div>Mrs. Mary Smith</div></td>
+																		</tr>
+																	</table></div></td>
+															<td class="legArea legArea1 legAreaFirst">
+																<div>
+																	<input type="text" name="legSegment_0_seatField_2" id="legSegment_0_seatField_2" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,2,0);" onFocus="seatMapFramework.setCurrentGuestSeat(2,0);" /></div></td>
+															<td class="legArea legArea2">
+																<div>
+																	<input type="text" name="legSegment_1_seatField_2" id="legSegment_1_seatField_2" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,2,1);" onFocus="seatMapFramework.setCurrentGuestSeat(2,1);" /></div></td>
+															<td class="legArea legArea3 legAreaLast">
+																<div>
+																	<input type="text" name="legSegment_2_seatField_2" id="legSegment_2_seatField_2" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,2,2);" onFocus="seatMapFramework.setCurrentGuestSeat(2,2);" /></div></td>
 															<td></td>
-													</tr>
-													<tr class="rowOdd rowLast">
-														<td class="nameArea">
-															<table>
-																<tr>
-																	<td class="code">
-																		<div>(3) Child - </div></td>
-																	<td class="name">
-																		<div>Mr. Bob Smith</div></td>
-																</tr>
-															</table></td>
-														<td class="legArea legArea1 legAreaFirst">
-															<div>
-																<input type="text" name="legSegment_0_seatField_3" id="legSegment_0_seatField_3" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,3,0);" onFocus="seatMapFramework.setCurrentGuestSeat(3,0);" /></div></td>
-														<td class="legArea legArea2">
-															<div>
-																<input type="text" name="legSegment_1_seatField_3" id="legSegment_1_seatField_3" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,3,1);" onFocus="seatMapFramework.setCurrentGuestSeat(3,1);" /></div></td>
-														<td class="legArea legArea3 legAreaLast">
-															<div>
-																<input type="text" name="legSegment_2_seatField_3" id="legSegment_2_seatField_3" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,3,2);" onFocus="seatMapFramework.setCurrentGuestSeat(3,2);" /></div></td>
+														</tr>
+														<tr class="rowOdd rowLast">
+															<td class="nameArea">
+																<div class="nameAreaWrap">
+																	<table>
+																		<tr>
+																			<td class="code">
+																				<div>(3) Child - </div></td>
+																			<td class="name">
+																				<div>Mr. Bob Smith</div></td>
+																		</tr>
+																	</table></div></td>
+															<td class="legArea legArea1 legAreaFirst">
+																<div>
+																	<input type="text" name="legSegment_0_seatField_3" id="legSegment_0_seatField_3" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,3,0);" onFocus="seatMapFramework.setCurrentGuestSeat(3,0);" /></div></td>
+															<td class="legArea legArea2">
+																<div>
+																	<input type="text" name="legSegment_1_seatField_3" id="legSegment_1_seatField_3" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,3,1);" onFocus="seatMapFramework.setCurrentGuestSeat(3,1);" /></div></td>
+															<td class="legArea legArea3 legAreaLast">
+																<div>
+																	<input type="text" name="legSegment_2_seatField_3" id="legSegment_2_seatField_3" value="" readonly="readonly" onBlur="seatMapFramework.enterGuestSeat(this,3,2);" onFocus="seatMapFramework.setCurrentGuestSeat(3,2);" /></div></td>
 															<td></td>
-													</tr>
-												</tbody>
+														</tr>
+													</tbody>
 												</table></div></div>
 										<!-- /Passengers Area -->
 										<!-- Flight Info Area -->
@@ -560,9 +564,9 @@ function registerJS(jsName){
 									<table>
 										<tr>
 											<td>
-												<a href="#" class="button2" id="pgButtonClear" onClick="seatMapFramework.resetAllGuestSeats();return false" style="display:none"><span><span>Clear Selection</span></span></a><span class="button2Disabled" id="pgButtonClearDisabled"><span><span>Clear Selection</span></span></span></td>
+												<a href="#" class="button2" id="pgButtonClear" onclick="seatMapFramework.resetAllGuestSeats();return false" style="display:none"><span><span>Clear Selection</span></span></a><span class="button2Disabled" id="pgButtonClearDisabled"><span><span>Clear Selection</span></span></span></td>
 											<td>
-												<a href="#" onClick="seatMapFramework.nextSegment();return false" class="button2" id="pgButtonNext"><span><span>Next Flight</span></span></a></td>
+												<a href="#" onclick="seatMapFramework.nextSegment();return false" class="button2" id="pgButtonNext"><span><span>Next Flight</span></span></a></td>
 											<td>
 												<a href="5 Flight Payment Registered Multiple Cards.html" class="button1" id="pgButtonSubmit"><span><span>Continue to Payment ></span></span></a></td>
 										</tr>
@@ -628,7 +632,7 @@ function registerJS(jsName){
 					<div><span></span></div></div>
 				<div class="bodyBlock">
 					<h3>Need Help?</h3>
-					<p>A representative is standing by to answer your question via our <a href="#" onClick="openWindow('chatSelect', '../../en/popups/Chat Selection.html', 700, 500, '');return false">online chat</a>.</p>
+					<p>A representative is standing by to answer your question via our <a href="#" onclick="openWindow('chatSelect', '../../en/popups/Chat Selection.html', 700, 500, '');return false">online chat</a>.</p>
 					<p>You can also <a href="#">contact us by email</a> or call 1(507) 217-2671.</p></div>
 				<div class="footerBlock">
 					<div><span></span></div></div></div>
