@@ -52,6 +52,43 @@ seatMapFramework = {
 			document.getElementById("legSegment_" + seatMapFramework.currentSegmentIndex + "_seatField_" + seatMapFramework.currentGuestIndex).focus();
 		}
 	},
+	
+	exitRowAgreement: {
+		isApproved: false,
+		isInprogress: false,
+		guestIndexs: [],
+		
+		
+		check: function(params){
+			this.guestIndexs[this.guestIndexs.length] = params.guestIndex;
+			
+			if(!this.isInprogress){
+				/* this call should be changed on App */
+				popupFramework.show({id:'popupModuleExitRowTerms',ajaxConfig:{},opacity:true,templateName:'exitRowTermsPopup',size:{w:690},position:'centered'})
+			}
+			this.isInprogress = true;	
+		}
+		,
+		
+		onClickYes: function(params){
+			this.isApproved = true;
+			popupFramework.hide({id:params.id});			
+		},
+		
+		onClickNo: function(params){
+			seatMapFramework.getUpAllGuests();
+			var tGuests = seatMapFramework.currentSegment.guests;
+			for(var i=0; i<this.guestIndexs.length; i++){
+			tGuests[this.guestIndexs[i]-1].curSeat = "";	
+			}
+			seatMapFramework.setCurrentGuest(seatMapFramework.currentGuestIndex-1);			
+			seatMapFramework.sitDownAllGuests();			
+			this.isInprogress = false;
+			this.guestIndexs = [];
+			popupFramework.hide({id:params.id});						
+		}
+	}
+	,
 		
 	segments: [
 		{
@@ -87,6 +124,7 @@ seatMapFramework = {
 	currentGuest: null,
 	currentGuestIndex: -1,	
 	
+	exitRowAgreementFlag: false,	
 
 	init: function(guests, viewMode){
 		this.errors.removeAll();
@@ -647,6 +685,9 @@ seatMapFramework = {
 			if(index > this.currentSegment.guests.length){
 				index = 1;
 			}
+			else if(index < 1){
+				index = this.currentSegment.guests.length;
+			}
 			if(this.currentSegment.guests[index-1].isEditable){
 				break;
 			}
@@ -789,6 +830,10 @@ seatMapFramework = {
 		if(guest.code == "CNN" && this.testAttrs(seatRow.attrs,[4])){
 			this.errors.add(guestIndex,3);		
 			return false;
+		}
+		
+		if(/*isExitRowPopUp && */ !this.exitRowAgreement.isApproved && this.testAttrs(seatRow.attrs,[4])){
+			this.exitRowAgreement.check({guestIndex:guestIndex})
 		}
 
 		return true;

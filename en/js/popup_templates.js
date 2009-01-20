@@ -97,6 +97,18 @@ var extPopupTemplates = {
 		<div class="dialogFooter"><table><tr><td><a href="#" class="button2" onClick="popupFramework.hide({id:\'{[values.config.id]}\'});return false"><span><span>Close</span></span></a></td></tr></table></div>\
 	',
 	
+	exitRowTermsPopup:'\
+		<div id="{[values.config.id]}Dialog" class="defaultDialogFrame">\
+		<div class="dialogHeader"><table width="100%" class="dialogHeaderInner"><tr><td width="100%" class="dialogTitle" id="{[values.config.id]}DialogTitle">Exit Row Terms and Conditions</td><td nowrap="nowrap" class="dialogClose"><a href="#" onClick="seatMapFramework.exitRowAgreement.onClickNo({id:\'{[values.config.id]}\'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td></tr></table></div>\
+		<div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div>\
+		<div class="dialogContent" id="{[values.config.id]}DialogContent">\
+		<div id="{[values.config.id]}DefCont"><div class="popupBlockLoading1"><table class="popupBlockLoading1OuterTable"><tr><td class="popupBlockLoading1OuterTD"><div class="popupLoadingIcon"><div><span/></div></div><div class="popupLoadingText"><p>Page Loading</p></div></td></tr></table></div></div>\
+		<div id="{[values.config.id]}UpdateCont"></div>\
+		<div id="{[values.config.id]}ErrorCont"><div class="popupBlockError1"><table class="popupBlockError1OuterTable"><tr><td class="popupBlockError1OuterTD"><div class="popupErrorIcon"><div><span/></div></div><div class="popupErrorText"><p>No connection.</p></div></td></tr></table></div></div>\
+		</div>\
+		<div class="dialogFooter"><table cellspacing="0" cellpadding="0" border="0"><tr><td><a href="#" id="popupExitRowTermsButtonYes" class="button2" style="display:none" onClick="seatMapFramework.exitRowAgreement.onClickYes({id:\'{[values.config.id]}\'});return false"><span><span>Yes</span></span></a><span class="button2Disabled" id="popupExitRowTermsButtonYesDisabled"><span><span>Yes</span></span></span></td><td><a href="#" class="button2" onClick="seatMapFramework.exitRowAgreement.onClickNo({id:\'{[values.config.id]}\'});return false"><span><span>No</span></span></a></td></tr></table></div>\
+		',
+		
 	airTermsPopup:'\
 		<div id="{[values.config.id]}Dialog" class="defaultDialogFrame">\
 		<div class="dialogHeader"><table width="100%" class="dialogHeaderInner"><tr><td width="100%" class="dialogTitle" id="{[values.config.id]}DialogTitle">Terms and Conditions</td><td nowrap="nowrap" class="dialogClose"><a href="#" onClick="popupFramework.hide({id:\'{[values.config.id]}\'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td></tr></table></div>\

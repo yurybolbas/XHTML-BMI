@@ -595,6 +595,56 @@
 	width: 520px;
 }
 
+/* Exit Row Terms */
+
+.popupBlockExitRowTerms {
+	padding: 4px;
+}
+
+.popupBlockExitRowTerms h3 {
+	font: bold 10px Verdana;
+	padding: 4px 5px 5px 5px;
+}
+
+.popupBlockExitRowTerms .exitRowTermsInfo {
+	font: 10px Verdana;
+	border: 1px solid #bfb5bf;
+	height: 400px;
+}
+
+.popupBlockExitRowTerms .exitRowTermsInfo .bodyBlock {
+	padding: 12px 12px 0px 12px;
+}
+
+.popupBlockExitRowTerms .exitRowTermsInfo p {
+	padding: 0 0 12px 0;
+}
+
+.popupBlockExitRowTerms .exitRowTermsInfo ul {
+	list-style: none;
+	padding: 0;
+	margin: 0px 0 12px 12px;
+}
+
+.popupBlockExitRowTerms .exitRowTermsInfo li {
+	background: url(../pictures/icons/bullets/bul_list.gif) no-repeat left 4px;
+	padding: 0 0 3px 10px;
+}
+
+.popupBlockExitRowTerms .exitRowConfirmation {
+	font: bold 10px Verdana;
+	text-align: center;
+	padding: 8px 0 5px 0;
+}
+
+.popupBlockExitRowTerms .exitRowConfirmation input {
+	vertical-align: middle;
+}
+
+.popupBlockExitRowTerms .exitRowConfirmation label {
+	vertical-align: middle;
+}
+
 /*  Terms  */
 
 .popupBlockAirTerms {

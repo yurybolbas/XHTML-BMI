@@ -127,6 +127,7 @@ var protoLoaderSrcMapping = {
 	preferencesPopupLoadedContent:"../popups/Popups.html",
 	fareRulesPopupLoadedContent:"../popups/Popups.html",
 	seatMapPopupLoadedContent:"../popups/Popups.html",
+	exitRowTermsPopupLoadedContent:"../popups/Popups.html",	
 	airTermsPopupLoadedContent:"../popups/Popups.html",
 	hotelDescriptionPopupLoadedContent:"../popups/Popups.html",
 	hotelBreakdownPopupLoadedContent:"../popups/Popups.html",

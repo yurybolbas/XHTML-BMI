@@ -1715,11 +1715,6 @@
 	padding: 10px;
 }
 
-.seatsBlock .passengersArea .warningMsg {
-	padding: 0 0 5px 0;
-	color: #ff0202;
-}
-
 .seatsBlock .legsTableOuter {
 	overflow:hidden;
 }
