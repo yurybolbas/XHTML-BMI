@@ -449,6 +449,10 @@ ajax: {  data has free format and depends on ajax engine
 			setTimeout(function(){drillDownFramework.oSource.focus()},50);		
 		}
 		else {
+			if(this.oSource.value.search(/^[\s]*$/g) != -1){
+				this.curText = "";
+				this.curVal = "";				
+			}
 			this.oSource.value = this.curText;
 			this.oValueField.value = this.curVal;			 	
 						
