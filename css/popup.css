@@ -609,7 +609,8 @@
 .popupBlockExitRowTerms .exitRowTermsInfo {
 	font: 10px Verdana;
 	border: 1px solid #bfb5bf;
-	height: 400px;
+	height: 180px;
+	overflow: auto;
 }
 
 .popupBlockExitRowTerms .exitRowTermsInfo .bodyBlock {

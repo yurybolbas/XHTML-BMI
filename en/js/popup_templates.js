@@ -100,7 +100,6 @@ var extPopupTemplates = {
 	exitRowTermsPopup:'\
 		<div id="{[values.config.id]}Dialog" class="defaultDialogFrame">\
 		<div class="dialogHeader"><table width="100%" class="dialogHeaderInner"><tr><td width="100%" class="dialogTitle" id="{[values.config.id]}DialogTitle">Exit Row Terms and Conditions</td><td nowrap="nowrap" class="dialogClose"><a href="#" onClick="seatMapFramework.exitRowAgreement.onClickNo({id:\'{[values.config.id]}\'});return false">Close<img src="../../pictures/icons/i_dialog_close.gif" width="11" height="11" alt=""/></a></td></tr></table></div>\
-		<div class="dialogBrandHead"><div class="dialogHeadBg"><div class="dialogLogo"></div></div></div>\
 		<div class="dialogContent" id="{[values.config.id]}DialogContent">\
 		<div id="{[values.config.id]}DefCont"><div class="popupBlockLoading1"><table class="popupBlockLoading1OuterTable"><tr><td class="popupBlockLoading1OuterTD"><div class="popupLoadingIcon"><div><span/></div></div><div class="popupLoadingText"><p>Page Loading</p></div></td></tr></table></div></div>\
 		<div id="{[values.config.id]}UpdateCont"></div>\

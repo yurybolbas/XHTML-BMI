@@ -64,7 +64,7 @@ seatMapFramework = {
 			
 			if(!this.isInprogress){
 				/* this call should be changed on App */
-				popupFramework.show({id:'popupModuleExitRowTerms',ajaxConfig:{},opacity:true,templateName:'exitRowTermsPopup',size:{w:690},position:'centered'})
+				popupFramework.show({id:'popupModuleExitRowTerms',ajaxConfig:{},opacity:true,templateName:'exitRowTermsPopup',size:{w:520},position:'centered'})
 			}
 			this.isInprogress = true;	
 		}
