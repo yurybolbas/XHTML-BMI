@@ -2552,6 +2552,10 @@
 	padding: 2px 8px 10px 0;
 }
 
+.insuranceCrossSell .colInfo .policyNum {
+	font-weight: bold;
+}
+
 .blockInsuranceCrossSell .componentTotal {
 	padding: 0 0 7px 0;
 }
