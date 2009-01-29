@@ -2549,7 +2549,11 @@
 
 .insuranceCrossSell .colInfo {
 	width: 100%;
-	padding: 2px 8px 10px 0;
+	padding: 2px 8px 0 0;
+}
+
+.insuranceCrossSell .colInfo P {
+	padding: 0 0 10px 0;
 }
 
 .insuranceCrossSell .colInfo .policyNum {
