@@ -969,18 +969,22 @@ interstConfig:  config of interstitialFramework;
 				if(config.interstConfig){
 					interstitialFramework.hide(config.interstConfig);			
 				}			
-				
-				if(1 || _httpStatus()){
-					if(httpRequest.responseText.indexOf(successToken) != -1){
-						_success();
+				try{
+					if(1 || _httpStatus()){
+						if(httpRequest.responseText.indexOf(successToken) != -1){
+							_success();
+						}
+						else{
+							_error();					
+						}
 					}
 					else{
-						_error();					
+						_error();
 					}
 				}
-				else{
-					_error();
-				}
+				catch(e){
+					_error();				
+				}	
 				httpRequest = null;
 			}
 			
@@ -1022,7 +1026,7 @@ interstConfig:  config of interstitialFramework;
 		
 		function _error(){
 			if(config.error){
-				config.error(httpRequest, config)
+				setTimeout(function(h,c){return function(){config.error(h,c)}}(httpRequest, config),1);				
 			}
 
 		};	
