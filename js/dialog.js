@@ -192,16 +192,8 @@ var popupFramework = {
 			
 			var top=0;
 			var left=0;	
-			var siteWidth = 930;
-			var tNodes = document.body.childNodes;
-			/*
-				for(var i in tNodes){
-					if(tNodes[i].className && tNodes[i].className.indexOf('layoutMain') != -1){
-						siteWidth = tNodes[i].offsetWidth;
-						alert(tNodes[i].clientWidth)
-					}
-				}
-			*/
+			var outerTable = document.getElementById(config.id+"OuterTable");
+			var siteWidth = parseInt((window.getComputedStyle) ? window.getComputedStyle(outerTable, "").getPropertyValue("width") : outerTable.currentStyle.width); 
 					
 			if(config.offsets) {
 				if(config.offsets.el && config.position!="centered"){
@@ -543,7 +535,7 @@ var popupFramework = {
 					config.positionClass = "popupOuterDivCentered";
 			}	
 			var popupLayout = this.templates[config.templateName] || "<div>error: no template</div>";
-			var tpl = '<div id="{[values.config.id]}Outer" class="popupOuterDiv {[values.config.positionClass]}" style="display:none"><table class="popupOuterTable"><tr><td class="popupOuterTD">'+popupLayout+'</td></tr></table></div>';
+			var tpl = '<div id="{[values.config.id]}Outer" class="popupOuterDiv {[values.config.positionClass]}" style="display:none"><table id="{[values.config.id]}OuterTable" class="popupOuterTable"><tr><td class="popupOuterTD">'+popupLayout+'</td></tr></table></div>';
 			
 			this.insertHTML(document.body,this.tplFilling(tpl,{config:config}));
 
