@@ -22,6 +22,20 @@ function switchSummarySection(o) {
 	}
 }
 
+function collapseDetailsSubBlock(lnk) {
+	lnk.blur();
+	var blockState = lnk.parentNode;
+	while (blockState.className.indexOf('state') < 0) {
+		blockState = blockState.parentNode;	
+	}
+	if (blockState.className.match('Expanded')) {
+		blockState.className = blockState.className.replace('Expanded','Collapsed');
+	}
+	else {
+		blockState.className = blockState.className.replace('Collapsed','Expanded');	
+	}	
+}
+
 function addLegInTable(tblId){
 	var oTbl = document.getElementById(tblId);
 	var templateLeg = oTbl.getElementsByTagName("TBODY")[0];

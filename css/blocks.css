@@ -472,6 +472,44 @@
 }
 
 
+/* Additional Search Options Block */
+
+.additionalSearchOptions .stateCollapsed .optionsHeader A {
+	padding: 0 0 0 10px;
+	background: url(../pictures/icons/bullets/bul3.gif) no-repeat left 3px;
+}
+
+.additionalSearchOptions .stateCollapsed .optionsHeader .sepLine1 {
+	margin-top: 6px;
+}
+
+.additionalSearchOptions .stateCollapsed .optionsBody {
+	display: none;
+}
+
+.additionalSearchOptions .stateExpanded .optionsHeader {
+	padding: 0 0 4px 0;
+}
+
+.additionalSearchOptions .stateExpanded .optionsHeader A {
+	padding: 0 0 0 10px;
+	background: url(../pictures/icons/bullets/bul4.gif) no-repeat left 5px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.additionalSearchOptions .stateExpanded .optionsHeader A:hover {
+	color: #000000;
+}
+
+.additionalSearchOptions .stateExpanded .optionsHeader .sepLine1 {
+	display: none;
+}
+
+.additionalSearchOptions .stateExpanded .optionsBody {
+	display: block;
+}
+
 /******************************************************************************
 
 	Travelers block
@@ -2179,6 +2217,42 @@
 	border: 1px solid #cccacb;
 	padding: 2px 2px 2px 2px
 }
+
+/* Expandable Sub Block */
+
+.detailsSubBlockExpandable .header {
+	padding-left: 6px;
+}
+
+.detailsSubBlockExpandable .header A {
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 17px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.detailsSubBlockExpandable .header A:hover {
+	color: #000000;
+}
+
+.detailsSubBlockExpandable .stateCollapsed .header A {
+	background-image: url(../pictures/icons/i_plus.gif);
+}
+
+.detailsSubBlockExpandable .stateExpanded .header A {
+	background-image: url(../pictures/icons/i_minus.gif);
+}
+
+.detailsSubBlockExpandable .stateCollapsed .body {
+	display: none;
+}
+
+.detailsSubBlockExpandable .stateExpanded .body {
+	display: block;
+}
+
+/* Details Table */
 
 .detailsTable {
 
