@@ -982,8 +982,7 @@ interstConfig:  config of interstitialFramework;
 						_error();
 					}
 				}
-				catch(e){
-					_error();				
+				catch(e){				
 				}	
 				httpRequest = null;
 			}
