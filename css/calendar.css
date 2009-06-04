@@ -68,6 +68,10 @@
 	clear: both;	
 }
 
+.cdrContent table {
+	width: 100%;
+}
+
 .cdrContent td, .cdrContent th {
 	text-align: center;
 	vertical-align: middle;
