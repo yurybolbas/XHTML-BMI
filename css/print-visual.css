@@ -23,3 +23,12 @@ a {
 .detailsSubBlockFareBreakdown .detailsTable TD {
 	border: 1px solid #bfb5bf;	
 }
+
+.passengerInfoBlock .details .seatsDescr td {
+	background: none;
+	padding-top: 0;
+}
+
+.passengerInfoBlock .details .seatsDescr div {
+	padding-top: 0;
+}
