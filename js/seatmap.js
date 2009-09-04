@@ -348,7 +348,7 @@ seatMapFramework = {
 					
 				} else if(tSeat.status==1 || tSeat.status==4 || tSeat.status==8 || tSeat.status==23){
 					/* Available Seat */
-					tSeat.defaultHTML='<td class="' + cellClass + ' availableSeat" id="plane_seat_' + tId + '" title="'+strSeat+'"><div>'+((viewMode!="view")?'<div><div onclick="seatMapFramework.clickOnSeat(\'' + tId + '\')"></div></div>':'')+'</div></td>';																			
+					tSeat.defaultHTML='<td class="' + cellClass + ' availableSeat" id="plane_seat_' + tId + '" title="'+strSeat+'"><div>'+((viewMode!="view")?'<div><div onclick="seatMapFramework.clickOnSeat(\'' + tId + '\');return false"></div></div>':'')+'</div></td>';																			
 					str+=tSeat.defaultHTML;						
 				} else{
 					/* Occupied Seat */
