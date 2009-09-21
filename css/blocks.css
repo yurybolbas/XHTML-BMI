@@ -1113,8 +1113,7 @@
 }
 
 .servicesTabs A,
-.servicesTabs A:hover,
-.servicesTabs SPAN {
+.servicesTabs A:hover {
 	display: block;
 	text-decoration: none;
 	color: #000;
