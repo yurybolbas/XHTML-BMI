@@ -8,7 +8,7 @@ config structure:
 var _proto_interstitialContents = {
 	waitAjax: '<div class="interstAjax"></div>'
 	,
-	searchInterst: '<table class="interstOuterTable"><tr><td class="interstOuterTD"><div class="interstSearch"><div class="interstSearchInner"><div class="brandHead"><div class="logo"></div></div><div class="title">Please wait while the system is processes your request</div><div class="bar"></div><div class="text">Please do not click the refresh, back or stop buttons until selection page is displayed. <br />It may take up to 60 seconds to process your request.</div> 				</div></div></td></tr></table>'
+	searchInterst: '<table class="interstOuterTable"><tr><td class="interstOuterTD"><div class="interstSearch"><div class="interstSearchInner"><div class="brandHead"><div class="logo"></div></div><div class="title">Please wait while the system is processes your request</div><div class="bar"></div><div class="text">Please do not click the refresh, back or stop buttons until selection page is displayed. <br />We are processing your request.</div> 				</div></div></td></tr></table>'
 	,	
 	searchInterstIframe: '<iframe src="../pages-common/Interstitial Page.html" scrolling="no" frameborder="0" style="width:100%;height:100%" scroll="none"></iframe>'	
 }
