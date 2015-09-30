@@ -11,3 +11,6 @@
 @import url("popup.css");
 @import url("profile.css");
 @import url("static.css");
+
+/* general styles for wai-aria markup */
+@import url("../../XHTML-CUC-DEMO/css/wcag.css");
